@@ -1,0 +1,51 @@
+https://git-scm.com/book/en/v2
+
+//////////////////////////////////////////////////////////////////////////Identificación
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+git config --list
+
+//////////////////////////////////////////////////////////////////////////Primeros pasos
+Lo de siempre:
+git add nombre_archivo
+git add .
+git commit -m "nombre del commit"
+
+
+Pasos a seguir:
+1) creo el repo con git init nombre_repo
+2) creo algun archivo en la carpeta nombre_repo
+3) paso a los archivos del wd a sa con git add .
+4) git commit -m "num_version"
+5) me creo un repo en github
+6) copio y pego lo que está en github xd, son tres lineas...
+
+//////////////////////////////////////////////////////////////////////////Ramas
+//ver las versiones
+git log --oneline
+
+//pasar de una versión a otra / o de una rama a otra
+git checkout nombre-version
+
+//crea una rama
+git branch NOMBRE-RAMA
+
+git branch -M nombre_de_la_rama
+
+
+//atajo para crear y moverte directamente a una rama
+git checkout -b NOMBRE-RAMA
+
+//renombrar rama
+git branch -m VIEJO-NOMBRE-RAMA NUEVO-NOMBRE-RAMA
+
+//eliminar rama
+git branch -d RAMA-A-ELIMINAR
+git branch --delete RAMA-A-ELIMINAR
+
+//comparar ramas
+git diff PRIMERA-RAMA..SEGUNDA-RAMA
+
+//Lista de todas las ramas que están completamente combinadas en tu rama actual 
+git branch --merged
