@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1680698899 "c:/Users/daia_/Desktop/UNI/GitHubUTN/LaTex-UTN-frrq/maquinas-electricas/mqe-formulas.tex" "build/mqe-formulas.pdf" "mqe-formulas" 1680698903
+["pdflatex"] 1680698951 "c:/Users/daia_/Desktop/UNI/GitHubUTN/LaTex-UTN-frrq/maquinas-electricas/mqe-formulas.tex" "build/mqe-formulas.pdf" "mqe-formulas" 1680698955
   "C:/Users/daia_/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1635286395 9726368 bf38a946b47974141fcbce9dc0b7628e ""
   "C:/Users/daia_/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1680696636 125189 c24c23a836d6e490d314f58685319dfe ""
   "C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -181,13 +181,13 @@
   "C:/Users/daia_/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/daia_/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/daia_/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "build/mqe-formulas.aux" 1680698903 194 72658fb03bfd53fc103956ba2036b889 "pdflatex"
-  "c:/Users/daia_/Desktop/UNI/GitHubUTN/LaTex-UTN-frrq/maquinas-electricas/mqe-formulas.tex" 1680698898 3711 23a2c93bf6fa8262ae753f9a1b0673e2 ""
+  "build/mqe-formulas.aux" 1680698954 194 72658fb03bfd53fc103956ba2036b889 "pdflatex"
+  "c:/Users/daia_/Desktop/UNI/GitHubUTN/LaTex-UTN-frrq/maquinas-electricas/mqe-formulas.tex" 1680698949 3739 c370c5f793db6e031ced5024e798c7a5 ""
   "img//carga-trafo.png" 1679589109 82216 4bef42b71985306c16294d866751f639 ""
   "img//utncom.jpg" 1679581064 16968 ed05105c01824819e4ff921f9833b16f ""
   "img//vacio-cp-trafo.png" 1679589928 35044 0549029e76f3df4d9e0db10f61d55f68 ""
   "img//vacio-fasores.png" 1679589033 34450 41516f8403f10356dce7323bdf39d500 ""
-  "mqe-formulas.tex" 1680698898 3711 23a2c93bf6fa8262ae753f9a1b0673e2 ""
+  "mqe-formulas.tex" 1680698949 3739 c370c5f793db6e031ced5024e798c7a5 ""
   (generated)
   "build/mqe-formulas.aux"
   "build/mqe-formulas.log"
