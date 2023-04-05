@@ -6,13 +6,12 @@ Primera vez
 Si ya tenés la carpeta
 - git pull
 Si no se muestran las actualizaciones:
-- git checkout <otra-rama>
-- git checkout <main>
-
+- git checkout *otra-rama*
+- git checkout *main*
 # Siempre
 Crear una nueva rama:
-- git branch <nombre-DDMMAAAA-version>
-- git push origin <nombre-DDMMAAAA-version>
+- git branch *nombre-DDMMAAAA-version*
+- git push origin *nombre-DDMMAAAA-version*
 
 # Revisar en GitHub
 Pull request: compare and merge si está todo ok.
