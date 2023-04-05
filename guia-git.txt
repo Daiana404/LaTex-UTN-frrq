@@ -24,29 +24,41 @@ Pasos a seguir:
 //////////////////////////////////////////////////////////////////////////Ramas
 //ver las versiones
 git log --oneline
+	El comando git log se utiliza para mostrar la historia registrada alcanzable
+	de un proyecto desde la más reciente instantánea confirmada hacia atrás.
 
 //pasar de una versión a otra / o de una rama a otra
 git checkout nombre-version
+	El comando git checkout se usa para cambiar de rama y 
+	revisar el contenido de tu directorio de trabajo.
+	-p y --stat para tener una idea de lo que fue introducido en cada commit y 
+	las opciones --pretty y --oneline para ver el historial 
+	de forma más concisa, junto con unas simples opciones de filtrado de fecha y autor.
 
 //crea una rama
-git branch NOMBRE-RAMA
+git branch <branch>
 
-git branch -M nombre_de_la_rama
+//fusionar rama
+git merge <branch>
+	La herramienta git merge se utiliza para fusionar uno o más ramas dentro de la rama que tienes activa. 
+	A continuación avanzará la rama actual al resultado de la fusión.
+
+git branch -M <branch>
 
 //atajo para crear y moverte directamente a una rama
-git checkout -b NOMBRE-RAMA
+git checkout -b <branch>
 
 //renombrar rama
-git branch -m VIEJO-NOMBRE-RAMA NUEVO-NOMBRE-RAMA
+git branch -m <old-branch> <new-branch>
 
 //eliminar rama
-git branch -d RAMA-A-ELIMINAR
-git branch --delete RAMA-A-ELIMINAR
+git branch -d <branch>
+git branch --delete <branch>
 		error: The branch 'valentin-quiere-texto' is not fully merged.
-		If you are sure you want to delete it, run 'git branch -D RAMA-A-ELIMINAR'.
+		If you are sure you want to delete it, run 'git branch -D <branch>'.
 
 //comparar ramas
-git diff PRIMERA-RAMA..SEGUNDA-RAMA
+git diff <first-branch>..<second-branch>
 
 //Lista de todas las ramas que están completamente combinadas en tu rama actual 
 git branch --merged
