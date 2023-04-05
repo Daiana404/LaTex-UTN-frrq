@@ -33,7 +33,6 @@ git branch NOMBRE-RAMA
 
 git branch -M nombre_de_la_rama
 
-
 //atajo para crear y moverte directamente a una rama
 git checkout -b NOMBRE-RAMA
 
@@ -43,6 +42,8 @@ git branch -m VIEJO-NOMBRE-RAMA NUEVO-NOMBRE-RAMA
 //eliminar rama
 git branch -d RAMA-A-ELIMINAR
 git branch --delete RAMA-A-ELIMINAR
+		error: The branch 'valentin-quiere-texto' is not fully merged.
+		If you are sure you want to delete it, run 'git branch -D RAMA-A-ELIMINAR'.
 
 //comparar ramas
 git diff PRIMERA-RAMA..SEGUNDA-RAMA
