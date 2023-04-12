@@ -3,7 +3,9 @@ Resúmenes de materias y fórmulas específicas de la carrera Ingeniería Electr
 # Pasos a seguir
 Primera vez
 - git clone https://github.com/Daiana404/LaTex-UTN-frrq.git
-Si ya tenés la carpeta
+
+
+Si ya tenés la carpeta:
 - git pull
 Si no se muestran las actualizaciones:
 - git checkout *otra-rama*

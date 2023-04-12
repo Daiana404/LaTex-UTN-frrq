@@ -1,0 +1,98 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+%\setmainfont{Butler}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}%Multicolumnas :)
+\usepackage[left=2.00cm, right=2.00cm, top=3.00cm, bottom=3.00cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tocloft} %Personalizar el formato del índice
+\usepackage{nameref}%Lo uso para llamar a las secciones
+\usepackage{textcase} %Hacer letras en mayúscula
+\usepackage{lastpage} %Colocar el num de páginas
+\usepackage{lipsum}
+\usepackage[many]{tcolorbox}
+\usepackage[explicit]{titlesec}
+\renewcommand{\contentsname}{} % Elimina el título del índice
+%BEGIN_FOLD SECTION / SUBSECTION / SUBSUBSECTION
+	\newcommand{\aux}[1]{
+		%	\begin{tabularx}{\textwidth} { 
+				%			 >{\raggedright\arraybackslash}X 
+				%			 >{\raggedleft\arraybackslash}X  }
+			%		{\large  \thesection \ . \textsc{#1}} &  \thesection \\
+			%	\end{tabularx}
+		\newpage
+		\textbf{\Huge #1} \\ {\small Unidad \thesection} \vspace{0.5cm}
+		\label{sec:\thesection}
+		\begin{multicols}{2} % Inicio de la sección de dos columnas
+			\tableofcontents
+		\end{multicols} % Fin de la sección de dos columnas
+		
+	}
+	\titleformat{name=\section}
+	{\normalfont}{}{0em}
+	{\aux{#1}}[\addvspace{4ex}]
+%END_FOLD
+%BEGIN_FOLD CAJITAS
+\newtcolorbox{preguntas}[1]{title = \textsc{\textbf{Pregunta de examen}},enhanced,attach boxed title to top left={xshift=2mm, yshift=-2mm}, colbacktitle=red!70!black, coltitle=white, boxed title style={colframe=red!30},colback=white!90!red, colframe=red!30}
+%END_FOLD
+%BEGIN_FOLD COMANDOS
+	
+%END_FOLD
+
+%BEGIN_FOLD ENCABEZADO Y PIE
+	\fancyhead[R]{\textbf{\nameref{sec:\thesection}}}
+	\fancyhead[L]{\textsc{Máquinas Térmicas}}
+	\fancyhead[C]{}
+	\fancyfoot[R]{Página \thepage\ | \pageref{LastPage}}
+	\fancyfoot[L]{UTN Facultad Regional Reconquista}
+	\fancyfoot[C]{}
+%END_FOLD
+
+\begin{document}
+	\pagestyle{fancy}
+	\section{Introducción general}
+	
+	\subsection{Conceptos básicos}
+	
+	\subsubsection{Energía} La energía es una característica de la materia y puede transformarse o transferirse. Existen en la naturaleza de distintas maneras.
+	
+	\subsubsection{Máquina} Es un dispositivo que transforma o transfiere la energía.
+	
+	Las máquinas de fluidos utilizan \textsl{fluidos de trabajo} para generar energía y se clasifican en dos grandes grupos: \textsl{máquinas hidráulicas}, como las turbinas hidráulicas que transforman la energía cinética del agua en energía mecánica de rotación; y en \textsl{máquinas térmicas}, como las turbinas de vapor, donde el funcionamiento es similar a una turbina hidráulica exceptuando el cambio de propiedades que sufre el líquido de trabajo durante el transcurso.
+	
+	\subsection{Clasificación de máquinas de los fluidos}
+	\lipsum[1]
+	\subsubsection{Máquinas Hidráulicas} Una máquina hidráulica utiliza como fluido de trabajo a los fluidos incompresibles o aquellos que se comporten como tal debido a que en el interior del sistema no sufren variaciones significativas en sus propiedades.
+	\subsubsection{Máquinas Térmicas} Es un dispositivo que transforma energía pero su fluido de trabajo cambia sus propiedades durante la operación de la máquina.
+	
+	Se clasifican en dos: 
+	\begin{itemize}
+		\item Turbomáquinas y;
+		\item De desplazamiento positivo
+	\end{itemize}
+	
+	En las \textsl{turbomáquinas} la sustancia de trabajo es impulsada a traves de un rotor provisto de palas y cuyo principio de funionamiento se basa en las ecuaciones de Euler. 	
+	
+	\subsection{Aplicaciones de las Máquinas Térmicas}
+	\subsubsection{Turbinas de vapor}
+	\subsubsection{Turbinas de gas}
+	\subsubsection{Turbocompresores}
+	\subsubsection{Motoras}
+	\subsubsection{Generadoras}
+	
+	\subsection{Ecuaciones de Euler}
+	\subsection{Principio de desplazamiento positivo}
+	
+	\section{Combustibles para calderas}
+	\subsection{Combustibles}
+	
+	\begin{preguntas}
+		. ¿Qué es un combustible?
+	\end{preguntas}
+	
+	
+	
+\end{document}
