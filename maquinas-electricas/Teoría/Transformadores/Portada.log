@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.9)  4 APR 2023 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.9)  13 APR 2023 10:24
 entering extended mode
 **./Portada.tex
 (Portada.tex
@@ -640,6 +640,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks39
 \@floatcapt=\box68
 )
+(C:\Users\melan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\melan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (C:\Users\melan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
@@ -656,27 +667,27 @@ LaTeX Info: Redefining \% on input line 25.
  (Desarrollo.aux))
 \openout1 = `Portada.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-Package hyperref Info: Link coloring ON on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+Package hyperref Info: Link coloring ON on input line 5.
 
 (C:\Users\melan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -690,9 +701,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
  (Portada.out) (Portada.out)
 \@outlinefile=\write4
 \openout4 = `Portada.out'.
@@ -728,7 +739,7 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 4.
+(lastpage)             ! on input line 5.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -764,14 +775,14 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./Figuras//../Figuras/UTNLOGO.jpg, id=22, 295.1025pt x 302.12875pt>
+<./Figuras//../Figuras/UTNLOGO.jpg, id=26, 295.1025pt x 302.12875pt>
 File: ./Figuras//../Figuras/UTNLOGO.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/UTNLOGO.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/UTNLOGO.jpg  used on input line 
-12.
+13.
 (pdftex.def)             Requested size: 170.71393pt x 174.783pt.
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-20.
+21.
 (C:\Users\melan\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -782,19 +793,31 @@ iguras/UTNLOGO.jpg>]
 \openout2 = `Desarrollo.aux'.
 
  (Desarrollo.tex
-<./Figuras//../Figuras/1.jpg, id=32, 470.35725pt x 157.7895pt>
+<./Figuras//../Figuras/1.jpg, id=36, 470.35725pt x 157.7895pt>
 File: ./Figuras//../Figuras/1.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/1.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/1.jpg  used on input line 26.
 (pdftex.def)             Requested size: 341.43437pt x 114.54253pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+
+
+(C:\Users\melan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+
+
+(C:\Users\melan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 29.
-<./Figuras//../Figuras/2.jpg, id=34, 230.0595pt x 49.3845pt>
+<./Figuras//../Figuras/2.jpg, id=38, 230.0595pt x 49.3845pt>
 File: ./Figuras//../Figuras/2.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/2.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/2.jpg  used on input line 35.
 (pdftex.def)             Requested size: 170.71393pt x 36.64719pt.
-<./Figuras//../Figuras/3.jpg, id=35, 213.79875pt x 28.30576pt>
+<./Figuras//../Figuras/3.jpg, id=39, 213.79875pt x 28.30576pt>
 File: ./Figuras//../Figuras/3.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/3.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/3.jpg  used on input line 42.
@@ -807,17 +830,17 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:voltaje' on page 1 undefined on input line 45.
 
-<./Figuras//../Figuras/4.jpg, id=37, 316.18124pt x 25.2945pt>
+<./Figuras//../Figuras/4.jpg, id=41, 316.18124pt x 25.2945pt>
 File: ./Figuras//../Figuras/4.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/4.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/4.jpg  used on input line 48.
 (pdftex.def)             Requested size: 256.07741pt x 20.48764pt.
-<./Figuras//../Figuras/5.jpg, id=38, 206.57175pt x 100.57574pt>
+<./Figuras//../Figuras/5.jpg, id=42, 206.57175pt x 100.57574pt>
 File: ./Figuras//../Figuras/5.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/5.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/5.jpg  used on input line 55.
 (pdftex.def)             Requested size: 128.0387pt x 62.34096pt.
-<./Figuras//../Figuras/6.jpg, id=39, 118.64325pt x 49.3845pt>
+<./Figuras//../Figuras/6.jpg, id=43, 118.64325pt x 49.3845pt>
 File: ./Figuras//../Figuras/6.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/6.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/6.jpg  used on input line 62.
@@ -845,27 +868,27 @@ l.64
 
  <./Figuras//../Figuras/1.jpg> <./Figuras//../Figuras/2.jpg> <./Figuras//../Fig
 uras/3.jpg> <./Figuras//../Figuras/4.jpg> <./Figuras//../Figuras/5.jpg>]
-<./Figuras//../Figuras/7.jpg, id=56, 437.83575pt x 224.63925pt>
+<./Figuras//../Figuras/7.jpg, id=60, 437.83575pt x 224.63925pt>
 File: ./Figuras//../Figuras/7.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/7.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/7.jpg  used on input line 79.
 (pdftex.def)             Requested size: 298.75264pt x 153.28738pt.
-<./Figuras//../Figuras/8.jpg, id=57, 202.95825pt x 52.39575pt>
+<./Figuras//../Figuras/8.jpg, id=61, 202.95825pt x 52.39575pt>
 File: ./Figuras//../Figuras/8.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/8.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/8.jpg  used on input line 87.
 (pdftex.def)             Requested size: 128.0387pt x 33.05505pt.
-<./Figuras//../Figuras/9.jpg, id=58, 128.27925pt x 45.771pt>
+<./Figuras//../Figuras/9.jpg, id=62, 128.27925pt x 45.771pt>
 File: ./Figuras//../Figuras/9.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/9.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/9.jpg  used on input line 96.
 (pdftex.def)             Requested size: 76.8193pt x 27.41042pt.
-<./Figuras//../Figuras/10.jpg, id=59, 196.93575pt x 60.82726pt>
+<./Figuras//../Figuras/10.jpg, id=63, 196.93575pt x 60.82726pt>
 File: ./Figuras//../Figuras/10.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/10.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/10.jpg  used on input line 103.
 (pdftex.def)             Requested size: 128.0387pt x 39.5493pt.
-<./Figuras//../Figuras/11.jpg, id=60, 154.77824pt x 51.19125pt>
+<./Figuras//../Figuras/11.jpg, id=64, 154.77824pt x 51.19125pt>
 File: ./Figuras//../Figuras/11.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/11.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/11.jpg  used on input line 110.
@@ -882,37 +905,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2 <./Figuras//../Figuras/6.jpg> <./Figuras//../Figuras/7.jpg> <./Figuras//../F
 iguras/8.jpg> <./Figuras//../Figuras/9.jpg> <./Figuras//../Figuras/10.jpg> <./F
 iguras//../Figuras/11.jpg>]
-<./Figuras//../Figuras/12.jpg, id=77, 106.59825pt x 52.39575pt>
+<./Figuras//../Figuras/12.jpg, id=81, 106.59825pt x 52.39575pt>
 File: ./Figuras//../Figuras/12.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/12.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/12.jpg  used on input line 124.
 (pdftex.def)             Requested size: 64.01608pt x 31.46646pt.
-<./Figuras//../Figuras/13.jpg, id=78, 227.04825pt x 33.12375pt>
+<./Figuras//../Figuras/13.jpg, id=82, 227.04825pt x 33.12375pt>
 File: ./Figuras//../Figuras/13.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/13.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/13.jpg  used on input line 135.
 (pdftex.def)             Requested size: 128.0387pt x 18.67906pt.
-<./Figuras//../Figuras/14.jpg, id=79, 256.5585pt x 52.39575pt>
+<./Figuras//../Figuras/14.jpg, id=83, 256.5585pt x 52.39575pt>
 File: ./Figuras//../Figuras/14.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/14.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/14.jpg  used on input line 142.
 (pdftex.def)             Requested size: 128.0387pt x 26.14983pt.
-<./Figuras//../Figuras/15.jpg, id=80, 190.91325pt x 39.14626pt>
+<./Figuras//../Figuras/15.jpg, id=84, 190.91325pt x 39.14626pt>
 File: ./Figuras//../Figuras/15.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/15.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/15.jpg  used on input line 148.
 (pdftex.def)             Requested size: 128.0387pt x 26.25471pt.
-<./Figuras//../Figuras/16.jpg, id=81, 660.066pt x 249.93375pt>
+<./Figuras//../Figuras/16.jpg, id=85, 660.066pt x 249.93375pt>
 File: ./Figuras//../Figuras/16.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/16.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/16.jpg  used on input line 153.
 (pdftex.def)             Requested size: 341.43437pt x 129.28365pt.
-<./Figuras//../Figuras/17.jpg, id=82, 377.61075pt x 51.19125pt>
+<./Figuras//../Figuras/17.jpg, id=86, 377.61075pt x 51.19125pt>
 File: ./Figuras//../Figuras/17.jpg Graphic file (type jpg)
 <use ./Figuras//../Figuras/17.jpg>
 Package pdftex.def Info: ./Figuras//../Figuras/17.jpg  used on input line 160.
 (pdftex.def)             Requested size: 256.07741pt x 34.71663pt.
-)
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.1556pt, for example:
@@ -923,7 +946,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3 <./Figuras//../Figuras/12.jpg> <./Figuras//../Figuras/13.jpg> <./Figuras//..
 /Figuras/14.jpg> <./Figuras//../Figuras/15.jpg> <./Figuras//../Figuras/16.jpg> 
-<./Figuras//../Figuras/17.jpg>] 
+<./Figuras//../Figuras/17.jpg>]
+<./Figuras//../Figuras/18.jpg, id=97, 616.704pt x 181.8795pt>
+File: ./Figuras//../Figuras/18.jpg Graphic file (type jpg)
+<use ./Figuras//../Figuras/18.jpg>
+Package pdftex.def Info: ./Figuras//../Figuras/18.jpg  used on input line 193.
+(pdftex.def)             Requested size: 341.43437pt x 100.69731pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.1556pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.1556pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-9.1556pt}.
+
+[4 <./Figuras//../Figuras/18.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
+
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.1556pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.1556pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-9.1556pt}.
+
+[5] 
 AED: lastpage setting LastPage
 (Portada.aux
 LaTeX Info: Redefining \. on input line 25.
@@ -933,16 +985,16 @@ LaTeX Info: Redefining \% on input line 25.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Portada.out' has not changed.
-(rerunfilecheck)             Checksum: A8ACF60321F16684FC1D128A5395AB08;998.
+(rerunfilecheck)             Checksum: 757C7009E577505E227AB57F6B215529;1253.
  ) 
 Here is how much of TeX's memory you used:
- 22044 strings out of 478868
- 405787 string characters out of 2848810
- 707726 words of memory out of 3000000
- 39549 multiletter control sequences out of 15000+600000
- 412934 words of font info for 59 fonts, out of 8000000 for 9000
+ 22593 strings out of 478868
+ 411866 string characters out of 2848810
+ 713240 words of memory out of 3000000
+ 40063 multiletter control sequences out of 15000+600000
+ 415006 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,12n,103p,609b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,13n,103p,609b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -963,10 +1015,13 @@ sfonts/cm/cmss9.pfb><C:/Users/melan/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmssbx10.pfb><C:/Users/melan/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/melan/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/melan/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Portada.pdf (4 pages, 427859 bytes).
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/melan/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/me
+lan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
+b>
+Output written on Portada.pdf (6 pages, 522074 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

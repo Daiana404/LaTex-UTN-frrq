@@ -160,5 +160,59 @@ La aplicación del 2° Ley de Kirchhoff a los circuitos primario y secundario no
 	\includegraphics[width=0.6\linewidth]{"../Figuras/17"}
 \end{figure} 
 
-
+Las ecuaciones para calcular $V_{1}$ y $V_{2}$ quedan:
+\begin{equation}
+	\mathbf{V_{1}=E_{1}+R_{1} \, I_{1}+ j \, X_{2} \, I_{2}} \hspace{5mm} ; \hspace{5mm} \mathbf{V_{2}=E_{2} - R_{2}\, I_{2} - j X_{2}\, I_{2}}
+\end{equation}
  
+Como se puede apreciar, las caídas de tensión $V_{1}$ y $V_{2}$ no son iguales a $E_{1}$ y $E_{2}$ por lo tanto la relación de transformación para trafos reales queda:
+\begin{equation}
+	\dfrac{E_{1}}{E_{2}}=\dfrac{N_{1}}{N_{2}}=m
+\end{equation}
+En los transformadores industriales la caída de tensión provocada por el cobre son muy pequeñas por lo que podemos decir:
+\begin{equation}
+	V_{1} \approx E_{1} \hspace{5mm}  V_{2} \approx E_{2}  \hspace{5mm} \therefore \hspace{5mm} \dfrac{V_{1}}{V_{2}} \approx m
+\end{equation}
+
+Si el transformador trabaja en \textbf{vacío}, $I_{2}=0$ por lo tanto las ecuaciones quedan:
+\begin{equation}
+	\mathbf{V_{1}=E_{1} + R_{1} \, I_{0} + jX_{1} \, I_{0}} \hspace{5mm} ; \hspace{5mm} \mathbf{V_{2}=E_{2}}
+\end{equation}
+
+Las caídas de tensiones en vacío son muy pequeñas por lo tanto:
+\begin{equation}
+	V_{1}=E_{1} \hspace{5mm} ; \hspace{5mm} V_{20}=E_{2} \hspace{5mm} \therefore \hspace{5mm} m=\dfrac{V_{1}}{V_{20}}=\dfrac{E_{1}}{E_{2}}=\dfrac{N_{1}}{N_{2}}
+\end{equation}
+
+Este cociente con la tensión secundaria en vacío es el que incluye el fabricante en la placa características de la máquina. La ecuación $\mathbf{I_{1}=I_{0}+\dfrac{I_{2}}{m}}$ es válida a todos los efectos.
+
+\section{Circuito equivalente de un transformador}
+Para el desarrollo de un circuito equivalente de un transformador se inicia \textbf{reduciendo} ambos devanados al mismo número de espiras. Si reducimos el secundario al primario, entonces $N_{1}=N'_{2}$. Para que este nuevo transformador sea equivalente al original \textit{deben conservarse las potencias activa y reactiva} y su distribución en los distintos elementos del circuito secundario. 
+ \begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{"../Figuras/18"}
+	\caption{Circuito equivalente de un transformador real reducido al primario}
+\end{figure} 
+
+\subsection*{a) F.e.m.s y tensiones}
+Si $N'_{2}=N_{1} \; \therefore \; \dfrac{E_{1}}{E'_{2}}=\dfrac{N_{1}}{N'_{2}}=1 \Rightarrow \boxed{E'_{2}=E_{1}=m \, E_{2} \; \wedge \; V'_{2}=m \, V_{2}}$
+
+\subsection*{b) Corrientes}
+Como la potencia aparente en ambos secundarios se conserva $S_{2}=V_{2}\, I_{2}=V'_{2}\, I'_{2}$ reemplazando $V'_{2}=m \, V_{2}$ queda:
+\begin{equation}
+	I'_{2}=\dfrac{I_{2}}{m}
+\end{equation}
+
+\subsection*{c) Impedancias}
+Como la potencia activa se conserva $R_{2}\, {I_{2}}^{2} = R'_{2} \, {I'_{2}}^{2}$ reemplazando $I'_{2}=\dfrac{I_{2}}{m}$ se tiene:
+\begin{equation}
+	R'_{2}=m^{2}\, R_{2}
+\end{equation}
+Lo mismo sucede con la potencia reactiva por lo tanto:
+\begin{equation}
+	X'_{2}=m^{2}\, X_{2}
+\end{equation}
+Entonces para una impedancia $Z'_{L}=m^{2}\, Z_{L}$\\
+
+La importancia fundamental de la reducción de los devanados es obtener una representación del transformador donde no exista una relación de transformación porque $N_{1}=N'_{2}$ y sustituir los devanados acoplados magnéticamente por otros \textbf{acoplados sólo eléctricamente}.
+%Me quedé pag 199 PDF/185 LIBRO
