@@ -28,7 +28,7 @@ Crear una carpeta por cada materia que se requiera. Colocar el nombre completo d
 
 ### Teoría
 
-Dentro de la carpeta de la materia, se deberá crear una carpeta de `Teoría`. En dicha carpeta, se deberá crear el archivo *main* del resumen de la amteria con el siguiente nombre como ejemplo: `maq-ele-resumen`.
+Dentro de la carpeta de la materia, se deberá crear una carpeta de `Teoría`. En dicha carpeta, se deberá crear el archivo *main* del resumen de la materia con el siguiente nombre como ejemplo: `maq-ele-resumen`.
 > Si están de acuerdo, nombremos a los archivos con las primeras tres letras de cada palabra. Con dos palabras bastaría. Lo hice con todos menos con mecánica de los fluidos... aunque se podría poner algo como `mec-flu`
 
 Además, se deben crear carpetas que correspondan a las unidades. En cada unidad, crear uno o más archivos respectivos a cada tema. Por ejemplo:
