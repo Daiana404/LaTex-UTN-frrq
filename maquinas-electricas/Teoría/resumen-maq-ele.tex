@@ -1,6 +1,10 @@
-\documentclass[a4paper, 15pt,titlepage]{article}
+\documentclass[11pt,a4paper,titlepage]{article}
 \usepackage{Paquetes}
+\graphicspath{{./Figuras/}}
+\usepackage{estilos-dai}
 \usepackage{float}
+\fancyhead[L]{\textsc{Máquinas Eléctricas}}
+
 \begin{document}
 	\begin{titlepage}
 		\begin{center}		
@@ -9,7 +13,7 @@
 			
 			\vspace{1cm}
 			
-			\includegraphics[width=0.40\linewidth]{"../Figuras/UTNLOGO"}\\
+			\includegraphics[width=0.40\linewidth]{UTNLOGO.jpg}\\
 			
 			\vspace{1cm}
 			
@@ -35,5 +39,7 @@
 			\hspace{3cm}Melani Faulkner
 		\end{flushleft}
 	\end{titlepage}
-	\include{Desarrollo}
+
+	\include{./U1/transformadores}
+	
 \end{document}
