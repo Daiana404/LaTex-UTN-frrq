@@ -1,0 +1,61 @@
+\usepackage{minitoc-hyper}%Para minis table of contents
+\usepackage{multicol}%Multicolumnas :)
+\usepackage[many]{tcolorbox}%Cajitas propias
+\usepackage{nameref}%Lo uso para llamar a las secciones
+\usepackage[explicit]{titlesec} %Para cambiar section, subsection, etc...
+
+
+%ESTILOS
+%\renewcommand{\contentsname}{} % Elimina el título del índice
+%BEGIN_FOLD SECTION / SUBSECTION / SUBSUBSECTION
+%Sectio
+\newcommand{\cero}{1}
+\newcommand{\aux}[1]{
+	\if\thesection\cero
+	
+	\else
+	\newpage
+	\fi
+	\textbf{\fontsize{40}{48}\selectfont #1} \\ {\large Unidad \thesection} \vspace{0.5cm}
+	\label{sec:\thesection}
+	\begin{multicols}{2} % Inicio de la sección de dos columnas
+		%\minitoc
+	\end{multicols} % Fin de la sección de dos columnas
+	
+}
+\titleformat{name=\section}
+{\normalfont}{}{0em}
+{\aux{#1}}[\addvspace{4ex}]
+%Subsection
+\newcommand{\auxx}[1]{
+	\vspace{.5cm}
+	
+	
+	{\Large \thesubsection \hspace{.8cm} \textsc{#1} \hrule}
+	
+	\vspace{-.5cm}
+}
+\titleformat{name=\subsection}
+{\normalfont}{}{0em}
+{\auxx{#1}}[\addvspace{4ex}]
+%Subsubsection
+\newcommand{\auxxx}[1]{
+	{\large \textit{\textbf{\thesubsubsection\ #1}}}
+}
+\titleformat{name=\subsubsection}
+{\normalfont}{}{0em}
+{\auxxx{#1}}[\addvspace{4ex}]
+%END_FOLD
+
+%BEGIN_FOLD CAJITAS
+\newtcolorbox{preguntas}[1]{title = \textsc{\textbf{Pregunta de examen}},enhanced,attach boxed title to top left={xshift=2mm, yshift=-2mm}, colbacktitle=red!70!black, coltitle=white, boxed title style={colframe=red!30},colback=white!90!red, colframe=red!30}
+%END_FOLD
+
+%BEGIN_FOLD ENCABEZADO Y PIE
+\fancyhead[R]{\textbf{\nameref{sec:\thesection}}}
+\fancyhead[C]{}
+%\fancyhead[L]{Nombre de la Materia} Esto lo vamos a poner en cada archivo
+\fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
+\fancyfoot[L]{UTN Facultad Regional Reconquista}
+\fancyfoot[C]{}
+%END_FOLD
