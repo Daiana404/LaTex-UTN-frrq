@@ -93,6 +93,43 @@
             Corriente reducida & $\fasor{i'}_2 = \dfrac{\fasor{i}_2}{m}$ \\
         \end{tabular}
 
-    \end{cajita}
+        \begin{center}
+            \subtitulo{Transformador Real}
+        \end{center}
+        \begin{tabular}{r |c | c | l}
+            \multicolumn{4}{c}{\includegraphics[width = 6cm]{trafo-real}} \\
+            $\fasor{V}_{1}\approx\fasor{E}_{1}$; $\fasor{V}_{2}\approx\fasor{E}_{2}$ &
+            $\dfrac{\fasor{V}_{1}}{\fasor{V}_{2}}\approx m$ &
+            $\fasor{Z'}_{L}= m^{2} \fasor{Z}_{L}$&
+            $\dfrac{\fasor{E}_{1}}{\fasor{E}_{2}}=\dfrac{\fasor{V}_{1}}{\fasor{V}_{20}}=\dfrac{\fasor{N}_{1}}{\fasor{N}_{2}}=\dfrac{\fasor{I}_{2}}{\fasor{I}_{1}}=m$\\
+        \end{tabular}
 
+    \end{cajita}
+\newpage
+    \begin{cajita}
+        \begin{center}
+        %     Circuito equivalente exacto
+        %     \begin{tabular}{c c}
+        %         referido al primario & referido al secundario\\
+        %         \includegraphics[width=6 cm]{equi-exacto-1}& \includegraphics[width=6 cm]{equi-exacto-2}
+        %     \end{tabular}
+        % \end{center}
+            \subtitulo{Circuito equivalente aproximado  }
+            \begin{tabular}{c c}
+                \includegraphics[width=6 cm,height=3.5 cm]{equi-aprox-1}& \includegraphics[width=6 cm,height=3.5 cm]{equi-aprox-2}
+            \end{tabular}\\
+            $RV=\dfrac{\fasor{V}_{20}-\fasor{V}_{2}}{\fasor{V}_{2}}$\\
+            \vspace*{0.25cm}
+            \subtitulo{Eficiencia}
+            \vspace*{0.25cm}
+            \begin{tabular}{r l}
+                $\eta =$&$ \dfrac{P_{out}}{P_{in}}=\dfrac{P_{out}}{P_{out}+P_{p}}=\dfrac{P_{out}}{P_{out}+P_{fe}+P_{\mu}}$ \\[0.5 cm]
+                $=$&$\dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}=
+                \dfrac{S}{S+\left(\dfrac{P_{fe}+P_{\mu}}{Cos(\phi)}\right)}$\\[0.8 cm]
+            \end{tabular}\\
+            La Eficiencia será máxima cuando $Cos(\phi)=1$ y $ P_{fe}=P_{\mu }$.
+        \end{center}
+
+
+    \end{cajita}
 \end{document}
