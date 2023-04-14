@@ -2,49 +2,17 @@
 \usepackage{{../../paquete}}
 \usepackage{{../../estilos}}
 \graphicspath{{../Figuras/}} %Esta es la forma en la que se insertan direcciones RELATIVAS ya que la carpeta Firugas y el documento se encuentran en la misma ubicación
-\fancyhead[L]{\textsc{Máquinas Eléctricas}}
+
 
 %BEGIN_FOLD
-\newcommand{\materia}{\textit{Máquinas Eléctricas}}
+\newcommand{\nombreMateria}{Máquinas Eléctricas}
+\newcommand{\materia}{\textit{\nombreMateria}}
 %END_FOLD
+\fancyhead[L]{\textsc{\nombreMateria}}
 
 \begin{document}
-	\pagestyle{fancy}
-	\begin{titlepage}
-		\begin{center}		
-			{\huge \textbf{Universidad Tecnológica Nacional}}\\
-			{\huge \textbf{Facultad Regional Reconquista}}
-			
-			\vspace{1cm}
-			
-			\includegraphics[width=0.40\linewidth]{UTNLOGO.jpg}\\
-			
-			\vspace{1cm}
-			
-			{\huge\textbf{Ingeniería Electromecánica}}
-			
-			\vspace{1cm}
-			
-			{\textbf{Año}: 4°} \hspace{5cm}  {Diseño Curricular: 2004 - Ordenanza N°1029 }
-			
-			\vspace{1cm}
-			
-			{{\LARGE  \textbf{Máquinas eléctricas}}}
-			\vspace{1cm}
-			
-			{\LARGE \textbf{Resumen de transformadores}}
-			
-		\end{center}
+	\include{../../portada.tex}
 		
-		\begin{flushleft}
-			\Large
-			\textbf{Alumno:}\\
-			\vspace{5mm}
-			\hspace{3cm}Faulkner Melani\\
-			\hspace{3cm}Franzoi Valentín\\
-			\hspace{3cm}Guardiani Franco\\
-			\hspace{3cm}Polo Daiana
-		\end{flushleft}
-	\end{titlepage}
+	\pagestyle{fancy}
 	\include{./U1/transformadores}
 \end{document}
