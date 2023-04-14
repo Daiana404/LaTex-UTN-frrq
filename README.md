@@ -34,6 +34,28 @@ Dentro de la carpeta de la materia, se deberá crear una carpeta de `Teoría`. E
 Además, se deben crear carpetas que correspondan a las unidades. En cada unidad, crear uno o más archivos respectivos a cada tema. Por ejemplo:
 `máquinas-eléctricas/Teoría/U1/transformadores.tex`
 
+Así debería verse el archivo *main*, pueden copiar y pegar: 
+
+```
+\documentclass[11pt,a4paper]{article}
+\usepackage{{../../paquete}}
+\usepackage{{../../estilos}}
+\graphicspath{{../Figuras}}
+%BEGIN_FOLD
+\newcommand{\nombreMateria}{Nombre De La Materia}
+%Si escriben las palabras principales con la primera letra en mayúscula, mucho mejor...
+\newcommand{\materia}{\textit{\nombreMateria}}
+%END_FOLD
+\fancyhead[L]{\textsc{\nombreMateria}}
+
+\begin{document}
+	\input{../../portada}
+	\pagestyle{fancy}
+  %A continuación, se agregan los \include{} necesarios
+	\include{./U1/...}
+\end{document}
+```
+
 ### Resumen de Formulas
 
 Así como se crea una carpeta de Teoría, se deberá crear una carpeta llamada `Formulas`. En dicha carpeta, se creará el archivo respectivo al resumen de fórmulas. Ejemplo: `maq-ele-formulas`
