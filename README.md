@@ -26,9 +26,18 @@ Algunas consideraciones a tener en cuenta
 ## Materias
 Crear una carpeta por cada materia que se requiera. Colocar el nombre completo de la materia, en minúsculas y separado por guiones medios: `máquinas-eléctricas`
 
-## Unidades
-Dentro de la carpeta de la materia se deben crear carpetas que correspondan a las unidades. En cada unidad, crear uno o más archivos respectivos a cada tema. Por ejemplo:
-`máquinas-eléctricas/U1/transformadores.tex`
+### Teoría
+
+Dentro de la carpeta de la materia, se deberá crear una carpeta de `Teoría`. En dicha carpeta, se deberá crear el archivo *main* del resumen de la materia con el siguiente nombre como ejemplo: `maq-ele-resumen`.
+> Si están de acuerdo, nombremos a los archivos con las primeras tres letras de cada palabra. Con dos palabras bastaría. Lo hice con todos menos con mecánica de los fluidos... aunque se podría poner algo como `mec-flu`
+
+Además, se deben crear carpetas que correspondan a las unidades. En cada unidad, crear uno o más archivos respectivos a cada tema. Por ejemplo:
+`máquinas-eléctricas/Teoría/U1/transformadores.tex`
+
+### Resumen de Formulas
+
+Así como se crea una carpeta de Teoría, se deberá crear una carpeta llamada `Formulas`. En dicha carpeta, se creará el archivo respectivo al resumen de fórmulas. Ejemplo: `maq-ele-formulas`
+
 
 # Sintáxis de GitHub
 Les recomiendo que lean la [Guía de Sintáxis de GitHub](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para que quede todo más bonito, referenciado y ordenado.
