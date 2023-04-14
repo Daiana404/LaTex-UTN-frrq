@@ -2,14 +2,18 @@
 \usepackage{{../../paquete}}
 \usepackage{{../../estilos}}
 \graphicspath{{../Figuras/}} %Esta es la forma en la que se insertan direcciones RELATIVAS ya que la carpeta Firugas y el documento se encuentran en la misma ubicación
-\fancyhead[L]{\textsc{Máquinas Térmicas}}
 
 %BEGIN_FOLD
-\newcommand{\materia}{\textit{Máquinas Térmicas}}
+\newcommand{\nombreMateria}{Máquinas Térmicas}
+\newcommand{\materia}{\textit{\nombreMateria}}
 %END_FOLD
+\fancyhead[L]{\textsc{\nombreMateria}}
+
 
 \begin{document}
+	\input{../../portada}
 	\pagestyle{fancy}
+	%Includesss
 	\include{./U1/unidad1}
 	\include{./U2/unidad2}
 	
