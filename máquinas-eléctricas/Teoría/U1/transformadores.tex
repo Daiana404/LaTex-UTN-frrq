@@ -1,118 +1,131 @@
 \section{Transformadores}
-
 \subsection{Transformadores Ideales}
 \subsubsection{Principio de funcionamiento}
-Para el análisis se toma que el transformador está alimentado por el lado de alta (el de + espiras) y trabaja como un reductor. Es decir que:
+Para el análisis se toma que el transformador está alimentado por el lado de alta (el de más espiras) y trabaja como un reductor. Es decir que:
 
-1) El primario trabaja como un recepto respecto a la fuente. (recibe I)
+\begin{enumerate}
+	\item El primario trabaja como un recepto respecto a la fuente (recibe corriente).
+	\item El secundario se comporta como un generador respecto a la carga conectada a sus bordes (entrega coriente).
+\end{enumerate}
 
-2) El secundario se comporta como un generador respecto a la carga conectada a sus bordes. (Entrega I)
-
-Para un transformador ideal no existen pérdidas por Histéresis y corrientes parásitas y no existen flujos de dispersión (todo el flujo magnético enlaza al primario y secundario).
+Para un transformador ideal no existen pérdidas por histéresis y corrientes parásitas, y no existen flujos de dispersión (todo el flujo magnético enlaza al primario y secundario).
 
 \subsubsection{Transformador ideal sin carga}
-\begin{figure}[!htbp]
+
+\begin{figure}[h]
+	\vspace{-1cm}
 	\centering
-	\includegraphics[width=0.80\linewidth]{"../Figuras/1"}
+	\includegraphics[width=0.80\linewidth]{1}
+	\caption{Esquema de un transformador ideal}
+	\label{fig:transformador-ideal}
 \end{figure} 
  
- Realmente $e_{1}$ representa una f.c.e.m porque se opone a $v_{1}$ y limita la corriente de primario. La polaridad $e_{2}$ tiene en cuenta que, al cerrar el circuito,\footnote{Porque si está abierto, sólo hay V, \textbf{no I}} la corriente $i_{2}$ debe generar un flujo que se oponga el flujo primario que la originó. Es decir que, \textit{la f.m.m del secundario actúa en contra de la f.m.m primaria produciendo un efecto desmagnetizante sobre ésta.}
+ Realmente $e_{1}$ representa una f.c.e.m porque se opone a $v_{1}$ y limita la corriente de primario. La polaridad $e_{2}$ tiene en cuenta que, al cerrar el circuito,\footnote{Porque si está abierto, sólo hay tensión y no corriente} la corriente $i_{2}$ debe generar un flujo que se oponga el flujo primario que la originó. Es decir que, \textsl{la f.m.m del secundario actúa en contra de la f.m.m primaria produciendo un efecto desmagnetizante sobre ésta.}\\
+ 
  
  Aplicando la 2° Ley de Kirchhoff al transformador ideal tenemos que:
  
- \begin{figure}[!htbp]
- 	\centering
- 	\includegraphics[width=0.40\linewidth]{"../Figuras/2"}
- 	\label{fig:voltaje}
- \end{figure} 
+\begin{equation}
+	v_1 = e_1 = N_1 \dfrac{d\Phi}{dt} \hspace{.5cm};\hspace{.5cm} e_2 = v_2 = N_2 \dfrac{d\Phi}{dt}
+	\label{eq:voltaje}
+\end{equation}
 
 Si se parte de un flujo \textbf{senoidal} de la forma:
- \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.40\linewidth]{"../Figuras/3"}
-\end{figure} 
+\begin{equation}
+	\Phi = \Phi_m \sin{\omega t} = \Phi_m \cos\left(\omega t - 90\deg\right)
+\end{equation}
 
-Haciendo la derivada del flujo y reemplazando en \ref{fig:voltaje} tenemos:
- \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.60\linewidth]{"../Figuras/4"}
-\end{figure} 
+Haciendo la derivada del flujo y reemplazando en \ref{eq:voltaje} tenemos:
+\begin{equation*}
+	\begin{split}
+		v_1 = e_1 = N_1 \omega \Phi_m \cos\left(\omega t\right) \\
+		e_2 = v_2 = N_2 \omega \Phi_m \cos\left(\omega t\right)
+	\end{split}
+\end{equation*}
 
-Comparando el flujo expresado en coseno y los voltajes podemos ver que los últimos van 90° adelantados respecto al flujo. Si calculamos sus \textbf{valores eficaces}:
+Comparando el flujo expresado en coseno y los voltajes podemos ver que en estos últimos van 90° adelantados respecto al flujo, se podría decir entonces que la corriente va en fase con el flujo magnético. 
 
- \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.30\linewidth]{"../Figuras/5"}
-\end{figure} 
+Si calculamos sus \textbf{valores eficaces}:
+
+\begin{equation}
+	\begin{split}
+		V_1 = E_1 = \dfrac{N_1 \omega \phi_m}{\sqrt{2}} = 4,44 f N_1 \Phi_m \\
+		V_2 = E_2 = \dfrac{N_2 \omega \phi_m}{\sqrt{2}} = 4,44 f N_2 \Phi_m
+	\end{split}
+\end{equation}
 
 Dividiendo entre sí las ecuaciones y simplificando resulta:
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.20\linewidth]{"../Figuras/6"}
-\end{figure} 
+\begin{equation}
+	\dfrac{V_1}{V_2} = \dfrac{E_1}{E_2} = \dfrac{N_1}{N_2} = m
+\end{equation} 
 
-donde el factor \textit{m} se denomina \textbf{relación de transformación}.
+donde el factor \textit{m} se denomina \textbf{relación de transformación}.\\
 
 Si el transformador está en \textbf{vacío} o \textbf{sin carga}, las pérdidas en el hierro $P_{Fe}$ en el núcleo del transformador será:
-
 \begin{equation}
-	P_{Fe} = V_{1}\,I_{0}\,cos\;\phi_{0}
+	P_{Fe} = V_{1} I_{0} \cos \left(\phi_{0}\right)
 \end{equation}
 
-donde $V_{1}$ y $I_{0}$ representa los valores eficaces de la tensión y la corriente.
+donde $V_{1}$ y $I_{0}$ representan los valores eficaces de la tensión y la corriente.\\
 
-La corriente de vacío $I_{0}$ tiene dos componentes: una activa $I_{Fe}$ y una reactiva $I_{\mu}$
+La corriente de vacío $I_{0}$ tiene dos componentes: una activa $I_{Fe}$ y una reactiva $I_{\mu}$.
 
  \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.70\linewidth]{"../Figuras/7"}
+	\includegraphics[width=0.3\linewidth]{7}
+	\caption{Diagrama fasorial de tensiones y corrientes en vacío.}
+	\label{diag:vacio}
 \end{figure} 
 
 \subsubsection{Transformador ideal con carga}
 
-Si cerramos el interruptor S, el transformador funciona \textbf{en carga} y aparece una corriente $i_{2}$ que circula por el secundario.
- \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.30\linewidth]{"../Figuras/8"}
-\end{figure} 
+En la figura \ref{fig:transformador-ideal} si cerramos el interruptor S, el transformador funciona \textbf{en carga} y aparece una corriente $i_{2}$ que circula por el secundario.
 
-La corriente $\mathbf{I_{2}}$ se retrasa $\phi_{2}$ de la f.e.m $\mathbf{E_{2}}$
+\begin{equation*}
+	\fasor{I}_2 = \dfrac{\fasor{e}_2}{\fasor{Z}_L} = \dfrac{E_2 \angle 0}{Z_L \angle \phi_2} = \dfrac{E_2}{Z_L} \angle -\phi_2
+\end{equation*}
 
-La corriente $i_{2}$ en el secundario produce una f.m.m. desmagnetizante $N_{2}i_{2}$ que se opone a la f.m.m primaria $N_{1}i_{0}$. Para que el flujo no se vea reducido por este efecto , en el primario se genera una corriente adicional primaria $i'_{2}$ con una f.m.m equivalente:
+La corriente $\fasor{i}_2$ se retrasa $\phi_{2}$ de la f.m.m $\fasor{e}_2$. \\
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.18\linewidth]{"../Figuras/9"}
-\end{figure} 
+
+La corriente $i_{2}$ en el secundario produce una f.m.m. desmagnetizante $N_{2}i_{2}$ que se opone a la f.m.m primaria $N_{1}i_{0}$. Para que el flujo no se vea reducido por este efecto, en el primario se genera una corriente adicional primaria $i'_{2}$ con una f.m.m equivalente:
+
+\begin{equation*}
+	N_1 i_2'=N_2 i_2
+\end{equation*}
 
 de donde se deduce el valor de la corriente $i'_{2}$ adicional primaria:
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.30\linewidth]{"../Figuras/10"}
-\end{figure} 
+\begin{equation}
+	i_2' = \dfrac{N_2}{N_1} i_2 = \dfrac{i_2}{m}
+\end{equation}
 
 La corriente total necesaria en el primario $i_{1}$ será igual a:
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.30\linewidth]{"../Figuras/11"}
-\end{figure} 
+\begin{equation*}
+	i_1 = i_0 + i_2' = i_0 + \dfrac{i_2}{m}
+\end{equation*}
 
-La ecuación nos indica que la corriente primaria $i_{1}$ tiene dos componentes:
+Y en forma fasorial: 
+
+\begin{equation}
+	\fasor{i}_1 = \fasor{i}_0 + \fasor{i}_2' = \fasor{i}_0 + \dfrac{\fasor{i}_2}{m}
+	\label{eq:corriente1}
+\end{equation}
+
+La ecuación \ref{eq:corriente1} nos indica que la corriente primaria $\fasor{i}_{1}$ tiene dos componentes:
 
 \begin{itemize}
-	\item \textbf{Una corriente de excitación o de vacío} $\mathbf{I_{0}}$ que produce el flujo en el núcleo magnético y vence las pérdidas en el hierro a través de sus componentes $I_{\mu}$ y $I_{Fe}$.
-	\item \textbf{Una componente de carga} $\mathbf{I'_{2}}$ que equilibra o contrarresta la acción desmagnetizante de la f.m.m secundaria para que el flujo en el núcleo permanezca constante e independiente de la carga. Esta se denomina \textbf{corriente secundaria reducida}.
+	\item \textbf{Una corriente de excitación o de vacío} $\fasor{i}_0$ que produce el flujo en el núcleo magnético y vence las pérdidas en el hierro a través de sus componentes $\fasor{i}_{\mu}$ y $\fasor{i}_{Fe}$;
+	\item Y \textbf{una componente de carga} $\fasor{i}_2'$ que equilibra o contrarresta la acción desmagnetizante de la f.m.m secundaria para que el flujo en el núcleo permanezca constante e independiente de la carga. Esta se denomina \textbf{corriente secundaria reducida}.
 \end{itemize}
 
-A plena carga la corriente $\mathbf{I'_{2}}$ es 20 veces por lo menos mayor que $\mathbf{I_{0}}$ por lo que puede despreciarse y la ecuación queda:
+A plena carga la corriente $\fasor{i}_2'$ es 20 veces por lo menos mayor que $\fasor{i}_0$ por lo que puede despreciarse y la ecuación queda:
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.15\linewidth]{"../Figuras/12"}
-\end{figure} 
+\begin{center}
+	$\fasor{i}_1 \approx \fasor{i}_2' = \dfrac{\fasor{i}_2}{m}$
+\end{center}
 
 \subsection{Funcionamiento de un transformador real}
 
@@ -120,87 +133,115 @@ En el análisis de un trafo real se tiene en cuenta la resistencias $R_{1}$ y $R
 
 Si consideramos los flujos de dispersión desaparece la idea del flujo común único que existía en el transformador ideal. Si tomamos que $\Phi_{1}$ y $\Phi_{2}$ son los flujos totales que atraviesan los devanados primario y secundario y $\Phi$ es el flujo común a ambos se cumplirá:
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\linewidth]{"../Figuras/13"}
-\end{figure} 
+\begin{equation*}
+	\begin{split}
+		\Phi_1 = \Phi + \Phi_{d1} \\
+		\Phi_2 = \Phi + \Phi_{d2}
+	\end{split}
+\end{equation*}
 
-Para representar estas pérdidas agregamos las resistencias $R_{1}$ y $R_{2}$ y dos bobinas adicionales con núcleo de aire que representan los flujos de dispersión $\Phi_{d1}$ y $\Phi_{d2}$ donde se han indicado con $L_{d1}$ y $L_{d2}$ son los coeficientes de autoinducción, cuyos valores serán:
+Para representar estas pérdidas agregamos las resistencias $R_{1}$ y $R_{2}$ y dos bobinas adicionales con núcleo de aire que representan los flujos de dispersión $\Phi_{d1}$ y $\Phi_{d2}$ donde se han indicado con $L_{d1}$ y $L_{d2}$ a los coeficientes de autoinducción, cuyos valores serán:
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\linewidth]{"../Figuras/14"}
-\end{figure} 
+\begin{equation*}
+	\begin{split}
+		L_{d1} = N_1 \dfrac{d\Phi_{d1}}{di_1} \\
+		L_{d2} = N_2 \dfrac{d\Phi_{d2}}{di_2}
+	\end{split}
+\end{equation*}
 
 y que dan lugar a las reactancias de dispersión $X_{1}$ y $X_{2}$ de ambos devanados:
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\linewidth]{"../Figuras/15"}
-\end{figure} 
+\begin{equation*}
+	\begin{split}
+		X_1 = L_{d1} \omega \\
+		X_2 = L_{d2} \omega
+	\end{split}
+\end{equation*}
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{"../Figuras/16"}
+	\includegraphics[width=0.8\linewidth]{16}
+	\caption{Transformador real con bobinas ideales en el núcleo.}
+	\label{fig:tranformador-real}
 \end{figure} 
 
 La aplicación del 2° Ley de Kirchhoff a los circuitos primario y secundario nos da:
+\begin{equation*}
+	\begin{split}
+		v_1 = e_1 + R_1 i_1 + L_{d1} \dfrac{di_1}{dt}\\
+		e_2 = v_2 + R_2 i_2 + L_{d2} \dfrac{di_2}{dt}
+	\end{split}
+\end{equation*}
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{"../Figuras/17"}
-\end{figure} 
-
-Las ecuaciones para calcular $V_{1}$ y $V_{2}$ quedan:
-\begin{equation}
-	\mathbf{V_{1}=E_{1}+R_{1} \, I_{1}+ j \, X_{2} \, I_{2}} \hspace{5mm} ; \hspace{5mm} \mathbf{V_{2}=E_{2} - R_{2}\, I_{2} - j X_{2}\, I_{2}}
-\end{equation}
+Y expresado en forma fasorial, las tensiones $\fasor{V}_1$ y $\fasor{V}_2$ se pueden calcular como:
+\begin{equation*}
+	\begin{split}
+		\fasor{v}_{1} = \fasor{e}_{1} + R_{1}  \fasor{i}_{1} + j X_{2} \fasor{i}_{2} \\
+		\fasor{v}_{2} = \fasor{e}_{2} - R_{2} \fasor{i}_{2} - j X_{2} \fasor{i}_{2}
+	\end{split}
+\end{equation*}
  
 Como se puede apreciar, las caídas de tensión $V_{1}$ y $V_{2}$ no son iguales a $E_{1}$ y $E_{2}$ por lo tanto la relación de transformación para trafos reales queda:
 \begin{equation}
 	\dfrac{E_{1}}{E_{2}}=\dfrac{N_{1}}{N_{2}}=m
+	\label{eq:rel-transf-real}
 \end{equation}
-En los transformadores industriales la caída de tensión provocada por el cobre son muy pequeñas por lo que podemos decir:
+En los transformadores industriales las caídas de tensión provocadas por el cobre son muy pequeñas por lo que podemos decir que:
 \begin{equation}
 	V_{1} \approx E_{1} \hspace{5mm}  V_{2} \approx E_{2}  \hspace{5mm} \therefore \hspace{5mm} \dfrac{V_{1}}{V_{2}} \approx m
 \end{equation}
 
-Si el transformador trabaja en \textbf{vacío}, $I_{2}=0$ por lo tanto las ecuaciones quedan:
-\begin{equation}
-	\mathbf{V_{1}=E_{1} + R_{1} \, I_{0} + jX_{1} \, I_{0}} \hspace{5mm} ; \hspace{5mm} \mathbf{V_{2}=E_{2}}
-\end{equation}
+Si el transformador trabaja \textbf{en vacío}, $I_{2}=0$ por lo tanto las ecuaciones quedan:
+\begin{equation*}
+	\fasor{v}_{1} = \fasor{e}_{1} + R_{1} \fasor{i}_{0} + j X_{1} \fasor{i}_{0}  \hspace{.3cm};\hspace{.3cm}	\fasor{v}_{2} = \fasor{e}_{2}
+\end{equation*}
 
-Las caídas de tensiones en vacío son muy pequeñas por lo tanto:
+Las caídas de tensiones por pérdidas son muy pequeñas en vacío por lo tanto:
 \begin{equation}
 	V_{1}=E_{1} \hspace{5mm} ; \hspace{5mm} V_{20}=E_{2} \hspace{5mm} \therefore \hspace{5mm} m=\dfrac{V_{1}}{V_{20}}=\dfrac{E_{1}}{E_{2}}=\dfrac{N_{1}}{N_{2}}
 \end{equation}
 
-Este cociente con la tensión secundaria en vacío es el que incluye el fabricante en la placa características de la máquina. La ecuación $\mathbf{I_{1}=I_{0}+\dfrac{I_{2}}{m}}$ es válida a todos los efectos.
+
+Este cociente con la tensión secundaria en vacío $V_0$ es el que incluye el fabricante en la placa características de la máquina. La ecuación \ref{eq:corriente1} es válida a todos los efectos.
 
 \subsection{Circuito equivalente de un transformador}
-Para el desarrollo de un circuito equivalente de un transformador se inicia \textbf{reduciendo} ambos devanados al mismo número de espiras. Si reducimos el secundario al primario, entonces $N_{1}=N'_{2}$. Para que este nuevo transformador sea equivalente al original \textit{deben conservarse las potencias activa y reactiva} y su distribución en los distintos elementos del circuito secundario. 
- \begin{figure}[H]
+Para el desarrollo de un circuito equivalente de un transformador se inicia \textbf{reduciendo} un devanado al mismo número de espiras que el otro. Si reducimos el secundario al primario, entonces $N_{1}=N'_{2}$. Para que este nuevo transformador sea equivalente al original \textsl{deben conservarse las potencias activa y reactiva}, y su distribución en los distintos elementos del circuito secundario. 
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{"../Figuras/18"}
+	\includegraphics[width=0.8\linewidth]{18}
 	\caption{Circuito equivalente de un transformador real reducido al primario}
 \end{figure} 
 
 \begin{enumerate}[label=\textbf{\alph*)}]
-	\item \textbf{F.e.m.s. y Tensiones}
+	\item \textbf{F.m.m.s. y Tensiones}
 	
-	Si $N'_{2}=N_{1} \; \therefore \; \dfrac{E_{1}}{E'_{2}}=\dfrac{N_{1}}{N'_{2}}=1 \Rightarrow \boxed{E'_{2}=E_{1}=m \, E_{2} \; \wedge \; V'_{2}=m \, V_{2}}$\\
+	Si el número de espiras en el primer devanado y el segundo devanado reducido son iguales, y considerando la relación de transformación de la ecuación \ref{eq:rel-transf-real}, entonces se tiene que:
+	\begin{equation*}
+		\dfrac{E_1}{E_2'} = \dfrac{N_1}{N_2'} = 1
+	\end{equation*}
+
+	Entonces, las tensiones reducidas se calculan como sigue:
+	\begin{equation}
+			\begin{split}
+				E_2' = m E_2 \\
+				V_2' = m V_2
+			\end{split}
+		\label{eq:v-reducida}
+	\end{equation}
 	
 	\item \textbf{Corrientes}
 	
 	
-	Como la potencia aparente en ambos secundarios se conserva $S_{2}=V_{2}\, I_{2}=V'_{2}\, I'_{2}$ reemplazando $V'_{2}=m \, V_{2}$ queda:
+	Como la potencia aparente en ambos secundarios se conserva $S_{2}=V_{2}\, I_{2}=V'_{2}\, I'_{2}$ reemplazando $V'_{2}$ de la ecuación \ref{eq:v-reducida} queda:
 	\begin{equation}
 		I'_{2}=\dfrac{I_{2}}{m}
-	\end{equation} \\
+		\label{eq:i-reducida}
+	\end{equation}
+
 
 	\item \textbf{Impedancias}
 	
 	
-	Como la potencia activa se conserva $R_{2}\, {I_{2}}^{2} = R'_{2} \, {I'_{2}}^{2}$ reemplazando $I'_{2}=\dfrac{I_{2}}{m}$ se tiene:
+	Como la potencia activa se conserva $P = R_{2}\, {I_{2}}^{2} = R'_{2} \, {I'_{2}}^{2}$ reemplazando $I'_{2}$ de la ecuación \ref{eq:i-reducida} se tiene que:
 	\begin{equation}
 		R'_{2}=m^{2}\, R_{2}
 	\end{equation}
@@ -208,8 +249,8 @@ Para el desarrollo de un circuito equivalente de un transformador se inicia \tex
 	\begin{equation}
 		X'_{2}=m^{2}\, X_{2}
 	\end{equation}
-	Entonces para una impedancia $Z'_{L}=m^{2}\, Z_{L}$
+	Entonces para una impedancia $Z'_{L}=m^{2}\, Z_{L}$.
 \end{enumerate}
 
-La importancia fundamental de la reducción de los devanados es obtener una representación del transformador donde no exista una relación de transformación porque $N_{1}=N'_{2}$ y sustituir los devanados acoplados magnéticamente por otros \textbf{acoplados sólo eléctricamente}.
+La importancia fundamental de la reducción de los devanados es obtener una representación del transformador donde no exista una relación de transformación porque los devanados son iguales, es decir, $N_{1}=N'_{2}$. Además, se pudo sustituir los devanados acoplados magnéticamente por otros \textbf{acoplados sólo eléctricamente}.
 %Me quedé pag 199 PDF/185 LIBRO

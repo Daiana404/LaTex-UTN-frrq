@@ -4,24 +4,23 @@
 \usepackage{nameref}%Lo uso para llamar a las secciones
 \usepackage[explicit]{titlesec} %Para cambiar section, subsection, etc...
 
+\numberwithin{equation}{section} % Establecer la numeración de ecuaciones en función de las secciones
+\numberwithin{figure}{section} % Establecer la numeración de figuras en función de las secciones
+\captionsetup{labelfont=bf} % Establecer el formato en negrita para la palabra "Figura" en todos los captions de figuras
 
 %ESTILOS
 %\renewcommand{\contentsname}{} % Elimina el título del índice
 %BEGIN_FOLD SECTION / SUBSECTION / SUBSUBSECTION
-%Sectio
+%Section
 \newcommand{\cero}{1}
 \newcommand{\aux}[1]{
 	\if\thesection\cero
 	
 	\else
-	\newpage
+%	\newpage
 	\fi
 	\textbf{\fontsize{40}{48}\selectfont #1} \\ {\large Unidad \thesection} \vspace{0.5cm}
 	\label{sec:\thesection}
-	\begin{multicols}{2} % Inicio de la sección de dos columnas
-		%\minitoc
-	\end{multicols} % Fin de la sección de dos columnas
-	
 }
 \titleformat{name=\section}
 {\normalfont}{}{0em}
