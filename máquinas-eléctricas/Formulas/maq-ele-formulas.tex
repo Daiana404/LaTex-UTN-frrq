@@ -37,16 +37,24 @@
 \newcommand{\unidad}[2]{\begin{center}
 		\fontsize{10}{10}\selectfont\color{gray!50!black}\scshape Unidad #1 \\
 		\fontsize{14}{14}\selectfont \scshape #2
-\end{center} \vspace{-.6cm}}
-%Comando pra subtitulos
+	\end{center} \vspace{-.6cm}}
+%Comando para subtitulos
 \newcommand{\subtitulo}[1]{
-    \textbf{#1} \\ \vspace{.1cm} {\color{gray} \hrule}
+	\textbf{#1} \\ \vspace{.1cm} {\color{gray} \hrule}
+}
+%Comando para subsubtitulos
+\newcommand{\subsubtitulo}[1]{
+	\begin{flushleft}
+		\vspace{.1cm}
+		\textsc{#1}
+		\vspace{.1cm}
+	\end{flushleft}
 }
 
 \begin{document}
-    \pagestyle{fancy}
-    \section*{Nomenclatura}
-    \begin{tabular}{r l r l}
+	\pagestyle{fancy}
+	\section*{Nomenclatura}
+	\begin{tabular}{r l r l}
 		$\fasor{Z}$ [$\Omega$]& Impedancia &
 		$\fasor{i}$ [A] & Corriente \\
 		$\fasor{v}$ [V] & Tensión&
@@ -55,81 +63,124 @@
 		$P$ [W] & Potencia activa \\
 		$Q$ [VAr] & Potencia reactiva &
 		$\fasor{s}$ [VA] & Potencia aparente \\
-        $m$ & Relación de transformación&
-        $\fasor{I}_{exc}$ o $\fasor{I}_0$ [A] & Corriente de excitación\\
-        $\fasor{I}_{Fe}$ [A] & Corriente debido a pérdidas en el Fe&
-        $\fasor{I}_{\mu}$ [A] & Corriente magnetizante\\
+		$m$ & Relación de transformación&
+		$\fasor{I}_{exc}$ o $\fasor{I}_0$ [A] & Corriente de excitación\\
+		$\fasor{I}_{Fe}$ [A] & Corriente debido a pérdidas en el Fe&
+		$\fasor{I}_{\mu}$ [A] & Corriente magnetizante\\
 	\end{tabular}
-    \unidad{1}{Acá quiero poner lo de las bobinas y eso... VER}
-    \unidad{2}{Transformadores}
+	\unidad{1}{Acá quiero poner lo de las bobinas y eso... VER}
+	\unidad{2}{Transformadores}
+	
+	\begin{cajita}
+		\centering
+		
+		\includegraphics[width = .8\linewidth]{carga-trafo}
+		\begin{multicols}{2}
+		
+			\begin{center}
+				\subtitulo{Transformador Ideal \textnormal{en vacío} \vspace{.1cm}} 
+			\end{center}
+			
+			\subsubtitulo{sin pérdidas en el núcleo de Fe} 
+			
+			\begin{tabular}{l l}
+				Autoinducción & $L = \dfrac{\mu N^2 S}{l}$ \\
+			\end{tabular}
+		
+			\subsubtitulo{con pérdidas en el núcleo de Fe}
+			
+			\begin{tabular}{l l}
+				Fem & $\mathcal{F} = N_1  \fasor{i}_1  = N_1  \fasor{i}_0$\\
+				Relación de transfor. & $m = \dfrac{E_1}{E_2} = \dfrac{N_1}{N_2}$ \\
+				\multicolumn{2}{c}{$ \fasor{i}_0 = \fasor{i}_\mu + \fasor{i}_{Fe} $} \vspace{.1cm} \\ 
+				\multicolumn{2}{c}{\includegraphics[width = .5\linewidth]{vacio-fasores}} \\
+			\end{tabular} 
+		
+	
+			\begin{center}
+				\subtitulo{Transformador Ideal \textnormal{en carga}}
+			\end{center}
+		
+			\vspace{-.6cm}
+			
+			\subsubtitulo{con pérdidas en el núcleo de Fe}
+		
+			\begin{tabular}{r l}
+				Fem & $\mathcal{F} = N_1  \fasor{i}_1 - N_2 \fasor{i}_2$\\
+				& $\mathcal{F} = N_1 \fasor{i}_0$\\
+				& $\fasor{i}_0 = \fasor{i}_1 - \dfrac{N_2}{N_1} \fasor{i}_2$\\
+				Corriente reducida & $\fasor{i'}_2 = \dfrac{\fasor{i}_2}{m}$ \\
+			\end{tabular}
+		
+		\end{multicols}
+	
+	\newpage
+	\includegraphics[width = .8\linewidth]{trafo-real}
+	
+	\begin{multicols}{2}
+	
+	\begin{center}
+		\subtitulo{Transformador Real \textnormal{en vacío} \vspace{.1cm}}
+	\end{center}
+	
+		\begin{tabular}{l l}
+			$\fasor{v}_1 = \fasor{e}_1 + R_1 \fasor{i}_0 + j X_1 \fasor{i}_0$ & $\fasor{v}_{20} = \fasor{e}_2$ \\
+			En trafos industriales & $m \approx \dfrac{V_1}{V_2}$\\
+		\end{tabular}\\
+	
+		\begin{center}
+			\subtitulo{Transformador Real \textnormal{en carga}}
+		\end{center}		
+		
+	\end{multicols}
+	
+	\subtitulo{Circuito equivalente aproximado}
+	
+	\begin{flushleft}
+		Se muestra el circuito referido al primario. Cuando es referido al secundario se hace un análisis similar.
+		
+		La \textsl{rama paralelo} siempre permanece del lado de alta tensión.
+	\end{flushleft}
 
-    \begin{cajita}
-        \centering
-        \begin{center}
-            \subtitulo{Transformador Ideal \textnormal{en vacío}}
-        \end{center}
-        \vspace{-.3cm} \textsc{sin pérdidas} \vspace{.1cm}
-
-        \begin{tabular}{r l}
-            Autoinducción & $L = \dfrac{\mu N^2 S}{l}$ \\
-        \end{tabular} \vspace{.4cm}
-
-        \textsc{con pérdidas} \vspace{.1cm}
-
-        \begin{tabular}{r l}
-            \multicolumn{2}{c}{\includegraphics[width = 4cm]{vacio-cp-trafo}  \includegraphics[width = 2.5cm]{vacio-fasores}} \\
-            Fem & $\mathcal{F} = N_1  \fasor{i}_1  = N_1  \fasor{i}_0$\\
-            Relación de transfor. & $m = \dfrac{E_1}{E_2} = \dfrac{V_1}{V_2}$ \\
-            \multicolumn{2}{c}{$ \fasor{i}_0 = \fasor{i}_\mu + \fasor{i}_{Fe} $} \\
-        \end{tabular}
-        
-        \begin{center}
-            \subtitulo{Transformador Ideal \textnormal{en carga}}
-        \end{center}
-        \begin{tabular}{r l}
-            \multicolumn{2}{c}{\includegraphics[width = 6cm]{carga-trafo}} \\
-            Fem & $\mathcal{F} = N_1  \fasor{i}_1 - N_2 \fasor{i}_2$\\
-            & $\fasor{i}_0 = \fasor{i}_1 - \dfrac{N_2}{N_1} \fasor{i}_2$\\
-            Corriente reducida & $\fasor{i'}_2 = \dfrac{\fasor{i}_2}{m}$ \\
-        \end{tabular}
-
-        \begin{center}
-            \subtitulo{Transformador Real}
-        \end{center}
-        \begin{tabular}{r |c | c | l}
-            \multicolumn{4}{c}{\includegraphics[width = 6cm]{trafo-real}} \\
-            $\fasor{V}_{1}\approx\fasor{E}_{1}$; $\fasor{V}_{2}\approx\fasor{E}_{2}$ &
-            $\dfrac{\fasor{V}_{1}}{\fasor{V}_{2}}\approx m$ &
-            $\fasor{Z'}_{L}= m^{2} \fasor{Z}_{L}$&
-            $\dfrac{\fasor{E}_{1}}{\fasor{E}_{2}}=\dfrac{\fasor{V}_{1}}{\fasor{V}_{20}}=\dfrac{\fasor{N}_{1}}{\fasor{N}_{2}}=\dfrac{\fasor{I}_{2}}{\fasor{I}_{1}}=m$\\
-        \end{tabular}
-
-    \end{cajita}
-\newpage
-    \begin{cajita}
-        \begin{center}
-        %     Circuito equivalente exacto
-        %     \begin{tabular}{c c}
-        %         referido al primario & referido al secundario\\
-        %         \includegraphics[width=6 cm]{equi-exacto-1}& \includegraphics[width=6 cm]{equi-exacto-2}
-        %     \end{tabular}
-        % \end{center}
-            \subtitulo{Circuito equivalente aproximado  }
-            \begin{tabular}{c c}
-                \includegraphics[width=6 cm,height=3.5 cm]{equi-aprox-1}& \includegraphics[width=6 cm,height=3.5 cm]{equi-aprox-2}
-            \end{tabular}\\
-            $RV=\dfrac{\fasor{V}_{20}-\fasor{V}_{2}}{\fasor{V}_{2}}$\\
-            \vspace*{0.25cm}
-            \subtitulo{Eficiencia}
-            \vspace*{0.25cm}
-            \begin{tabular}{r l}
-                $\eta =$&$ \dfrac{P_{out}}{P_{in}}=\dfrac{P_{out}}{P_{out}+P_{p}}=\dfrac{P_{out}}{P_{out}+P_{fe}+P_{\mu}}$ \\[0.5 cm]
-                $=$&$\dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}=
-                \dfrac{S}{S+\left(\dfrac{P_{fe}+P_{\mu}}{Cos(\phi)}\right)}$\\[0.8 cm]
-            \end{tabular}\\
-            La Eficiencia será máxima cuando $Cos(\phi)=1$ y $ P_{fe}=P_{\mu }$.
-        \end{center}
-
-
-    \end{cajita}
+	\begin{multicols}{2}
+		\includegraphics[width=.8\linewidth]{equi-aprox} \\
+		
+		\begin{tabular}{l l}
+			Resistencia de cortocircuito &
+			$R_{cc} = R_1 + R_2'$\\ \vspace{.1cm}
+			Reactancia de cortocircuito & $X_{cc} = X_1 + X_2'$ \vspace{.2cm}  \\
+			\multicolumn{2}{l}{\textbf{Parámetros referidos al primario} \vspace{.1cm}} \\ \vspace{.1cm}
+			Número de espiras & $N_2' = m N_2$ \\ \vspace{.1cm}
+			Tensión referida & $V_2' = m V_2$ \\ \vspace{.1cm}
+			Corriente referida & $I_2' = \dfrac{I_2}{m}$ \\ \vspace{.1cm}
+			Impedancia referida & $Z_2' = m^2 Z_2$ \\ \vspace{.1cm}
+			& $Z_2 = R_2 + j X_2$\\
+		\end{tabular}
+	\end{multicols}
+	
+	\subtitulo{Acá considero poner lo del ensayo en vacío y en cortocircuito}	
+	
+	\begin{flushleft}
+		texto texto mucho texto
+	\end{flushleft}
+	
+	
+	\subtitulo{Regulación de Voltaje y Eficiencia}
+	
+	\vspace{.3cm}
+	\begin{tabular}{l l}
+		Regulación de voltaje & $RV=\dfrac{V_{20}-V_{2pc}}{V_{20}}$ \vspace{.2cm} \\
+		& $RV = \dfrac{V_{1n} - V_2'}{V_{1n}}$ \vspace{.2cm}\\
+		\multicolumn{2}{l}{Falta revisar esto, después verifico bien las fórmulas... \vspace{.2cm}} \\
+		\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}=\dfrac{P_{out}}{P_{out}+P_{p}}=\dfrac{P_{out}}{P_{out}+P_{fe}+P_{\mu}}
+			= \dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}=
+			\dfrac{S}{S+\left(\dfrac{P_{fe}+P_{\mu}}{Cos(\phi)}\right)}$}\\
+		
+		La eficiencia será máxima cuando & $cos(\phi)=1$ y $ P_{fe}=P_{\mu }$ \\
+	\end{tabular}
+		
+	
+	
+	
+\end{cajita}
 \end{document}
