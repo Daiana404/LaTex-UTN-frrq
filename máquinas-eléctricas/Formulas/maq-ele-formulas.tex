@@ -158,29 +158,66 @@
 		\end{tabular}
 	\end{multicols}
 	
-	\subtitulo{Acá considero poner lo del ensayo en vacío y en cortocircuito}	
+	\begin{multicols}{2}
+		\subtitulo{Ensayo de vacío}
+		
+			\begin{flushleft}
+				Permite determinar las pérdidas en el $Fe$
+				y los parámetros de la rama paralelo, $R_{Fe}$ y $X_\mu$.
+			\end{flushleft}
+		
+		\subtitulo{Ensayo de cortocircuito}
+		
+			\begin{flushleft}
+				Permite determinar los parámetros de la rama de cortocircuito,  $R_{cc}$ y $X_{cc}$.
+			\end{flushleft}
+		
+	\end{multicols}	
+
+\end{cajita}
 	
-	\begin{flushleft}
-		texto texto mucho texto
-	\end{flushleft}
+	\newpage
+\begin{cajita}
+	\centering
+	\begin{multicols}{2}
+	
+	\subtitulo{Regulación de Voltaje}
+	\vspace{.3cm}
+	
+		\begin{tabular}{l l}
+			Regulación de voltaje & $RV=\dfrac{V_{20}-V_{2pc}}{V_{20}}$ \vspace{.2cm} \\
+			& $RV = \dfrac{V_{1n} - V_2'}{V_{1n}}$ \vspace{.2cm}\\
+			\multicolumn{2}{l}{Falta revisar esto, después verifico bien las fórmulas... \vspace{.2cm}} \\
+		\end{tabular}\\
+	
+	\vspace{2cm}
 	
 	
-	\subtitulo{Regulación de Voltaje y Eficiencia}
+	\subtitulo{Eficiencia \vspace{.1cm}} 
+	\vspace{.3cm}
+	
+		\begin{tabular}{l l}
+			\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}= \dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}$\vspace{.2cm}}\\
+			
+			Eficiencia máxima & $cos(\phi)=1$ y $ P_{fe}=P_{\mu }$ \\
+			Potencia útil & $P_{out} = S \cos \phi$\\
+			Potencia demandada & $P_{in} = P_{out} + P_{p}$\\
+			Pérdidas en potencia & $P_p = P_{Fe} + P_\mu$\\
+		\end{tabular}
 	
 	\vspace{.3cm}
-	\begin{tabular}{l l}
-		Regulación de voltaje & $RV=\dfrac{V_{20}-V_{2pc}}{V_{20}}$ \vspace{.2cm} \\
-		& $RV = \dfrac{V_{1n} - V_2'}{V_{1n}}$ \vspace{.2cm}\\
-		\multicolumn{2}{l}{Falta revisar esto, después verifico bien las fórmulas... \vspace{.2cm}} \\
-		\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}=\dfrac{P_{out}}{P_{out}+P_{p}}=\dfrac{P_{out}}{P_{out}+P_{fe}+P_{\mu}}
-			= \dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}=
-			\dfrac{S}{S+\left(\dfrac{P_{fe}+P_{\mu}}{Cos(\phi)}\right)}$}\\
-		
-		La eficiencia será máxima cuando & $cos(\phi)=1$ y $ P_{fe}=P_{\mu }$ \\
-	\end{tabular}
-		
+	
+	\subtitulo{Índice de Carga}
+	\vspace{.3cm}
+	
+		\begin{tabular}{l l}
+			$C = \dfrac{I}{I_n}$ & $C_{opt} = \sqrt{\dfrac{P_0}{P_{cc}}}$\\
+		\end{tabular}
+			
+	\end{multicols}
 	
 	
+\end{cajita}	
 	
-\end{cajita}
+	
 \end{document}
