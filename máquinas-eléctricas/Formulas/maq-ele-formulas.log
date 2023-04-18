@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.18)  18 APR 2023 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.18)  18 APR 2023 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,7 +1157,7 @@ Package pdftex.def Info: ./img//ensayo-cc-2.jpg  used on input line 185.
 <./img//utncom.jpg, id=13, 545.03625pt x 172.645pt>
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 213.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 221.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1174,7 +1174,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
  <./img//utncom.jpg> <./img//carga-trafo.png> <./img//vacio-fasores.png>]
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 213.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 221.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1189,7 +1189,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./img//ensayo-vacio-2.jpg>]
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 214.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 222.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1205,10 +1205,10 @@ LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 22846 strings out of 476331
- 482062 string characters out of 5786349
- 1874660 words of memory out of 5000000
- 42866 multiletter control sequences out of 15000+600000
+ 22847 strings out of 476331
+ 482077 string characters out of 5786349
+ 1876660 words of memory out of 5000000
+ 42867 multiletter control sequences out of 15000+600000
  591871 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,427b,955s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1223,7 +1223,7 @@ ers/Valentin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb>
 <C:/Users/Valentin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8
 a.pfb><C:/Users/Valentin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia
 /putri8a.pfb>
-Output written on maq-ele-formulas.pdf (3 pages, 589539 bytes).
+Output written on maq-ele-formulas.pdf (3 pages, 590019 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
