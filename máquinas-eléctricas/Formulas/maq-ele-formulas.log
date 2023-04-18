@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.18)  18 APR 2023 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.18)  18 APR 2023 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1144,10 +1144,20 @@ File: ./img//ensayo-vacio-2.jpg Graphic file (type jpg)
 <use ./img//ensayo-vacio-2.jpg>
 Package pdftex.def Info: ./img//ensayo-vacio-2.jpg  used on input line 167.
 (pdftex.def)             Requested size: 176.96024pt x 91.77652pt.
-<./img//utncom.jpg, id=11, 545.03625pt x 172.645pt>
+<./img//ensayo-cc-1.jpg, id=11, 657.95813pt x 199.49532pt>
+File: ./img//ensayo-cc-1.jpg Graphic file (type jpg)
+<use ./img//ensayo-cc-1.jpg>
+Package pdftex.def Info: ./img//ensayo-cc-1.jpg  used on input line 184.
+(pdftex.def)             Requested size: 199.07816pt x 60.36044pt.
+<./img//ensayo-cc-2.jpg, id=12, 252.945pt x 172.39406pt>
+File: ./img//ensayo-cc-2.jpg Graphic file (type jpg)
+<use ./img//ensayo-cc-2.jpg>
+Package pdftex.def Info: ./img//ensayo-cc-2.jpg  used on input line 185.
+(pdftex.def)             Requested size: 88.47842pt x 60.30199pt.
+<./img//utncom.jpg, id=13, 545.03625pt x 172.645pt>
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 203.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 213.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1164,7 +1174,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
  <./img//utncom.jpg> <./img//carga-trafo.png> <./img//vacio-fasores.png>]
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 203.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 213.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1179,7 +1189,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./img//ensayo-vacio-2.jpg>]
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 204.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 214.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1190,15 +1200,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-7.40138pt}.
 
-[3] (maq-ele-formulas.aux
+[3 <./img//ensayo-cc-1.jpg> <./img//ensayo-cc-2.jpg>] (maq-ele-formulas.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 22816 strings out of 476331
- 481334 string characters out of 5786349
+ 22846 strings out of 476331
+ 482062 string characters out of 5786349
  1874660 words of memory out of 5000000
- 42836 multiletter control sequences out of 15000+600000
+ 42866 multiletter control sequences out of 15000+600000
  591871 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,427b,955s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1213,9 +1223,9 @@ ers/Valentin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb>
 <C:/Users/Valentin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8
 a.pfb><C:/Users/Valentin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia
 /putri8a.pfb>
-Output written on maq-ele-formulas.pdf (3 pages, 518953 bytes).
+Output written on maq-ele-formulas.pdf (3 pages, 589539 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
