@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  19 APR 2023 12:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  19 APR 2023 16:02
 entering extended mode
 **./maq-ele-formulas.tex
 (maq-ele-formulas.tex
@@ -819,6 +819,47 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \stm@phasetot=\skip69
 \stm@phasewd=\skip70
 )
+(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfrac\xfrac.
+sty (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-10-18 L3 programming layer (loader) 
+
+(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count313
+\l__pdf_internal_box=\box113
+))
+(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
+)
+(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2021-08-27 L3 Experimental document command parser
+)
+(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\xt
+emplate.sty
+Package: xtemplate 2021-08-27 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen304
+\l__xtemplate_tmp_int=\count314
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip71
+)
+Package: xfrac 2021-08-27 L3 Experimental split-level fractions
+\l__xfrac_slash_box=\box114
+\l__xfrac_tmp_box=\box115
+\l__xfrac_denominator_bot_sep_dim=\dimen305
+\l__xfrac_numerator_bot_sep_dim=\dimen306
+\l__xfrac_numerator_top_sep_dim=\dimen307
+\l__xfrac_slash_left_sep_dim=\dimen308
+\l__xfrac_slash_right_sep_dim=\dimen309
+\l__xfrac_slash_left_muskip=\muskip18
+\l__xfrac_slash_right_muskip=\muskip19
+
+Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
+(xtemplate)             line 80.
+
+)
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
 Package: tcolorbox 2021/06/14 version 4.51 text color boxes
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
@@ -836,32 +877,32 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count313
+\etb@tempcnta=\count315
 )
-\tcb@titlebox=\box113
-\tcb@upperbox=\box114
-\tcb@lowerbox=\box115
-\tcb@phantombox=\box116
-\c@tcbbreakpart=\count314
-\c@tcblayer=\count315
-\c@tcolorbox@number=\count316
-\tcb@temp=\box117
-\tcb@temp=\box118
-\tcb@temp=\box119
+\tcb@titlebox=\box116
+\tcb@upperbox=\box117
+\tcb@lowerbox=\box118
+\tcb@phantombox=\box119
+\c@tcbbreakpart=\count316
+\c@tcblayer=\count317
+\c@tcolorbox@number=\count318
 \tcb@temp=\box120
+\tcb@temp=\box121
+\tcb@temp=\box122
+\tcb@temp=\box123
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
 e.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '4.51'
-\c@tcbrastercolumn=\count317
-\c@tcbrasterrow=\count318
-\c@tcbrasternum=\count319
-\c@tcbraster=\count320
+\c@tcbrastercolumn=\count319
+\c@tcbrasterrow=\count320
+\c@tcbrasternum=\count321
+\c@tcbraster=\count322
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
 .tex
 Library (tcolorbox): 'tcbskins.code.tex' version '4.51'
-\tcb@waterbox=\box121
+\tcb@waterbox=\box124
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
 w.code.tex
@@ -881,9 +922,9 @@ ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ))
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box122
-\tcb@totalupperbox=\box123
-\tcb@totallowerbox=\box124
+\tcb@testbox=\box125
+\tcb@totalupperbox=\box126
+\tcb@totallowerbox=\box127
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
 .tex
@@ -896,45 +937,32 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '4.51'
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
 de.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '4.51'
-\tcbfitdim=\dimen304
-\tcb@lowerfitdim=\dimen305
-\tcb@upperfitdim=\dimen306
-\tcb@cur@hbadness=\count321
+\tcbfitdim=\dimen310
+\tcb@lowerfitdim=\dimen311
+\tcb@upperfitdim=\dimen312
+\tcb@cur@hbadness=\count323
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbxparse.cod
 e.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.51'
-
-(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e.sty
-(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-10-18 L3 programming layer (loader) 
-
-(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count322
-\l__pdf_internal_box=\box125
 ))
-Package: xparse 2021-08-27 L3 Experimental document command parser
-)))
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count323
-\Gm@cntv=\count324
-\c@Gm@tempcnt=\count325
-\Gm@bindingoffset=\dimen307
-\Gm@wd@mp=\dimen308
-\Gm@odd@mp=\dimen309
-\Gm@even@mp=\dimen310
-\Gm@layoutwidth=\dimen311
-\Gm@layoutheight=\dimen312
-\Gm@layouthoffset=\dimen313
-\Gm@layoutvoffset=\dimen314
+\Gm@cnth=\count324
+\Gm@cntv=\count325
+\c@Gm@tempcnt=\count326
+\Gm@bindingoffset=\dimen313
+\Gm@wd@mp=\dimen314
+\Gm@odd@mp=\dimen315
+\Gm@even@mp=\dimen316
+\Gm@layoutwidth=\dimen317
+\Gm@layoutheight=\dimen318
+\Gm@layouthoffset=\dimen319
+\Gm@layoutvoffset=\dimen320
 \Gm@dimlist=\toks43
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
@@ -944,58 +972,58 @@ LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `maq-ele-formulas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 55.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-54.
+55.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 55.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-54.
+55.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 55.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-54.
+55.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    ... okay on input line 55.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen315
-\scratchbox=\box126
-\nofMPsegments=\count327
-\nofMParguments=\count328
+\scratchcounter=\count327
+\scratchdimen=\dimen321
+\scratchbox=\box128
+\nofMPsegments=\count328
+\nofMParguments=\count329
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen316
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen322
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
 \everyMPtoPDFconversion=\toks45
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1008,10 +1036,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 54.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 54.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 55.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 55.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1050,73 +1078,78 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 57.
+ 59.
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 57.
+(Font)              scaled to size 10.07397pt on input line 59.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 57.
+(Font)              scaled to size 7.63599pt on input line 59.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 57.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+(Font)              scaled to size 5.51999pt on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 57.
+(Font)              scaled to size 10.07397pt on input line 59.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 57.
+(Font)              scaled to size 7.63599pt on input line 59.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 57.
+(Font)              scaled to size 5.51999pt on input line 59.
 <./img//carga-trafo.png, id=4, 1080.035pt x 333.245pt>
 File: ./img//carga-trafo.png Graphic file (type png)
 <use ./img//carga-trafo.png>
-Package pdftex.def Info: ./img//carga-trafo.png  used on input line 77.
+Package pdftex.def Info: ./img//carga-trafo.png  used on input line 80.
 (pdftex.def)             Requested size: 361.92052pt x 111.66954pt.
 <./img//vacio-fasores.png, id=6, 371.3875pt x 392.46625pt>
 File: ./img//vacio-fasores.png Graphic file (type png)
 <use ./img//vacio-fasores.png>
-Package pdftex.def Info: ./img//vacio-fasores.png  used on input line 96.
+Package pdftex.def Info: ./img//vacio-fasores.png  used on input line 99.
 (pdftex.def)             Requested size: 110.59973pt x 116.87244pt.
 <./img//trafo-real.png, id=7, 934.24031pt x 292.09125pt>
 File: ./img//trafo-real.png Graphic file (type png)
 <use ./img//trafo-real.png>
-Package pdftex.def Info: ./img//trafo-real.png  used on input line 118.
+Package pdftex.def Info: ./img//trafo-real.png  used on input line 121.
 (pdftex.def)             Requested size: 361.92052pt x 113.15297pt.
 <./img//equi-aprox.png, id=8, 641.39626pt x 486.81876pt>
 File: ./img//equi-aprox.png Graphic file (type png)
 <use ./img//equi-aprox.png>
-Package pdftex.def Info: ./img//equi-aprox.png  used on input line 146.
+Package pdftex.def Info: ./img//equi-aprox.png  used on input line 149.
 (pdftex.def)             Requested size: 176.96024pt x 134.31012pt.
 <./img//ensayo-vacio.png, id=9, 1080.035pt x 350.30875pt>
 File: ./img//ensayo-vacio.png Graphic file (type png)
 <use ./img//ensayo-vacio.png>
-Package pdftex.def Info: ./img//ensayo-vacio.png  used on input line 170.
+Package pdftex.def Info: ./img//ensayo-vacio.png  used on input line 173.
 (pdftex.def)             Requested size: 221.19946pt x 71.74426pt.
 <./img//ensayo-cc.png, id=10, 1136.245pt x 377.41pt>
 File: ./img//ensayo-cc.png Graphic file (type png)
 <use ./img//ensayo-cc.png>
-Package pdftex.def Info: ./img//ensayo-cc.png  used on input line 190.
+Package pdftex.def Info: ./img//ensayo-cc.png  used on input line 193.
 (pdftex.def)             Requested size: 221.19946pt x 73.47083pt.
+<./img//circuito-rv.png, id=11, 888.31876pt x 494.84875pt>
+File: ./img//circuito-rv.png Graphic file (type png)
+<use ./img//circuito-rv.png>
+Package pdftex.def Info: ./img//circuito-rv.png  used on input line 212.
+(pdftex.def)             Requested size: 221.19946pt x 123.22108pt.
 
-Overfull \hbox (35.75146pt too wide) in paragraph at lines 207--211
+Overfull \hbox (7.99197pt too wide) in paragraph at lines 214--220
  [][] 
  []
 
-<./img//utncom.jpg, id=11, 545.03625pt x 172.645pt>
+<./img//utncom.jpg, id=12, 545.03625pt x 172.645pt>
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 242.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 252.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1131,7 +1164,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
  <./img//utncom.jpg> <./img//carga-trafo.png> <./img//vacio-fasores.png>]
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 242.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 252.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1146,7 +1179,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 /img//ensayo-cc.png>]
 File: ./img//utncom.jpg Graphic file (type jpg)
 <use ./img//utncom.jpg>
-Package pdftex.def Info: ./img//utncom.jpg  used on input line 243.
+Package pdftex.def Info: ./img//utncom.jpg  used on input line 253.
 (pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
 
 
@@ -1157,18 +1190,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-7.40138pt}.
 
-[3] (maq-ele-formulas.aux
+[3 <./img//circuito-rv.png>] (maq-ele-formulas.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 21802 strings out of 478907
- 448719 string characters out of 2851891
- 785910 words of memory out of 3000000
- 39266 multiletter control sequences out of 15000+600000
- 483014 words of font info for 93 fonts, out of 8000000 for 9000
+ 22207 strings out of 478907
+ 460665 string characters out of 2851891
+ 805528 words of memory out of 3000000
+ 39654 multiletter control sequences out of 15000+600000
+ 484400 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,95p,428b,966s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,15n,89p,418b,966s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
 :/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-
 mcl.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
@@ -1180,9 +1213,9 @@ ograms/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/daia_/AppData/Local
 /Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/daia_/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/daia_/AppData
 /Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on maq-ele-formulas.pdf (3 pages, 608981 bytes).
+Output written on maq-ele-formulas.pdf (3 pages, 686681 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
