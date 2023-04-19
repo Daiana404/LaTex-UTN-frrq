@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage[spanish]{babel}
 \usepackage{booktabs, fourier, tabularx, wrapfig, multicol,multirow,caption, subcaption,tikz, fancyhdr, steinmetz, xcolor}
+\usepackage{xfrac}
 \usepackage[many]{tcolorbox}
 
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
@@ -54,6 +55,7 @@
 \begin{document}
 	\pagestyle{fancy}
 	\section*{Nomenclatura}
+	
 	\begin{tabular}{r l r l}
 		$\fasor{Z}$ [$\Omega$]& Impedancia &
 		$\fasor{i}$ [A] & Corriente \\
@@ -67,6 +69,7 @@
 		$\fasor{I}_{exc}$ o $\fasor{I}_0$ [A] & Corriente de excitación\\
 		$\fasor{I}_{Fe}$ [A] & Corriente debido a pérdidas en el Fe&
 		$\fasor{I}_{\mu}$ [A] & Corriente magnetizante\\
+		$\fasor{v}_0$ [V] & Tensión en vacío & $\fasor{v}_{pc}$ [V] & Tensión a plena carga \\
 	\end{tabular}
 	\unidad{1}{Acá quiero poner lo de las bobinas y eso... VER}
 	\unidad{2}{Transformadores}
@@ -172,7 +175,7 @@
 			
 			\begin{tabular}{c c}
 					Pérdidas en Fe & $P_0 = P_{Fe} = V_{1n}\cdot I_0 \cos \phi_0$\vspace{.3cm} \\ 
-					$ R_{fe}=\dfrac{V_{1n}}{I_{fe}} $ &$X_{\mu}=\dfrac{V_{1n}}{I_{\mu}}$\\
+					$ R_{fe}=\dfrac{V_{1n}}{I_{0} \cos \phi_0} $ &$X_{\mu}=\dfrac{V_{1n}}{I_{0}\sin \phi_0}$\\
 			\end{tabular}\\
 		
 %			Se puede determinar la correspondencia entre las bobinas:\\
@@ -199,25 +202,33 @@
 			
 	\end{multicols}
 	En ambos ensayos, los factores de potencia $\cos \phi_{0}$ y $\cos \phi_{cc}$ son las incógnitas a determinar para calcular los parámetros.
-	\begin{multicols}{2}
+	
+		\newpage
 		
 		\subtitulo{Regulación de Voltaje}
 		\vspace{.3cm}
 		
-		\begin{tabular}{l l}
-			Regulación de voltaje & $RV=\dfrac{V_{20}-V_{2pc}}{V_{2pc}}$ \vspace{.2cm} \\
-			& $RV = \dfrac{V_{1n} - V_2'}{V_{1n}}$ \vspace{.2cm}\\
-			\multicolumn{2}{l}{Falta revisar esto, después verifico bien las fórmulas... \vspace{.2cm}} \\
-		\end{tabular}\\
+		\begin{multicols}{2}
+			\includegraphics[width=\linewidth]{circuito-rv} \\
+			
+			\begin{tabular}{l l}
+				Regulación de voltaje & $RV=\dfrac{V_{20}-V_{2pc}}{V_{2pc}}$\\[.3cm]
+				& $RV = \dfrac{\frac{V_{1n}}{m} - V_{2pc}}{V_{2pc}}$\\[.3cm]
+				RV ideal & $RV = 0 \%$ \\[.1cm]
+				Cargas resistivas e inductivas & $RV_L > RV_R > 0$ \\[.1cm]
+				Cargas capacitivas & $RV_C < 0$ \\
+			\end{tabular}\\
+		\end{multicols}
 		
-		\vspace{2cm}
+		
+		
 		
 		
 		\subtitulo{Eficiencia \vspace{.1cm}} 
 		\vspace{.3cm}
 		
 		\begin{tabular}{l l}
-			\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}= \dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}$\vspace{.2cm}}\\
+			\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}= \dfrac{S \cos(\phi)}{S \cos(\phi )+P_{fe}+P_{\mu}}$\vspace{.2cm}}\\
 			
 			Eficiencia máxima & $cos(\phi)=1$ y $ P_{fe}=P_{\mu }$ \\
 			Potencia útil & $P_{out} = S \cos \phi$\\
@@ -234,7 +245,6 @@
 			$C = \dfrac{I}{I_n}$ & $C_{opt} = \sqrt{\dfrac{P_0}{P_{cc}}}$\\
 		\end{tabular}
 		
-	\end{multicols}
 		
 	
 	
