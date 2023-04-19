@@ -158,62 +158,83 @@
 		\end{tabular}
 	\end{multicols}
 	
-	\subtitulo{Acá considero poner lo del ensayo en vacío y en cortocircuito}	
+	\begin{multicols}{2}
+	\subtitulo{Ensayo de vacío}	
 	
-	\begin{flushleft}
-		El \textbf{ensayo de vacío} es útil para hallar los valores de la rama paralelo (pérdidas en el hierro), se realiza a tensión nominal y la corriente presente es solo la que alimenta/magnetiza ``el transformador''.\\
-		\begin{multicols}{2}
-			\includegraphics[width=.8\linewidth]{ensayo-vacio-1}\\
-			\includegraphics[width=.8\linewidth]{ensayo-vacio-2}\\
-			\columnbreak
-			Como $\fasor{I}_{2}=0\rightarrow\fasor{I}_{0}=\fasor{I}_{1}$\\
-			\vspace*{0.3cm}
-			\begin{tabular}{l c l}
-					$\fasor{I}_{fe}=\fasor{I}_{0}.Cos[\phi_{0}] $& ; & $\fasor{I}_{\mu}=\fasor{I}_{0}.Sin[\phi_{0}] $\\[0.2cm]
-					$ R_{fe}=\dfrac{V_{1}}{I_{fe}} $& ; &$X_{\mu}=\dfrac{V_{1}}{I_{\mu}}$\\[0.4cm]
-			\end{tabular}
+	
+		\begin{flushleft}
+			Permite determinar las pérdidas en el $Fe$
+			y los parámetros de la rama paralelo, $R_{Fe}$ y $X_\mu$.
+		\end{flushleft}
+	
+			\includegraphics[width=\linewidth]{ensayo-vacio}\\ \vspace{.3cm}
+			
+			
+			\begin{tabular}{c c}
+					Pérdidas en Fe & $P_0 = P_{Fe} = V_{1n}\cdot I_0 \cos \phi_0$\vspace{.3cm} \\ 
+					$ R_{fe}=\dfrac{V_{1n}}{I_{fe}} $ &$X_{\mu}=\dfrac{V_{1n}}{I_{\mu}}$\\
+			\end{tabular}\\
 		
-			Se puede determinar la correspondencia entre las bobinas:\\
-			$\bullet$ A corresponde con y si: $V_{3}=V_{1}+V_{2}$\\
-			$\bullet$ A corresponde con x si: $V_{3}=V_{1}-V_{2}$\\
+%			Se puede determinar la correspondencia entre las bobinas:\\
+%			$\bullet$ A corresponde con y si: $V_{3}=V_{1}+V_{2}$\\
+%			$\bullet$ A corresponde con x si: $V_{3}=V_{1}-V_{2}$\\
 			
-		\end{multicols}
-	
-		El \textbf{ensayo de cortocircuito} sirve para determinar las pérdidas en cobre, se realiza a tensión reducida y la corriente que circula por la rama serie es la nominal, analizando el circuito aproximado podemos ver que la perdida debido a la corriente que circula en la rama paralelo es despreciable. 
-			\begin{multicols}{2}
-			\includegraphics[width=0.9\linewidth]{ensayo-cc-1}\\
-			\includegraphics[width=.4\linewidth]{ensayo-cc-2}\\
+			\newpage %Similar al columnbreak pero deja alineado todo hacia arriba y no intenta distribuir en el eje y
 			
-			\columnbreak
-				$\fasor{I}_{0}$ es despreciable respecto a la $\fasor{I}_{n}$, $\fasor{I}_{n}=\fasor{I}_{cc}$\\
-			\vspace*{0.3cm}
-			\begin{tabular}{l c l}
-				\multicolumn{3}{c}{$P_{cc}=V_{cc}.I_{1n}.Cos(\phi)$}\\[0.1cm]
-				\multicolumn{3}{c}{$Z_{cc}=\dfrac{V_{cc}}{I_{1n}}$}\\[0.2cm]
-				$ R_{cc}=\dfrac{V_{cc}}{I_{cc}}.Cos(\phi_{cc}) $& ; &$X_{cc}=\dfrac{V_{cc}}{I_{cc}}.Sen(\phi_{cc})$\\[0.4cm]			$ R_{cc}=R_{1}+R'_{2} $& ; &$X_{cc}=X_{1}+X'_{2}$\\[0.4cm]
+	\subtitulo{Ensayo de cortocircuito}
+		
+		\begin{flushleft}
+			Permite determinar las pérdidas en el $Cu$ y los parámetros de la rama de cortocircuito,  $R_{cc}$ y $X_{cc}$. $\fasor{I}_{0}$ es despreciable.
+		\end{flushleft}
+		
+			\includegraphics[width=\linewidth]{ensayo-cc}\\ \vspace{.1cm}
+			
+				
+			\begin{tabular}{c c}
+				\multicolumn{2}{c}{$P_{cc} = P_{Cu} =V_{cc}\cdot I_{1n} \cos\phi$}\\[0.1cm]
+				$ R_{cc}=\dfrac{V_{1cc}}{I_{1n}} \cos\phi_{cc} $ &$X_{cc}=\dfrac{V_{1cc}}{I_{1n}} \sin\phi_{cc}$\\[0.4cm]
 				
 %							$\fasor{I}_{fe}=\fasor{I}_{0}.Cos[\phi_{0}] $& ; & $\fasor{I}_{\mu}=\fasor{I}_{0}.Sin[\phi_{0}] $\\[0.2cm]
 			\end{tabular}
 			
-		\end{multicols}
-
-	\end{flushleft}
-	
-	
-	\subtitulo{Regulación de Voltaje y Eficiencia}
-	
-	\vspace{.3cm}
-	\begin{tabular}{l l}
-		Regulación de voltaje & $RV=\dfrac{V_{20}-V_{2pc}}{V_{20}}$ \vspace{.2cm} \\
-		& $RV = \dfrac{V_{1n} - V_2'}{V_{1n}}$ \vspace{.2cm}\\
-		\multicolumn{2}{l}{Falta revisar esto, después verifico bien las fórmulas... \vspace{.2cm}} \\
-		\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}=\dfrac{P_{out}}{P_{out}+P_{p}}=\dfrac{P_{out}}{P_{out}+P_{fe}+P_{\mu}}
-			= \dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}=
-			\dfrac{S}{S+\left(\dfrac{P_{fe}+P_{\mu}}{Cos(\phi)}\right)}$}\\
+	\end{multicols}
+	En ambos ensayos, los factores de potencia $\cos \phi_{0}$ y $\cos \phi_{cc}$ son las incógnitas a determinar para calcular los parámetros.
+	\begin{multicols}{2}
 		
-		La eficiencia será máxima cuando & $cos(\phi)=1$ y $ P_{fe}=P_{\mu }$ \\
-
-	\end{tabular}
+		\subtitulo{Regulación de Voltaje}
+		\vspace{.3cm}
+		
+		\begin{tabular}{l l}
+			Regulación de voltaje & $RV=\dfrac{V_{20}-V_{2pc}}{V_{2pc}}$ \vspace{.2cm} \\
+			& $RV = \dfrac{V_{1n} - V_2'}{V_{1n}}$ \vspace{.2cm}\\
+			\multicolumn{2}{l}{Falta revisar esto, después verifico bien las fórmulas... \vspace{.2cm}} \\
+		\end{tabular}\\
+		
+		\vspace{2cm}
+		
+		
+		\subtitulo{Eficiencia \vspace{.1cm}} 
+		\vspace{.3cm}
+		
+		\begin{tabular}{l l}
+			\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}= \dfrac{S~Cos(\phi)}{S~Cos(\phi )+P_{fe}+P_{\mu}}$\vspace{.2cm}}\\
+			
+			Eficiencia máxima & $cos(\phi)=1$ y $ P_{fe}=P_{\mu }$ \\
+			Potencia útil & $P_{out} = S \cos \phi$\\
+			Potencia demandada & $P_{in} = P_{out} + P_{p}$\\
+			Pérdidas en potencia & $P_p = P_{Fe} + P_\mu$\\
+		\end{tabular}
+		
+		\vspace{.3cm}
+		
+		\subtitulo{Índice de Carga}
+		\vspace{.3cm}
+		
+		\begin{tabular}{l l}
+			$C = \dfrac{I}{I_n}$ & $C_{opt} = \sqrt{\dfrac{P_0}{P_{cc}}}$\\
+		\end{tabular}
+		
+	\end{multicols}
 		
 	
 	
