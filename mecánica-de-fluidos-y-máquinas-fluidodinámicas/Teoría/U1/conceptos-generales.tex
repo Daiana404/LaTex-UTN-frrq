@@ -1,21 +1,25 @@
 \section{Conceptos generales}
-\subsection{Fluidos}
-\subsubsection{Definición de un fluido}
+
+\subsection{Definición de un fluido}
 Un fluido es una sustancia que siempre se deforma continuamente cuando se somete a un esfuerzo cortante, sin importar qué tan pequeño sea dicho esfuerzo.\\
 
 Tiene \textbf{propiedades} que lo caracterizan y definen el estado en el que se encuentra, pudiendo determinar su comportamiento. Algunas de estas propiedades son: \\
 \begin{center}
 	\begin{tabular} {r l}
-		Densidad & $\rho = \dfrac{m}{V}$\\
-		Viscosidad & $\mu$\\
-		Peso & $P$\\
-		Peso específico & $\gamma$ \\
-		Temperatura & T \\
+		Densidad & $\rho = \dfrac{m}{V} \;[kg/m^3]$ \\
+		Viscosidad & $\mu \;[kg/m s]$ \\
+		Peso & $P \;[kgf] [N]$\\
+		Peso específico & $\gamma \;[kgf/m^3]$ \\
+		Temperatura & $T \;[°C]$ \\
 	\end{tabular}
 \end{center}
 
+A fines de simplificar cálculos, consideramos la densidad de un fluido constante.
 
-\subsubsection{Ecuación de Newton para los fluidos}
+También consideramos la estructura molecular de los fluidos como \emph{continuo}, esto quiere decir que las propiedades de este varían en forma continua a lo largo de su estructura o se mantienen constantes.
+
+
+\subsection{Ecuación de Newton para los fluidos}
 Para obtener la ecuación de newton para los fluidos, se plantea un sistema en el que un fluido se entra entre dos placas paralelas separadas por una cierta distancia. La placa inferior es fija y a la superior se le aplica una fuerza $F$ lo que produce un esfuerzo cortante en el fluido, y a su vez establece una velocidad en la placa superior.
 
 Si la fuerza $F$, por más pequeña que sea, hace que la placa se mueva permanentemente, entonces la sustancia es un fluido.
@@ -23,23 +27,30 @@ Si la fuerza $F$, por más pequeña que sea, hace que la placa se mueva permanen
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}[b]{0.45\linewidth}
-		\includegraphics[width= .7\linewidth]{cortante2}
+		\flushright
+		\includegraphics[width= .5\linewidth]{cortante2}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.45\linewidth}
+		\flushleft
 		\includegraphics[width= .5\linewidth]{cortante1}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[b]{.9\linewidth}
+		\centering
+		\includegraphics[width= .5\linewidth]{cortante3}
 	\end{subfigure}
 	\caption{Esfuerzo cortante}
 \end{figure}
 
 Manteniendo ciertas cantidades constantes, como la viscosidad del fluido, el area de las placas, la distancia entre ellas y la velocidad de la placa superior, se llega a una expresión que relaciona la fuerza aplicada con los parámetros mencionados:
-\begin{center}
-	$F = \mu \dfrac{A \cdot U}{y}$
-\end{center}
+\begin{gather}
+	F = \mu \dfrac{A \cdot U}{y}
+\end{gather}
 
 Considerando que el esfuerzo se calcula como la fuerza aplicada en un área $\tau = \sfrac{F}{A}$:
-\begin{center}
-	$\tau = \mu \dfrac{U}{y}$;\\ Y en forma diferencial, $\tau = \mu \dfrac{du}{dy}$
-\end{center}
+\begin{gather}
+	\tau = \mu \dfrac{U}{y}\\ Y en forma diferencial, \tau = \mu \dfrac{du}{dy}
+\end{gather}
 
 El término $\dfrac{du}{dy}$ representa la tasa a la cual cada capa se mueve con respecto a la más próxima.\\ \vspace{.5cm}
 
@@ -50,25 +61,66 @@ Los \textbf{newtonianos} son aquellos fluidos donde su viscosidad es constante, 
 
 Un fluido ideal se considera cuando su viscosidad es nula, por lo tanto el esfuerzo cortante requerido será nulo sin importar su movimiento.
 
-\begin{center}
-	\textbf{imagen 02}
-\end{center}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width= .5\linewidth]{tipo_fluido}
+	\caption{Tipos de fluidos}
+\end{figure}
 
-\subsubsection{Viscosidad absoluta o dinámica $\mu$}
+\subsection{Viscosidad absoluta o dinámica $\mu$}
 La viscosidad es una propiedad propia del fluido e indica el grado de resistencia a los esfuerzos cortantes.
 
-En los gases, la viscosidad absoluta incrementa con la temperatura, en cambio, en los líquidos disminuye junto con esta. Esto se debe a la cohesión entre las moléculas de la sustancia (se puede completar más).
+En los gases, la viscosidad absoluta incrementa con la temperatura, en cambio, en los líquidos disminuye junto con esta. 
 
-\subsubsection{Viscosidad cinemática $v$}
+En un líquido, esto se debe directamente a la cohesión entre las moléculas de la sustancia. Esta disminuye cuando aumenta la temperatura. En cambio en gases, la viscosidad se debe por el movimiento aleatorio de las moléculas, y éste aumenta con la temperatura.
+
+\subsection{Viscosidad cinemática $v$}
 
 Es la relación entre la viscosidad absoluta y la densidad de la sustancia
 \begin{center}
 	$v = \dfrac{\mu}{\rho}$
 \end{center}
 
-\subsubsection{Compresibilidad}
+\subsection{Compresibilidad y tensión superficial}
 Es la capacidad de un fluido de disminuir su volumen bajo la aplicación de una presión. Los gases son altamente compresibles mientra que los líquidos, muy poco. 
 
-En la materia \materia se trabaja con fluidos ideales no compresibles, es decir, de viscosidad cero.
+En la materia \materia se trabaja con fluidos ideales no compresibles, es decir, de viscosidad cero.\\
 
-\subsubsection{Preión de vapor}
+El fenómeno de tensión superficial se debe a la cohesión y adhesión. Sobre la superficie del liquido las fuerzas cohesivas desde abajo exceden a las fuerzas \ref{fuerzas_cohesivas_adhesivas} adhesivas desde el gas localizado por encima del fluido, dando como resultado una tensión superficial.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.45\linewidth}
+		\flushright
+		\includegraphics[width = .7\linewidth]{fuerzas}
+		\caption{Fuerzas cohesivas y adhesivas}
+		\label{fuerzas_cohesivas_adhesivas}
+	\end{subfigure}
+	\begin{subfigure}[b]{.45\linewidth}
+		\flushleft
+		\includegraphics[width = .7\linewidth]{U1_efectocapilar}
+		\caption{Capilaridad}
+		\label{capilaridad}
+	\end{subfigure}
+	\caption{Tensión superficial}
+\end{figure}
+
+En el caso en que un líquido se encuentra en contacto con un sólido. Si la adhesión del líquido con el sólido es mayor que la cohesión en el líquido, entonces éste \emph{subirá} dentro del tubo y formará con el sólido un menisco curvado hacia arriba \ref{capilaridad}. Puede pasar también que la adhesión sea menor que la cohesión y entonces el menisco estará curvado hacia abajo, como el caso del mercurio y el vidrio.
+
+Podemos calcular la altura h que se desplaza el fluido igualando la componente vertical de fuerza de tensión superficial (que actúa en la dirección $\theta$) con el peso de la columna de fluido.
+
+\begin{gather*}
+	\sigma \pi \cos \beta = \gamma \dfrac{\pi D^2}{4} h \\
+	\\
+	h = \dfrac{4 \sigma \cos \beta}{\gamma D}
+\end{gather*}
+Donde:
+	$\sigma$ tensión superficial
+
+\subsection{Preión de vapor}
+Cuando un liquido se evapora, las moléculas escapan desde la superficie líquida.  Si el espacio por encima del líquido se encuentra confinado, el equilibrio se logrará cuando el número de moléculas de vapor que se condensan es igual al número de moléculas que escapan de la superficie. La presión resultante de las moléculas de vapor se conoce como \emph{presión de vapor} y es directamente proporcional a la temperatura. Cuando la presión por encima del líquido iguala a la presión de vapor de este, se produce la ebullición. \\
+
+En flujos líquidos, pueden crearse condiciones que lleven la presión por debajo de la presión de vapor del líquido. Cuando ocurre esto se forman burbujas localmente, fenómeno llamado \emph{cavitación}.
+
+
+
