@@ -1,4 +1,5 @@
 \section{Transformadores}
+\label{sec:unidad-transformadores}
 \subsection{Transformadores Ideales}
 \subsubsection{Principio de funcionamiento}
 Para el análisis se toma que el transformador está alimentado por el lado de alta (el de más espiras) y trabaja como un reductor. Es decir que:
@@ -15,7 +16,7 @@ Para un transformador ideal no existen pérdidas por histéresis y corrientes pa
 \begin{figure}[h]
 	\vspace{-1cm}
 	\centering
-	\includegraphics[width=0.80\linewidth]{1}
+	\includegraphics[width=0.80\linewidth]{trafo-ideal}
 	\caption{Esquema de un transformador ideal}
 	\label{fig:transformador-ideal}
 \end{figure} 
@@ -73,7 +74,7 @@ La corriente de vacío $I_{0}$ tiene dos componentes: una activa $I_{Fe}$ y una 
 
  \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.3\linewidth]{7}
+	\includegraphics[width=0.3\linewidth]{vacio-fasores}
 	\caption{Diagrama fasorial de tensiones y corrientes en vacío.}
 	\label{diag:vacio}
 \end{figure} 
@@ -159,7 +160,7 @@ y que dan lugar a las reactancias de dispersión $X_{1}$ y $X_{2}$ de ambos deva
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{16}
+	\includegraphics[width=0.8\linewidth]{trafo-real}
 	\caption{Transformador real con bobinas ideales en el núcleo.}
 	\label{fig:tranformador-real}
 \end{figure} 
@@ -207,7 +208,7 @@ Este cociente con la tensión secundaria en vacío $V_0$ es el que incluye el fa
 Para el desarrollo de un circuito equivalente de un transformador se inicia \textbf{reduciendo} un devanado al mismo número de espiras que el otro. Si reducimos el secundario al primario, entonces $N_{1}=N'_{2}$. Para que este nuevo transformador sea equivalente al original \textsl{deben conservarse las potencias activa y reactiva}, y su distribución en los distintos elementos del circuito secundario. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{18}
+	\includegraphics[width=0.8\linewidth]{trafo-equivalente}
 	\caption{Circuito equivalente de un transformador real reducido al primario}
 \end{figure} 
 
@@ -252,5 +253,64 @@ Para el desarrollo de un circuito equivalente de un transformador se inicia \tex
 	Entonces para una impedancia $Z'_{L}=m^{2}\, Z_{L}$.
 \end{enumerate}
 
-La importancia fundamental de la reducción de los devanados es obtener una representación del transformador donde no exista una relación de transformación porque los devanados son iguales, es decir, $N_{1}=N'_{2}$. Además, se pudo sustituir los devanados acoplados magnéticamente por otros \textbf{acoplados sólo eléctricamente}.
-%Me quedé pag 199 PDF/185 LIBRO
+La importancia fundamental de la reducción de los devanados es obtener una representación del transformador donde no exista una relación de transformación porque los devanados son iguales, es decir, $N_{1}=N'_{2}$. Además, se pudo sustituir los devanados acoplados magnéticamente por otros \textbf{acoplados sólo eléctricamente}.\\
+
+
+Teniendo en cuenta que los devanados idénticos tienen la misma polaridad, se puede sustituir a los mismos por un solo devanado como se muestra en la figura \ref{fig:trafo-un-devanado}. Por dicho devanado circulará una corriente $\fasor{i}_1 - \fasor{i}_2'$, lo cual, según las ecuaciones \ref{eq:corriente1} y \ref{eq:i-reducida}, $\fasor{i}_0$ circulará por el devanado.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .6\linewidth]{trafo-equivalente-2}
+	\caption{Circuito equivalente de un transformador real reducido al primario.}
+	\label{fig:trafo-un-devanado}
+\end{figure}
+
+%Acá falta agregar la referencia a la unidad 1, pero lo voy a hacer cuando esté la unidad xd
+Según lo visto en la sección x de la Unidad 1, la corriente de vacío que circula por el devanado de $N_1=N_2'$ espiras, se puede descomponer en una parte activa $\fasor{i}_{Fe}$ y otra reactiva $\fasor{i}_\mu$, y se representa con un circuito en paralelo formado por una resistencia $R_{Fe}$, cuyas pérdidas por calor indican las \textsl{pérdidas en el hierro}; y por una reactancia $X_{\mu}$, por la que se deriva la corriente de magnetización de la máquina.\\
+
+
+Conforme a lo mencionado, el circuito de la figura \ref{fig:circuito-equivalente-exacto} representa al \textbf{circuito equivalente exacto del transformador} reducido al primario.\\
+
+
+\textsl{``Este circuito responde fielmente al comportamiento del transformador real y por ello se denomina circuito equivalente \textbf{exacto}.''} %\cite{ME_JFM}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .6 \linewidth]{circuito-equivalente-exacto}
+	\caption{Circuito equivalente exacto de un transformador real reducido al primario.}
+	\label{fig:circuito-equivalente-exacto}
+\end{figure}
+
+
+El esquema puede simplificarse aún más observando la conexión en serie constituida por las ramas primaria y secundaria (reducida), obteniendo una impedancia compuesta por una \textsl{resistencia de cortocircuito} $R_{cc}$ y una \textsl{reactancia de cortocircuito} $X_{cc}$:
+% Tengo que ver mejor cómo alinear esto
+\begin{equation}
+	\begin{aligned}
+		R_{cc} &= R_1 + R_2'\\
+		X_{cc} &= X_1 + X_2'
+	\end{aligned}
+\end{equation}
+
+Entonces, el circuito de la figura \ref{fig:circuito-equivalente-exacto} se convierte en el de la figura \ref{fig:aproximado-2}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[height = 4cm]{equivalente-aproximado-1}
+		\subcaption{}
+		\label{fig:aproximado-1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[height = 4cm]{equivalente-aproximado-2}
+		\subcaption{}
+		\label{fig:aproximado-2}
+	\end{subfigure}
+	\caption{Circuito equivalente aproximado de un transformador reducido al primario.}
+\end{figure}
+
+Con este último circuito equivalente simplificado se pueden resolver una variedad de problemas prácticos que afectan la utilización del transformador; en particular para el cálculo de la \textsl{caída de tensión} y el \textsl{rendimiento}. Inclusive, si solo se trata de la determinación de la caída de tensión del transformador, se puede despreciar la rama paralelo, ya que no afecta al cálculo.
+
+\subsection{Ensayos del transformador}
