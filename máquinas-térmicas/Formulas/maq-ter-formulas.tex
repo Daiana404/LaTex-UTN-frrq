@@ -45,5 +45,82 @@
 
 \begin{document}
 	\pagestyle{fancy}
-	jajan't
+	\begin{cajita}
+		\section*{Poder calorífico}
+			\begin{center}
+				\begin{tabular}{r l}
+					Relación entre los poderes caloríficos: & \boxed{PCI = PCS - 597 \times G= PCS - 597(9H+H_{2}O)}\\
+				\end{tabular}
+			\end{center}
+			\begin{multicols}{2}
+			Siendo:\\
+				\begin{tabular}{r p{0.4\textwidth}}
+					PCI & poder calorífico inferior\\
+					PCS & poder calorífico superior\\
+					597	& Calor de condensación del agua a O ºC \\
+					G & Porcentaje en peso del agua formada por la combustión del $H_{2}$ más la humedad propia del combustible\\
+				\end{tabular}
+			\newpage
+			
+			Recordando: \boxed{G=9H+H_{2}O} $\uparrow$\\
+			
+				\begin{tabular}{r p{0.4\textwidth}}
+					9 & Son los kilos de agua que se forman al oxidar un kilo de  hidrógeno.\\
+					H & \% de hidrógeno contenido en el combustible.\\
+					H2O & \% de humedad del combustible.\\
+				\end{tabular}
+			\end{multicols}
+		
+	\begin{center}
+		\subtitulo{ Método analítico}
+	\end{center}
+%\vspace{0.2cm}
+	\begin{tabular}{l l}
+		\multicolumn{2}{l}{\textbf{Formulas de Dulong}}\\
+		PCS comb. seco & \boxed{PCS	=	8.140  \times	C	+ 34.400	\times	(H -	O/8)	+	2.220	\times	S}\\
+		PCI comb. seco: &\boxed{PCI = 8.140 \times C + 29.000 \times (H - O/ 8 ) + 2.220 \times S}\\
+		PCI comb. húmedo:&\boxed{PCI = 8.140 \times C + 29.000 \times (H - O/ 8 ) +  2.220 \times S - 600 \times H2O}\\[0.2cm]
+		\multicolumn{2}{l}{\textbf{Formula de Hutte}}\\
+		PCI comb. húmedo & \boxed{8.100 \times C + 29.000 \times (H - O/ 8 ) + 2.500 \times S -  600 \times H2O}\\[0.2cm]
+		\multicolumn{2}{l}{\textbf{Formula de Asociación de Ing. Alemanes}}\\
+		PCI comb. húmedo& \boxed{PCI = 8.080 \times C + 29.000 \times (H - O/ 8 ) + 2.500 \times S -  600 \times H2O}\\
+	\end{tabular}
+	\begin{flushleft}
+		\begin{tabular}{r p{0.87\textwidth}}
+				C & Cantidad centesimal de carbono en peso por kilogramo combustible\\
+				H & Cantidad centesimal de hidrógeno total en peso por kilogramo de
+				combustible\\
+				O & Cantidad centesimal de oxígeno en peso por kilogramo combustible\\
+				S & Cantidad centesimal de azufre en peso por kilogramo combustible\\
+				O / 8 & Cantidad centesimal de hidrógeno en peso que se encuentra combinado con el oxígeno del mismo combustible dando ``agua de  combinación''\\
+				(H - O/8 ) &  Cantidad centesimal de ``hidrógeno disponible'', en peso  realmente disponible para que se oxide con el oxígeno del aire,  dando ``agua de formación''\\
+			\end{tabular}
+		\end{flushleft}
+
+	\begin{center}
+		\subtitulo{ Método práctico}		
+	\end{center}
+		CALORIMETRO DE MAHLER Y KROEKER
+			\begin{flushleft}
+			\begin{tabular}{r p{0.85\textwidth}}
+				$Q$=&$Q_{agua}+Q_{termometro}+Q_{agitador}+Q_{recipiente}+Q_{vaso}$\\
+				$Q$=&$\Delta T (m_{agua}~cp_{agua}+m_{termometro}~cp_{termometro}+m_{agitador}+cp_{agitador}+m_{recipiente}~cp_{recipiente}+m_{vaso}~cp_{vaso})$\\
+				$Q$&$\left(m_{agua}~cp_{agua}+E_{aparato}\right)\Delta T$\\					
+				\multicolumn{2}{l}{	Para determinar el poder calorifico:}\\
+				$Q$=&$Q_{combustible}+Q_{alambre}$\\
+				$Q_{comb}$=&$Q-Q_{alambre}$\\
+				\multicolumn{2}{l}{Reemplazo:}\\
+				$Q_{comb}$=&$\left(m_{agua}~cp_{agua}+E_{aparato}\right)\Delta T - m_{alambre} ~ C_{alambre}$ \\
+				\multicolumn{2}{l}{Nos queda:}\\
+				PCS=&$\dfrac{Q_{combustible}}{G_{combustible}}$\\
+				PCI=& $PCS-600	( 9H	+ H2O )$=$ PCS	-	600	\dfrac{G_{agua}}{G_{combustible}}$\\
+			\end{tabular}\\
+		\textit{$G_{agua}$ representa el peso del total de agua existente = (peso papel humedo - peso papel seco)\\
+			    $G_{combustible}$ el peso de combustible quemado}
+		\end{flushleft}
+	
+	
+			
+	\end{cajita}
+	
 \end{document}
