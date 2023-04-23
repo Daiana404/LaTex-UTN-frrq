@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{Jesus Fraile Mora}%
+}{%
+{Jesus Fraile Mora}%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+maquinaselectricas
+\APACinsertmetastar {%
+maquinaselectricas}%
+\begin{APACrefauthors}%
+{Jesus Fraile Mora}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2008}.
+\newblock
+\APACrefbtitle {Máquinas Eléctricas} {Máquinas eléctricas}\
+  (\PrintOrdinal{6°}\ \BEd).
+\newblock
+\APACaddressPublisher{}{Mc Graw Hill}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
