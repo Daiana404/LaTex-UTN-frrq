@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  22 APR 2023 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  24 APR 2023 17:12
 entering extended mode
 **./mfymf-resumen.tex
 (mfymf-resumen.tex
@@ -619,11 +619,23 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
+(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks39
+\SOUL@lasttoken=\toks40
+\SOUL@cmds=\toks41
+\SOUL@buffer=\toks42
+\SOUL@token=\toks43
+\SOUL@spaceskip=\skip99
+\SOUL@ttwidth=\dimen274
+\SOUL@uldp=\dimen275
+\SOUL@ulht=\dimen276
+)
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip99
-\enit@outerparindent=\dimen274
-\enit@toks=\toks39
+\labelindent=\skip100
+\enit@outerparindent=\dimen277
+\enit@toks=\toks44
 \enit@inbox=\box65
 \enit@count@id=\count308
 \enitdp@description=\count309
@@ -675,7 +687,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen275
+\@linkdim=\dimen278
 \Hy@linkcounter=\count310
 \Hy@pagecounter=\count311
  (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
@@ -714,7 +726,7 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen276
+\XeTeXLinkMargin=\dimen279
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -725,8 +737,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count314
-\Field@Width=\dimen277
-\Fld@charsize=\dimen278
+\Field@Width=\dimen280
+\Fld@charsize=\dimen281
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -768,16 +780,16 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip100
+\Hy@SectionHShift=\skip101
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count320
-\float@exts=\toks40
+\float@exts=\toks45
 \float@box=\box66
-\@float@everytoks=\toks41
+\@float@everytoks=\toks46
 \@floatcapt=\box67
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfrac\xfrac.
@@ -791,19 +803,19 @@ Package: xparse 2021-08-27 L3 Experimental document command parser
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\xt
 emplate.sty
 Package: xtemplate 2021-08-27 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen279
+\l__xtemplate_tmp_dim=\dimen282
 \l__xtemplate_tmp_int=\count321
 \l__xtemplate_tmp_muskip=\muskip18
-\l__xtemplate_tmp_skip=\skip101
+\l__xtemplate_tmp_skip=\skip102
 )
 Package: xfrac 2021-08-27 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box68
 \l__xfrac_tmp_box=\box69
-\l__xfrac_denominator_bot_sep_dim=\dimen280
-\l__xfrac_numerator_bot_sep_dim=\dimen281
-\l__xfrac_numerator_top_sep_dim=\dimen282
-\l__xfrac_slash_left_sep_dim=\dimen283
-\l__xfrac_slash_right_sep_dim=\dimen284
+\l__xfrac_denominator_bot_sep_dim=\dimen283
+\l__xfrac_numerator_bot_sep_dim=\dimen284
+\l__xfrac_numerator_top_sep_dim=\dimen285
+\l__xfrac_slash_left_sep_dim=\dimen286
+\l__xfrac_slash_right_sep_dim=\dimen287
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 
@@ -828,8 +840,8 @@ Package: mtcmess 2006/03/14
 Package minitoc Info: I0001
 (minitoc)             *** minitoc package, version 62 ***.
 \tf@mtc=\write4
-\mtcindent=\skip102
-\mtcskipamount=\skip103
+\mtcindent=\skip103
+\mtcskipamount=\skip104
 Package minitoc Info: I0005
 (minitoc)             compatible with hyperref.
 Package minitoc Info: I0023
@@ -838,7 +850,7 @@ Package minitoc Info: I0004
 (minitoc)             chapter level macros NOT available.
 Package minitoc Info: I0028
 (minitoc)             section level macros available.
-\mtc@toks=\toks42
+\mtc@toks=\toks47
 \mtc@strutbox=\box70
 \mtc@hstrutbox=\box71
 Package minitoc Info: I0002
@@ -860,10 +872,10 @@ Package minitoc Info: I0031
 
 \c@ptc=\count322
 \c@parttocdepth=\count323
-\ptcindent=\skip104
+\ptcindent=\skip105
 \c@stc=\count324
 \c@secttocdepth=\count325
-\stcindent=\skip105
+\stcindent=\skip106
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
@@ -878,21 +890,21 @@ File: english.mld 2006/01/13
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@tracingmulticols=\count326
 \mult@box=\box72
-\multicol@leftmargin=\dimen285
+\multicol@leftmargin=\dimen288
 \c@unbalance=\count327
 \c@collectmore=\count328
 \doublecol@number=\count329
 \multicoltolerance=\count330
 \multicolpretolerance=\count331
-\full@width=\dimen286
-\page@free=\dimen287
-\premulticols=\dimen288
-\postmulticols=\dimen289
-\multicolsep=\skip106
-\multicolbaselineskip=\skip107
+\full@width=\dimen289
+\page@free=\dimen290
+\premulticols=\dimen291
+\postmulticols=\dimen292
+\multicolsep=\skip107
+\multicolbaselineskip=\skip108
 \partial@page=\box73
 \last@line=\box74
-\maxbalancingoverflow=\dimen290
+\maxbalancingoverflow=\dimen293
 \mult@rightbox=\box75
 \mult@grightbox=\box76
 \mult@gfirstbox=\box77
@@ -937,9 +949,9 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@minrows=\count332
 \c@columnbadness=\count333
 \c@finalcolumnbadness=\count334
-\last@try=\dimen291
-\multicolovershoot=\dimen292
-\multicolundershoot=\dimen293
+\last@try=\dimen294
+\multicolovershoot=\dimen295
+\multicolundershoot=\dimen296
 \mult@nat@firstbox=\box116
 \colbreak@box=\box117
 \mc@col@check@num=\count335
@@ -948,8 +960,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 Package: tcolorbox 2021/06/14 version 4.51 text color boxes
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks43
-\verbatim@line=\toks44
+\every@verbatim=\toks48
+\verbatim@line=\toks49
 \verbatim@in@stream=\read4
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
@@ -1014,9 +1026,9 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '4.51'
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
 de.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '4.51'
-\tcbfitdim=\dimen294
-\tcb@lowerfitdim=\dimen295
-\tcb@upperfitdim=\dimen296
+\tcbfitdim=\dimen297
+\tcb@lowerfitdim=\dimen298
+\tcb@upperfitdim=\dimen299
 \tcb@cur@hbadness=\count344
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbxparse.cod
@@ -1036,23 +1048,23 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box130
-\beforetitleunit=\skip108
-\aftertitleunit=\skip109
-\ttl@plus=\dimen297
-\ttl@minus=\dimen298
-\ttl@toksa=\toks45
-\titlewidth=\dimen299
-\titlewidthlast=\dimen300
-\titlewidthfirst=\dimen301
+\beforetitleunit=\skip109
+\aftertitleunit=\skip110
+\ttl@plus=\dimen300
+\ttl@minus=\dimen301
+\ttl@toksa=\toks50
+\titlewidth=\dimen302
+\titlewidthlast=\dimen303
+\titlewidthfirst=\dimen304
 
 
 Package titlesec Warning: Non standard sectioning command \section
 (titlesec)                detected. Using default spacing and no format.
 
-)) (mfymf-resumen.aux (U2/Estática-de-fluidos.aux)
+)) (mfymf-resumen.aux (U1/conceptos-generales.aux)
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
-)
+ (U2/Estática-de-fluidos.aux))
 \openout1 = `mfymf-resumen.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1080,16 +1092,16 @@ LaTeX Info: Redefining \% on input line 11.
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count346
-\scratchdimen=\dimen302
+\scratchdimen=\dimen305
 \scratchbox=\box131
 \nofMPsegments=\count347
 \nofMParguments=\count348
-\everyMPshowfont=\toks46
+\everyMPshowfont=\toks51
 \MPscratchCnt=\count349
-\MPscratchDim=\dimen303
+\MPscratchDim=\dimen306
 \MPnumerator=\count350
 \makeMPintoPDFobject=\count351
-\everyMPtoPDFconversion=\toks47
+\everyMPtoPDFconversion=\toks52
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1199,21 +1211,153 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-\openout2 = `./U2/Estática-de-fluidos.aux'.
+\openout2 = `./U1/conceptos-generales.aux'.
 
-(U2/Estática-de-fluidos.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+(U1/conceptos-generales.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 13.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 13.
+
+Missing character: There is no � in font cmr10!
+<../Figuras/cortante3.jpg, id=99, 541.27219pt x 217.5628pt>
+File: ../Figuras/cortante3.jpg Graphic file (type jpg)
+<use ../Figuras/cortante3.jpg>
+Package pdftex.def Info: ../Figuras/cortante3.jpg  used on input line 29.
+(pdftex.def)             Requested size: 386.95897pt x 155.54294pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[1{C:/Users/daia_/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+<../Figuras/tipo-fluido.jpg, id=119, 707.64375pt x 395.22656pt>
+File: ../Figuras/tipo-fluido.jpg Graphic file (type jpg)
+<use ../Figuras/tipo-fluido.jpg>
+Package pdftex.def Info: ../Figuras/tipo-fluido.jpg  used on input line 66.
+(pdftex.def)             Requested size: 338.58632pt x 189.10352pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2 <../Figuras/cortante3.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3 <../Figuras/tipo-fluido.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+<../Figuras/fuerzas.jpg, id=141, 369.63094pt x 244.66406pt>
+File: ../Figuras/fuerzas.jpg Graphic file (type jpg)
+<use ../Figuras/fuerzas.jpg>
+Package pdftex.def Info: ../Figuras/fuerzas.jpg  used on input line 108.
+(pdftex.def)             Requested size: 152.36281pt x 100.8505pt.
+<../Figuras/efecto-capilar-agua.jpg, id=142, 205.5178pt x 277.035pt>
+File: ../Figuras/efecto-capilar-agua.jpg Graphic file (type jpg)
+<use ../Figuras/efecto-capilar-agua.jpg>
+Package pdftex.def Info: ../Figuras/efecto-capilar-agua.jpg  used on input line
+ 115.
+(pdftex.def)             Requested size: 68.56279pt x 92.41945pt.
+<../Figuras/efecto-capilar-mercurio.jpg, id=143, 218.31563pt x 277.035pt>
+File: ../Figuras/efecto-capilar-mercurio.jpg Graphic file (type jpg)
+<use ../Figuras/efecto-capilar-mercurio.jpg>
+Package pdftex.def Info: ../Figuras/efecto-capilar-mercurio.jpg  used on input 
+line 120.
+(pdftex.def)             Requested size: 68.56279pt x 87.0044pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4 <../Figuras/fuerzas.jpg> <../Figuras/efecto-capilar-agua.jpg> <../Figuras/ef
+ecto-capilar-mercurio.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5]
+\openout2 = `./U2/Estática-de-fluidos.aux'.
+
+ (U2/Estática-de-fluidos.tex
 LaTeX Font Info:    Calculating math sizes for size <7.665> on input line 3.
-<../Figuras/fluido-infinitesimal.jpg, id=50, 768.62157pt x 428.35031pt>
+<../Figuras/fluido-infinitesimal.jpg, id=160, 768.62157pt x 428.35031pt>
 File: ../Figuras/fluido-infinitesimal.jpg Graphic file (type jpg)
 <use ../Figuras/fluido-infinitesimal.jpg>
 Package pdftex.def Info: ../Figuras/fluido-infinitesimal.jpg  used on input lin
@@ -1232,7 +1376,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[1{C:/Users/daia_/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+[6
+
 
 
  <../Figuras/fluido-infinitesimal.jpg>]
@@ -1245,22 +1390,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-
-Package caption Warning: \label without proper reference on input line 86.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:precipitado' on page 2 undefined on input line 82
-.
-
-<../Figuras/vaso-de-precipitado.jpg, id=75, 323.70938pt x 268.00125pt>
+<../Figuras/vaso-de-precipitado.jpg, id=175, 323.70938pt x 268.00125pt>
 File: ../Figuras/vaso-de-precipitado.jpg Graphic file (type jpg)
 <use ../Figuras/vaso-de-precipitado.jpg>
 Package pdftex.def Info: ../Figuras/vaso-de-precipitado.jpg  used on input line
  86.
 (pdftex.def)             Requested size: 145.11053pt x 120.13734pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
@@ -1272,7 +1409,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[2 <../Figuras/vaso-de-precipitado.jpg>])
+[7 <../Figuras/vaso-de-precipitado.jpg>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1281,7 +1418,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3] 
+[8] 
 AED: lastpage setting LastPage
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1306,44 +1443,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4
+[9
 
 
 
-] (mfymf-resumen.aux (U2/Estática-de-fluidos.aux)
+] (mfymf-resumen.aux (U1/conceptos-generales.aux)
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
-)
 
-LaTeX Warning: There were undefined references.
-
+(U2/Estática-de-fluidos.aux))
 Package rerunfilecheck Info: File `mfymf-resumen.out' has not changed.
-(rerunfilecheck)             Checksum: F88EDAF9B9E95C49FFF6B10E48ADECB4;1918.
+(rerunfilecheck)             Checksum: 3C39FF49A9FBCB8FEC78B89FF07BA3D4;4060.
  ) 
 Here is how much of TeX's memory you used:
- 31705 strings out of 478907
- 609001 string characters out of 2851891
- 1065458 words of memory out of 3000000
- 48835 multiletter control sequences out of 15000+600000
- 425421 words of font info for 111 fonts, out of 8000000 for 9000
+ 32034 strings out of 478907
+ 615343 string characters out of 2851891
+ 1068073 words of memory out of 3000000
+ 49118 multiletter control sequences out of 15000+600000
+ 427976 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,103p,511b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,13n,103p,718b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmbxti10.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/daia_/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/daia_/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/daia_/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dai
-a_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
-sers/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsl10.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb>
-Output written on mfymf-resumen.pdf (4 pages, 211782 bytes).
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/daia_/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/da
+ia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsl10.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on mfymf-resumen.pdf (9 pages, 449975 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
