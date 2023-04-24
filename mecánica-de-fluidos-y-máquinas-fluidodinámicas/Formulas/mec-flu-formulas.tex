@@ -8,6 +8,7 @@
 \usepackage[spanish]{babel}
 \usepackage{booktabs, fourier, tabularx, wrapfig, multicol,multirow,caption, subcaption,tikz, fancyhdr, steinmetz, xcolor}
 \usepackage{xfrac}
+\usepackage{soul}
 \usepackage[many]{tcolorbox}
 
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
@@ -43,15 +44,25 @@
 \newcommand{\variable}[2]{$#1$ $\left[#2\right]$}
 %Comando para grados
 \newcommand{\grado}{^\circ}
+%Comando para el volumen desplazado
+\newcommand{\vdes}{\st{\textsl{V}}}
 
 \begin{document}
 	\pagestyle{fancy}
 	\section*{Nomenclatura}
-		\begin{tabular}{r l r l}
+	
+		\begin{center}
+			\begin{tabular}{r l r l}
 			\variable{V}{m^3} & Volumen & \variable{W}{kgf} & Peso\\
 			\variable{\mu}{Pa \cdot s} & Viscosidad absoluta & \variable{v}{m^2/s} & Viscosidad cinemática\\
-			\variable{\sigma}{\sfrac{N}{m}} & Tensión superficial & $C$ & Centro de presión\\
+			\variable{\sigma}{N/m} & Tensión superficial & $\overline{GM}$ & Altura metacéntrica\\
+			$G$ & Centro de gravedad & $C$ & Centro de presión\\
+			\variable{\rho}{kg/m^3} & Densidad & $\rho_{rel}$ & Densidad relativa\\
+			\variable{\tau}{N/m^2} & Esfuerzo de corte & $g=9.8 \sfrac{m}{s^2}$ & Aceleración de la gravedad\\
+			\variable{W}{kgf}& Peso & \variable{\gamma}{kgf/m^3}& Peso específico\\
+			\variable{J}{m^4} & Segundo momento & \variable{\overline{J}}{m^4} & Segundo momento respecto a G\\
 		\end{tabular}
+		\end{center}
 	\section*{Conversión de unidades}
 		\begin{tabular}{r l r l}
 			Presión & & & \\
@@ -107,8 +118,26 @@
 			
 			\begin{tabular}{l l}
 				Magnitud de F & $F = \gamma \bar{h} A = P_C A$\\
-				Punto de aplicación de F & $ y_P = \bar{y} + \dfrac{\bar{I}}{A \bar{y}}$\\
-				$C:(x_P, y_P)$& $x_P = \bar{x} + \dfrac{\bar{I}_{xy}}{A \bar{y}}$\\
+				Punto de aplicación C de F & $ y_P = \bar{y} + \dfrac{\bar{J}}{A \bar{y}}$\\
+				$C:(x_P, y_P)$& $x_P = \bar{x} + \dfrac{\bar{J}_{xy}}{A \bar{y}}$\\
 			\end{tabular}
+		
+			
+		\begin{multicols}{2}
+			\subtitulo{Flotabilidad}
+			\begin{tabular}{l l}
+				\multicolumn{2}{c}{$F_B = \gamma \vdes$}\\
+				En equilibrio & $F=W$\\
+			\end{tabular}
+		
+			\columnbreak
+			
+			\subtitulo{Estabilidad}
+			
+			$\overline{GM} = \dfrac{J_O}{\vdes} - \overline{CG}$
+			
+			
+			\includegraphics[width=\linewidth]{estabilidad}
+		\end{multicols}
 		\end{cajita}
 \end{document}
