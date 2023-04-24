@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{booktabs, fourier, tabularx, wrapfig, multicol,multirow,caption, subcaption,tikz, fancyhdr, steinmetz, xcolor}
+\usepackage{xfrac}
+\usepackage[many]{tcolorbox}
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\graphicspath{{../Figuras}}
+
+%Configuración y comandos
+
+%tcolorbox personalizado
+\newtcolorbox{cajita}{colback=white!97!brown, colframe=brown!15!gray, breakable}
+
+%Encabezado y pie de página
+\fancyhead[R]{\textsc{Mecánica de Fluidos y Máquinas Fluidodinámicas}}
+\fancyhead[L]{Hoja de fórmulas}
+\fancyfoot[R]{ \vspace{.1cm} Página \thepage }
+\fancyfoot[L]{\hrule \vspace{.1cm} Ingeniería Electromecánica}
+\fancyfoot[C]{\vspace{.1cm}\includegraphics[width=.1\textwidth]{../../utncom}}
+
+\newtcolorbox{mybox}[1]{title = \textsc{Unidad #1},colbacktitle=red!85!black,enhanced,attach boxed title to top center={yshift=-2mm}, colbacktitle=white, coltitle=gray!50!black, boxed title style={colframe=blue!30},colback=white!97!brown, colframe=blue!30}
+
+%Comando para fasores :)
+\newcommand{\fasor}[1]{\uppercase{\textit{\textbf{#1}}}}
+%Comando título de cada unidad
+\newcommand{\unidad}[2]{\begin{center}
+		\fontsize{10}{10}\selectfont\color{gray!50!black}\scshape Unidad #1 \\
+		\fontsize{14}{14}\selectfont \scshape #2
+	\end{center} \vspace{-.6cm}}
+%Comando pra subtitulos
+\newcommand{\subtitulo}[1]{
+	\textbf{#1} \\ \vspace{.1cm} {\color{gray} \hrule} \vspace{.2cm}
+}
+%Comando para variables y sus unidades
+\newcommand{\variable}[2]{$#1$ $\left[#2\right]$}
+%Comando para grados
+\newcommand{\grado}{^\circ}
+
+\begin{document}
+	\pagestyle{fancy}
+	\section*{Nomenclatura}
+		\begin{tabular}{r l r l}
+			\variable{V}{m^3} & Volumen & \variable{W}{kgf} & Peso\\
+			\variable{\mu}{Pa \cdot s} & Viscosidad absoluta & \variable{v}{m^2/s} & Viscosidad cinemática\\
+			\variable{\sigma}{\sfrac{N}{m}} & Tensión superficial & $C$ & Centro de presión\\
+		\end{tabular}
+	\section*{Conversión de unidades}
+		\begin{tabular}{r l r l}
+			Presión & & & \\
+			Temperatura & $K =\ \grado C + 273.15$ & $ \grado R\ =\ \grado F + 459.67$ & \\
+		\end{tabular}
+	\unidad{1}{Conceptos generales}
+		\begin{cajita}
+			\centering
+			\begin{multicols}{2}
+				\subtitulo{Presión \vspace{.085cm}}
+				\begin{tabular}{l l}
+					\multicolumn{2}{c}{$P_{absoluta} = P_{atmosférica} + P_{manométrica}$\vspace{.1cm}}\\
+					$P_{man} (+)$ & Presión manométrica\vspace{.1cm} \\
+					$P_{man} (-)$ & Vacío \\
+				\end{tabular}
+				\columnbreak
+				
+				\subtitulo{Densidad y peso específico}
+				$\rho_{rel} = \dfrac{\rho}{\rho_{H_2O}}$\vspace{.1cm}\\
+				$\gamma = \dfrac{W}{V} = \dfrac{mg}{V} = \rho g$\\
+			\end{multicols}
+			
+			\begin{multicols}{2}
+				\subtitulo{Viscosidad\vspace{.08cm}}
+				\begin{tabular}{l l}
+					$\tau = \mu \dfrac{du}{dy}$ & $v = \dfrac{\mu}{\delta}$\\
+					Fluido newtoniano & $\mu = cte$ \\
+					Fluido ideal & $\mu = 0$
+				\end{tabular}
+			
+			\columnbreak
+			
+				\subtitulo{Tensión superficial}
+				\begin{tabular}{l l}
+					No sé que pingo poner acá & help...\\
+					Capilaridad & $h = \dfrac{4 \sigma \cos \beta}{\gamma D}$
+				\end{tabular}
+			\end{multicols}
+		
+		También pensaba poner la ecuacion de los gases y algo de ese estilo que vimos en termo... pero no sé, qué opinan ustedes?
+			
+		\end{cajita}
+	
+	\unidad{2}{Estática de los fluidos}
+		\begin{cajita}
+			\centering
+			\subtitulo{Fluidos en reposo}
+			$dp = -\gamma dz$
+			
+			Agregar algo de manómetros estaría bien?
+			
+			\subtitulo{Fuerzas sobre áreas planas}
+			
+			\begin{tabular}{l l}
+				Magnitud de F & $F = \gamma \bar{h} A = P_C A$\\
+				Punto de aplicación de F & $ y_P = \bar{y} + \dfrac{\bar{I}}{A \bar{y}}$\\
+				$C:(x_P, y_P)$& $x_P = \bar{x} + \dfrac{\bar{I}_{xy}}{A \bar{y}}$\\
+			\end{tabular}
+		\end{cajita}
+\end{document}
