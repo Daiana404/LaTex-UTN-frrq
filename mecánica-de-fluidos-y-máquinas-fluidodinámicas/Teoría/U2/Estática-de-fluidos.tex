@@ -83,7 +83,8 @@ Supongamos ahora que se tiene un fluido contenido en un vaso de precipitado como
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = .3\linewidth]{vaso-de-precipitado}\label{fig:precipitado}
+	\includegraphics[width = .3\linewidth]{vaso-de-precipitado}
+	\label{fig:precipitado}
 	\caption{Presión en un fluido en reposo}
 \end{figure}
 
@@ -111,7 +112,7 @@ Al estar en contacto con el aire, la presión en el punto 2 será la atmosféric
 \end{equation}
 
 
-A la diferencia $P_1 - P_{atm}$ se la denomina como \textbf{presión hidrostática}.\\
+A la diferencia $P_1 - P_{atm}$ se la denomina como \textbf{presión hidrostática} o manométrica.\\
 
 
 
@@ -120,11 +121,64 @@ Si se despeja la presión $P_1$ se llega a la expresión para el \textbf{Segundo
 \begin{equation}
 	P_1 = P_{atm} + \gamma h
 \end{equation}
-\subsection{Ecuaciones fundamentales}
 
 \subsection{Manómetros} %Ver este también
+Los manómetros son instrumentos que usan columnas de líquidos para medir presiones. Estudiaremos tres tipos, pero todos se basan en la ecuación fundamental de la hidrostática:
 
+\subsubsection{Manómetro de tubo U}
+Para medir presiones relativamente pequeñas, usamos un manómetro como se ve en la figura \ref{fig:manometro-u}. Si trazamos una linea horizontal imaginaria que pase por 1, la presión en ambos lados del manómetro será igual. Entonces
+\begin{gather}
+	P_{1} = P_{1'} \\
+	P_{1} = P_{2} + \gamma \, h = P_{atm} + \gamma \, h\\
+\end{gather}
+Donde $\gamma$ es el peso específico del fluido que se utilize
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.45\linewidth}
+		\flushright
+		\includegraphics[width = .6\linewidth]{U2-manometro-U}
+		\label{fig:manometro-u}
+		\caption{Presiónes pequeñas}
+	\end{subfigure}
+	\begin{subfigure}[b]{.45\linewidth}
+		\flushleft
+		\includegraphics[width = .6\linewidth]{U2-manometro-U1}
+		\label{fig:manometro-u2}
+		\caption{Presiónes grandes}
+	\end{subfigure}
+	\caption{Manómetros de tubo en U}
+\end{figure}
+
+Cuando necesitemos medir presiones relativamente grandes usamos un manómetro como se ve en la figura \ref{fig:manometro-u2}. Siguiendo la misma metodología que el caso anterior, pero ahora existen dos fluidos no miscibles dentro del tubo.
+
+\begin{gather}
+	P_{2} = P_{2'}\\
+	P_{1} + \gamma_{1} h = P_{atm} + \gamma_{2} H 
+\end{gather}
+
+\subsubsection{Micromanómetro}
+Lo usamos para medir cambios de presión muy pequeños. Seguimos con el mismo principio que usamos anteriormente.
+\begin{gather}
+	P_{3}=P_{3'}\\
+	P_{1} + \gamma_{1} (z_{1}-z_{2}) + \gamma_{2} (z_{2}-z_{3}) = P_{5} + \gamma_{2} (z_{5} - z_{4}) + \gamma_{3} (z_{4} - z_{3'})
+\end{gather}
+Observando que $z_{2}-z_{3} + h = z_{5} - z_{4} + H$
+\begin{gather}
+	P_{1} = \gamma_{1} (z_{2} - z_{1}) + \gamma_{2} (h- H) + \gamma_{3} \\
+	P_{1} = \gamma_{1} (z_{2} - z_{1}) + \gamma_{2} h + (\gamma_{3} -\gamma_{2}) H
+\end{gather}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = .4\linewidth]{U2-micromanometro}
+	\caption{Micromanómetro}
+	\label{micro}
+\end{figure}
+en la figura \ref{micro}
 \subsection{Fuerzas sobre superficies}
+\subsubsection{Planas}
+\subsubsection{Curvas}
 
 \subsection{Cuerpos sumergidos}
 
