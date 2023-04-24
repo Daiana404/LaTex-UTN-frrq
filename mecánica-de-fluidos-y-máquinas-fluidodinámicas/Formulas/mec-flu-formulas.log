@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  24 APR 2023 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  24 APR 2023 15:59
 entering extended mode
 **./mec-flu-formulas.tex
 (mec-flu-formulas.tex
@@ -860,12 +860,24 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 (xtemplate)             line 80.
 
 )
+(C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks41
+\SOUL@lasttoken=\toks42
+\SOUL@cmds=\toks43
+\SOUL@buffer=\toks44
+\SOUL@token=\toks45
+\SOUL@spaceskip=\skip72
+\SOUL@ttwidth=\dimen310
+\SOUL@uldp=\dimen311
+\SOUL@ulht=\dimen312
+)
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
 Package: tcolorbox 2021/06/14 version 4.51 text color boxes
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks41
-\verbatim@line=\toks42
+\every@verbatim=\toks46
+\verbatim@line=\toks47
 \verbatim@in@stream=\read4
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
@@ -937,9 +949,9 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '4.51'
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
 de.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '4.51'
-\tcbfitdim=\dimen310
-\tcb@lowerfitdim=\dimen311
-\tcb@upperfitdim=\dimen312
+\tcbfitdim=\dimen313
+\tcb@lowerfitdim=\dimen314
+\tcb@upperfitdim=\dimen315
 \tcb@cur@hbadness=\count323
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbxparse.cod
@@ -955,15 +967,15 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count324
 \Gm@cntv=\count325
 \c@Gm@tempcnt=\count326
-\Gm@bindingoffset=\dimen313
-\Gm@wd@mp=\dimen314
-\Gm@odd@mp=\dimen315
-\Gm@even@mp=\dimen316
-\Gm@layoutwidth=\dimen317
-\Gm@layoutheight=\dimen318
-\Gm@layouthoffset=\dimen319
-\Gm@layoutvoffset=\dimen320
-\Gm@dimlist=\toks43
+\Gm@bindingoffset=\dimen316
+\Gm@wd@mp=\dimen317
+\Gm@odd@mp=\dimen318
+\Gm@even@mp=\dimen319
+\Gm@layoutwidth=\dimen320
+\Gm@layoutheight=\dimen321
+\Gm@layouthoffset=\dimen322
+\Gm@layoutvoffset=\dimen323
+\Gm@dimlist=\toks48
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (mec-flu-formulas.aux
@@ -972,59 +984,59 @@ LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `mec-flu-formulas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 50.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-47.
+50.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 50.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-47.
+50.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 50.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-47.
+50.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 50.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count327
-\scratchdimen=\dimen321
+\scratchdimen=\dimen324
 \scratchbox=\box128
 \nofMPsegments=\count328
 \nofMParguments=\count329
-\everyMPshowfont=\toks44
+\everyMPshowfont=\toks49
 \MPscratchCnt=\count330
-\MPscratchDim=\dimen322
+\MPscratchDim=\dimen325
 \MPnumerator=\count331
 \makeMPintoPDFobject=\count332
-\everyMPtoPDFconversion=\toks45
+\everyMPtoPDFconversion=\toks50
 )
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1036,10 +1048,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 47.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 47.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 50.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 50.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1078,55 +1090,60 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 50.
+ 55.
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 50.
+(Font)              scaled to size 10.07397pt on input line 55.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 50.
+(Font)              scaled to size 7.63599pt on input line 55.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 50.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+(Font)              scaled to size 5.51999pt on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 50.
+(Font)              scaled to size 10.07397pt on input line 55.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 50.
+(Font)              scaled to size 7.63599pt on input line 55.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 50.
-LaTeX Font Info:    Calculating math sizes for size <5.88287> on input line 53.
+(Font)              scaled to size 5.51999pt on input line 55.
+LaTeX Font Info:    Calculating math sizes for size <5.88287> on input line 61.
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.41223pt on input line 53.
+(Font)              scaled to size 5.41223pt on input line 61.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 4.11325pt on input line 53.
+(Font)              scaled to size 4.11325pt on input line 61.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 3.24736pt on input line 53.
+(Font)              scaled to size 3.24736pt on input line 61.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.41223pt on input line 53.
+(Font)              scaled to size 5.41223pt on input line 61.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 4.11325pt on input line 53.
+(Font)              scaled to size 4.11325pt on input line 61.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 3.24736pt on input line 53.
+(Font)              scaled to size 3.24736pt on input line 61.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 66.
+LaTeX Warning: Command \' invalid in math mode on input line 77.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 66.
+LaTeX Warning: Command \' invalid in math mode on input line 77.
 
+<../Figuras/estabilidad.png, id=4, 661.47125pt x 379.4175pt>
+File: ../Figuras/estabilidad.png Graphic file (type png)
+<use ../Figuras/estabilidad.png>
+Package pdftex.def Info: ../Figuras/estabilidad.png  used on input line 140.
+(pdftex.def)             Requested size: 221.19946pt x 126.87552pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1135,25 +1152,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-<../../utncom.jpg, id=4, 408.77719pt x 102.3825pt>
+<../../utncom.jpg, id=6, 408.77719pt x 102.3825pt>
 File: ../../utncom.jpg Graphic file (type jpg)
 <use ../../utncom.jpg>
-Package pdftex.def Info: ../../utncom.jpg  used on input line 114.
+Package pdftex.def Info: ../../utncom.jpg  used on input line 142.
 (pdftex.def)             Requested size: 48.37263pt x 12.11508pt.
 [1{C:/Users/daia_/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
- <../../utncom.jpg>] (mec-flu-formulas.aux
+ <../../utncom.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: ../../utncom.jpg Graphic file (type jpg)
+<use ../../utncom.jpg>
+Package pdftex.def Info: ../../utncom.jpg  used on input line 143.
+(pdftex.def)             Requested size: 48.37263pt x 12.11508pt.
+[2 <../Figuras/estabilidad.png>] (mec-flu-formulas.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 22174 strings out of 478907
- 459670 string characters out of 2851891
- 795577 words of memory out of 3000000
- 39620 multiletter control sequences out of 15000+600000
- 555706 words of font info for 182 fonts, out of 8000000 for 9000
+ 22408 strings out of 478907
+ 463072 string characters out of 2851891
+ 804140 words of memory out of 3000000
+ 39841 multiletter control sequences out of 15000+600000
+ 569682 words of font info for 190 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,19n,89p,418b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,18n,89p,418b,971s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
 :/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-
 mex.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
@@ -1161,10 +1191,11 @@ r/fourier-mlit.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/fourier/fourier-ms.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts
 /type1/adobe/utopia/putb8a.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fo
 nts/type1/adobe/utopia/putr8a.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX
-/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on mec-flu-formulas.pdf (1 page, 103922 bytes).
+/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/daia_/AppData/Local/Programs/MiK
+TeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on mec-flu-formulas.pdf (2 pages, 239251 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
