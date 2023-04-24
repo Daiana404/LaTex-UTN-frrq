@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  24 APR 2023 11:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.26)  24 APR 2023 12:39
 entering extended mode
-**./maq-ele-formulas.tex
-(maq-ele-formulas.tex
+**./mec-flu-formulas.tex
+(mec-flu-formulas.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-10-18>
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -966,50 +966,50 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks43
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(maq-ele-formulas.aux
+(mec-flu-formulas.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
-\openout1 = `maq-ele-formulas.aux'.
+\openout1 = `mec-flu-formulas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 47.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-52.
+47.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-52.
+47.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-52.
+47.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    ... okay on input line 47.
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1036,10 +1036,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 52.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 52.
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 47.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 47.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1078,73 +1078,54 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 56.
+ 50.
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 56.
+(Font)              scaled to size 10.07397pt on input line 50.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 56.
+(Font)              scaled to size 7.63599pt on input line 50.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 56.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+(Font)              scaled to size 5.51999pt on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
 
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
 
 
 (C:\Users\daia_\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 56.
+(Font)              scaled to size 10.07397pt on input line 50.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 56.
+(Font)              scaled to size 7.63599pt on input line 50.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 56.
-<../Figuras//trafo-ideal.png, id=4, 1080.035pt x 333.245pt>
-File: ../Figuras//trafo-ideal.png Graphic file (type png)
-<use ../Figuras//trafo-ideal.png>
-Package pdftex.def Info: ../Figuras//trafo-ideal.png  used on input line 77.
-(pdftex.def)             Requested size: 361.92052pt x 111.66954pt.
-<../Figuras//vacio-fasores.png, id=6, 371.3875pt x 392.46625pt>
-File: ../Figuras//vacio-fasores.png Graphic file (type png)
-<use ../Figuras//vacio-fasores.png>
-Package pdftex.def Info: ../Figuras//vacio-fasores.png  used on input line 96.
-(pdftex.def)             Requested size: 110.59973pt x 116.87244pt.
-<../Figuras//trafo-real.png, id=7, 934.24031pt x 292.09125pt>
-File: ../Figuras//trafo-real.png Graphic file (type png)
-<use ../Figuras//trafo-real.png>
-Package pdftex.def Info: ../Figuras//trafo-real.png  used on input line 118.
-(pdftex.def)             Requested size: 361.92052pt x 113.15297pt.
-<../Figuras//equi-aprox.png, id=8, 641.39626pt x 486.81876pt>
-File: ../Figuras//equi-aprox.png Graphic file (type png)
-<use ../Figuras//equi-aprox.png>
-Package pdftex.def Info: ../Figuras//equi-aprox.png  used on input line 146.
-(pdftex.def)             Requested size: 176.96024pt x 134.31012pt.
-<../Figuras//ensayo-vacio.png, id=9, 1080.035pt x 350.30875pt>
-File: ../Figuras//ensayo-vacio.png Graphic file (type png)
-<use ../Figuras//ensayo-vacio.png>
-Package pdftex.def Info: ../Figuras//ensayo-vacio.png  used on input line 170.
-(pdftex.def)             Requested size: 221.19946pt x 71.74426pt.
-<../Figuras//ensayo-cc.png, id=10, 1136.245pt x 377.41pt>
-File: ../Figuras//ensayo-cc.png Graphic file (type png)
-<use ../Figuras//ensayo-cc.png>
-Package pdftex.def Info: ../Figuras//ensayo-cc.png  used on input line 190.
-(pdftex.def)             Requested size: 221.19946pt x 73.47083pt.
-<../Figuras//circuito-rv.png, id=11, 888.31876pt x 494.84875pt>
-File: ../Figuras//circuito-rv.png Graphic file (type png)
-<use ../Figuras//circuito-rv.png>
-Package pdftex.def Info: ../Figuras//circuito-rv.png  used on input line 209.
-(pdftex.def)             Requested size: 221.19946pt x 123.22108pt.
+(Font)              scaled to size 5.51999pt on input line 50.
+LaTeX Font Info:    Calculating math sizes for size <5.88287> on input line 53.
 
-Overfull \hbox (7.99197pt too wide) in paragraph at lines 211--217
- [][] 
- []
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.41223pt on input line 53.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 4.11325pt on input line 53.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 3.24736pt on input line 53.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.41223pt on input line 53.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 4.11325pt on input line 53.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 3.24736pt on input line 53.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 66.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 66.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1154,67 +1135,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-<../Figuras//utncom.jpg, id=12, 545.03625pt x 172.645pt>
-File: ../Figuras//utncom.jpg Graphic file (type jpg)
-<use ../Figuras//utncom.jpg>
-Package pdftex.def Info: ../Figuras//utncom.jpg  used on input line 249.
-(pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
+<../../utncom.jpg, id=4, 408.77719pt x 102.3825pt>
+File: ../../utncom.jpg Graphic file (type jpg)
+<use ../../utncom.jpg>
+Package pdftex.def Info: ../../utncom.jpg  used on input line 114.
+(pdftex.def)             Requested size: 48.37263pt x 12.11508pt.
 [1{C:/Users/daia_/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
- <../Figuras//trafo-ideal.png> <../Figuras//vacio-fasores.png> <../Figuras//utn
-com.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-File: ../Figuras//utncom.jpg Graphic file (type jpg)
-<use ../Figuras//utncom.jpg>
-Package pdftex.def Info: ../Figuras//utncom.jpg  used on input line 249.
-(pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
-[2 <../Figuras//trafo-real.png> <../Figuras//equi-aprox.png> <../Figuras//ensay
-o-vacio.png> <../Figuras//ensayo-cc.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-File: ../Figuras//utncom.jpg Graphic file (type jpg)
-<use ../Figuras//utncom.jpg>
-Package pdftex.def Info: ../Figuras//utncom.jpg  used on input line 250.
-(pdftex.def)             Requested size: 48.37263pt x 15.32135pt.
-[3 <../Figuras//circuito-rv.png>] (maq-ele-formulas.aux
+ <../../utncom.jpg>] (mec-flu-formulas.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 22207 strings out of 478907
- 460915 string characters out of 2851891
- 805531 words of memory out of 3000000
- 39654 multiletter control sequences out of 15000+600000
- 484400 words of font info for 98 fonts, out of 8000000 for 9000
+ 22174 strings out of 478907
+ 459670 string characters out of 2851891
+ 795577 words of memory out of 3000000
+ 39620 multiletter control sequences out of 15000+600000
+ 555706 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,89p,418b,966s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,19n,89p,418b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
 :/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-
-mcl.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
-r/fourier-mex.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/fourier/fourier-ml.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/fourier/fourier-mlit.pfb><C:/Users/daia_/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:/Users/daia_/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/daia_/AppData/Local
-/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/daia_/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/daia_/AppData
-/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on maq-ele-formulas.pdf (3 pages, 686726 bytes).
+mex.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
+r/fourier-mlit.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/fourier/fourier-ms.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fonts
+/type1/adobe/utopia/putb8a.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX/fo
+nts/type1/adobe/utopia/putr8a.pfb><C:/Users/daia_/AppData/Local/Programs/MiKTeX
+/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on mec-flu-formulas.pdf (1 page, 103922 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
