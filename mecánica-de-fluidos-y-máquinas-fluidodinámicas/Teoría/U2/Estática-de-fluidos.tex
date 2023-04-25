@@ -84,8 +84,8 @@ Supongamos ahora que se tiene un fluido contenido en un vaso de precipitado como
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = .3\linewidth]{vaso-de-precipitado}
-	\label{fig:precipitado}
 	\caption{Presión en un fluido en reposo}
+	\label{fig:precipitado}
 \end{figure}
 
 Al estar en contacto con el aire, la presión en el punto 2 será la atmosférica $P_{atm}$, y la ecuación \ref{eq:fundamental-integrada} quedará de la siguiente manera:
@@ -136,16 +136,16 @@ Donde $\gamma$ es el peso específico del fluido que se utilize
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}[b]{.45\linewidth}
-		\flushright
+		\centering
 		\includegraphics[width = .6\linewidth]{U2-manometro-U}
-		\label{fig:manometro-u}
 		\caption{Presiónes pequeñas}
+		\label{fig:manometro-u}
 	\end{subfigure}
 	\begin{subfigure}[b]{.45\linewidth}
-		\flushleft
+		\centering
 		\includegraphics[width = .6\linewidth]{U2-manometro-U1}
-		\label{fig:manometro-u2}
 		\caption{Presiónes grandes}
+		\label{fig:manometro-u2}
 	\end{subfigure}
 	\caption{Manómetros de tubo en U}
 \end{figure}
@@ -173,11 +173,67 @@ Observando que $z_{2}-z_{3} + h = z_{5} - z_{4} + H$
 	\centering
 	\includegraphics[width = .4\linewidth]{U2-micromanometro}
 	\caption{Micromanómetro}
-	\label{micro}
+	\label{fig:micro}
 \end{figure}
-en la figura \ref{micro}
+\subsubsection{Efecto de la fuerza superficial sobre un fluido confinado}
+Si se ejerce una presión externa sobre una parte de la frontera de un fluido confinado, esta presión se transmite uniformemente a través de todo el fluido.
+\\
+Este principio explica el funcionamiento de gatos hidráulicos, prensas, frenos, y diversos mecanismos que transmiten fuerzas a través de un fluido.
+
+
+\begin{figure}[h]	
+	\centering
+	\includegraphics[width = .2\linewidth]{U2-gato-hidraulico}
+	\caption{Gato hidráulico}
+	\label{fig:gato}
+\end{figure}
+
+\begin{equation}
+	\dfrac{F_{B}}{F_{C}} = \dfrac{\Delta P A_{B}}{\Delta P A_{C}} = \dfrac{A_{B}}{A_{C}}
+\end{equation}
+
+
 \subsection{Fuerzas sobre superficies}
 \subsubsection{Planas}
+Si sumergimos una placa plana, sobre ésta actuara una presión constante (sobre la superficie libre) y una presión causada por la gravedad que se incrementa uniformemente.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = .6\linewidth]{U2-sup-plana}
+	\caption{Fuerza sobre área plana}
+	\label{fig:sup-plana}
+\end{figure}
+Debido a que no puede existir esfuerzo cortante, esta fuerza debe ser perpendicular a la superficie sumergida. Observando la figura \ref{fig:sup-plana}, sobre el elemento \textbf{dA} actúa una presión constante. La magnitud de la fuerza sobre este elemento será $\gamma \, h \, dA$. Si integramos sobre el área completa de la placa
+\begin{equation*}
+	F = \int_{A} \gamma \ h \ dA = \int_{A} \gamma \ y \sin \theta \ dA =  \gamma \sin \theta \int_{A} y \ dA
+\end{equation*}
+La integral que queda es el primer momento de \emph{área} de la placa con respecto al eje \emph{x}; esto es equivalente a usar \textbf{$A \ \overline{y}$}, doonde $\overline{y}$ es la distancia al centroide de la superficie. Entonces la magnitud de la fuerza, teniendo en cuenta la presion en la superficie libre será:
+
+\begin{equation}
+	F =(P_{s} + \overline{y} \sin \theta \ \gamma) A
+\end{equation}
+
+Como la fuerza resultante no actúa en el centroide de la placa, para hallar la ubicación de esta igualamos la suma de los momentos de todas las fuerzas de presión que actúan sobre el área con el momento generado por la fuerza misma. Si la fuerza F actúa en el punto $(x_{p}, y_{p})$:
+
+\begin{equation*}
+	y_{p} F = \int_{A} y (P_{s} \overline{y} \sin \theta \ \gamma ) dA
+\end{equation*}
+
+Desarrollando llegamos a la siguiente ecuación:
+
+\begin{equation}
+	y_{p} = \overline{y} + \dfrac{\overline{I}_{x}}{A \overline{y}}
+\end{equation}
+
+Donde $\overline{I}_{x}$ es el momento de inercia centroidal de la placa respecto de $x$.
+\\
+De igual manera para hallar la coordenada $x_{p}$
+\begin{equation*}
+	x_{p} F = \int_{A} y (P_{s} \ \overline{y} \ \sin \ \theta \ \gamma ) dA
+\end{equation*}
+\begin{equation}
+	x_{p} = \overline{x} + \dfrac{\overline{I}_{xy}}{A \overline{y}}
+\end{equation}
+Donde $\overline{I}_{xy}$ es el producto de inercia centroidal y $\overline{x}$ la distancia al eje $y$ centroidal.
 \subsubsection{Curvas}
 
 \subsection{Cuerpos sumergidos}
