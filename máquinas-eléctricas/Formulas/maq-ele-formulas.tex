@@ -1,52 +1,8 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{graphicx}
-\usepackage[spanish]{babel}
-\usepackage{booktabs, fourier, tabularx, wrapfig, multicol,multirow,caption, subcaption,tikz, fancyhdr, steinmetz, xcolor}
-\usepackage{xfrac}
-\usepackage[many]{tcolorbox}
+\usepackage{{../../paquete-formulas}}
+\usepackage{{../../estilos-formulas}}
 
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-
-\graphicspath{{../Figuras/}}
-
-%Configuración y comandos
-
-%tcolorbox personalizado
-\newtcolorbox{cajita}{colback=white!97!brown, colframe=brown!15!gray, breakable}
-
-%Encabezado y pie de página
-\fancyhead[R]{\textsc{Máquinas Eléctricas}}
-\fancyhead[L]{Hoja de fórmulas}
-\fancyfoot[R]{ \vspace{.1cm} Página \thepage }
-\fancyfoot[L]{\hrule \vspace{.1cm} Ingeniería Electromecánica}
-\fancyfoot[C]{\vspace{.1cm}\includegraphics[width=.1\textwidth]{utncom}}
-
-\newtcolorbox{mybox}[1]{title = \textsc{Unidad #1},colbacktitle=red!85!black,enhanced,attach boxed title to top center={yshift=-2mm}, colbacktitle=white, coltitle=gray!50!black, boxed title style={colframe=blue!30},colback=white!97!brown, colframe=blue!30}
-
-%Comando para fasores :)
-\newcommand{\fasor}[1]{\uppercase{\textbf{#1}}}
-%Comando título de cada unidad
-\newcommand{\unidad}[2]{\begin{center}
-		\fontsize{10}{10}\selectfont\color{gray!50!black}\scshape Unidad #1 \\
-		\fontsize{14}{14}\selectfont \scshape #2
-	\end{center} \vspace{-.6cm}}
-%Comando para subtitulos
-\newcommand{\subtitulo}[1]{
-	\textbf{#1} \\ \vspace{.1cm} {\color{gray} \hrule}
-}
-%Comando para subsubtitulos
-\newcommand{\subsubtitulo}[1]{
-	\begin{flushleft}
-		\vspace{.1cm}
-		\textsc{#1}
-		\vspace{.1cm}
-	\end{flushleft}
-}
+\newcommand{\materia}{Máquinas Eléctricas}
 
 \begin{document}
 	\pagestyle{fancy}
@@ -71,7 +27,6 @@
 	\unidad{2}{Transformadores}
 	
 	\begin{cajita}
-		\centering
 		
 		\includegraphics[width = .8\linewidth]{trafo-ideal}
 		\begin{multicols}{2}
@@ -112,8 +67,9 @@
 			\end{tabular}
 		
 		\end{multicols}
-	
+	\end{cajita}
 	\newpage
+	\begin{cajita}
 	\includegraphics[width = .8\linewidth]{trafo-real}
 	
 	\begin{multicols}{2}
@@ -132,7 +88,8 @@
 		\end{center}		
 		
 	\end{multicols}
-	
+	\end{cajita}
+	\begin{cajita}
 	\subtitulo{Circuito equivalente aproximado}
 	
 	\begin{flushleft}
@@ -156,8 +113,9 @@
 			& $Z_2 = R_2 + j X_2$\\
 		\end{tabular}
 	\end{multicols}
-	
+	\end{cajita}
 	\begin{multicols}{2}
+		\begin{cajita}
 	\subtitulo{Ensayo de vacío}	
 	
 	
@@ -179,9 +137,10 @@
 %			$\bullet$ A corresponde con x si: $V_{3}=V_{1}-V_{2}$\\
 			
 			\newpage %Similar al columnbreak pero deja alineado todo hacia arriba y no intenta distribuir en el eje y
-			
+		\end{cajita}	
+	
+	\begin{cajita}
 	\subtitulo{Ensayo de cortocircuito}
-		
 		\begin{flushleft}
 			Permite determinar las pérdidas en el $Cu$ y los parámetros de la rama de cortocircuito,  $R_{cc}$ y $X_{cc}$. $\fasor{I}_{0}$ es despreciable.
 		\end{flushleft}
@@ -195,14 +154,13 @@
 				
 %							$\fasor{I}_{fe}=\fasor{I}_{0}.Cos[\phi_{0}] $& ; & $\fasor{I}_{\mu}=\fasor{I}_{0}.Sin[\phi_{0}] $\\[0.2cm]
 			\end{tabular}
-			
+			\end{cajita}
 	\end{multicols}
 	En ambos ensayos, los factores de potencia $\cos \phi_{0}$ y $\cos \phi_{cc}$ son las incógnitas a determinar para calcular los parámetros.
 	
-		\newpage
+		\begin{cajita}
 		
 		\subtitulo{Regulación de Voltaje}
-		\vspace{.3cm}
 		
 		\begin{multicols}{2}
 			\includegraphics[width=\linewidth]{circuito-rv} \\
@@ -216,34 +174,30 @@
 			\end{tabular}\\
 		\end{multicols}
 		
+		\end{cajita}
 		
-		
-		
-		
-		\subtitulo{Eficiencia \vspace{.1cm}} 
-		\vspace{.3cm}
-		
-		\begin{tabular}{l l}
-			\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}= \dfrac{S \cos(\phi)}{S \cos(\phi )+P_{fe}+P_{\mu}}$\vspace{.2cm}}\\
+		\begin{multicols}{2}
+			\begin{cajita}
+				\subtitulo{Eficiencia \vspace{.1cm}} 
+				\vspace{.3cm}
+				
+				\begin{tabular}{l l}
+					\multicolumn{2}{c}{$\eta = \dfrac{P_{out}}{P_{in}}= \dfrac{S \cos(\phi)}{S \cos(\phi )+P_{fe}+P_{\mu}}$\vspace{.2cm}}\\
+					
+					Eficiencia máxima & $\cos\phi=1$ y $ P_{Fe}=P_{\mu }$ \\
+					Potencia útil & $P_{out} = S \cos \phi$\\
+					Potencia demandada & $P_{in} = P_{out} + P_{p}$\\
+					Pérdidas en potencia & $P_p = P_{Fe} + P_\mu$\\
+				\end{tabular}
+			\end{cajita}
 			
-			Eficiencia máxima & $cos(\phi)=1$ y $ P_{fe}=P_{\mu }$ \\
-			Potencia útil & $P_{out} = S \cos \phi$\\
-			Potencia demandada & $P_{in} = P_{out} + P_{p}$\\
-			Pérdidas en potencia & $P_p = P_{Fe} + P_\mu$\\
-		\end{tabular}
-		
-		\vspace{.3cm}
-		
-		\subtitulo{Índice de Carga}
-		\vspace{.3cm}
-		
-		\begin{tabular}{l l}
-			$C = \dfrac{I}{I_n}$ & $C_{opt} = \sqrt{\dfrac{P_0}{P_{cc}}}$\\
-		\end{tabular}
-		
-		
-	
-	
-	
-\end{cajita}
+			\begin{cajita}
+				\subtitulo{Índice de Carga}
+				\vspace{.3cm}
+				
+				\begin{tabular}{l l}
+					$C = \dfrac{I}{I_n}$ & $C_{opt} = \sqrt{\dfrac{P_0}{P_{cc}}}$\\
+				\end{tabular}
+			\end{cajita}
+		\end{multicols}
 \end{document}
