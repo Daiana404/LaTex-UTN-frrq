@@ -82,8 +82,42 @@
 			    $G_{combustible}$ el peso de combustible quemado}
 		\end{flushleft}
 	
+		\section*{Aire mínimo para una combustión perfecta}
+		\begin{equation}
+			G_{t \ aire} = 11.6 g_{c} + 34.78 g_{hd} +4.35 g_{s} \; [Kg_{aire}/Kg_{comb.}]
+		\end{equation}
+		\begin{equation}
+			V_{t \ aire} = 8.89 g_{c} + 26.27 g_{hd} + 3.34 g_{s} \; [m^{3}_{aire}/Kg_{comb.}]
+		\end{equation}
+		\begin{flushleft}
+			Donde 
+		
+		$g_{hd} = g_{h} - \dfrac{g_{o_{2}}}{2}$
+		
+		$g_{c}$ composición gravimétrica carbono
+		
+		$g_{h}$ composición gravimétrica hidrógeno
+		
+		$g_{o_{2}}$ composición gravimétrica oxígeno
+		
+		$g_{s}$ composición gravimétrica azufre
+		
+		-
+		\\
 	
-			
+		En la práctica es necesario trabajar con un exceso de aire para que asegurar la combustión perfecta:
+		\end{flushleft}
+		\begin{equation}
+			V_{R \ aire} = (1+e) V_{t \ aire} [m^{3}_{aire}/Kg_{comb.}]
+		\end{equation}
+		
+		\section*{Gases de combustón}
+		\begin{equation}
+			g_{h} = (3.67 g_{c} + 9 g_{hd} +2 g_{s}) + 3.35 (2.67 g_{c} + 8 g_{hd} + g_{s}) + g_{w} \; [Kg_{humo}/Kg_{comb}]
+		\end{equation}
+		\begin{equation}
+			V_{h} = 1.897 g_{c} + 11.2 g_{hd} +0.7 g_{s} + 3.76 (1.867 g_{c} + 5.6 g_{hd} +0.7 g_{s}) + 1.24 g_{w} \; [m^{2}_{humo}/Kg_{comb}]
+		\end{equation}
 	\end{cajita}
 	
 \end{document}
