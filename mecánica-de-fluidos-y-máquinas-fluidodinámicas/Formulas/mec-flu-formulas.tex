@@ -13,7 +13,7 @@
 \newcommand{\vdes}{\st{\textsl{V}}}
 
 \begin{document}
-	\pagestyle{fancy}
+	\pagestyle{pieyencabezado}
 	\section*{Nomenclatura}
 	
 		\begin{center}
@@ -34,9 +34,8 @@
 			Temperatura & $K =\ \grado C + 273.15$ & $ \grado R\ =\ \grado F + 459.67$ & \\
 		\end{tabular}
 	\unidad{1}{Conceptos generales}
+	\begin{multicols}{2}
 		\begin{cajita}
-			\centering
-			\begin{multicols}{2}
 				\subtitulo{Presión \vspace{.085cm}}
 				\begin{tabular}{l l}
 					\multicolumn{2}{c}{$P_{absoluta} = P_{atmosférica} + P_{manométrica}$\vspace{.1cm}}\\
@@ -44,13 +43,15 @@
 					$P_{man} (-)$ & Vacío \\
 				\end{tabular}
 				\columnbreak
-				
+		\end{cajita}
+		\begin{cajita}		
 				\subtitulo{Densidad y peso específico}
 				$\rho_{rel} = \dfrac{\rho}{\rho_{H_2O}}$\vspace{.1cm}\\
 				$\gamma = \dfrac{W}{V} = \dfrac{mg}{V} = \rho g$\\
-			\end{multicols}
-			
-			\begin{multicols}{2}
+		\end{cajita}
+	\end{multicols}
+	\begin{multicols}{2}
+		\begin{cajita}		
 				\subtitulo{Viscosidad\vspace{.08cm}}
 				\begin{tabular}{l l}
 					$\tau = \mu \dfrac{du}{dy}$ & $v = \dfrac{\mu}{\delta}$\\
@@ -58,51 +59,62 @@
 					Fluido ideal & $\mu = 0$
 				\end{tabular}
 			
-			\columnbreak
+		\end{cajita}
+		\begin{cajita}
 			
 				\subtitulo{Tensión superficial}
 				\begin{tabular}{l l}
 					No sé que pingo poner acá & help...\\
 					Capilaridad & $h = \dfrac{4 \sigma \cos \beta}{\gamma D}$
 				\end{tabular}
-			\end{multicols}
 		
-		También pensaba poner la ecuacion de los gases y algo de ese estilo que vimos en termo... pero no sé, qué opinan ustedes?
+		También pensaba poner la ecuación de los gases y algo de ese estilo que vimos en termo... pero no sé, qué opinan ustedes?
 			
 		\end{cajita}
+	\end{multicols}
 	
 	\unidad{2}{Estática de los fluidos}
+	
+	\begin{multicols}{2}
 		\begin{cajita}
-			\centering
-			\subtitulo{Fluidos en reposo}
+			\subtitulo{Fluidos en reposo}\vspace{.1cm}
+			
 			$dp = -\gamma dz$
 			
 			Agregar algo de manómetros estaría bien?
-			
-			\subtitulo{Fuerzas sobre áreas planas}
+		\end{cajita}
+	
+		\begin{cajita}
+			\subtitulo{Fuerzas sobre áreas planas}\vspace{.1cm}
 			
 			\begin{tabular}{l l}
-				Magnitud de F & $F = \gamma \bar{h} A = P_C A$\\
-				Punto de aplicación C de F & $ y_P = \bar{y} + \dfrac{\bar{J}}{A \bar{y}}$\\
+				Magnitud de F & $F = \gamma \bar{h} A$\\ & \hspace{.2cm} $= P_C A$\\
+				Punto de aplicación de F & $ y_P = \bar{y} + \dfrac{\bar{J}}{A \bar{y}}$\\
 				$C:(x_P, y_P)$& $x_P = \bar{x} + \dfrac{\bar{J}_{xy}}{A \bar{y}}$\\
 			\end{tabular}
-		
+		\end{cajita}
+	
+		\begin{cajita}
+			\subtitulo{Flotabilidad}\vspace{.1cm}
 			
-		\begin{multicols}{2}
-			\subtitulo{Flotabilidad}
 			\begin{tabular}{l l}
 				\multicolumn{2}{c}{$F_B = \gamma \vdes$}\\
 				En equilibrio & $F=W$\\
 			\end{tabular}
-		
-			\columnbreak
+		agreguen si falta...
+		\end{cajita}
+	
+		\begin{cajita}
+			\subtitulo{Estabilidad}\vspace{.1cm}
 			
-			\subtitulo{Estabilidad}
 			
 			$\overline{GM} = \dfrac{J_O}{\vdes} - \overline{CG}$
 			
 			
-			\includegraphics[width=\linewidth]{estabilidad}
-		\end{multicols}
+%			\includegraphics[width=\linewidth]{estabilidad}
+			agreguen si falta...
 		\end{cajita}
+	\end{multicols}	
+			
+			
 \end{document}

@@ -16,11 +16,17 @@
 \newtcolorbox{cajita}{miestilo}
 
 %Encabezado y pie de página
-\fancyhead[R]{\textsc{\materia}}
-\fancyhead[L]{Hoja de fórmulas}
-\fancyfoot[R]{ \vspace{.1cm} Página \thepage }
-\fancyfoot[L]{\hrule \vspace{.1cm} Ingeniería Electromecánica}
-\fancyfoot[C]{\vspace{.1cm}\includegraphics[width=.1\textwidth]{../../utncom}}
+\fancypagestyle{pieyencabezado}{
+	\fancyhf{} % Borra el encabezado y el pie de página predeterminados
+	\renewcommand{\footrulewidth}{0.4pt} % Establece el ancho de la línea de pie de página en 0.4pt
+	\fancyfoot[L]{Ingeniería Electromecánica} % Define el contenido del pie de página izquierdo
+	\fancyfoot[C]{\includegraphics[width=.1\textwidth]{../../utncom}} % Define el número de página en el centro del pie de página
+	\fancyfoot[R]{Página \thepage} % Define el contenido del pie de página derecho
+	\renewcommand{\headrulewidth}{0.4pt} % Establece el ancho de la línea de encabezado en 0.4pt
+	\fancyhead[L]{Hoja de fórmulas} % Define el contenido del encabezado izquierdo
+	\fancyhead[C]{} % Define el contenido del encabezado central
+	\fancyhead[R]{\textsc{\materia}} % Define el contenido del encabezado derecho
+}
 %Comando para fasores :)
 \newcommand{\fasor}[1]{\uppercase{\textbf{#1}}}
 %Comando título de cada unidad

@@ -51,12 +51,15 @@
 %END_FOLD
 
 %BEGIN_FOLD ENCABEZADO Y PIE
+
+\newcommand{\materia}{\textit{\nombreMateria}}
 \fancyhead[R]{\textbf{\nameref{sec:\thesection}}}
 \fancyhead[C]{}
 %\fancyhead[L]{Nombre de la Materia} Esto lo vamos a poner en cada archivo
 \fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
 \fancyfoot[L]{UTN Facultad Regional Reconquista}
 \fancyfoot[C]{}
+\fancyhead[L]{\textsc{\nombreMateria}}
 
 % Definición del estilo para la portada
 \fancypagestyle{piePortada}{
@@ -65,4 +68,5 @@
 	\fancyfoot[C]{Facultad Regional Reconquista}
 	\fancyfoot[R]{\textbf{Año 2023}}
 }
+
 %END_FOLD
