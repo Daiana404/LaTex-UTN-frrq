@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt,titlepage]{article}
+\documentclass[a4paper, 11pt]{article}
 \usepackage{{../../paquete}}
 \usepackage{{../../estilos}}
 \graphicspath{{../Figuras/}} %Esta es la forma en la que se insertan direcciones RELATIVAS ya que la carpeta Firugas y el documento se encuentran en la misma ubicación
@@ -6,13 +6,12 @@
 
 %BEGIN_FOLD
 \newcommand{\nombreMateria}{Máquinas Eléctricas}
-\newcommand{\materia}{\textit{\nombreMateria}}
 %END_FOLD
-\fancyhead[L]{\textsc{\nombreMateria}}
 
 \begin{document}
-	%	\input{../../portada}
+	\input{../../portada}
 	\pagestyle{fancy}
+	
 	\section{Introducción a máquinas eléctricas}
 	\include{./U1/transformadores}
 	

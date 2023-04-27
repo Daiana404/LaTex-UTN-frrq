@@ -1,8 +1,9 @@
-\usepackage{minitoc-hyper}%Para minis table of contents
 \usepackage{multicol}%Multicolumnas :)
 \usepackage[many]{tcolorbox}%Cajitas propias
 \usepackage{nameref}%Lo uso para llamar a las secciones
 \usepackage[explicit]{titlesec} %Para cambiar section, subsection, etc...
+\usepackage{titletoc}
+\usepackage{tocloft}%Modificar el toc
 
 \numberwithin{equation}{section} % Establecer la numeración de ecuaciones en función de las secciones
 \numberwithin{figure}{section} % Establecer la numeración de figuras en función de las secciones
@@ -14,17 +15,27 @@
 %Section
 \newcommand{\cero}{1}
 \newcommand{\aux}[1]{
-	\if\thesection\cero
-	
-	\else
-%	\newpage
-	\fi
+%	\if\thesection\cero
+%	
+%	\else
+%%	\newpage
+%	\fi
 	\textbf{\fontsize{40}{48}\selectfont #1} \\ {\large Unidad \thesection} \vspace{0.5cm}
-	\label{sec:\thesection}
+	\label{sec:\thesection}\\
+	
+	{\vspace{.5cm}\Large\textsl{Visión General}} \vspace{-.2cm}
+	\begin{multicols}{2}
+		\startcontents[seccion] 
+		\printcontents[seccion]{}{2}{}
+	\end{multicols}
 }
 \titleformat{name=\section}
 {\normalfont}{}{0em}
 {\aux{#1}}[\addvspace{4ex}]
+
+\renewcommand{\cftsubsecfont}{\normalfont\bfseries}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\setlength{\cftbeforesubsecskip}{10pt}
 %Subsection
 \newcommand{\auxx}[1]{
 	\vspace{.5cm}
@@ -37,7 +48,7 @@
 \titleformat{name=\subsection}
 {\normalfont}{}{0em}
 {\auxx{#1}}[\addvspace{4ex}]
-%Subsubsection
+%%Subsubsection
 \newcommand{\auxxx}[1]{
 	{\large \textit{\textbf{\thesubsubsection\ #1}}}
 }
@@ -55,11 +66,10 @@
 \newcommand{\materia}{\textit{\nombreMateria}}
 \fancyhead[R]{\textbf{\nameref{sec:\thesection}}}
 \fancyhead[C]{}
-%\fancyhead[L]{Nombre de la Materia} Esto lo vamos a poner en cada archivo
+\fancyhead[L]{\textsc{\nombreMateria}}
 \fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
 \fancyfoot[L]{UTN Facultad Regional Reconquista}
 \fancyfoot[C]{}
-\fancyhead[L]{\textsc{\nombreMateria}}
 
 % Definición del estilo para la portada
 \fancypagestyle{piePortada}{
