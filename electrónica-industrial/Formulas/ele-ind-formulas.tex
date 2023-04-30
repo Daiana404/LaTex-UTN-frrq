@@ -30,14 +30,36 @@
 	\unidad{2}{Transistores}
 	\begin{multicols}{2}
 		\begin{cajita}
-			\subtitulo{Transistores bipolares}
-			\begin{multicols}{2}
-				\subsubtitulo{PNP}
-				
-				
-				\subsubtitulo{NPN}
-			\end{multicols}
+			\subtitulo{Polarización del BJT}
 			
+			\subsubtitulo{Ecuaciones del dispositivo}
+			
+			\begin{tabular}{c c}
+				$i_C = \alpha i_E$ & $i_C = \beta i_B$ \\[.1cm]
+				\multicolumn{2}{l}{Si no se especifica, $\alpha = 1 $}\\[.1cm]
+				$V_{BB} = V_{R_B} + v_{BE}$ & $V_{CC} = V_{R_C} + v_{CE}$ \\[.1cm]
+				\multicolumn{2}{c}{$i_E = i_B + i_C$}
+			\end{tabular}
+		
+		\subsubtitulo{Aplicación en conmutación}\vspace{-.3cm}
+		
+		Garantizar que: $\beta i_B = 5 i_C$\\
+		
+		
+		\begin{tabular}{l l}
+			\textbf{Corte} & \textbf{Saturación} \\[.1cm]
+			$i_B = 0$ & $v_{CE} = 0.2 V$ \\[.1cm]
+			$i_C = i_{fuga}$ & $i_C = \dfrac{V_{CC}}{R_C + R_E}$\\[.1cm]
+			Interruptor abierto & $v_{CE} = V_{CC}$ \\[.1cm]
+			& Interruptor cerrado \\
+		\end{tabular}
+		
+		\subsubtitulo{Aplicación para amplificación}\vspace{-.8cm}
+		\begin{flushleft}
+			Condición para aplicar el método aproximado:
+		\end{flushleft}
+			
+			$\beta R_E \geq 10 R_2$\\
 		\end{cajita}
 	
 	
