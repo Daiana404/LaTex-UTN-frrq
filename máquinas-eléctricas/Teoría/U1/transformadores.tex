@@ -315,3 +315,52 @@ Entonces, el circuito de la figura \ref{fig:circuito-equivalente-exacto} se conv
 Con este último circuito equivalente simplificado se pueden resolver una variedad de problemas prácticos que afectan la utilización del transformador; en particular para el cálculo de la \textsl{caída de tensión} y el \textsl{rendimiento}. Inclusive, si solo se trata de la determinación de la caída de tensión del transformador, se puede despreciar la rama paralelo, ya que no afecta al cálculo.
 
 \subsection{Ensayos del transformador}
+Los ensayos representan pruebas para verificar el comportamiento de la máquina. No se puede realizar ensayos reales directos porque 1) se disipa gran cantidad de energía y 2) es imposible tener cargas lo suficientemente grandes.
+Para predecir el comportamiento del transformador correctamente se necesitan los parámetros del circuito equivalente que se obtienen con ensayos que requieren muy poco consumo de energía porque son pruebas sin carga real. Estos se denominan: a) \textbf{Ensayo de vacío} y b) \textbf{Ensayo de cortocircuito}.
+\subsubsection{Método de los tres voltímetros}
+Para determinar la polaridad de los terminales del transformador, conectamos tres voltímetros de la forma que se muestra:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .6 \linewidth]{ensayo-vacio-2}
+	\caption{Disposición de los aparatos de medida para determinar la polaridad}
+	\label{fig:ensayo3voltimetros}
+\end{figure}
+Se señalan los terminales primario con las letras A y A'. Se unen a continuación dos terminales cualesquiera de primario y secundario, por ejemplo A con x. Se conectan tres voltímetros de c.a. como se muestra en \ref*{fig:ensayo3voltimetros}. Al alimentar el primario con tensión alterna, si:
+\begin{itemize}
+	\item $V_{3}=V_{1}-V_{2}$ significa que \textit{x} es homólogo de \textit{A} y se identifica con la letra \textit{<<a>>} e \textit{y} es \textit{$<<a'>>$}
+	\item $V_{3}=V_{1}+V_{2}$ significa que \textit{x} es homólogo de \textit{$A'$} y se identifica con \textit{$<<a'>>$} e \textit{y} es \textit{<<a>>}
+\end{itemize}
+
+\subsubsection{Ensayo de vacío}
+Esta prueba consiste en aplicar al primario del transformador la tensión asignada con el secundario en circuito abierto. En este se mide la potencia absorbida $P_{0}$, la corriente de vacío $I_{0}$ y la tensión secundaria.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .6 \linewidth]{ensayo-vacio-1}
+	\caption{Esquema eléctrico del ensayo de vacío}
+	\label{fig:ensayo-vacio}
+\end{figure}
+
+Las pérdidas de cobre $R_{1}\,{I_{0}}^2$ en vacío son despreciables debido al pequeño valor de $I_{0}$, \textbf{la potencia absorbida en vacío coincide prácticamente con las pérdidas en el hierro} que se calcula como:
+\begin{equation*}
+	P_{0}=V_{1n}\,I_{0}\,cos\;\phi_{0}=P_{Fe}
+\end{equation*}
+Debido al pequeño valor de caída de tensión en el cobre del primario, $V_{1n}=E_{1}$, resultando el diagrama \ref{fig:vacio-fasores} donde toma $V_{1n}$ como referencia de fase.\\
+Las dos componentes de $I_{0}$ valen:
+\begin{equation*}
+	I_{Fe}=I_{0}\,cos\;\phi_{0}\qquad;\qquad I_{\mu}=I_{0}\,sen\;\phi_{0}
+\end{equation*}
+
+Donde se pueden obtener los valores de $R_{Fe}$ y $X_{\mu}$:
+\begin{equation*}
+	R_{Fe}=\dfrac{V_{1}}{I_{Fe}}\qquad;\qquad X_{\mu}=\dfrac{V_{1}}{I_{\mu}}
+\end{equation*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .3\linewidth]{vacio-fasores}
+	\caption{Diagrama fasorial del circuito en vacío}
+	\label{fig:vacio-fasores}
+\end{figure}
+Como $V_{1n}=E_{1}$ y $E_{2}=V_{20}$, la relación de transformación queda:
+\begin{equation*}
+	m=\dfrac{N_{1}}{N_{2}}=\dfrac{E_{1}}{E_{2}}=\dfrac{V_{1n}}{V_{20}}
+\end{equation*}
