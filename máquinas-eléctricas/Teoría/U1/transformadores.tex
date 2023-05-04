@@ -364,3 +364,46 @@ Como $V_{1n}=E_{1}$ y $E_{2}=V_{20}$, la relación de transformación queda:
 \begin{equation*}
 	m=\dfrac{N_{1}}{N_{2}}=\dfrac{E_{1}}{E_{2}}=\dfrac{V_{1n}}{V_{20}}
 \end{equation*}
+
+\subsubsection{Ensayo de cortocircuito}
+En este ensayo se cortocircuita el secundario y se aplica en el primario una tensión que se va elevando gradualmente desde cero hasta que en el secundario circule la \textbf{corriente asignada de plena carga}. El esquema y los instrumentos necesarios están en la figura \ref{}
+
+La tensión necesaria representa un pequeño porcentaje con respecto a la asignada (3 al 5\%) por lo que $I_{0}$ es muy pequeño siendo \textit{despreciables la potencia de pérdidas en el hierro}. \textbf{La potencia absorbida en cortocircuito coincide con las pérdidas en el cobre}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .6\linewidth]{ensayo-cc}
+	\caption{Circuito eléctrico del ensayo de cortocircuito}
+	\label{fig:ensayo-cc}
+\end{figure}
+
+Las ecuaciones para este ensayo quedan:
+\begin{gather*}
+	P_{cc}=V_{1cc}\,I_{1n}\,cos\, \phi_{cc}\\
+	V_{Rcc}=R_{cc}\,I_{1n}=V_{1cc}\,cos\,\phi_{cc}\quad;\quad V_{Xcc}=X_{cc}\,I_{1n}=V_{1cc}\,sin\,\phi_{cc}\\
+	R_{cc}=\dfrac{V_{1cc}}{I_{1n}}\,cos\,\phi_{cc}\quad;\quad X_{cc}=\dfrac{V_{1cc}}{I_{1n}}\,sen\,\phi_{cc}
+\end{gather*}
+
+El circuito equivalente de cortocircuito:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .3\linewidth]{ensayo-cc-2}
+	\caption{Circuito equivalente de cortocircuito}
+	\label{fig:ensayo-cc-2}
+\end{figure}
+
+Si bien obtenemos los valores de $R_{cc}$ y $X_{cc}$ con este ensayo, no conocemos los valores de totales del primario y secundario. Generalmente en la práctica se utiliza la solución aproximada:
+\begin{equation*}
+	R_{1}=R_{2}'=\dfrac{R_{cc}}{2}\quad;\quad X_{1}=X_{2}'=\dfrac{X_{cc}}{2}
+\end{equation*}
+
+\paragraph{Ensayo de cortocircuito sin utilizar la corriente asignada}: para este caso, las pérdidas en el cobre ya no serán las nominales y la tensión de cortocircuito estará en función de la corriente utilizada. Para diferenciar:
+\begin{gather*}
+	\underbrace{V_{1cc}\; ; \; I_{1cc}=I_{1n} \; ; \; P_{cc}}_{\text{Valores para corriente asignada}}\\
+	\underbrace{V_{1corto}\; ; \; I_{1corto} \; ; \; P_{corto}}_{\text{Valores para otra corriente}}
+\end{gather*}
+Como consideramos que los valores de $R_{cc}$ y $X_{cc}$ no dependen de la corriente que circula, tenemos que:
+\begin{gather*}
+	Z_{cc}=\dfrac{V_{1cc}}{I_{1n}}=\dfrac{V_{1corto}}{I_{1corto}}\quad ; \quad P_{cc}=R_{cc}{I_{1n}}^{2}\quad ; \quad P_{corto}=R_{cc}{I_{1corto}}^{2}\\
+	V_{1cc}=V_{1corto}\dfrac{I_{1n}}{I_{1corto}}\quad;\quad P_{cc}=P_{corto}\dfrac{{I_{1n}}^{2}}{{I_{1corto}}^{2}}
+\end{gather*}
+%página 206 PDF-192 Libro
