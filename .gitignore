@@ -1,0 +1,16 @@
+portada.tex
+portada.log
+texput.log
+utncom.jpg
+guia-git.txt
+*.aux
+*.log
+*.out
+*.ptc
+*.synctex.gz
+*.bib
+U1
+U2
+U3
+Figuras
+

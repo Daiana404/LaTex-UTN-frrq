@@ -316,35 +316,65 @@ Con este último circuito equivalente simplificado se pueden resolver una varied
 
 \subsection{Ensayos del transformador}
 Los ensayos representan pruebas para verificar el comportamiento de la máquina. No se puede realizar ensayos reales directos porque 1) se disipa gran cantidad de energía y 2) es imposible tener cargas lo suficientemente grandes.
-Para predecir el comportamiento del transformador correctamente se necesitan los parámetros del circuito equivalente que se obtienen con ensayos que requieren muy poco consumo de energía porque son pruebas sin carga real. Estos se denominan: a) \textbf{Ensayo de vacío} y b) \textbf{Ensayo de cortocircuito}.
+
+
+Para predecir el comportamiento del transformador correctamente se necesitan los \textsl{parámetros del circuito equivalente} que se obtienen con ensayos que requieren muy poco consumo de energía porque son pruebas sin carga real. Estos se denominan: a) \textbf{Ensayo de vacío} y b) \textbf{Ensayo de cortocircuito}.
+
+Para exponer el tema, en los siguientes párrafos los ensayos serán aplicados al lado de mayor tensión del transformador, sin embargo, también se puede aplicar al lado de baja tensión.
+
 \subsubsection{Método de los tres voltímetros}
-Para determinar la polaridad de los terminales del transformador, conectamos tres voltímetros de la forma que se muestra:
+
+Es importante conocer la polaridad de un transformador porque si se conecta incorrectamente, puede provocar una inversión en la dirección del flujo de corriente en el circuito en el que se encuentra el transformador, lo que podría causar problemas de operación y posibles daños en los equipos.\\
+
+En general, se puede determinar la polaridad de un transformador mediante la observación directa de los devanados, pero esto no siempre es posible o fácil de hacer en la práctica. También, la polaridad puede ser fácilmente identificada mediante una marca o etiqueta en el transformador que indique a la misma, o mediante la documentación técnica. Sin embargo, en algunos casos, puede no haber una marca clara o dicha documentación disponible, y se necesita realizar el \textbf{ensayo de los tres voltímetros} para confirmar la polaridad.\\
+
+
+El ensayo de los tres voltímetros consiste en conectar tres voltímetros de la forma que se muestra en el esquema de la figura \ref{fig:ensayo3voltimetros}.
+
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = .6 \linewidth]{ensayo-vacio-2}
+	\includegraphics[width = .6 \linewidth]{tres-voltimetros}
 	\caption{Disposición de los aparatos de medida para determinar la polaridad}
 	\label{fig:ensayo3voltimetros}
 \end{figure}
-Se señalan los terminales primario con las letras A y A'. Se unen a continuación dos terminales cualesquiera de primario y secundario, por ejemplo A con x. Se conectan tres voltímetros de c.a. como se muestra en \ref*{fig:ensayo3voltimetros}. Al alimentar el primario con tensión alterna, si:
+Se señalan los terminales primario con las letras A y A'. Se unen a continuación dos terminales cualesquiera de primario y secundario, por ejemplo A con x. Se conectan tres voltímetros de c.a. como se muestra en la \ref{fig:ensayo3voltimetros}. 
+
+
+Al alimentar el primario con tensión alterna, si:
 \begin{itemize}
-	\item $V_{3}=V_{1}-V_{2}$ significa que \textit{x} es homólogo de \textit{A} y se identifica con la letra \textit{<<a>>} e \textit{y} es \textit{$<<a'>>$}
-	\item $V_{3}=V_{1}+V_{2}$ significa que \textit{x} es homólogo de \textit{$A'$} y se identifica con \textit{$<<a'>>$} e \textit{y} es \textit{<<a>>}
+	\item $V_{3}=V_{1}-V_{2}$ significa que \textit{x} es homólogo de \textit{A} y se identifica con la letra <<$a$>> e \textit{y} es <<$a'$>>.
+	\item $V_{3}=V_{1}+V_{2}$ significa que \textit{x} es homólogo de \textit{$A'$} y se identifica con <<$a'$>> e $y$ es <<$a$>>
 \end{itemize}
 
 \subsubsection{Ensayo de vacío}
-Esta prueba consiste en aplicar al primario del transformador la tensión asignada con el secundario en circuito abierto. En este se mide la potencia absorbida $P_{0}$, la corriente de vacío $I_{0}$ y la tensión secundaria.
+
+Los parámetros que se obtendrán en este ensayo son $R_{Fe}$ y $X_\mu$ correspondientes a la rama paralelo del transformador.\\
+
+
+Esta prueba consiste en aplicar al primario del transformador la tensión asignada mientras que el secundario se encuentra como circuito abierto. En este ensayo se mide la potencia absorbida $P_{0}$, la corriente de vacío $I_{0}$ y la tensión secundaria en vacío $V_{20}$.
+
+
+En la figura \ref{fig:equi-ensayo-vacio} se muestra el circuito eléctrico equivalente del presente ensayo.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = .6 \linewidth]{ensayo-vacio-1}
-	\caption{Esquema eléctrico del ensayo de vacío}
+	\caption{Esquema del ensayo de vacío}
 	\label{fig:ensayo-vacio}
 \end{figure}
 
-Las pérdidas de cobre $R_{1}\,{I_{0}}^2$ en vacío son despreciables debido al pequeño valor de $I_{0}$, \textbf{la potencia absorbida en vacío coincide prácticamente con las pérdidas en el hierro} que se calcula como:
+Las pérdidas de cobre $R_{1}\,{I_{0}}^2$ en vacío son despreciables debido al pequeño valor de $I_{0}$, por lo que \textbf{la potencia absorbida en vacío coincide prácticamente con las pérdidas en el hierro} que se calcula como:
+
 \begin{equation*}
 	P_{0}=V_{1n}\,I_{0}\,cos\;\phi_{0}=P_{Fe}
 \end{equation*}
-Debido al pequeño valor de caída de tensión en el cobre del primario, $V_{1n}=E_{1}$, resultando el diagrama \ref{fig:vacio-fasores} donde toma $V_{1n}$ como referencia de fase.\\
+
+
+
+Debido al pequeño valor de caída de tensión en el cobre del primario se considera que  $V_{1n}=E_{1}$, resultando el diagrama \ref{fig:vacio-fasores} donde toma $V_{1n}$ como referencia de fase.\\
+
+
 Las dos componentes de $I_{0}$ valen:
 \begin{equation*}
 	I_{Fe}=I_{0}\,cos\;\phi_{0}\qquad;\qquad I_{\mu}=I_{0}\,sen\;\phi_{0}
@@ -356,39 +386,68 @@ Donde se pueden obtener los valores de $R_{Fe}$ y $X_{\mu}$:
 \end{equation*}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = .3\linewidth]{vacio-fasores}
-	\caption{Diagrama fasorial del circuito en vacío}
-	\label{fig:vacio-fasores}
+	\begin{subfigure}[b]{.3\linewidth}
+		\includegraphics[width = \linewidth]{equi-vacio}
+		\caption{}
+		\label{fig:equi-ensayo-vacio}
+	\end{subfigure}
+	\begin{subfigure}[b]{.27\linewidth}
+		\includegraphics[width = \linewidth]{fasor-vacio}
+		\caption{}
+		\label{fig:vacio-fasores}
+	\end{subfigure}
+	\caption{Circuito eléctrico equivalente del ensayo de vacío y diagrama fasorial}
 \end{figure}
-Como $V_{1n}=E_{1}$ y $E_{2}=V_{20}$, la relación de transformación queda:
+
+Como $V_{1n}\approx E_{1}$ y $E_{2}=V_{20}$, la relación de transformación queda:
+
 \begin{equation*}
-	m=\dfrac{N_{1}}{N_{2}}=\dfrac{E_{1}}{E_{2}}=\dfrac{V_{1n}}{V_{20}}
+	m=\dfrac{N_{1}}{N_{2}}=\dfrac{E_{1}}{E_{2}} \approx \dfrac{V_{1n}}{V_{20}}
 \end{equation*}
 
 \subsubsection{Ensayo de cortocircuito}
-En este ensayo se cortocircuita el secundario y se aplica en el primario una tensión que se va elevando gradualmente desde cero hasta que en el secundario circule la \textbf{corriente asignada de plena carga}. El esquema y los instrumentos necesarios están en la figura \ref{}
 
-La tensión necesaria representa un pequeño porcentaje con respecto a la asignada (3 al 5\%) por lo que $I_{0}$ es muy pequeño siendo \textit{despreciables la potencia de pérdidas en el hierro}. \textbf{La potencia absorbida en cortocircuito coincide con las pérdidas en el cobre}.
+Este ensayo es utilizado para determinar los parámetros $R_{cc}$ y $X_{cc}$ de la rama de cortocircuito del transformador.\\
+
+Consiste en cortocircuitar el secundario y se aplica en el primario una tensión que se va elevando gradualmente desde cero hasta que en el secundario circule la \textbf{corriente asignada de plena carga}. El esquema y los instrumentos necesarios están en la figura \ref{fig:ensayo-cc}.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = .6\linewidth]{ensayo-cc}
-	\caption{Circuito eléctrico del ensayo de cortocircuito}
+	\caption{Esquema del ensayo de cortocircuito.}
 	\label{fig:ensayo-cc}
 \end{figure}
 
-Las ecuaciones para este ensayo quedan:
-\begin{gather*}
-	P_{cc}=V_{1cc}\,I_{1n}\,cos\, \phi_{cc}\\
-	V_{Rcc}=R_{cc}\,I_{1n}=V_{1cc}\,cos\,\phi_{cc}\quad;\quad V_{Xcc}=X_{cc}\,I_{1n}=V_{1cc}\,sin\,\phi_{cc}\\
-	R_{cc}=\dfrac{V_{1cc}}{I_{1n}}\,cos\,\phi_{cc}\quad;\quad X_{cc}=\dfrac{V_{1cc}}{I_{1n}}\,sen\,\phi_{cc}
-\end{gather*}
+La tensión necesaria representa un pequeño porcentaje con respecto a la asignada (del 3 al 5\%) por lo que $I_{0}$ es muy pequeña siendo \textit{despreciable la potencia de pérdidas en el hierro}. \textbf{La potencia absorbida en cortocircuito coincide con las pérdidas en el cobre}.\\
 
-El circuito equivalente de cortocircuito:
+Las ecuaciones para este ensayo quedan:
+\begin{equation}
+	P_{cc}=V_{1cc}\,I_{1n}\,cos\, \phi_{cc}\\
+\end{equation}	
+\begin{equation}
+	V_{Rcc}=R_{cc}\,I_{1n}=V_{1cc}\,cos\,\phi_{cc}\quad;\quad V_{Xcc}=X_{cc}\,I_{1n}=V_{1cc}\,sin\,\phi_{cc}\\
+	\label{eq:caida-cc}
+\end{equation}
+\begin{equation}
+	R_{cc}=\dfrac{V_{1cc}}{I_{1n}}\,cos\,\phi_{cc}\quad;\quad X_{cc}=\dfrac{V_{1cc}}{I_{1n}}\,sen\,\phi_{cc}
+	\label{eq:Rcc-Xcc}
+\end{equation}
+
+El circuito eléctrico equivalente de cortocircuito y el diagrama fasorial se muestran en las figuras \ref{fig:ensayo-cc-equi} y \ref{fig:ensayo-cc-fasores}.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = .3\linewidth]{ensayo-cc-2}
-	\caption{Circuito equivalente de cortocircuito}
-	\label{fig:ensayo-cc-2}
+	\begin{subfigure}[b]{.3\linewidth}
+		\includegraphics[width = \linewidth]{equi-cortocircuito}
+		\caption{}
+		\label{fig:ensayo-cc-equi}
+	\end{subfigure}
+	\begin{subfigure}[b]{.25\linewidth}
+		\includegraphics[width = \linewidth]{fasor-cortocircuito}
+		\caption{}
+		\label{fig:ensayo-cc-fasores}
+	\end{subfigure}
+	\caption{Circuito eléctrico equivalente del ensayo de cortocircuito y diagrama fasorial}
 \end{figure}
 
 Si bien obtenemos los valores de $R_{cc}$ y $X_{cc}$ con este ensayo, no conocemos los valores de totales del primario y secundario. Generalmente en la práctica se utiliza la solución aproximada:
@@ -396,14 +455,30 @@ Si bien obtenemos los valores de $R_{cc}$ y $X_{cc}$ con este ensayo, no conocem
 	R_{1}=R_{2}'=\dfrac{R_{cc}}{2}\quad;\quad X_{1}=X_{2}'=\dfrac{X_{cc}}{2}
 \end{equation*}
 
-\paragraph{Ensayo de cortocircuito sin utilizar la corriente asignada}: para este caso, las pérdidas en el cobre ya no serán las nominales y la tensión de cortocircuito estará en función de la corriente utilizada. Para diferenciar:
+\vspace{.5cm}
+
+\textbf{Porcentaje de las caídas de tensión}
+
+En algunos casos, las caídas de tensión en (\ref{eq:caida-cc}) se expresan como \textbf{tanto por ciento} respecto a la tensión asignada de cortocircuito, resultando:
+
+\begin{equation}
+	\varepsilon_{cc} = \dfrac{V_{1cc}}{V_{1n}} \cdot 100 \qquad;\qquad 
+	\varepsilon_{R_{cc}} = \dfrac{V_{R_{cc}}}{V_{1n}} \cdot 100 \qquad;\qquad
+	\varepsilon_{X_{cc}} = \dfrac{V_{X_{cc}}}{V_{1n}} \cdot 100
+\end{equation}
+
+
+\textbf{Ensayo de cortocircuito sin utilizar la corriente asignada}
+
+Para este caso las pérdidas en el cobre (que ya no serán las nominales) y la tensión de cortocircuito estarán en función de la corriente utilizada para el ensayo. Para diferenciar:
 \begin{gather*}
 	\underbrace{V_{1cc}\; ; \; I_{1cc}=I_{1n} \; ; \; P_{cc}}_{\text{Valores para corriente asignada}}\\
 	\underbrace{V_{1corto}\; ; \; I_{1corto} \; ; \; P_{corto}}_{\text{Valores para otra corriente}}
 \end{gather*}
-Como consideramos que los valores de $R_{cc}$ y $X_{cc}$ no dependen de la corriente que circula, tenemos que:
+Como consideramos que los valores de $R_{cc}$ y $X_{cc}$ son lineales y no dependen de la corriente que circula, el proceso a seguir para calcularlos sería el mismo que el que se ha empleado para la (\ref{eq:Rcc-Xcc}). Entonces tiendo en cuenta las corrientes $I_{1cc}=I_{1n}$ e $I_{1corto}$, y el circuito equivalente de la figura \ref{fig:ensayo-cc-equi}, las ecuaciones serán:
+
 \begin{gather*}
-	Z_{cc}=\dfrac{V_{1cc}}{I_{1n}}=\dfrac{V_{1corto}}{I_{1corto}}\quad ; \quad P_{cc}=R_{cc}{I_{1n}}^{2}\quad ; \quad P_{corto}=R_{cc}{I_{1corto}}^{2}\\
+	Z_{cc}=\dfrac{V_{1cc}}{I_{1n}}=\dfrac{V_{1corto}}{I_{1corto}}\quad ; \quad P_{cc}=R_{cc} {I_{1n}}^{2}\quad ; \quad P_{corto}=R_{cc} {I_{1corto}}^{2}\\
 	V_{1cc}=V_{1corto}\dfrac{I_{1n}}{I_{1corto}}\quad;\quad P_{cc}=P_{corto}\dfrac{{I_{1n}}^{2}}{{I_{1corto}}^{2}}
 \end{gather*}
 %página 206 PDF-192 Libro

@@ -78,5 +78,7 @@
 	\fancyfoot[C]{Facultad Regional Reconquista}
 	\fancyfoot[R]{\textbf{Año 2023}}
 }
-
 %END_FOLD
+% Para quitar los números de página al toc
+\let\Contentsline\contentsline
+\renewcommand\contentsline[3]{\Contentsline{#1}{#2}{}}
