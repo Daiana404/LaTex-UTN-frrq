@@ -3,14 +3,16 @@ portada.log
 texput.log
 utncom.jpg
 guia-git.txt
+*.sty
+*.log
 *.aux
 *.log
 *.out
 *.ptc
 *.synctex.gz
 *.bib
-U1
-U2
-U3
-Figuras
+U1/
+U2/
+U3/
+Figuras/
 
