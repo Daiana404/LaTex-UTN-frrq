@@ -1,8 +1,3 @@
-portada.tex
-portada.log
-texput.log
-utncom.jpg
-guia-git.txt
 *.sty
 *.log
 *.aux
@@ -10,9 +5,3 @@ guia-git.txt
 *.out
 *.ptc
 *.synctex.gz
-*.bib
-U1/
-U2/
-U3/
-Figuras/
-
