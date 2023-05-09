@@ -11,8 +11,8 @@ guia-git.txt
 *.ptc
 *.synctex.gz
 *.bib
-U1/
-U2/
-U3/
-Figuras/
+U1/*
+U2/*
+U3/*
+Figuras/*
 
