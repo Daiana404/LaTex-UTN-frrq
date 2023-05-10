@@ -2,6 +2,8 @@
 \usepackage{{../../paquete-formulas}}
 \usepackage{{../../estilos-formulas}}
 
+\usepackage{array}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}%centrar en el medio y dar ancho a la columna del tabular
 \newcommand{\materia}{Máquinas Eléctricas}
 
 \begin{document}
@@ -204,4 +206,23 @@
 				Cuando $\cos\phi=1$ y $C_{opt} = \sqrt{\dfrac{P_0}{P_{cc}}}$.
 			\end{cajita}
 		\end{multicols}
+	\begin{cajita}
+		\subtitulo{Transformadores trifásicos}\vspace{.5cm}
+		
+			\begin{tabular}{| M{1.5cm} | M{1.5cm} | M{1.5cm}  M{1.5cm} | M{1.5cm} | M{1.5cm} | M{1.5cm}  M{1.5cm} |}
+				\hline
+			 & & \multicolumn{2}{c|}{Diagrama fasorial} & & & \multicolumn{2}{c|}{Diagrama fasorial}  \\
+			 \multirow{-2}{1.5cm}{\centering Índice horario} & \multirow{-2}{1.5cm}{\centering Símbolo acoplam.} & A.T. & B.T. & \multirow{-2}{1.5cm}{\centering Índice horario} & \multirow{-2}{1.5cm}{\centering Símbolo acoplam.} & A.T. & B.T. \\
+			 \hline
+			0 ($0^\circ$)   & Dd0 & \includegraphics[height=1.2cm]{trianguloabc} & \includegraphics[height=1.2cm]{dd0bt} & 6 ($180^\circ$) & Dd6 & \includegraphics[height=1.2cm]{trianguloabc} & \includegraphics[height=1.2cm]{dd6bt}\\
+			0 ($0^\circ$)   & Yy0 & \includegraphics[height=1.2cm]{estrellaabc} & \includegraphics[height=1.2cm]{yy0bt} & 6 ($180^\circ$) & Yy5 & \includegraphics[height=1.2cm]{estrellaabc} & \includegraphics[height=1.2cm]{yy6bt} \\ \hline
+			5 ($150^\circ$) & Dy5 & \includegraphics[height=1.2cm]{trianguloabc} & \includegraphics[height=1.2cm]{dy5bt} & 11 ($330^\circ$) & Dy5 & \includegraphics[height=1.2cm]{trianguloabc} & \includegraphics[height=1.2cm]{dy11bt} \\
+			5 ($150^\circ$) & Yd5 & \includegraphics[height=1.2cm]{estrellaabc} & \includegraphics[height=1.2cm]{yd5bt} & 11 ($330^\circ$) & Yd5 & \includegraphics[height=1.2cm]{estrellaabc} & \includegraphics[height=1.2cm]{yd11bt} \\ \hline
+			
+			
+			
+			
+		\end{tabular}
+	
+	\end{cajita}
 \end{document}
