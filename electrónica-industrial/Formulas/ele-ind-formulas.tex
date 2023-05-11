@@ -29,13 +29,16 @@
 
 	\unidad{2}{Transistores}
 	
+	
+	Tengo que revisar todo :(...
+	
 	\begin{multicols}{2}
 		
 		\begin{cajita}
 			\subtitulo{Transistor bipolar BJT}
-			\subsubtitulo{Tipo constructivo}
+			\subsubtitulo{Tipo constructivo}\vspace{-.2cm}
 			\begin{tabular}{c c}
-				\includegraphics[width = .3\linewidth]{transistor-npn} & \includegraphics[width = .3\linewidth]{transistor-pnp} \\
+				\includegraphics[width = .4\linewidth]{transistor-npn} & \includegraphics[width = .4\linewidth]{transistor-pnp} \\
 				\textsc{npn} & \textsc{pnp} \\
 				Sale corriente hacia E & Ingresa corriente a E
 			\end{tabular}
@@ -55,27 +58,34 @@
 					
 			\begin{multicols}{2}
 				\begin{tabular}{l}
-					$I_C = \alpha I_E$ \quad;\quad
-					$I_C = \beta I_B$ \\[.1cm]
+					$i_C = \alpha i_E$ \quad;\quad
+					$i_C = \beta i_B$ \\[.1cm]
 					Si no se especifica: $\alpha = 1 $ \\[.1cm] 
-					$V_{BB} = V_{R_B} + V_{BE}$ \\[.1cm] 
-					$V_{CC} = V_{R_C} + V_{CE}$ \\[.1cm]
-					$I_E = I_B + I_C$
+					$i_E = i_B + i_C$\\[.2cm]
+					Aplicando Kirchhoff:\\[.1cm]
+					$V_{BB} = V_{R_B} + v_{BE}$ \\[.1cm] 
+					$V_{CC} = V_{R_C} + v_{CE}$ \\
 				\end{tabular}
 				\columnbreak
 				
-				img del esquema de un transistor con emisor común
-			\end{multicols}	
+				\includegraphics[width = \linewidth]{polarizacion}
+			\end{multicols}
+		\begin{flushleft}
+			El circuito puede variar, por lo tanto, \textbf{siempre aplicar Kirchhoff}.
+		\end{flushleft}	
+			
 			
 			\subsubtitulo{Aplicación en conmutación}\vspace{-.3cm}
 		
-			Garantizar que: $\beta i_B = 5 i_C$\\
+			\begin{flushleft}
+				Garantizar que: $\beta i_B = 5 i_C$
+			\end{flushleft}
 			\begin{tabular}{l l}
-				\textbf{Corte} & \textbf{Saturación} \\[.1cm]
-				$i_B = 0$ & $v_{CE} = 0.2 V$ \\[.1cm]
-				$i_C = i_{fuga}$ & $i_C = \dfrac{V_{CC}}{R_C + R_E}$\\[.1cm]
-				Interruptor abierto & $v_{CE} = V_{CC}$ \\[.1cm]
-				Interruptor cerrado & \\
+				\textbf{Corte} 		& \textbf{Saturación} 				\\[.1cm]
+				$i_B = 0$ 			& $v_{CE} = 0.2 V$ 					\\[.1cm]
+				$i_C = i_{fuga}$ 	& $i_C = \dfrac{V_{CC}}{R_C + R_E}$	\\[.1cm]
+				Interruptor abierto & $v_{CE} = V_{CC}$ 				\\[.1cm]
+				& Interruptor cerrado
 			\end{tabular}
 	
 			\subsubtitulo{Aplicación para amplificación}\vspace{-.8cm}
