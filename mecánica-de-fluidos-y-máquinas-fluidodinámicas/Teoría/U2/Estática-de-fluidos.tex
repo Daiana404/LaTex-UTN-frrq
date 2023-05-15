@@ -241,11 +241,50 @@ En este tipo de casos, no se utiliza un método directo para llegar al resultado
 	\includegraphics[width = .6\linewidth]{U2-curvas.jpg}
 \end{figure}
 Dicho DCL muestra las fuerzas debidas: al agua sobre la curva, $F_{1}$ y $F_{2}$ resultantes ubicadas debido a la distribución de las mismas y $F_{w}$ que es el agua del cuerpo inscripto en la figura. $F_{H}$ y $F_{V}$ son fuerzas que componen las reacciones y que mantienen el equilibrio en el sistema.\\
-En este tipo de problemas la llave de la cuestión esta en hallar correctamente donde se encuentra esa fuerza $F_{w}$, conociendo ello solo basta plantear sumatoria de momentos respecto al vínculo de grado 2 de la compuerta.\\
+En este tipo de problemas la llave de la cuestión esta en hallar correctamente donde se encuentra esa fuerza $F_{w}$, conociendo ello solo basta plantear sumatoria de momentos respecto al vínculo de grado 2 de la compuerta.
 \subsection{Cuerpos sumergidos}
-
 \subsubsection{Empuje de flotación}
-
+El \textbf{Princípio de Arquímedes} establece que la fuerza de flotación que aparece en un cuerpo sumergido es igual al peso del volumen de líquido desplazado.\\
+También conocida como fuerza de boyamiento, resultante ejercida sobre un cuerpo por un fluido estático que se encuentra sumergido o flotando, esta fuerza siempre actúa verticalmente.
+\begin{equation}
+	F_{B}=\gamma V_{\text{líquido desplazado}}
+\end{equation}
 \subsubsection{Estabilidad de flotación}
+La \textbf{estabilidad vertical} la vemos cuando un objeto encuentra equilibrio entre el peso y la fuerza de boyamiento, cuando se lo quita del equilibrio (hundiendolo/removiendolo) aparecen fuerzas restauradoras que contribuyen a reponer el cuerpo nuevamente al equilibrio.\\
+La \textbf{estabilidad rotacional} de un cuerpo sumergido.
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = .6\linewidth]{U2-estabilidad2.jpg}
+\end{figure}
+
+
+Para esto precisamos conocer el concepto de centro de flotabilidad $\textbf{C}$, que no es mas que el punto por el cual pasa la resultante de la fuerza de boyamiento.\\
+Un análisis rápido nos que nos dará criterio para estabilidad depende de las posiciones relativas \textit{(cuál se encuentra arriba)}:\\
+\begin{tabular}{p{\textwidth}}
+	$\bullet$ $\textbf{G}$ arriba de $\textbf{C}$ una pequeña rotación angular resulta en un momento que continuará aumentando la rotación, \textbf{No estable}\\
+	$\bullet$ $\textbf{G}$ sobre  $\textbf{C}$ neutral\\
+	$\bullet$ $\textbf{G}$ abajo de $\textbf{C}$ una pequeña rotación angular resulta en un momento restaurador, \textbf{Estable}\\
+\end{tabular}\\
+
+Sin embargo un cuerpo puede ser estable aun si $\textbf{G}$ está por encima de $\textbf{C}$, cuando el cuerpo gira el centroide $\textbf{C}$ se mueve a $\textbf{C'}$, y si $\textbf{C'}$ se traslada lo suficientemente lejos puede desarrollar un momento restaurador y el cuerpo es estable.\\
+En este tipo de situaciónes lo que hay que analizar es el valor de la \textbf{altura metacéntrica $\widehat{GM}$}, definida como la distancia de G al punto de intersección de la fuerza de flotación antes de la rotación con la fuerza de flotación despues de la rotación:\\
+\begin{tabular}{p{\textwidth}}
+	$\bullet$ $\widehat{GM}>0$ cuerpo estable.\\
+	$\bullet$ $\widehat{GM}<0$ cuerpo inestable.
+\end{tabular}\\
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = .6\linewidth]{U2-estabilidad3.jpg}
+\end{figure}
+\begin{multicols}{2}
+	\begin{tabular}{l}
+		El valor de $\widehat{GM}$ se puede calcular como\\
+		$\widehat{GM}=\dfrac{I_{o}}{V_{desplazado}}-\widehat{CG}$\\
+	\end{tabular}
+	\begin{tabular}{l}
+		El valor del momento restaurador:\\
+		$C=\gamma~ \Delta \theta~ I_{yy}$\\
+	\end{tabular}
+\end{multicols}
 \subsection{Equilibrio relativo}	
