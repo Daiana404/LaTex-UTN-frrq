@@ -234,21 +234,28 @@ De igual manera para hallar la coordenada $x_{p}$
 	x_{p} = \overline{x} + \dfrac{\overline{I}_{xy}}{A \overline{y}}
 \end{equation}
 Donde $\overline{I}_{xy}$ es el producto de inercia centroidal y $\overline{x}$ la distancia al eje $y$ centroidal.
+
 \subsubsection{Curvas}
 En este tipo de casos, no se utiliza un método directo para llegar al resultado, sino que se realiza un diagrama de cuerpo libre en el cual mediante integración se van determinando las fuerzas actuantes y ellas nos permitirán plantear las ecuaciones para los resultados.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = .6\linewidth]{U2-curvas.jpg}
+	\caption{Fuerza sobre superficies curvas}
+	\label{fig:fuerz-sup-curv}
 \end{figure}
 Dicho DCL muestra las fuerzas debidas: al agua sobre la curva, $F_{1}$ y $F_{2}$ resultantes ubicadas debido a la distribución de las mismas y $F_{w}$ que es el agua del cuerpo inscripto en la figura. $F_{H}$ y $F_{V}$ son fuerzas que componen las reacciones y que mantienen el equilibrio en el sistema.\\
 En este tipo de problemas la llave de la cuestión esta en hallar correctamente donde se encuentra esa fuerza $F_{w}$, conociendo ello solo basta plantear sumatoria de momentos respecto al vínculo de grado 2 de la compuerta.
+
 \subsection{Cuerpos sumergidos}
 \subsubsection{Empuje de flotación}
 El \textbf{Princípio de Arquímedes} establece que la fuerza de flotación que aparece en un cuerpo sumergido es igual al peso del volumen de líquido desplazado.\\
 También conocida como fuerza de boyamiento, resultante ejercida sobre un cuerpo por un fluido estático que se encuentra sumergido o flotando, esta fuerza siempre actúa verticalmente.
 \begin{equation}
 	F_{B}=\gamma V_{\text{líquido desplazado}}
+	\label{ec:fuerz-boy}
 \end{equation}
+Donde esta fuerza de boyamiento actuará en el centroide del volumen desplazado. En líquidos compresibles no será asi ya que $\gamma$ depende de $z$.
+
 \subsubsection{Estabilidad de flotación}
 La \textbf{estabilidad vertical} la vemos cuando un objeto encuentra equilibrio entre el peso y la fuerza de boyamiento, cuando se lo quita del equilibrio (hundiendolo/removiendolo) aparecen fuerzas restauradoras que contribuyen a reponer el cuerpo nuevamente al equilibrio.\\
 La \textbf{estabilidad rotacional} de un cuerpo sumergido.
@@ -256,6 +263,8 @@ La \textbf{estabilidad rotacional} de un cuerpo sumergido.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = .6\linewidth]{U2-estabilidad2.jpg}
+	\caption{Estabilidad cuerpo sumergido}
+	\label{fig:est-cuerp-sum}
 \end{figure}
 
 
@@ -267,7 +276,7 @@ Un análisis rápido nos que nos dará criterio para estabilidad depende de las 
 	$\bullet$ $\textbf{G}$ abajo de $\textbf{C}$ una pequeña rotación angular resulta en un momento restaurador, \textbf{Estable}\\
 \end{tabular}\\
 
-Sin embargo un cuerpo puede ser estable aun si $\textbf{G}$ está por encima de $\textbf{C}$, cuando el cuerpo gira el centroide $\textbf{C}$ se mueve a $\textbf{C'}$, y si $\textbf{C'}$ se traslada lo suficientemente lejos puede desarrollar un momento restaurador y el cuerpo es estable.\\
+Sin embargo un cuerpo puede ser estable aun si $\textbf{G}$ está por encima de $\textbf{C}$ en el caso de cuerpos en flotación. Observando la figura \ref{fig:sec-transv} cuando el cuerpo gira el centroide $\textbf{C}$ se mueve a $\textbf{C'}$, y si $\textbf{C'}$ se traslada lo suficientemente lejos puede desarrollar un momento restaurador y el cuerpo es estable.\\
 En este tipo de situaciónes lo que hay que analizar es el valor de la \textbf{altura metacéntrica $\widehat{GM}$}, definida como la distancia de G al punto de intersección de la fuerza de flotación antes de la rotación con la fuerza de flotación despues de la rotación:\\
 \begin{tabular}{p{\textwidth}}
 	$\bullet$ $\widehat{GM}>0$ cuerpo estable.\\
@@ -276,6 +285,8 @@ En este tipo de situaciónes lo que hay que analizar es el valor de la \textbf{a
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = .6\linewidth]{U2-estabilidad3.jpg}
+	\caption{Sección transversal cuerpo en flotación}
+	\label{fig:sec-transv}
 \end{figure}
 \begin{multicols}{2}
 	\begin{tabular}{c}
@@ -287,4 +298,50 @@ En este tipo de situaciónes lo que hay que analizar es el valor de la \textbf{a
 		$C=\gamma~ \Delta \theta~ I_{yy}$\\
 	\end{tabular}
 \end{multicols}
-\subsection{Equilibrio relativo}	
+
+\subsection{Equilibrio relativo}
+
+\subsubsection{Aceleración lineal uniforme}	
+El fluido se encuentra en reposo con relación a un marco de referencia acelerado en \emph{x} e \emph{y}. Recordando la ecuación \ref{eq:variacion-de-presion}, esta se simplifica a:
+\begin{equation}
+	dp = - \rho a_{x} dx - \rho(g + a_{z}) dz
+\end{equation} 
+
+Integrando entre los puntos 1 y 2 tenemos:
+
+\begin{equation}
+	p_{2}- p_{1} = - \rho a_{x}(x_{2}-x_{1}) - \rho(g + a_{z}) (z_{2}-z_{1})
+\end{equation}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = .5\linewidth]{U2-aceleracion-lineal}
+	\caption{Depósito linealmente acelerado}
+\end{figure}
+
+Si los puntos 1 y 2 se encuentran a la misma presión entonces:
+\begin{equation}
+	\dfrac{z_{1}-z_{2}}{x_{2}-x_{1}} = \tan \alpha = \dfrac{a_{x}}{g-a_{z}}
+\end{equation}
+\\
+\subsubsection{Rotacion uniforme alrededor de un eje vertical}
+
+La ecuacion diferencial de presion:
+\begin{equation}
+	dp = \rho r \omega^{2} dr - \rho g dz
+\end{equation}
+Si elegimos el centro de coordenadas en el vértice del paraboloide e integramos la ecuación.
+\begin{equation}
+	p -p_{0} = \dfrac{\rho \omega^{2} }{2} r^{2} - \rho g z
+\end{equation}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = .4\linewidth]{U2-rotacion-uniforme}
+	\caption{Depósito sometido a rotación}
+\end{figure}
+Si los dos puntos considerados se encuentran a la misma presión como la superficie libre entonces $p - p_{0} = 0$ y nos queda una ecuación de una parábola que corta el origen:
+
+\begin{equation}
+	z = \dfrac{\omega^{2} r^{2} }{2 g}
+\end{equation}
+
+El origen de coordenadas se puede encontrar igualando el volumen del fluido en reposo y cuando se encuentra en rotación uniforme.
