@@ -37,14 +37,22 @@ Un tubo de corriente está constituido por una región parcial del flujo delimit
 Ocurre cuando las condiciones en cualquier punto del fluido no cambian con el tiempo es decir:
 
 \begin{tabular}{r c l}
-	$\dfrac{\delta v}{\delta t} = 0$ & $\dfrac{\delta p}{\delta t}$ & $ \dfrac{\delta \rho}{\delta t}$
+	\centering
+	$\dfrac{\delta v}{\delta t} = 0$ & $\dfrac{\delta p}{\delta t} =0$ & $ \dfrac{\delta \rho}{\delta t}=0$
 \end{tabular}
 
 Esto no significa que la velocidad no varíe de un punto.
 
 \subsubsection{Flujo en una, dos y tres dimensiones}
+El vector velocidad del flujo $\vec{V}$ puede depender de una, dos o tres dimensiones espaciales mas el tiempo. El nombre que recibe el flujo dependiendo de cuantas variables espaciales depende es: \textbf{unidimesional}(tubos largos, rectos, o entre placas), \textbf{bidimensional} o \textbf{tridimensional}. 
+
+
+El flujo en una dimensión no tiene en cuenta las variaciones o cambios en la velocidad, presión, etc. en un plano transversal a la dirección de este, es decir, el vector velocidad depende solo de una variable espacial.
+
+
 
 \subsubsection{Flujo laminar y turbulento}
+
 En un \textbf{flujo laminar} las partículas se mueven a lo largo de trayectorias suaves en láminas o capas, con una capa deslizándose suavemente sobre otra adyacente. El flujo laminar está gobernado por la ley de viscosidad de Newton, la cual relaciona el esfuerzo cortante con la tasa de deformación angular. En situaciones de baja viscosidad, alta velocidad o grandes caudales, este flujo no es estable y se rompe en flujo turbulento.\\
 
 En un \textbf{flujo turbulento} los movimientos del fluido varían irregularmente. Las partículas se mueven en trayectorias arremolinadas causando un intercambio de momentum. La turbulencia causa mayores esfuerzos cortantes y pérdidas.\\
@@ -67,9 +75,102 @@ Si un flujo es laminar o turbulento depende de tres parámetros físicos que com
 \end{tabular}
 
 \subsubsection{Flujos viscosos e inviscidos}
+El \textbf{flujo inviscido} es aquel en donde se desprecian los efectos viscosos. Estos flujos se consideran generalmente en flujos externos, para el estudio de flujos aerodinámicos, donde los efectos viscosos están confinados en una capa delgada alrededor del cuerpo denominada \emph{capa límite}. \\
+
+En un \textbf{flujo viscoso} se consideran las pérdidas que generan los efectos viscosos. Esto suele ocurrir en tubos, conductos, o canales abiertos. 
+
 \subsubsection{Flujo compresible e incompresible}
 		
+Un \textbf{flujo incompresible} existe si la densidad de cada partícula de fluido permanece relativamente constante cuando se mueve por el campo del fluido.
+\begin{equation*}
+	\dfrac{D \rho}{dt} = 0
+\end{equation*}
 
+Esta condición no implica que la densidad sea la misma en todos los puntos.
+
+En flujos de gas, el número de Mach nos permite determinar si este flujo puede ser estudiado como compresible ($M < 0.3$) o incompresible.
+
+\begin{equation*}
+	M = \dfrac{V}{c}
+\end{equation*}
+
+donde $V$ es la velocidad del gas y $c=\sqrt{k R T}$ es la velocidad de la onda.\\
+
+
+En un \textbf{flujo compresible}.. avisale
+
+
+\subsection{Ecuación de continuidad}
+
+La \textbf{ley de conservación de la masa} establece que toda la masa de un sistema permanece constante, en otras palabras, el caudal de flujo permanece constante a lo largo del trayecto.\\
+
+
+Considerando un caudal volumétrico de un flujo con densidad constante entre dos puntos (1) y (2):
+\begin{equation*}
+	Q_1 = Q_2 \left[\dfrac{m^3}{s}\right]
+\end{equation*}
+
+además, si se considera el caudal en función de la sección transversal del flujo y la velocidad de las partículas en ese punto, se llega a la \emph{ecuación de la continuidad}:
+
+\begin{equation}
+	A_1  V_1 = A_2 V_2
+	\label{eq:continuidad-1}
+\end{equation}
+
+
+En caso de que se presenten perfiles de velocidad no uniformes, como se muestra en la figura \ref{fig:velocidad-no-uniforme}, se toma la velocidad promedio en el instante determinado y se denota con una raya arriba. La ecuación de continuidad se expresa entonces
+
+\begin{equation}
+	A_1 \overline{V}_1= A_2  \overline{V}_2
+	\label{eq:continuidad-2}
+\end{equation} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.5\linewidth]{U3-velocidad-no-uniforme}
+	\caption{Perfiles de velocidad no uniformes.}
+	\label{fig:velocidad-no-uniforme}
+\end{figure}
+
+\subsection{Ecuación de Euler}
+
+Esto lo podriamos agregar dentro de la ecuación de bernoulli en el enfoque diferencial, pero después lo completo :) (Dai y Franquis)
+
+\subsection{Ecuación de Bernoulli}
+
+\subsubsection{Enfoque diferencial}
+
+Para la deducción de la \emph{ecuación de Bernoulli} se realizaron cinco suposiciones:
+\begin{itemize}
+	\item Flujo inviscido (sin esfuerzos cortantes)\vspace{-.2cm}
+	\item Flujo permanente ($\partial V / \partial t = 0$)\vspace{-.2cm}
+	\item A lo largo de una línea de corriente ($a_s = V \partial V / \partial s$)\vspace{-.2cm}
+	\item Densidad constante ($\partial \rho / \partial s = 0$)\vspace{-.2cm}
+	\item Marco de referencia inercial.
+\end{itemize}
+
+\subsubsection{Enfoque termodinámico}
+
+Para el siguiente análisis se plantea la \emph{primera ley de la termodinámica} para un sistema de régimen permanente esquematizado en la figura \ref{fig:ecuacion-de-bernoulli}, donde la ecuación de flujo estable se puede expresar como sigue:
+
+\begin{equation*}
+ \dfrac{p_1}{\rho} +	\dfrac{V_1^2}{2} + g z_1 + u_1 + Q=  \dfrac{p_2}{\rho} + \dfrac{V_2^2}{2} + g z_2 + u_2 + W
+\end{equation*}
+
+
+Si las pérdidas son insignificantes y no se suministra ni se extrae energía del sistema, tanto la energía interna $u$, como el calor $Q$ y trabajo $W$ se eliminan de la ecuación, obteniendo entonces la \emph{ecuación de Bernoulli}:
+
+\begin{equation}
+	\dfrac{p_1}{\rho} +	\dfrac{V_1^2}{2} + g z_1 =  \dfrac{p_2}{\rho} + \dfrac{V_2^2}{2} + g z_2
+	\label{eq:bernoulli}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = .5 \linewidth]{U3-flujo-bernoulli}
+	\caption{Esquema del principio de Bernoulli}
+	\label{fig:ecuacion-de-bernoulli}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
