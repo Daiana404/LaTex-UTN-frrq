@@ -7,6 +7,21 @@
 Un sistema de control se refiere a una masa fija (infinitesimal o finita) definida y se distingue de todas las demás. Las fronteras del sistema forman una superficie cerrada. Esta superficie puede variar en el tiempo de tal manera que mantenga la misma masa durante los cambios. Es decir $dm/dt = 0$.
 En el enfoque \emph{Lagrangiano} en el cual el estudio se centra en el movimiento de partículas individuales, el movimiento se observa como una función del tiempo. Es decir se "sigue" a la partícula, como en el estudio de sólidos. En este caso se utiliza un sistema de control, ya que la masa de la partícula o solido se mantiene constante
 
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.45\linewidth}
+		\centering
+		\includegraphics[width = .6\linewidth]{U3-sistema-volumen-control}
+		\label{fig:manometro-u}
+	\end{subfigure}
+	\begin{subfigure}[b]{.45\linewidth}
+		\centering
+		\includegraphics[width = .6\linewidth]{U3-sistema-volumen-control2}
+		\label{fig:manometro-u2}
+	\end{subfigure}
+	\caption{Sistema y volumen de control}
+\end{figure}
+
 \subsubsection{Volumen de control}
 En el enfoque \emph{Euleriano} se mantiene fija la coordenada espacial y así se pueden observar las velocidades de las partículas móviles al pasar por esta posición en cualquier instante. Entonces, las propiedades del flujo son funciones del espacio y el tiempo.
 Este tipo de enfoque se puede estudiar a través de un volumen de control o punto fijo, en el cual el flujo pasa a traces de este.
@@ -18,7 +33,7 @@ Este tipo de enfoque se puede estudiar a través de un volumen de control o punt
 Es el lugar geométrico de los puntos recorridos por una partícula determinada cuando se desplaza en un campo de flujo.
 
 \subsubsection{Linea de corriente}
-Es una línea continua que representa el flujo y ésta posee la propiedad de que el vector velocidad de cada partícula es tangente a la línea de corriente. La ecuacion que representa el vector: $ \overline{v} x d\overline{r} = 0$
+Es una línea continua que representa el flujo y ésta posee la propiedad de que el vector velocidad de cada partícula es tangente a la línea de corriente. La ecuacion que representa el vector: $ \overline{v} \times d\overline{r} = 0$
 
 \begin{figure}[h]
 	\centering
@@ -132,12 +147,8 @@ En caso de que se presenten perfiles de velocidad no uniformes, como se muestra 
 	\label{fig:velocidad-no-uniforme}
 \end{figure}
 
-\subsection{Ecuación de Euler}
-
-Esto lo podriamos agregar dentro de la ecuación de bernoulli en el enfoque diferencial, pero después lo completo :) (Dai y Franquis)
 
 \subsection{Ecuación de Bernoulli}
-
 \subsubsection{Enfoque diferencial}
 
 Para la deducción de la \emph{ecuación de Bernoulli} se realizaron cinco suposiciones:
@@ -149,6 +160,21 @@ Para la deducción de la \emph{ecuación de Bernoulli} se realizaron cinco supos
 	\item Marco de referencia inercial.
 \end{itemize}
 
+Teniendo en cuenta la ecuación de \textbf{Euler} a lo largo de una linea de corriente:
+\begin{equation}
+	\dfrac{dp}{\rho} + g dz + v dv = 0
+\end{equation}
+
+Ecuación que se obtiene a partir de considerar un volumen de control diferencial que es atravesado por una linea de corriente. (Streeter U4)
+Se puede integrar esta ecuación y nos quedaría:
+
+\begin{equation}
+	g z + \dfrac{v^{2}}{2} + \dfrac{p}{\rho} = constante
+\end{equation}
+
+Donde la constante se conoce como \emph{constante de Bernoulli}. \\
+
+La ecuación se conoce también como ecuacion de la conservación de energía mecánica.
 \subsubsection{Enfoque termodinámico}
 
 Para el siguiente análisis se plantea la \emph{primera ley de la termodinámica} para un sistema de régimen permanente esquematizado en la figura \ref{fig:ecuacion-de-bernoulli}, donde la ecuación de flujo estable se puede expresar como sigue:
@@ -172,12 +198,27 @@ Si las pérdidas son insignificantes y no se suministra ni se extrae energía de
 	\label{fig:ecuacion-de-bernoulli}
 \end{figure}
 
+Vemos entonces como llegamos a la misma ecuación desde dos puntos diferentes de vista.
+
 \subsubsection{Efecto Venturi}
 
-\subsubsection{Aplicaciones}
+\subsection{Cantidad de movimiento}
 
-:)
+La segunda Ley de Newton establece
 
+\begin{equation*}
+	\vec{F} = \dfrac{d(m \vec{v})}{dt} = \dfrac{d}{dt} \int_{vc} \rho (\vec{v} \cdot \widehat{n}) dV + \int_{sc} \vec{v} \rho \vec{v} dA
+\end{equation*}
+
+En el cual la suma vectorial de fuerzas externas que actúan sobre el volumen de control es igual a la razón de cambio de la cantidad de movimiento dentro del volumen de control mas la razón de cambio neto a la cual la cantidad de movimiento está dejando la superficie de control. El vector $\widehat{n}$ es el vector de área y siempre apunta hacia afuera de ésta.\\
+
+Para un flujo permanente uniforme, la primer integral se hace cero entonces:
+
+\begin{equation}
+	\sum \vec{F} = \sum_{i = 1}^{N} \rho_{i} A_{i} \vec{v_{i}} (\vec{v_{i}} \cdot \widehat{n})
+\end{equation}
+
+Donde N es el número de áreas de entrada o salida de flujo. Si tenemos en cuenta que el flujo másico es $\dot{m} = \rho A v$ se puede simplificar la ecuación.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
