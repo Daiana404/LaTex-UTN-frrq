@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{{../../paquete-formulas}}
+\usepackage{{../../estilos-formulas}}
+
+\usepackage{enumitem}
+
+\newcommand{\materia}{Elementos de Máquinas}
+
+\begin{document}
+\pagestyle{pieyencabezado}
+% \setlength\itemsep{-3mm}
+
+\begin{multicols}{2}
+	\section*{Nomenclatura}
+	\begin{tabular}{l r}
+		$\sigma_{T}$&tensión tracción \\
+		$\sigma_{C}$&tensión compresión\\
+		$\sigma_{f}$&tensión fluencia\\
+		$\sigma_{adm}$&tensión admisible\\
+		$Cs$&Coeficiente de seguridad\\
+	\end{tabular}
+	
+	\begin{cajita}
+		\section*{5 teorías de rotura}
+		\begin{flushleft}
+			1- Máxima tensión corte (GUEST):
+			\begin{equation*}
+				\dfrac{\sigma_{T}}{C_{s}}=\sigma_{adm}\geq\sqrt{(\sigma_{x}-\sigma_{y})^{2}+4~\tau_{xy}^{2}}
+			\end{equation*}
+			2- Máxima tensión normal:
+			\begin{equation*}
+				\dfrac{\sigma_{RT}}{C_{s}}=\sigma_{adm}\geq\dfrac{\sigma_{x}+\sigma_{y}}{2}+\dfrac{1}{2}\sqrt{(\sigma_{x}-\sigma_{y})^{2}+4~\tau_{xy}^{2}}
+			\end{equation*}
+			3- Deformaciones principales:
+			\begin{equation*}
+				\dfrac{\sigma_{RT}}{C_{s}};\dfrac{\sigma_{RC}}{C_{s}}=\sigma_{adm}
+			\end{equation*}
+			\begin{equation*}
+				\sigma_{adm}\geq(\sigma_{x}-\sigma_{y})\left(\dfrac{1-\mu}{2}\right)\pm\dfrac{1+\mu}{2}\sqrt{(\sigma_{x}-\sigma_{y})^{2}+4~\tau_{xy}^{2}}
+			\end{equation*}
+			4- Energía deformación
+			\begin{equation*}
+				\sigma_{adm}=\dfrac{\sigma_{f}}{Cs}\geq\sqrt{\sigma_{x}^{2}+\sigma_{y}^{2}-2\mu \sigma_{x} \sigma_{y} +2(1+\mu)\tau_{xy}^{2}}
+			\end{equation*}
+			5- Energía distorión:
+			\begin{equation*}
+				\sigma_{adm}=\dfrac{\sigma_{f}}{Cs}\geq\sqrt{\sigma_{x}^{2}-\sigma_{x} \sigma_{y}+\sigma_{y}^{2}+3\tau_{xy}^{2}}			
+			\end{equation*}
+		\end{flushleft}
+		\begin{tabular}{l r}
+			(1,4,5 $\rightarrow$ material dúctil) & (2,3 $\rightarrow$ material frágil)
+		\end{tabular}
+		
+	\end{cajita}
+
+	\begin{cajita}
+		\section*{Deformaciones}
+		\begin{center}
+			$e=\dfrac{l-l_{0}}{l_{0}}$
+		\end{center}
+		\begin{itemize}[itemsep=-2mm]
+			\item $e$ = alargamiento especifico.
+			\item $l$ = longitud "final"
+			\item $l_{0}$ = longitud inicial
+		\end{itemize}
+	\end{cajita}
+\end{multicols}
+
+
+
+
+\end{document}
