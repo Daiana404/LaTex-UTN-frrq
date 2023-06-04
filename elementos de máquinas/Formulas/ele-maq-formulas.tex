@@ -2,14 +2,16 @@
 \usepackage{{../../paquete-formulas}}
 \usepackage{{../../estilos-formulas}}
 
-
+\usepackage{enumitem}
 
 \newcommand{\materia}{Elementos de Máquinas}
 
 \begin{document}
 \pagestyle{pieyencabezado}
+% \setlength\itemsep{-3mm}
+
 \begin{multicols}{2}
-	\section{Nomenclatura}
+	\section*{Nomenclatura}
 	\begin{tabular}{l r}
 		$\sigma_{T}$&tensión tracción \\
 		$\sigma_{C}$&tensión compresión\\
@@ -49,6 +51,18 @@
 			(1,4,5 $\rightarrow$ material dúctil) & (2,3 $\rightarrow$ material frágil)
 		\end{tabular}
 		
+	\end{cajita}
+
+	\begin{cajita}
+		\section*{Deformaciones}
+		\begin{center}
+			$e=\dfrac{l-l_{0}}{l_{0}}$
+		\end{center}
+		\begin{itemize}[itemsep=-2mm]
+			\item $e$ = alargamiento especifico.
+			\item $l$ = longitud "final"
+			\item $l_{0}$ = longitud inicial
+		\end{itemize}
 	\end{cajita}
 \end{multicols}
 
