@@ -38,12 +38,13 @@
 				\sigma_{adm}=\dfrac{\sigma_{f}}{Cs}\geq\sqrt{\sigma_{x}^{2}-\sigma_{x} \sigma_{y}+\sigma_{y}^{2}+3\tau_{xy}^{2}}			
 			\end{equation*}
 		\end{flushleft}
-		\begin{tabular}{l r}
-			(1,4,5 $\rightarrow$ material dúctil) & (2,3 $\rightarrow$ material frágil)
-		\end{tabular}
-
+			\begin{tabular}{l r}
+				(1,4,5 $\rightarrow$ material dúctil) & (2,3 $\rightarrow$ material frágil)
+			\end{tabular}
 		
-		\vspace{0.5cm}
+
+	\begin{cajita}
+%		\vspace{0.5cm}
 		\textbf{NOMENCLATURA}
 		\begin{tabular}{l r}
 			$\sigma_{T}$&tensión tracción \\
@@ -52,6 +53,7 @@
 			$\sigma_{adm}$&tensión admisible\\
 			$Cs$&Coeficiente de seguridad\\
 		\end{tabular}
+	\end{cajita}
 	\end{cajita}
 
 	\begin{cajita}
@@ -64,10 +66,56 @@
 			\item $l$ = longitud "final"
 			\item $l_{0}$ = longitud inicial
 		\end{itemize}
+	
+		\begin{center}
+			$\sigma=E~e$
+		\end{center}
+%		\begin{itemize}[itemsep=-2mm]
+%			\item $e$ = alargamiento especifico.
+%			\item $l$ = longitud "final"
+%			\item $l_{0}$ = longitud inicial
+%		\end{itemize}
+	\textbf{	Para deformaciones producidas por torsión}
+	\begin{center}
+		$\tau_{xy}=G~ \gamma$\hspace*{1.5cm}$G=\dfrac{E}{2(1+\mu)}$
+	\end{center}
+	\begin{itemize}[itemsep=-2mm]
+		\item $\tau$ = tensión tangencial
+		\item $\gamma$ = angulo distorsión
+		\item $l_{0}$ = longitud inicial
+	\end{itemize}
 	\end{cajita}
-\end{multicols}
+
+	\begin{cajita}
+	\section*{Cargas dinámicas}
+	\textbf{Solicitud dinámica axial}\\
+	\begin{center}
+		$\delta=\delta_{est}\left(1+\sqrt{1+\dfrac{v^{2}}{g~\delta_{est}}}\right)$
+	\end{center}
+	\begin{itemize}[itemsep=-2mm]
+		\item $\delta_{est}$ alargamiento estático
+		\item $v$ velocidad
+		\item $g$ gravedad
+	\end{itemize}
+	\begin{center}
+	$\sigma_{din}=\sigma_{est}\left(1+\sqrt{1+\dfrac{2~h}{\delta_{est}}}\right)$
+	\end{center}
+	\begin{itemize}[itemsep=-2mm]
+		\item $\sigma_{est/din}$ tensión estatica/dinamica
+		\item $h$ altura
+	\end{itemize}
+	
+	\end{cajita}
 
 
-
-
+	\begin{cajita}
+		\section*{Tensiones variables}
+		\begin{tabular}{l r}
+			Tension media & tension alternada\\
+			$\sigma_{m}=\dfrac{\sigma_{max}+\sigma_{min}}{2}$&$\sigma_{a}=\dfrac{\sigma_{max}-\sigma_{min}}{2}$\\[0.3cm]
+			\multicolumn{2}{c}{$\sigma_{max}=\sigma_{m}+\sigma_{a}$}\\
+		\end{tabular}
+	
+	\end{cajita}
+	\end{multicols}
 \end{document}
