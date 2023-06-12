@@ -1,7 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{{../../paquete-formulas}}
 \usepackage{{../../estilos-formulas}}
-
 \usepackage{enumitem}
 
 \newcommand{\materia}{Elementos de Máquinas}
@@ -114,7 +113,8 @@
 			\textbf{Consideraciónes/Recordatorios}\\\vspace{0.2cm}
 %			$\tau_{f}=0.6~\sigma_{f}$ ||| $\tau_{max}=\dfrac{MT}{Wp}=\dfrac{MT~16}{Pi~D^{3}}$
 			\begin{tabular}{l|r}
-				$\tau_{f}=0.6~\sigma_{f}$ & $\tau_{max}=\dfrac{MT}{Wp}=\dfrac{MT~16}{Pi~D^{3}}$\\[0.2 cm]
+				$\tau_{f}=0.6~\sigma_{f}$ & $\tau_{max}=\dfrac{MT}{Wp}=\dfrac{MT~16}{\pi~D^{3}}$\\[0.3 cm]
+				& $\sigma_{max}=\dfrac{MF}{Wr}=\dfrac{MT~32}{\pi D^{3})}$\\[0.2 cm]
 			\end{tabular}
 		\end{cajita}
 		\begin{tabular}{l r}
@@ -143,11 +143,24 @@
 			\hline
 		\end{tabular}
 	
-	\vspace*{0.4cm}
+%	\vspace*{0.4cm}
+	\newpage
 	
 	\textbf{VIDA}\\
-	\textbf{Finita}\\\vspace*{0.2cm}
+	\textbf{Finita}\\
+	
 
+	\includegraphics[height=0.8\textwidth, angle=90]{fluencia}
+	
+%		\begin{figure}
+%%			\vspace{-1cm}
+%			\centering
+%			\includegraphics[height=0.8\textwidth, angle=90]{fluencia}
+%		\end{figure} % YO NO ENTIENDO PORQUE ESTA VERGA NO ANDA
+	
+	
+	
+	
 	\begin{tabular}{r l }
 		\multicolumn{2}{c}{Condicionando cantidad de RPMs/ciclos}\\
 		$m=\dfrac{1}{3}log_{10}\left(\dfrac{0.9\sigma_{R}}{\sigma_{w}}\right)$&
@@ -168,6 +181,17 @@
 %		$\sigma_{wN}=\left[\dfrac{10^{b}}{N_{(RPM)}^{m}}\right]$& \\[0.5cm]
 %		\multicolumn{2}{c}{$CL=\dfrac{\sigma_{wN}}{\sigma_{w}}$}\\
 	\end{tabular}
+\newpage
+	\textbf{Diagrama de Goodman}\\
+\includegraphics[width=0.8\textwidth]{goodman}\\
+\includegraphics[width=0.8\textwidth]{goodman2}\\
+
+\vspace*{0.2cm}
+\begin{tabular}{l c r}	
+	Soderberg&Cs&$\frac{OL}{OA}$\\[0.2cm]
+	Elastico&Cs&$\frac{OL'}{OA'}$\\[0.2cm]
+	Fatiga&Cs&$\frac{O'B}{O'A}$\\[0.2cm]
+\end{tabular}
 	\end{cajita}
 	\end{multicols}
 \end{document}
