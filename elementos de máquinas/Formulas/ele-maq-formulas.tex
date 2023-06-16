@@ -2,6 +2,7 @@
 \usepackage{{../../paquete-formulas}}
 \usepackage{{../../estilos-formulas}}
 \usepackage{enumitem}
+\usepackage{multirow}
 
 \newcommand{\materia}{Elementos de Máquinas}
 
@@ -113,9 +114,24 @@
 			\textbf{Consideraciónes/Recordatorios}\\\vspace{0.2cm}
 %			$\tau_{f}=0.6~\sigma_{f}$ ||| $\tau_{max}=\dfrac{MT}{Wp}=\dfrac{MT~16}{Pi~D^{3}}$
 			\begin{tabular}{l|r}
-				$\tau_{f}=0.6~\sigma_{f}$ & $\tau_{max}=\dfrac{MT}{Wp}=\dfrac{MT~16}{\pi~D^{3}}$\\[0.3 cm]
-				& $\sigma_{max}=\dfrac{MF}{Wr}=\dfrac{MT~32}{\pi D^{3})}$\\[0.2 cm]
+%				\multicolumn{2}{r}{Esto aplica para cilindros}\\
+			\multirow[r]{2}{2.5 cm}{Esto aplica para cilindros}& $\tau_{max}=\dfrac{MT}{Wp}=\dfrac{MT~16}{\pi~D^{3}}$\\[0.3 cm]
+				& $\sigma_{max}=\dfrac{MF}{Wr}=\dfrac{MF~32}{\pi D^{3}}$\\[0.2 cm]
+			\end{tabular}\\\vspace{0.2cm}
+		
+		$\tau_{f}=0.6~\sigma_{f}$ y tambien $\tau_{R}=0.6~\sigma_{R}$ \\\vspace{0.3cm}
+		
+		$\mathbf{\sigma_{wb}}$ para distintos materiales\\\vspace*{0.2cm}
+			\begin{tabular}{l|r}
+				Aceros	& 0.4 / 0.5 $\sigma_{R}\leq140Kg/mm^{2}$\\
+				\multicolumn{2}{r}{ 70 $kg/mm^{2}$ si$\sigma_{R}\geq140Kg/mm^{2}$}\\
+				Fundición & 0.4 $\sigma_{R}$\\
+				Al y Mg & 0.3 /0.4$\sigma_{R}$\\
+				
 			\end{tabular}
+		
+			
+		
 		\end{cajita}
 		\begin{tabular}{l r}
 			Tension media & tension alternada\\
