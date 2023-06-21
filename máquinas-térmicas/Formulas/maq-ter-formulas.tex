@@ -4,13 +4,184 @@
 
 
 \newcommand{\materia}{Máquinas Térmicas}
-
+\newcommand{\vs}{\vspace{-.3cm}}
 
 
 \begin{document}
 	\pagestyle{pieyencabezado}
+	
+	\section*{Nomenclatura}
+	\begin{tabular}{r l}
+		PCI [kcal/kg$_{comb}$] & Poder calorífico inferior \\
+		PCS [kcal/kg$_{comb}$] & Poder calorífico superior \\
+		H, S, C, O & \% del elemento en peso por kilogramo de combustible (cant. centesimal)\\
+		H$_2$O & \% de humedad en el combustible \\
+		G & Peso\\
+		m & Masa\\
+		C & Calor latente\\
+		c$_p$ & Calor específico
+	\end{tabular}
+
+	\unidad{2}{Combustibles para generadores de calor}
+	
+	\begin{multicols}{2}
+		\begin{cajita}
+			
+			\subtitulo{Poder calorífico}
+			
+			\vspace{.2cm}
+			
+			\includegraphics[width = \linewidth]{U2-poderes-calorificos}\vs
+			
+			\begin{flushleft}
+				Relación entre los poderes caloríficos
+			\end{flushleft}\vspace{-.2cm}
+			
+			$PCI = PCS - Q_{vapor} = PCS - 579 G$\vspace{.2cm}
+			
+			
+			\boxed{PCI = PCS - 579 \left(9H+H_2O\right)}\vspace{.2cm}
+			
+			\begin{tabular}{r p{.7\linewidth}}
+				$Q_{vapor}$ & Calor de condensación del vapor de agua\\
+				$G$ & \% en peso del agua formada por la combustión más la humedad del combustible.\\
+				$597$ & Calor de condensación del agua a $0^\circ C$.
+			\end{tabular}
+			
+			\subsubtitulo{Hidrógeno}
+			\vspace{-.8cm}
+			
+			
+			\begin{flushleft}
+				Reacción química de la combustión completa del hidrógeno
+			\end{flushleft}\vs
+			
+			$H_2 + \frac{1}{2}O_2 \rightarrow H_2O + \boxed{34400} \left[\frac{kcal}{kg_H}\right]$
+		
+		\subsubtitulo{Carbono}
+		\vspace{-.8cm}
+		
+		\begin{flushleft}
+			Reacción química de la combustión completa del carbono
+		\end{flushleft}\vs
+	
+		$C + O_2 \rightarrow CO_2 + \boxed{8140} \left[\frac{kcal}{kg_C}\right]$
+		
+		\begin{flushleft}
+			Reacción química de la combustión incompleta del carbono
+		\end{flushleft}\vs
+	
+		$C + \frac{1}{2} O_2 \rightarrow CO + \boxed{2440} \left[\frac{kcal}{kg_C}\right]$
+			
+		\subsubtitulo{Azufre}
+		\vspace{-.8cm}
+		
+		\begin{flushleft}
+			Reacción química de la combustión para el azufre.
+		\end{flushleft}\vs
+	
+		$S + O_2 \rightarrow SO_2 + \boxed{2220} \left[\frac{kcal}{kg_S}\right] $
+		
+		\end{cajita}
+		\columnbreak
+		\begin{cajita}
+			\subtitulo{Método analítico}
+			
+			\subsubtitulo{Fórmula de Dulong}
+			\vspace{-.8cm}
+			
+			\begin{flushleft}
+				PC de un combustible seco
+			\end{flushleft}
+			
+			\vspace{-.2cm}
+		
+			\boxed{PCS = PCI = 8140  C + 34400 \left(H - \dfrac{O}{8} \right) + 2220 S}
+			
+			\begin{flushleft}
+				PCI de un combustible húmedo
+			\end{flushleft}
+			
+			\vspace{-.2cm}
+			
+			\boxed{PCI = 8140  C + 34400 \left(H - \dfrac{O}{8} \right) + 2220 S - 600 H_2O}
+			
+			\subsubtitulo{Fórmula de Hutte}
+			
+			\vspace{-.8cm}
+			
+			\begin{flushleft}
+				PCS de un combustible húmedo
+			\end{flushleft}
+		
+			\vspace{-.2cm}
+			
+			\boxed{PCI = 8100  C + 29000 \left(H - \dfrac{O}{8} \right) + 2500 S - 600 H_2O}
+			
+			\subsubtitulo{Fórmula de la Asociación de Ingenieros Alemanes}
+			
+			\vspace{-.8cm}
+			
+			\begin{flushleft}
+				PCI de un combustible húmedo
+			\end{flushleft}
+			
+			\vspace{-.2cm}
+			
+			\boxed{PCI = 8080  C + 29000 \left(H - \dfrac{O}{8} \right) + 2500 S - 600 H_2O}
+			\vspace{.2cm}
+			
+			\begin{tabular}{r p{.7\linewidth}}
+				$\dfrac{O}{8}$ & \% de $H_2$ en peso combinado con el $O_2$ del combustible dando \emph{agua de combinación}\\
+				$H - \dfrac{O}{8}$ & \% de \emph{hidrógeno disponible} en peso que se oxida con el aire ($O_2$) para dar \emph{agua de formación}
+			\end{tabular}
+		\end{cajita}
+	\end{multicols}
+	
 	\begin{cajita}
-		\section*{Poder calorífico}
+		
+		\subtitulo{Método práctico}
+		
+		\subsubtitulo{Calorímetro de Mahler y Kroeker}\vspace{-.6cm}
+		
+		\begin{multicols}{2}
+			\begin{flushleft}
+				Supone que el calor $Q$ generado dentro de la bomba calorimétrica es absorbido por los elementos que la rodean:
+				\begin{itemize}
+					\item Agua contenida\\[.1cm]
+					\item Agitador\\[.1cm]
+					\item Termómetro\\[.1cm]
+					\item Bomba\\[.1cm]
+					\item Recipiente
+				\end{itemize} 
+			
+				Y dicho calor es cedido por la combustión y el alambre:
+			\end{flushleft} 
+			\begin{tabular}{r c l}
+				$Q$ & = & $Q_{combustible} + Q_{alambre}$\\[.2cm]
+					& = & $\left(m_{w} {c_p}_{w} + E_{aparato}\right) \Delta t$\\[.2cm]
+			\end{tabular}
+			
+			
+			
+			$PCS = \dfrac{Q_{comb}}{G_{comb}}$\\[.1cm]
+			
+				\columnbreak
+			
+			\boxed{PCS = \dfrac{\left(m_{w} {c_p}_{w} + E_{aparato}\right) \Delta t - m_{alam} C_{alam}}{G_{comb}}}\\[.1cm]
+			\boxed{PCI = PCS - 600 \dfrac{G_w}{G_{comb}}}
+			\vspace{.3cm}
+		
+			
+			\begin{tabular}{r p{.7\linewidth}}
+				$G_w$ & Peso total de agua existente $= papel\,húmedo - papel\, seco$\\
+				$G_{comb}$ & Peso de combustible quemado\\
+			\end{tabular}
+		\end{multicols}
+		
+	\end{cajita}
+	
+	\begin{cajita}
 			\begin{center}
 				\begin{tabular}{r l}
 					Relación entre los poderes caloríficos: & \boxed{PCI = PCS - 597 \times G= PCS - 597(9H+H_{2}O)}\\
@@ -19,8 +190,6 @@
 			\begin{multicols}{2}
 			Siendo:\\
 				\begin{tabular}{r p{0.4\textwidth}}
-					PCI & poder calorífico inferior\\
-					PCS & poder calorífico superior\\
 					597	& Calor de condensación del agua a O ºC \\
 					G & Porcentaje en peso del agua formada por la combustión del $H_{2}$ más la humedad propia del combustible\\
 				\end{tabular}
