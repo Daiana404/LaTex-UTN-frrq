@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{{../../paquete-formulas}}
 \usepackage{{../../estilos-formulas}}
+\usepackage[thinlines]{easytable} %Para tener comando TAB y tablas dif.
 
 
 \newcommand{\materia}{Máquinas Térmicas}
@@ -267,5 +268,162 @@
 	Yo copié las formulas, pero los analisis dimensionales no dan en algunos...
 	\end{cajita}
 		
+	% \newpage
+	\begin{cajita}
+		\subtitulo{ Caracteristica de una caldera}
+		\renewcommand{\arraystretch}{1.25}
+		\begin{multicols}{2}
+			% \begin{tabular}{l{1cm} l{5cm}}
+			% asdasdads& asdasdasd\\			
+			% \end{tabular}
+			\begin{tabular}{@{}p{1cm}@{}@{}p{7cm}@{}}
+				$G_{r}$ & cantidad vapor producido\\
+	
+				$R_{e}$&relacion estequio... 9,7 para gas natural\\
+				$\lambda$&exceso de aire $\dfrac{21}{21-O_{2}}$\\
+				$v$ & velocidad gas\\
+				$A_{2}$y$B$& parametros dependen gas/caldera?\\
+				$P_{ab}$ & va en MCA\\
+				$P_C$& en combustible sin quemar es la potencia calorifica del carbono, 8140 $kcal/kg$\\
+				$\% C$ & es Carbono sin quemar, en las cenizas\\
+			\end{tabular}
+	
+			\renewcommand{\arraystretch}{1.5}
+	
+			PERDIDAS\\
+	
+			\begin{tabular}{r l}
+				gases comb & $Q = G_{g} c_{p~\textit{humo}} (t_{gas}-t_{aire})$\\
+				humedad comb & $ Q= G_{h2o} \Delta h_{agua}$\\
+				comb sin quemar & $ Q =\dfrac{G_{escoria}}{G_{combustible}}~P_{C}~\% C$\\
+				hw comb comb &$ Q=9~G_{humedad} ~\Delta h_{agua}$\\
+				exceso aire & $Q = G_{aire}~c_{p~\textit{humo}} (t_{gas}-t_{aire})$\\
+			\end{tabular}
+			
+			\renewcommand{\arraystretch}{1.5}
+		
+			\begin{tabular}{r l}
+				Capacidad  & $Q=G_{r} \, \Delta h$\\
+				Potencia  (HP) & $P=\dfrac{G_{v}\,\left(\Delta h\right)}{543.4(kcal/kg)~~15.66(kg)}~~$\\
+				&$~~=\dfrac{G_{v}\,\left(\Delta h\right)}{8510 (kcal/hp~h)}$\\[0.4cm]
+				Aire combustion& $A_{c}=G_{c}\,Re\,\lambda$\\
+				% \multicolumn{2}{r}{\begin{itemize}
+				% 	\item ASD
+				% \end{itemize}}\\
+				\multicolumn{2}{c}{\textsl{Ejercicio dimensionamieto?}}\\
+				Diametro tubo gas & $D=\sqrt{\dfrac{365.35\,G_{c}}{v~~P_{ab}}}~~$ \textit{(v<40m/s)}\\
+				Presión abs gas& $P_{ab}=P_{atm}+P_{carga}+P_{contra}$\\
+				Perdida gases & $pg=(T_{gas}-T_{amb})\left(\dfrac{A_{2}}{21-O_{2}}+B\right)$\\
+				Rendimiento  & $ \eta=100-pg$\\
+				Calor quemador& $Q=\dfrac{G_{v}(\Delta H)}{\eta_{caldera} \, n_{quemadores}}$\\
+			\end{tabular}
+		\end{multicols}
+	
+			\begin{center}
+				\textbf{Intercambiador (superficies de intercambio)}
+			\end{center}
+	
+			\begin{multicols}{2}
+				\renewcommand{\arraystretch}{1}
+				\begin{tabular}{@{}p{1cm}@{}@{}p{7cm}@{}}
+					$S$ & superficie de intercambio\\
+					$n$ & número de tubos\\
+					$l$ & longitud tubos\\
+					$d$& diametro tubos\\
+					$K$ & coef total de transmisión de calor\\
+					$\alpha$ & coeficientes peliculares \break (humo/vapor/agua)\\
+				\end{tabular}
+				
+				\renewcommand{\arraystretch}{1.5}
+				\begin{tabular}{l l}
+					$S=n~l~\pi~d$ &	$Q=S~K~\Delta T_m$\\[0.2cm]
+					$\Delta T_m = \dfrac {\Delta T_1 - \Delta T_2}{ln\left(\frac{\Delta T_1}{\Delta T_2}\right)}$ & $K=\dfrac{1}{\dfrac{1}{\alpha_1}+\dfrac{e}{\lambda}+\dfrac{1}{\alpha_2}}$\\
+				\end{tabular}\\
+				\renewcommand{\arraystretch}{1}
+				\begin{tabular}{@{}p{1cm}@{}@{}p{7cm}@{}}
+					$e$& espesor tubo\\
+					$\Delta T_m$ & diferencia log de temp\\
+					$\lambda$ & conductividad térmica tubo\\
+	
+				\end{tabular}
+			\end{multicols}
+		\end{cajita}
 
-\end{document}
+\end{document}\begin{cajita}
+	\subtitulo{ Caracteristica de una caldera}
+	\renewcommand{\arraystretch}{1.25}
+	\begin{multicols}{2}
+		% \begin{tabular}{l{1cm} l{5cm}}
+		% asdasdads& asdasdasd\\			
+		% \end{tabular}
+		\begin{tabular}{@{}p{1cm}@{}@{}p{7cm}@{}}
+			$G_{r}$ & cantidad vapor producido\\
+
+			$R_{e}$&relacion estequio... 9,7 para gas natural\\
+			$\lambda$&exceso de aire $\dfrac{21}{21-O_{2}}$\\
+			$v$ & velocidad gas\\
+			$A_{2}$y$B$& parametros dependen gas/caldera?\\
+			$P_{ab}$ & va en MCA\\
+			$P_C$& en combustible sin quemar es la potencia calorifica del carbono, 8140 $kcal/kg$\\
+			$\% C$ & es Carbono sin quemar, en las cenizas\\
+		\end{tabular}
+
+		\renewcommand{\arraystretch}{1.5}
+
+		PERDIDAS\\
+
+		\begin{tabular}{r l}
+			gases comb & $Q = G_{g} c_{p~\textit{humo}} (t_{gas}-t_{aire})$\\
+			humedad comb & $ Q= G_{h2o} \Delta h_{agua}$\\
+			comb sin quemar & $ Q =\dfrac{G_{escoria}}{G_{combustible}}~P_{C}~\% C$\\
+			hw comb comb &$ Q=9~G_{humedad} ~\Delta h_{agua}$\\
+			exceso aire & $Q = G_{aire}~c_{p~\textit{humo}} (t_{gas}-t_{aire})$\\
+		\end{tabular}
+		
+		\renewcommand{\arraystretch}{1.5}
+	
+		\begin{tabular}{r l}
+			Capacidad  & $Q=G_{r} \, \Delta h$\\
+			Potencia  (HP) & $P=\dfrac{G_{v}\,\left(\Delta h\right)}{543.4(kcal/kg)~~15.66(kg)}~~$\\
+			&$~~=\dfrac{G_{v}\,\left(\Delta h\right)}{8510 (kcal/hp~h)}$\\[0.4cm]
+			Aire combustion& $A_{c}=G_{c}\,Re\,\lambda$\\
+			% \multicolumn{2}{r}{\begin{itemize}
+			% 	\item ASD
+			% \end{itemize}}\\
+			\multicolumn{2}{c}{\textsl{Ejercicio dimensionamieto?}}\\
+			Diametro tubo gas & $D=\sqrt{\dfrac{365.35\,G_{c}}{v~~P_{ab}}}~~$ \textit{(v<40m/s)}\\
+			Presión abs gas& $P_{ab}=P_{atm}+P_{carga}+P_{contra}$\\
+			Perdida gases & $pg=(T_{gas}-T_{amb})\left(\dfrac{A_{2}}{21-O_{2}}+B\right)$\\
+			Rendimiento  & $ \eta=100-pg$\\
+			Calor quemador& $Q=\dfrac{G_{v}(\Delta H)}{\eta_{caldera} \, n_{quemadores}}$\\
+		\end{tabular}
+	\end{multicols}
+
+		\begin{center}
+			\textbf{Intercambiador (superficies de intercambio)}
+		\end{center}
+
+		\begin{multicols}{2}
+			\renewcommand{\arraystretch}{1}
+			\begin{tabular}{@{}p{1cm}@{}@{}p{7cm}@{}}
+				$S$ & superficie de intercambio\\
+				$n$ & número de tubos\\
+				$l$ & longitud tubos\\
+				$d$& diametro tubos\\
+				$K$ & coef total de transmisión de calor\\
+				$\alpha$ & coeficientes peliculares \break (humo/vapor/agua)\\
+			\end{tabular}
+			
+			\renewcommand{\arraystretch}{1.5}
+			\begin{tabular}{l l}
+				$S=n~l~\pi~d$ &	$Q=S~K~\Delta T_m$\\[0.2cm]
+				$\Delta T_m = \dfrac {\Delta T_1 - \Delta T_2}{ln\left(\frac{\Delta T_1}{\Delta T_2}\right)}$ & $K=\dfrac{1}{\dfrac{1}{\alpha_1}+\dfrac{e}{\lambda}+\dfrac{1}{\alpha_2}}$\\
+			\end{tabular}\\
+			\renewcommand{\arraystretch}{1}
+			\begin{tabular}{@{}p{1cm}@{}@{}p{7cm}@{}}
+				$e$& espesor tubo\\
+				$\Delta T_m$ & diferencia log de temp\\
+				$\lambda$ & conductividad térmica tubo\\
+
+			\end{tabular}
+		\end{multicols}
