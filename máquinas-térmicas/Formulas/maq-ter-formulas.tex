@@ -20,10 +20,11 @@
 		G & Peso\\
 		m & Masa\\
 		C & Calor latente\\
-		c$_p$ & Calor específico
+		c$_p$ & Calor específico\\
+		g & Composición gravimétrica (\% generalmente)
 	\end{tabular}
 
-	\unidad{2}{Combustibles para generadores de calor}
+	\unidad{2}{Combustión}
 	
 	\begin{multicols}{2}
 		\begin{cajita}
@@ -86,7 +87,7 @@
 		\end{cajita}
 		\columnbreak
 		\begin{cajita}
-			\subtitulo{Método analítico}
+			\subtitulo{PC Método analítico}
 			
 			\subsubtitulo{Fórmula de Dulong}
 			\vspace{-.8cm}
@@ -141,7 +142,7 @@
 	
 	\begin{cajita}
 		
-		\subtitulo{Método práctico}
+		\subtitulo{PC Método práctico}
 		
 		\subsubtitulo{Calorímetro de Mahler y Kroeker}\vspace{-.6cm}
 		
@@ -163,11 +164,10 @@
 					& = & $\left(m_{w} {c_p}_{w} + E_{aparato}\right) \Delta t$\\[.2cm]
 			\end{tabular}
 			
-			
+			\columnbreak
 			
 			$PCS = \dfrac{Q_{comb}}{G_{comb}}$\\[.1cm]
 			
-				\columnbreak
 			
 			\boxed{PCS = \dfrac{\left(m_{w} {c_p}_{w} + E_{aparato}\right) \Delta t - m_{alam} C_{alam}}{G_{comb}}}\\[.1cm]
 			\boxed{PCI = PCS - 600 \dfrac{G_w}{G_{comb}}}
@@ -185,49 +185,71 @@
 	\begin{cajita}
 			
 		\begin{center}
-			\subtitulo{Aire mínimo para una combustión perfecta}
+			\subtitulo{Aire mínimo}
 		\end{center}
-		\begin{equation}
-			G_{t \ aire} = 11.6 g_{c} + 34.78 g_{hd} +4.35 g_{s} \; [Kg_{aire}/Kg_{comb.}]
-		\end{equation}
-		\begin{equation}
-			V_{t \ aire} = 8.89 g_{c} + 26.27 g_{hd} + 3.34 g_{s} \; [m^{3}_{aire}/Kg_{comb.}]
-		\end{equation}
-		\begin{flushleft}
-			Donde 
-		
-		$g_{hd} = g_{h} - \dfrac{g_{o_{2}}}{2}$
-		
-		$g_{c}$ composición gravimétrica carbono
-		
-		$g_{h}$ composición gravimétrica hidrógeno
-		
-		$g_{o_{2}}$ composición gravimétrica oxígeno
-		
-		$g_{s}$ composición gravimétrica azufre
-		
-		-
-		\\
 	
-		En la práctica es necesario trabajar con un exceso de aire para que asegurar la combustión perfecta:
-		\end{flushleft}
-		\begin{equation}
-			V_{R \ aire} = (1+e) V_{t \ aire} [m^{3}_{aire}/Kg_{comb.}]
-		\end{equation}
+		\begin{multicols}{2}
+			\subsubtitulo{Composición del aire atmosférico}
+			
+			\begin{tabular}{r l}
+				En volumen & 21\% O$_2$\\
+				& 79\% N$_2$\\
+				En peso    & 23\% O$_2$\\
+				& 77\% N$_2$\\
+			\end{tabular}
 		
+			\subsubtitulo{Hidrógeno disponible}
+			
+			\boxed{g_{Hd} = g_H - \dfrac{g_{O_2}}{8}}
+			
+			
+			\subsubtitulo{Exceso de aire}\vs
+			
+			\begin{flushleft}
+				En la práctica se trabaja con un exceso de aire de 3-4\%  para una combustión completa.
+			\end{flushleft}
 		
-		\end{cajita}
+			\boxed{{V_R}_{aire} = {V_t}_{aire} \left( 1 + e \right)}
+			
+			\begin{flushleft}
+				$e$ \, Porcentaje de exceso de aire
+			\end{flushleft}
+		
+			\columnbreak
+			
+			\subsubtitulo{Cantidad teórica o mínima de aire}
+			
+			\boxed{{V_t}_{aire} = 8.89 g_{C} + 26.27 g_{Hd} + 3.34 g_{S}}\\ \vspace{.3cm}
+			
+			\boxed{{G_{t}}_{aire} = 11.6 g_{C} + 34.78 g_{Hd} +4.35 g_{S}}
+		
+			\begin{flushleft}
+				Donde: \vspace{.5cm}
+				
+				\begin{tabular}{r p{.5\linewidth}}
+					 ${V_t}_{aire} \left[\dfrac{m^3_{aire}}{kg_{comb}}\right]$ & Porcentaje en volumen del aire teórico \\
+					 ${G_{t}}_{aire} \left[\dfrac{kg_{aire}}{kg_{comb}}\right]$ & Porcentaje en peso del aire teórico
+				\end{tabular}
+			\end{flushleft}
+			
+		\end{multicols}
+		
+	\end{cajita}
 		\begin{cajita}
 		
-		\begin{center}
-			\subtitulo{Gases de combustión}
-		\end{center}
-		\begin{equation}
-			g_{h} = (3.67 g_{c} + 9 g_{hd} +2 g_{s}) + 3.35 (2.67 g_{c} + 8 g_{hd} + g_{s}) + g_{w} \; [Kg_{humo}/Kg_{comb}]
-		\end{equation}
-		\begin{equation}
-			V_{h} = 1.897 g_{c} + 11.2 g_{hd} +0.7 g_{s} + 3.76 (1.867 g_{c} + 5.6 g_{hd} +0.7 g_{s}) + 1.24 g_{w} \; [m^{2}_{humo}/Kg_{comb}]
-		\end{equation}
+		\subtitulo{Gases de combustión}
+		
+		\vspace{.5cm}
+		
+		\boxed{g_{humo} = (3.67 g_{C} + 9 g_{Hd} +2 g_{S}) + 3.35 (2.67 g_{C} + 8 g_{Hd} + g_{S}) + g_{w}}\\\vspace{.3cm}
+		
+		\boxed{V_{humo} = 1.897 g_{C} + 11.2 g_{Hd} +0.7 g_{S} + 3.76 (1.867 g_{C} + 5.6 g_{Hd} +0.7 g_{S}) + 1.24 g_{w}}\\\vspace{.2cm}
+		
+		\begin{tabular}{r  p{.5\linewidth}}
+			$g_{humo} \, \left[\dfrac{kg_{humo}}{kg_{comb}}\right]$ & Porcentaje en peso de los humos\\[.4cm]
+			$V_{humo} \, \left[\dfrac{m^{3}_{humo}}{kg_{comb}}\right]$ & Porcentaje en volumen de los humos
+		\end{tabular}
+	
 	\end{cajita}
 	
 	\begin{cajita}
