@@ -13,17 +13,16 @@
 	
 	\section*{Nomenclatura}
 	\begin{tabular}{r l}
-		PCI $[kcal / kg_{comb}]$ & Poder calorífico inferior \\
-		PCS $[kcal / kg_{comb}]$ & Poder calorífico superior \\
-		$H,\ S,\ C,\ O$ & Composición gravimétrica respectiva al elemento (cant. centesimal)\\
-		$g$ & Composición gravimétrica (cant. centesimal)\\
-		$r$ & Composición volumétrica (cant. centesimal)\\
-		$H_2O$ & \% de humedad en el combustible \\
-		$G [kg]$ & Peso\\
+		PCI [kcal / kg$_{comb}$] & Poder calorífico inferior \\
+		PCS [kcal / kg$_{comb}$] & Poder calorífico superior \\
+		H, S, C, O & \% en peso del elemento por kilogramo de combustible (cant. centesimal)\\
+		H$_2$O & \% de humedad en el combustible \\
+		G & Peso\\
 		m & Masa\\
-		c$_{L}$ & Calor latente\\
+		C & Calor latente\\
 		c$_p$ & Calor específico\\
-		1 $m^3$ & 1 $tn$ de vapor
+		g & Composición gravimétrica (\% generalmente)\\
+		$r$ & Composición volumétrica (\% generalmente)\\
 	\end{tabular}
 
 	\unidad{2}{Combustión}
@@ -44,7 +43,7 @@
 			$PCI = PCS - Q_{vapor} = PCS - 579 G$\vspace{.2cm}
 			
 			
-			\boxed{PCI = PCS - 579 \left(9\ H+H_2O\right)}\vspace{.2cm}
+			\boxed{PCI = PCS - 579 \left(9H+H_2O\right)}\vspace{.2cm}
 			
 			\begin{tabular}{r p{.7\linewidth}}
 				$Q_{vapor}$ & Calor de condensación del vapor de agua\\
@@ -100,7 +99,7 @@
 			
 			\vspace{-.2cm}
 		
-			\boxed{PCS = PCI = 8140\  C + 34400 \left(H - \dfrac{O}{8} \right) + 2220\ S}
+			\boxed{PCS = PCI = 8140  C + 34400 \left(H - \dfrac{O}{8} \right) + 2220 S}
 			
 			\begin{flushleft}
 				PCI de un combustible húmedo
@@ -108,7 +107,7 @@
 			
 			\vspace{-.2cm}
 			
-			\boxed{PCI = 8140\  C + 34400 \left(H - \dfrac{O}{8} \right) + 2220\ S - 600\ H_2O}
+			\boxed{PCI = 8140  C + 34400 \left(H - \dfrac{O}{8} \right) + 2220 S - 600 H_2O}
 			
 			\subsubtitulo{Fórmula de Hutte}
 			
@@ -120,7 +119,7 @@
 		
 			\vspace{-.2cm}
 			
-			\boxed{PCI = 8100\  C + 29000 \left(H - \dfrac{O}{8} \right) + 2500\ S - 600\ H_2O}
+			\boxed{PCI = 8100  C + 29000 \left(H - \dfrac{O}{8} \right) + 2500 S - 600 H_2O}
 			
 			\subsubtitulo{Fórmula de la Asociación de Ingenieros Alemanes}
 			
@@ -132,7 +131,7 @@
 			
 			\vspace{-.2cm}
 			
-			\boxed{PCI = 8080\  C + 29000 \left(H - \dfrac{O}{8} \right) + 2500\ S - 600\ H_2O}
+			\boxed{PCI = 8080  C + 29000 \left(H - \dfrac{O}{8} \right) + 2500 S - 600 H_2O}
 			\vspace{.2cm}
 			
 			\begin{tabular}{r p{.7\linewidth}}
@@ -152,7 +151,7 @@
 			\begin{flushleft}
 				Supone que el calor $Q$ generado dentro de la bomba calorimétrica es absorbido por los elementos que la rodean:
 				\begin{itemize}
-					\item Agua contenida ($w$)\\[.1cm]
+					\item Agua contenida\\[.1cm]
 					\item Agitador\\[.1cm]
 					\item Termómetro\\[.1cm]
 					\item Bomba\\[.1cm]
@@ -171,7 +170,7 @@
 			$PCS = \dfrac{Q_{comb}}{G_{comb}}$\\[.1cm]
 			
 			
-			\boxed{PCS = \dfrac{\left(m_{w} {c_p}_{w} + E_{aparato}\right) \Delta t - m_{alam} {c_L}_{alam}}{G_{comb}}}\\[.1cm]
+			\boxed{PCS = \dfrac{\left(m_{w} {c_p}_{w} + E_{aparato}\right) \Delta t - m_{alam} C_{alam}}{G_{comb}}}\\[.1cm]
 			\boxed{PCI = PCS - 600 \dfrac{G_w}{G_{comb}}}
 			\vspace{.3cm}
 		
@@ -202,7 +201,7 @@
 		
 			\subsubtitulo{Hidrógeno disponible}
 			
-			\boxed{Hd = H - \dfrac{O_2}{8}}
+			\boxed{g_{Hd} = g_H - \dfrac{g_{O_2}}{8}}
 			
 			
 			\subsubtitulo{Exceso de aire}\vs
@@ -221,9 +220,9 @@
 			
 			\subsubtitulo{Cantidad teórica o mínima de aire}
 			
-			\boxed{V_{at} = 8.89\ C + 26.27\ Hd + 3.34\ S}\\ \vspace{.3cm}
+			\boxed{V_{at} = 8.89 g_{C} + 26.27 g_{Hd} + 3.34 g_{S}}\\ \vspace{.3cm}
 			
-			\boxed{G_{at} = 11.6\ C + 34.78\ Hd +4.35\ S}
+			\boxed{G_{at} = 11.6 g_{C} + 34.78 g_{Hd} +4.35 g_{S}}
 		
 			\begin{flushleft}
 				Donde: \vspace{.5cm}
@@ -243,14 +242,13 @@
 		
 		\vspace{.5cm}
 		
-		\boxed{g_{humo} = (3.67\ C + 9\ Hd +2\ S) + 3.35\ (2.67\ C + 8\ Hd + S) + g_{agua}}\\\vspace{.3cm}
+		\boxed{g_{humo} = (3.67 g_{C} + 9 g_{Hd} +2 g_{S}) + 3.35 (2.67 g_{C} + 8 g_{Hd} + g_{S}) + g_{w}}\\\vspace{.3cm}
 		
-		\boxed{V_{humo} = 1.897\ C + 11.2\ Hd +0.7\ S + 3.76\ (1.867\ C + 5.6\ Hd +0.7\ S) + 1.24\ g_{agua}}\\\vspace{.2cm}
+		\boxed{V_{humo} = 1.897 g_{C} + 11.2 g_{Hd} +0.7 g_{S} + 3.76 (1.867 g_{C} + 5.6 g_{Hd} +0.7 g_{S}) + 1.24 g_{w}}\\\vspace{.2cm}
 		
-		\begin{tabular}{r l}
-			$g_{humo}$ & (kg de humo / kg de combustible)\\[.2cm]
-			$V_{humo}$ & (m$^3$ de humo / kg de combustible)\\[.2cm]
-			$g_{agua}$ & (kg de agua / kg de combustible)\\
+		\begin{tabular}{r  p{.5\linewidth}}
+			$g_{humo} \, \left[\dfrac{kg_{humo}}{kg_{comb}}\right]$ & Porcentaje en peso de los humos\\[.4cm]
+			$V_{humo} \, \left[\dfrac{m^{3}_{humo}}{kg_{comb}}\right]$ & Porcentaje en volumen de los humos
 		\end{tabular}
 	
 	\end{cajita}
@@ -261,40 +259,58 @@
 		\begin{multicols}{2}
 				\boxed{g_{hum} = 1 + e\ G_{at}}\\[.2cm]
 				
-				\boxed{G_{at} = 11.6\ C + 37.38\ Hd + 4.35\ S}\\[.2cm]
+				\boxed{G_{at} = 11.6\ g_C + 37.38\ g_{Hd} + 4.35\ g_S}\\[.2cm]
 				
-				\boxed{g_{hum} = g_{sec} + 9\ H}\\[.2cm]
+				\boxed{g_{hum} = g_{sec} + 9\ g_{H_2O}}\\[.2cm]
 				
-				\boxed{g_{sec} = C\ g_{sec/C} = C\ \left(\dfrac{\sum \mu_i\ r_i}{\mu_{CO_2}\ r_{CO_2}}\right)}\\[.2cm]
+				\boxed{g_{sec} = g_C\ g_{sec/C} = g_C\ \left(\dfrac{\sum \mu_i\ r_i}{\mu_{CO_2}\ r_{CO_2}}\right)}\\[.2cm]
 				
 				\columnbreak
 				
-				\begin{tabular}{r p{.9\linewidth}}
+				\begin{tabular}{r l}
 					$e$ & Porcentaje de exceso de aire\\
-					$\mu$ & Peso molecular (kg / kmol)\\[.1cm]
-					$9\ H$ & \textbf{Agua de formación} (kg de agua / kg de combustible)\\
+					$\mu$ & Peso molecular (kg / kmol)\\
 					$g_{hum}$ & (kg de gases húmedos / kg de combustible)\\
 					$g_{sec}$ & (kg de gases secos / kg de combustible)\\
 					$g_{sec/C}$ & (kg de gases secos / kg de carbono)\\
 				\end{tabular}
+				
 		\end{multicols}
-	
 		
 		\begin{multicols}{2}
-			Desarrollo para llegar a $g_{sec}$
-			\begin{gather*}
-				g_{sec/C} = \dfrac{g''_{sec}}{g'_{C}}\\
-				g''_{sec} = \sum_{i=1}^{n} g_i = \sum_{i=1}^{n} \mu_i~r_i\\
-				g'_{C} = \sum_{i=1}^{n} \mu_{iC}~r_{iC}
-			\end{gather*}
-		
 			\begin{tabular}{r p{0.87\textwidth}}
-				$g''_{sec}$ & (kg gases secos / kmol combustible)\\
+				$g_{h}$ & (kg de gases húmedos/ kg de combustible)\\
+				$e$ & (coeficiente de exceso de aire)\\
+				$g'_{S}$ & (kg gases secos / kg carbono)\\
+				$g''_{S}$ & (kg gases secos / kmol combustible)\\
+				$\mu$ & (masa molecular) (kg/kmol)\\
+				$G_{AT}$ & (kg de aire teórico / kg de combustible)\\
+				$g_{S}$ & (kg gases secos/ kg de combustible)\\
+				$g_{C}$ & kg de carbono / kg de combustible)\\
 				$g'_{C}$ & (kg carbono / kmol combustible)\\
+				$g{w}$ & (kg de aire teórico/ kg combustible)\\
+				$r$ & composición volumentrica\\
+				
 			\end{tabular}
-		
+			\begin{tabular}{r l }
+			$g_{h}=$&$1+e~G_{AT}$\\[0.2cm]
+			$e=$&$\dfrac{g_{h}-1}{G_{AT}}$\\
+			$g_{h}=$&$g_{s}+g_{w}$\\
+			$g_{S}=$&$g'_{S}~g_{C}$\\
+			\end{tabular}
+			\begin{tabular}{r l }
+				$g'_{S}=$&$\dfrac{G''_{S}}{g'_{C}}$\\
+				$g_{i}=$&$\mu_{i}~r_{i}$\\[0.3cm]
+				$g''_{S}=$&$\displaystyle \sum_{i=1}^{n} \mu_{i}~r_{i}$\\[0.3cm]
+				$g'_{C}=$&$\displaystyle \sum_{i=1}^{n} \mu_{C}~r_{iC}$\\[0.3cm]
+				$g'_{S}=$&$\dfrac{\sum_{i=1}^{n} \mu_{i}~r_{i}}{\sum_{i=1}^{n} \mu_{C}~r_{iC}}$\\[0.3cm]
+				$g_{h}=$&$\dfrac{\sum_{i=1}^{n} \mu_{i}~r_{i}}{\sum_{i=1}^{n} \mu_{C}~r_{iC}} g_{C}+g_{w}$\\[0.35cm]
+				$g_{w}=$&$9~g_{he}$\\[0.1cm]
+				$G_{AT}=$&$11.6~g_{C}+37.38~g_{hd}+4.35~g_{S}$\\
+				&\tiny{para mi aca gs es del azufre, no gases secos/comb.}
+			\end{tabular}
 		\end{multicols}
-	
+	Yo copié las formulas, pero los analisis dimensionales no dan en algunos...
 	\end{cajita}
 		
 	% \newpage
@@ -305,17 +321,18 @@
 			% \begin{tabular}{l{1cm} l{5cm}}
 			% asdasdads& asdasdasd\\			
 			% \end{tabular}
-			\begin{tabular}{r  p{7cm} }
-				$G_{v}$ & Vapor producido (kg / h)\\
-				$R_{e}$& Relacion esteq. 9,7 para gas natural\\
-				$\lambda$& Exceso de aire $\dfrac{21}{21-O_{2}}$\\
-				$v$ & Velocidad gas\\
-				$A_{2},\ B$& parametros dependen gas/caldera?\\
+			\begin{tabular}{@{}p{1.5cm}@{}@{}p{7cm}@{}}
+				$G_{r}$ & cantidad vapor producido\\
+	
+				$R_{e}$&relacion estequio... 9,7 para gas natural\\
+				$\lambda$&exceso de aire $\dfrac{21}{21-O_{2}}$\\
+				$v$ & velocidad gas\\
+				$A_{2}$y$B$& parametros dependen gas/caldera?\\
 				$P_{ab}$ & va en MCA\\
 				$P_C$& en combustible sin quemar es la potencia calorifica del carbono, 8140 $kcal/kg$\\
 				$\% C$ & es Carbono sin quemar, en las cenizas\\
-				$C_{p~humo}$ & se puede aproximar 0.24 $\frac{kcal}{kg~^{\circ} C}$\\
-				$C_{v}$ & vapor sobrecalentado  0.46 $\frac{kcal}{kg~^{\circ} C}$
+				$C_{p~humo}$ & se puede aproximar 0.24 $\frac{kCal}{kg~^{\circ} C}$\\
+				$C_{v}$ & vapor sobrecalentado  0.46 $\frac{kCal}{kg~^{\circ} C}$
 			\end{tabular}
 		\vspace{0.4cm}
 	
@@ -323,15 +340,13 @@
 	
 			\textbf{PERDIDAS}\\
 	
-			\begin{tabular}{p{0.19\textwidth} l}
-				Gases combustión & $Q = G_{g} {c_{p}}_{humo} (T_{gas} - T_{aire})$\\
-				Humedad de comb. & $ Q = G_{H_2O}\ \Delta h_{H_2O}$\\
-				Comb. sin quemar & $ Q = \dfrac{G_{escoria}}{G_{comb.}}\ PC\ C$\\
-				Humedad comb. durante combustión & $Q = 9\ G_{hum} ~\Delta h_{agua}$\\
-				Exceso aire & $Q = G_{aire}~c_{p~\textit{humo}} (T_{gas} - T_{aire})$\\
-				Humedad aire & $ Q = G_{aire}~ c_{v} ~ (T_{gas} - T_{aire})$\\
-				Pérdidas por radiación & \\
-				Pérdidas circunstanciales & \\
+			\begin{tabular}{p{0.2\textwidth} l}
+				gases combustión & $Q = G_{g} c_{p~\textit{humo}} (t_{gas}-t_{aire})$\\
+				humedad comb & $ Q= G_{h2o} \Delta h_{agua}$\\
+				comb sin quemar & $ Q =\dfrac{G_{escoria}}{G_{combustible}}~P_{C}~\% C$\\
+				humedad comb \break durante combustión &$ Q=9~G_{humedad} ~\Delta h_{agua}$\\
+				exceso aire & $Q = G_{aire}~c_{p~\textit{humo}} (t_{gas}-t_{aire})$\\
+				humedad aire & $ Q = G_{aire}~ c_{v} ~ (t_{gas}-t_{aire})$\\
 			\end{tabular}
 			
 			\renewcommand{\arraystretch}{1.5}
