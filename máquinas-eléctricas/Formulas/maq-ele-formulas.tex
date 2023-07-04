@@ -26,6 +26,10 @@
 		$\fasor{v}_0$ [V] & Tensión en vacío & $\fasor{v}_{pc}$ [V] & Tensión a plena carga \\
 	\end{tabular}
 	\unidad{1}{Acá quiero poner lo de las bobinas y eso... VER}
+	
+%	BEGIN_FOLD
+
+
 	\unidad{2}{Transformadores}
 	
 	\begin{cajita}
@@ -225,4 +229,63 @@
 		\end{tabular}
 	
 	\end{cajita}
+%	END_FOLD
+
+	\newpage
+%	BEGIN_FOLD
+	\unidad{3}{Máquinas asíncronas}
+	\begin{cajita}
+		\subtitulo{Aspectos básicos}
+		\begin{multicols}{2}
+			\begin{tabular}{l l}
+				Tension inducida & $e_{ind} = l \vec{v} \times \vec{B}$\\
+				Fuerza en el devanado & $F = i \vec{l} \times \vec{B}$\\
+				\multicolumn{2}{l}{l es la longitud del segmento y su dirección es la de la corriente}\\ \vspace{.1cm}
+				Velocidad campo rotante & $n_{sinc} = \dfrac{120}{P} f_{e}$\\
+				Deslizamiento & $ s = \dfrac{n_{sinc} - n_{m}}{n_{sinc}} = \dfrac{\omega_{sinc} - \omega_{m}}{\omega_{sinc}}$\\
+				Frecuencia eléctrica en el rotor & $f_{r} = s f_{e}$
+			\end{tabular}
+		\end{multicols}
+	\end{cajita}
+	
+	\begin{cajita}
+		\subtitulo{Circuito equivalente}
+		\begin{multicols}{2}
+			\includegraphics[width= .9\linewidth]{U3-Circuito_equivalente}\\ \vspace{.1cm}
+			\begin{gather*}
+					R_{2} = a_{ef}^{2} R_{R}\\
+				X_{2} = a_{ef}^{2} X_{R0}\\
+				E_{2} = a_{ef} E_{R0}\\
+				I_{2} = \dfrac{I_{R}}{a_{ef}}			
+			\end{gather*}
+		\end{multicols}
+		Donde el subíndice \emph{R0} equivale a los parámetros a rotor bloqueado, es decir s=1
+	\end{cajita}
+	
+	\begin{cajita}
+		\subtitulo{Diagrama de potencias}
+		\begin{multicols}{2}
+					\vspace{.5cm}
+				\includegraphics[width = \linewidth]{U3-Diagrama-potencia} \\
+				\begin{center}
+					\begin{tabular}{r l}
+						\vspace{.2cm}
+						Perdidas cobre estator & $P_{CE} = 3 I_{1}^{2} R_{1}$\\ \vspace{.2cm}
+						Pérdidas en el núcleo & $P_{nucl} = 3 E_{1}^{2} G_{C}$\\ \vspace{.2cm}
+						Potencia en el entrehierro & $P_{EH} = P_{in} - P_{CE} - P_{nucl}$\\ \vspace{.2cm}
+						Pérdidas cobre rotor & $P_{CR} = 3 I_{2}^{2} R_{2}$\\ \vspace{.2cm}
+						Potencia convertida & $P_{conv} = P_{EH} - P_{CR}$\\ \vspace{.2cm}
+						$P_{CR} = s P_{EH}$ & $P_{conv} = (1-s) P_{EH}$\\ \vspace{.2cm}
+						Potencia de salida & $P_{out} = P_{conv} - P_{FyR} - P_{misc}$ \\ 
+						\multicolumn{2}{c}{$\tau_{ind} = \dfrac{P_{conv}}{\omega_{m}} = \dfrac{(1-s) P_{EH}}{(1-s) \omega_{sinc}}$}						
+					\end{tabular}
+				\end{center}
+		\end{multicols}
+	\end{cajita}
+	
+	\begin{cajita}
+		\subtitulo{Ensayos de motor asincrónico}
+	\end{cajita}
+%	END_FOLD
+
 \end{document}
