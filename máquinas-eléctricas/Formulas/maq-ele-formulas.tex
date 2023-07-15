@@ -282,10 +282,54 @@
 				\end{center}
 		\end{multicols}
 	\end{cajita}
-	
-	\begin{cajita}
-		\subtitulo{Ensayos de motor asincrónico}
-	\end{cajita}
-%	END_FOLD
 
+%	END_FOLD
+\newpage
+\begin{multicols}{2}
+\begin{cajita}
+	\subtitulo{Ensayo de vacío o rotor libre}	
+	
+	
+		\begin{flushleft}
+			
+			Permite determinar las pérdidas en el $Fe$ y mecánicas,
+			los parámetros $R_{Fe}$.\\
+			``Si bien $N_{rot}\neq N_{sinc}$, el motor gira a una velocidad muy cercana ($R_2$ elevada), y al no ejercer ningún par de carga el eje se considera potencia disipada $P_{conv}=0$''\\
+			Primero hay que medir la resistencia del estator (CC, se agrega un 10\textasciitilde20 \% por efecto pelicular).\\
+			Luego hacemos funcionar el motor sin carga, conectandolo a tensión nominal y descendiendo hasta le 50\textasciitilde30\%, midiendo la potencia tomada de la red.\\
+			Al nosotros conocer la potencia de entrada y la perdida en $Fe$ nos quedan dos incognitas las cuales se iteran.\\
+
+		\end{flushleft}
+	
+			\begin{tabular}{c c}
+				\multicolumn{2}{c}{$P_0=P_{fe}+P_m+P_{cu1}$}\\
+				\multicolumn{2}{c}{$P_0-P_{cu1}=P_{fe}+P_m=P_0-m_1~R_1~I_{0}^{2}$}\\
+			\end{tabular}\\
+			\begin{flushleft}
+				cuando la tensión $V_1=0$ no existen perdidas\ en el hierro porque no hay flujo, ``solo quedarán las pérdidas mecánicas''\\	
+			\end{flushleft}	
+			\begin{tabular}{c c}
+				\multicolumn{2}{c}{\includegraphics[width=\linewidth]{ensayo-vacio-asincrona-1.jpg}}\\
+				\multicolumn{2}{c}{$Cos(\phi_0)=\dfrac{P_{fe}}{m_1 V_1n I_0}$} \\ [0.3 cm ]
+				$ R_{fe}=\dfrac{V_{1n}}{I_{0} \cos \phi_0} $ &$X_{\mu}=\dfrac{V_{1n}}{I_{0}\sin \phi_0}$\\
+			\end{tabular}\\
+
+		\end{cajita}
+		
+
+		\begin{cajita}
+		\subtitulo{Ensayo cortocircuito o rotor bloqueado}	
+		
+		\begin{flushleft}
+			Se realiza impidiendo que el rotor gire ($n=0~\rightarrow s=1 \rightarrow R_2=0$), se comporta como un transformador en cortocircuito.\\
+			Se realiza suministrando tensión desde 0 hasta llegar a la corriente nominal, midiendo a su vez la potencia.
+		\end{flushleft}
+		\begin{tabular}{c c}
+			\multicolumn{2}{c}{$Cos(\phi_{cc})=\dfrac{P_{cc}}{m_1 V_{1cc} I_{1n}}$} \\ [0.3 cm ]
+			$ R_{cc}=\dfrac{V_{1cc}}{I_{1n}} \cos \phi_{cc} $ &$X_{\mu}=\dfrac{V_{1cc}}{I_{1n}}\sin \phi_{cc} $\\
+			\multicolumn{2}{c}{\includegraphics[width=0.8\linewidth]{ensayo-cc-asincrono-1.jpg}}\\
+			%NO SE POR QUE CARAJOS HACE ESTE TABULAR EN OTRA CAJITA, PERO ES CULPA DE LA IMAGEN
+		\end{tabular}
+		\end{cajita}
+	\end{multicols}
 \end{document}
