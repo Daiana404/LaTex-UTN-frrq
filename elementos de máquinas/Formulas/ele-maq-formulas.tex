@@ -3,6 +3,7 @@
 \usepackage{{../../estilos-formulas}}
 \usepackage{enumitem}
 \usepackage{multirow}
+\usepackage[document]{ragged2e}
 
 \newcommand{\materia}{Elementos de Máquinas}
 
@@ -197,7 +198,10 @@
 %		$\sigma_{wN}=\left[\dfrac{10^{b}}{N_{(RPM)}^{m}}\right]$& \\[0.5cm]
 %		\multicolumn{2}{c}{$CL=\dfrac{\sigma_{wN}}{\sigma_{w}}$}\\
 	\end{tabular}
+\end{cajita}
 \newpage
+\begin{cajita}
+
 	\textbf{Diagrama de Goodman}\\
 \includegraphics[width=0.8\textwidth]{goodman}\\
 \includegraphics[width=0.8\textwidth]{goodman2}\\
@@ -209,8 +213,9 @@
 	Fatiga&Cs&$\frac{O'B}{O'A}$\\[0.2cm]
 \end{tabular}
 	\end{cajita}
-	% \newpage
+	\newpage
 %	\begin{cajita}
+	% \justify
 		\textbf{ENGRANAJES}\\
 	\textbf{rectos: dimensionamiento}\\
 			Carga transmitida $P_t$, la fuerza:\\
@@ -227,19 +232,44 @@
 			 $P_t=71620\dfrac{N}{n~\frac{Dp_1}{2}} \left[\dfrac{cv}{\frac{v}{min}~cm}\right]~\left[kg\right]$\\ \vspace*{0.2cm}
 			Relación de transmisión : $i=\frac{\omega_2}{\omega_1}=\frac{z_1}{z_2}=\frac{Dp_1}{Dp_2}$\\ \vspace*{0.2cm}
 			Paso del dentado: $z~t=\pi~Dp \rightarrow Dp=\frac{t}{\pi~z}=\frac{M}{\pi}$\\\vspace*{0.2cm}
-			Módulo del dentado:
-			\begin{tabular}{l}
-				Métrico/alemán\\
-				$M(mm)=\dfrac{t(mm)}{\pi}=\dfrac{Dp(mm)}{z}$\\
-				Diamteral pitch\\
-				$P"(\frac{1}{pulg})=\dfrac{\pi}{t(")}=\dfrac{z}{Dp(")}$\\
-			\end{tabular}
+			Módulo del dentado:\\\vspace*{0.2cm}
+			\begin{centering}
+				\begin{tabular}{l}
+					Métrico/alemán\\
+					$M(mm)=\dfrac{t(mm)}{\pi}=\dfrac{Dp(mm)}{z}$\\
+					Diamteral pitch\\
+					$P"(\frac{1}{pulg})=\dfrac{\pi}{t(")}=\dfrac{z}{Dp(")}$\\
+				\end{tabular}
+			\end{centering}\\\vspace*{0.2cm}
+			Entre centro:\\
+			$ec=\dfrac{dp_1+dp_2}{2}=\dfrac{M z_1+ M z_2}{2}=\frac{M}{2}(z_1+z_2)$\\
 
 
 %	\end{cajita}
+
+	\textbf{Ejes helicoidales}\\
+	\includegraphics[width=0.3\textwidth]{engranaje-heli.jpg}\\
+	\begin{tabular}{r l}
+		$t_c$& paso circunferencial\\
+		$t_n$& paso normal\\
+	\end{tabular}\\
+	\begin{tabular}{r l}
+		$t_n\approx t_c Cos(\phi)$& $M_c=\dfrac{t_c}{\pi}$ \\
+		\multicolumn{2}{c}{$M_n=\dfrac{t_n}{\pi}=M_c Cos(\phi)$}\\
+	\end{tabular}\\
 	
-	
+	$D_p=M_c z= \dfrac{M_n}{Cos(\psi)}z$\\
+	$D_{ext}=D_p+2M_n =\dfrac{M_n}{Cos(\psi)}z+2M_n$\\
+	$M_n=\dfrac{D_{ext}}{\frac{z}{Cos(\psi)}+2}$\\\vspace*{0.2cm}
+	Entre centro:\\\vspace*{0.2cm}
+	$ec=\dfrac{dp_1+dp_2}{2}=\dfrac{M_c z_1+ M z_2}{2}$\\
+	$ec=\dfrac{M_n}{2 Cos{\psi}}(z_1+z_2)$\\
 %	\begin{cajita}
+	\vspace*{0.2cm}
+		\textbf{Ejes concurrentes}\\
+
+
+	\vspace*{0.2cm}
 		\textbf{Ejes alabeados}\\
 		\begin{tabular}{r l}
 			$t_c$& paso circunferencial\\
