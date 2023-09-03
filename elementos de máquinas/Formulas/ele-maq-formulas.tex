@@ -217,59 +217,143 @@
 %	\begin{cajita}
 	% \justify
 		\textbf{ENGRANAJES}\\
-	\textbf{rectos: dimensionamiento}\\
-			Carga transmitida $P_t$, la fuerza:\\
-			\includegraphics[height=0.2\textwidth]{engranaje-recto}\\
-			\begin{tabular}{l l}
+	\textbf{Dientes rectos}\\
+			\includegraphics[height=0.18\textwidth]{engranaje-recto}\\
+			\begin{tabular}{p{3.5cm} l}
 				Altura diente & $k + W$\\
 							&$\rightarrow~De=Di+2h=Dp+2k$\\
 				Altura de cabeza (k) & $k= M$ o $K=0.8M$\\
 				Raíz (w) & $w=1.166M$\\
-				Juego de cabeza& $S_k=W-k$\\
-			\end{tabular}\vspace*{0.2cm}
+				Juego de cabeza& $S_k=W-k$\\ \hline
+				Relación de transmisión& $i=\frac{\omega_2}{\omega_1}=\frac{z_1}{z_2}=\frac{Dp_1}{Dp_2}$\\ 
+				Paso del dentado &$z~t=\pi~Dp \rightarrow Dp=\frac{t}{\pi~z}=\frac{M}{\pi}$\\\hline
+			\end{tabular}\\\vspace*{0.2cm}
 
-
-			 $P_t=71620\dfrac{N}{n~\frac{Dp_1}{2}} \left[\dfrac{cv}{\frac{v}{min}~cm}\right]~\left[kg\right]$\\ \vspace*{0.2cm}
-			Relación de transmisión : $i=\frac{\omega_2}{\omega_1}=\frac{z_1}{z_2}=\frac{Dp_1}{Dp_2}$\\ \vspace*{0.2cm}
-			Paso del dentado: $z~t=\pi~Dp \rightarrow Dp=\frac{t}{\pi~z}=\frac{M}{\pi}$\\\vspace*{0.2cm}
-			Módulo del dentado:\\\vspace*{0.2cm}
+			\textbf{\textit{Módulo del dentado:}}\\\vspace*{0.2cm}
 			\begin{centering}
-				\begin{tabular}{l}
-					Métrico/alemán\\
-					$M(mm)=\dfrac{t(mm)}{\pi}=\dfrac{Dp(mm)}{z}$\\
-					Diamteral pitch\\
-					$P"(\frac{1}{pulg})=\dfrac{\pi}{t(")}=\dfrac{z}{Dp(")}$\\
+				\begin{tabular}{p{1.8cm} l}
+					Métrico / alemán & $M(mm)=\frac{t(mm)}{\pi}=\frac{Dp(mm)}{z}$\\
+					Diamteral pitch& $P"(\frac{1}{pulg})=\frac{\pi}{t(")}=\frac{z}{Dp(")}$\\
 				\end{tabular}
 			\end{centering}\\\vspace*{0.2cm}
-			Entre centro:\\
-			$ec=\dfrac{dp_1+dp_2}{2}=\dfrac{M z_1+ M z_2}{2}=\frac{M}{2}(z_1+z_2)$\\
+			% Entre centro:\\\vspace*{0.1cm}
+			% $ec=\dfrac{dp_1+dp_2}{2}=\dfrac{M z_1+ M z_2}{2}=\frac{M}{2}(z_1+z_2)$\\\vspace*{0.2cm}
 
+
+			\textbf{\textit{Para el dimensionamiento (piñon):}}\\
+			\textbullet Entre centro:$=\frac{dp_1+dp_2}{2}=\frac{M z_1+ M z_2}{2}=\frac{M}{2}(z_1+z_2)$\\\vspace*{0.2cm}
+			\textbullet No exceder la relación $\frac{b}{M}$ y $\frac{b}{D_p}$ de los siguientes valores:\\
+			\begin{tabular}{r l p{0.5\textwidth}}
+				$\frac{b}{M}$&=6& p. dientes de Fundición bruto\\
+							&=10& p. apoyos ordinarios\\
+							&=15-28& p. buenos apoyos apoyos \newline en cajas de engranajes\\
+				$\frac{b}{D_p}$&=0.5-2.5&\\
+			\end{tabular}\vspace*{0.2cm}
+			\textbullet desgaste- Buckingham: $P_t\leq F_w$\\
+			\textit{(Carga transmitida $P_t$, la fuerza)}\\\vspace*{0.08cm}
+			$\left\{\begin{array}{l}
+				
+				F_w=Dp ~b ~\lambda ~C_z ~\dfrac{C_L c_\psi C_v}{C_s}\\\vspace*{0.2cm}
+				P_t=71620\dfrac{N}{n~\frac{Dp_1}{2}} \left[\dfrac{cv}{\frac{v}{min}~cm}\right]~\left[kg\right]\\ 
+				\mu=\frac{b}{D_p}
+			\end{array}\right.$\\
+			queda:$D_p=\sqrt[3]{\dfrac{71620 \times 2 \times N~C_s}{n_1~\mu~\lambda~C_z~C_L~C_\psi~C_v}}$\\\vspace*{0.2cm}
+
+			\textbullet resistencia, M necesario, Lewis	$P_t\leq F_b$\\
+			$\left\{\begin{array}{l}
+				
+				F_b=b ~Y ~M ~\sigma_{Wadm} ~\dfrac{K_1}{K_f ~K_s}~C_v\\\vspace*{0.2cm}
+				P_t=71620\dfrac{N}{n~\frac{Dp_1}{2}} \left[\dfrac{cv}{\frac{v}{min}~cm}\right]~\left[kg\right]\\ 
+				\mu=\frac{b}{D_p}
+			\end{array}\right.$\\
+			queda: $M=\dfrac{71620\times 2\times N~K_f ~K_s}{n_1~Y~\mu~C_v~\sigma_{Wadm}~K_1~D_{p1}^2}$\\
+			\vfill\columnbreak
+			 
 
 %	\end{cajita}
 
-	\textbf{Ejes helicoidales}\\
-	\includegraphics[width=0.3\textwidth]{engranaje-heli.jpg}\\
+	\textbf{Dientes helicoidales} $(\psi=\phi)$\\
 	\begin{tabular}{r l}
 		$t_c$& paso circunferencial\\
 		$t_n$& paso normal\\
 	\end{tabular}\\
-	\begin{tabular}{r l}
-		$t_n\approx t_c Cos(\phi)$& $M_c=\dfrac{t_c}{\pi}$ \\
-		\multicolumn{2}{c}{$M_n=\dfrac{t_n}{\pi}=M_c Cos(\phi)$}\\
-	\end{tabular}\\
-	
+
+
+		% \begin{tabular}{r l}
+		% 	\multirow[c]{5}{*}{\includegraphics[width=0.2\textwidth]{engranaje-heli.jpg}} 
+		% 	&\\
+		% 	&\\
+		% 	&$M_c=\dfrac{t_c}{\pi}$\\	
+		% 	&$t_n\approx t_c Cos(\phi)$\\
+		% 	&$M_n=\dfrac{t_n}{\pi}=M_c Cos(\phi)$\\
+		% \end{tabular}\\ \vspace*{.5cm}
+
+		\begin{multicols}{2}
+			\includegraphics[width=0.2\textwidth]{engranaje-heli.jpg}\\
+			$\left\{\begin{array}{l}
+				M_c=\dfrac{t_c}{\pi}\\
+				t_n\approx t_c Cos(\phi)\\
+			\end{array} \right.$\\
+			$M_n=\dfrac{t_n}{\pi}=M_c Cos(\phi)$\\
+		\end{multicols}
+		
+
 	$D_p=M_c z= \dfrac{M_n}{Cos(\psi)}z$\\
 	$D_{ext}=D_p+2M_n =\dfrac{M_n}{Cos(\psi)}z+2M_n$\\
 	$M_n=\dfrac{D_{ext}}{\frac{z}{Cos(\psi)}+2}$\\\vspace*{0.2cm}
-	Entre centro:\\\vspace*{0.2cm}
+	\textbf{\textit{Para el dimensionamiento (piñon):}}\\
+	\textbullet Entre centro:\\\vspace*{0.2cm}
 	$ec=\dfrac{dp_1+dp_2}{2}=\dfrac{M_c z_1+ M z_2}{2}$\\
 	$ec=\dfrac{M_n}{2 Cos{\psi}}(z_1+z_2)$\\
-%	\begin{cajita}
-	\vspace*{0.2cm}
+	\textbullet Mantener contacto sobre totalidad del flanco:\\
+	$b_{min}=\dfrac{t_c}{tan(\psi)}$\\
+	Consideraciones varias:\\
+	\begin{tabular}{l r}
+	$\lambda=\frac{b}{M}= 12 - 20~~~~~$&
+	$\mu=\frac{b}{D_p}=2 - 4~~~~~$\\
+	\end{tabular}
+
+	\textbullet Resistencia, M necesario, Lewis	$P_t\leq F_b$,
+	se utilizan valores ``normales'' $Y_n$ correspondiente a $Z_{eq}=\frac{Z}{Cos^{3}(\psi)}$\\
+
+
+	\textbullet Desgaste- Buckingham: $P_t\leq F_w$, con $C_\psi=\frac{1}{Cos^{2}(\psi)}$ \\
+
+	\textbullet Podemos plantear por Efectos dinámicos - Buckingham: aplicamos Lewisy Buckingham sin $C_v$, pero comparamos esos esfuerzos con $P_d$, $P_d=F_t+\Delta_p$\\
+
+	\begin{multicols}{2}
+		\textbf{\textit{Descomposición de fuerzas}}\\
+		\includegraphics[width=5.3cm]{engranaje-heli2.jpg}\\
+		\vfill\columnbreak
+		\vspace*{0.8cm}
+		$P_t=71620\dfrac{N}{n\frac{D_p}{2}}$\\
+		$P_r=P_t~tan(\alpha_c)$\\
+		$P_a=P_t~tan(\psi)$
+	\end{multicols}
+
+
+
+	\newpage
 		\textbf{Ejes concurrentes}\\
+		$\begin{array}{l}
+		i=\dfrac{\omega_2}{\omega_1}=\dfrac{sen(\beta_1)}{sen(\beta_2)}\\
+		\phi=\beta_1+\beta_2
+		\end{array}$\\
 
-
+		\begin{multicols}{2}
+			\textbf{\textit{Descomposición de fuerzas}}\\
+			\includegraphics[width=4.5cm]{engranaje-concurrentes.jpg}\\
+			\vfill\columnbreak
+			\vspace*{0.2cm}
+			$P_t=71620\dfrac{N}{n\frac{D_p}{2}}$\\
+			$F=P_t~tan(\alpha)$\\
+			$F_x=F~cos(\beta_2)$\\
+			$F_y=F~cos(\beta_1)$\\
+			% $F_x=F~cos(\beta_2)=P_t~tan(\alpha)~cos(\beta_2)$\\
+			% $F_y=F~cos(\beta_1)=P_t~tan(\alpha)~cos(\beta_1)$\\
+		\end{multicols}
 	\vspace*{0.2cm}
+	\vfill\columnbreak
 		\textbf{Ejes alabeados}\\
 		\begin{tabular}{r l}
 			$t_c$& paso circunferencial\\
