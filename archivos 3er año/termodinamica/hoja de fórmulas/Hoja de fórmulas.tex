@@ -1,0 +1,372 @@
+\documentclass[a4paper, 11pt,titlepage]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{left=2.54cm, right=2.54cm, top=2.54cm, bottom=2.54cm}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\tcbset{colframe=white!60!black, colback=white!95!gray,
+}
+\tcbuselibrary{breakable}
+\usepackage{fancyhdr}
+
+\fancyhf[HL]{\textbf{UTN-Frrq}}
+\fancyhead[R]{\textit{Termodinamica}}
+\fancyfoot[R]{\vspace{.2cm}\thepage}
+\fancyfoot[C]{}
+\fancyfoot[L]{\hrule \vspace{.2cm}  \small{Franco Guardiani, Valentin Franzoi, Daiana Polo}}
+
+
+
+\title{
+	\begin{spacing}{1}
+		\hrule
+		\vspace{0.2cm}
+		\textbf{\Large{TERMODINÁMICA}\\}
+		\textbf{\Large{Resumen de formulas\\}}
+		\Large{Franzoi, Guardiani, Polo}
+		\vspace{0.2cm}
+		\hrule
+	\end{spacing}
+	\vspace{1cm}
+	\date{}
+	}
+
+\begin{document}
+	\pagestyle{fancy}
+	\maketitle
+	
+%NOMENCLATURA
+%\begin{tabular}{r l c r l}
+%	content
+%\end{tabular}
+%FORMULAS
+%	\begin{center}
+%		\begin{tabular}{r | l c r | l}
+%			content
+%		\end{tabular}
+%	\end{center}
+
+
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+	\begin{tcolorbox}[title =
+			\large\textbf{Fórmulas Generales}]
+		
+		%	NOMENCLATURA
+		\begin{tabular}{r l c r l}
+				$m$& Masa & \hspace{1cm}& $t$ & Tiempo\\
+				$V$ & Volumen && $g$ & Aceleración de la gravedad  \\
+				$h$ & Altura && $\delta_{H_{2}O}$ & Densidad del agua ($997 \frac{kg}{m^3}$) \\
+				$e$ & Energia por unidad de masa [$\frac{J}{kg}$]&& $W$& Trabajo por unidad de masa\\
+				
+		\end{tabular}
+	
+	%	ECUACIONES
+	\begin{center}
+			\begin{tabular}{r | l c r | l}
+			\vspace{0.3cm} Densidad & $\delta = \dfrac{m}{V}$ &  & Presión hidrostática & $P_{h}=\delta g h$ \\ 
+			\vspace{0.3cm} Caudal volumentrico & $Q_v = \dfrac{V}{t}$ & &Caudal masico & $Q_m = \dfrac{m}{t} = \dfrac{Q_v}{v_e}$ \\ 
+			\vspace{0.3cm} Volumen especifico & $v_e = \dfrac{V}{m}$ & & Densidad especifica & $\delta_e = \dfrac{\delta}{\delta_{H_{2}O}}$ \\ 
+			\vspace{0.3cm} Potencia & $N = Q_m W \; [\frac{J}{h} = W]$ && Potencia & $N = W Q_m$
+			
+		\end{tabular}
+	Temperaturas $\dfrac{^\circ C}{100} = \dfrac{^\circ F - 32}{180} = \dfrac{k - 273}{100}$ 
+	\end{center}
+		
+	\end{tcolorbox}
+% \vspace{-0.1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{tcolorbox}[title = \large\textbf{Primer Principio}]
+	
+%	NOMENCLATURA
+	\begin{tabular}{r l c r l}
+		$Q$ & Calor [$J = N.m$]& \hspace{1cm} & $W $& Trabajo [$J$]\\
+		$U$ & Energia interna [$J$] & & $u$ & por unidad de masa [$\frac{J}{kg}$]\\
+		$c_v$ & Calor especifico a volumen cte & & $c_p$& Calor especifico a presion cte\\
+		$T$ & Temperatura [$k$] && $c$ & Calor especifico
+	\end{tabular} 
+
+	\begin{center}
+			\begin{tabular}{r | l c r | l}
+					\vspace{0.3cm} Calor & $\delta Q = du + \delta W$ && Trabajo & $W = \int{p \, dV}$   \\ 
+					\vspace{0.3cm} Ciclo cerrado  & $\oint{\delta Q} = \oint{\delta W} $ && Energia interna  & $\Delta U =m C_v\Delta T$\\ 
+					\vspace{0.3cm} Proceso a P: cte & $Q = m c_p \Delta T$ &&  Proceso a P: cte (p.109) & $W = p \Delta V = mR \Delta T$\\ 
+			     	\vspace{0.3cm} 	Proceso a V: cte & $Q = m c_v \Delta T$ && Entalpia & $H = U + pV$ \\ 
+					Razon calores esp. & $k = \dfrac{c_p}{c_v}$ &&Gas Ideal & $H = m c_p T$
+			\end{tabular}
+		\end{center}
+	\end{tcolorbox}
+%\vspace{1cm}
+	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{tcolorbox}[title = \large\textbf{Gases ideales}]
+		
+		\begin{tabular}{r l c r l}
+			\vspace{0.3cm} $m$ & Masa & & $p$ & Presion \\
+			\vspace{0.3cm} $V$ & Volumen & & $T$ & Temperatura \\
+			\vspace{0.3cm} $\overline{R} = RM$ & Constante universal & & $M$ & Masa molar [$\frac{g}{mol} = \frac{Kg}{kmol}$]\\
+			
+		\end{tabular}
+	     
+	   	\begin{center}
+	     	\begin{tabular}{r | l c r | l}
+	     			\vspace{0.3cm} Ley Universal & $pV = mRT$ & & Numero de moles & $n = \dfrac{m}{M}$ \\
+	     			\vspace{0.3cm} Para n mol presentes & $pV = n\overline{R}T$ & & Para cada gas & $R = \dfrac{\overline{R}}{M}  = cte $  \\
+	     			\vspace{.3cm} Ley de Boyle (T = cte) & $pV = cte $ && Ley de Charles (p = cte)  &  $\dfrac{V}{T} = cte $  \\
+	     			
+	     			
+	     	\end{tabular}
+	   	\end{center}
+	   
+	\end{tcolorbox}
+%\vspace{1cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tcolorbox}[title = \large\textbf{Mezcla de gases}]
+
+	\begin{tabular}{r l c r l}
+		\vspace{.3cm} $M_m$ & Masa molar mezcla && $M_i$ & Masa molar del elemento i \\
+		\vspace{.3cm} $n_{\small{t}}$ & Numero de moles total && $n_i$ & N° de moles del elemento i \\
+		\vspace{.3cm} $m_{\small{t}}$ & Masa total && $m_i$ & Masa del elemento i \\
+		\vspace{.3cm} $p_{\small{t}}$ & Presion total && $p_i$ & Presion del elemento i \\
+		\vspace{.3cm} $V_T$ & Volumen total && $V_i$ & Volumen del elemento i \\
+	\end{tabular}
+
+		\begin{center}
+				\begin{tabular}{r | l c r | l}
+					\vspace{.3cm}	$n_t = \dfrac{m_t}{M_t}$ & $m_t = \sum m_i = \sum M_i n_i$ && comp. gravimetrica & $g_i = \dfrac{m_i}{m_t}$ \\
+					\vspace{.3cm}	Fraccion molar & $\chi_i = \dfrac{n_i}{n_t} = \dfrac{p_i}{p_t} =\dfrac{V_i}{V_t} $ && Const. mezcla & $R_m = \sum g_i R_i$\\
+					\vspace{.3cm}	Analisis volumentrico & $V_i = V_t \chi_i$ && Calor esp. mezcla & $C_v = \sum g_i C_{v_i}$\\
+					\vspace{.3cm}	Analisis barometrico & $p_i = p_t \chi_i$ && Calor esp. mezcla & $C_p = \sum g_i C_{p_i}$\\
+					\vspace{.3cm}	Energia int, mecla & $u = \sum g_i u_i$ && Entalpia mezcla & $h = \sum g_i h_i$\\
+					\vspace{.3cm}	Ley de Dalton & \multicolumn{4}{l}{$(p_1 + p_2)V = (n_1 + n_2)\overline{R}T $ }\\
+					\vspace{.3cm}   Ley de amagat & \multicolumn{4}{l}{$p (V_1 + V_2) = (n_1 + n_2)\overline{R}T$}\\
+					\end{tabular}
+			\end{center}
+\end{tcolorbox}
+%\vspace{1cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{tcolorbox}[title = \large\textbf{Gases reales}]
+%		NOMENCLATURA
+		\begin{tabular}{r l c r l}
+			$p_c$ & Presion critica && $V_c$ & volumen critico \\
+			$T_c$ & Temperatura critica && $b$ & Volumen de moleculas \\
+			$p_i$ & Presion interna termodinamica && $p_i =$ & $a \delta_{i}^2 = a \dfrac{1}{V^2}$\\
+			$Z$ & Coeficiente de compresibilidad
+		\end{tabular}
+%		FORMULAS
+		\begin{center}
+				\begin{tabular}{r | l c r | l}
+							\vspace{.3cm} Van der Waals & $(p + p_i)(V-b)=mRT$ &$\rightarrow$& \multicolumn{2}{l}{$(p + \dfrac{a}{V^2})(V-b)=mRT$} \\
+							\vspace{.3cm} Constante & $a = 3 p_c V_{c}^2$ && Constante & $b = \dfrac{V_c}{3}$ \\
+							\vspace{.3cm} Constante & $R = \dfrac{8}{3} \dfrac{p_c V_c}{T_c}$ && con coeficiente $Z$& $P V = ZnRT$ \\
+							\vspace{.3cm} Battie-Bridgeman & $P = \dfrac{\overline{R} T}{\overline{v}^2 }(\overline{v}+B)-\dfrac{A}{\overline{v}^2 }$ &&\multicolumn{2}{c}{$A=A_0(1-\dfrac{a}{\overline{v}})$} \\
+							\multicolumn{2}{c}{$A=A_0(1-\dfrac{a}{\overline{v}})$} && \multicolumn{2}{c}{$e=\dfrac{C}{\overline{v}T^3}$}\\
+							
+				\end{tabular}
+		\end{center}
+	\end{tcolorbox}
+	\vspace{1cm}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tcolorbox}[title = \large\textbf{Transformaciones de gases}]
+
+\begin{itemize}
+\item Transformacion Isobárica (p = Cte.):	
+		%NOMENCLATURA
+%\begin{tabular}{r l c r l}
+%	content
+%\end{tabular}
+
+%FORMULAS
+	\begin{center}
+			\begin{tabular}{r | l c r | l}
+					\vspace{.3cm} Calor & $Q = \Delta U + W$ && Trabajo & $W = \int p\,dv = p \Delta V$\\
+					\vspace{.3cm} Calor & $Q = C_p \Delta T$ && Energia int. & $\Delta U = C_v \Delta T $\\
+					\vspace{.3cm} Ec. de Mayer & $C_p = C_v + R$ && Trabajo &$W = p \Delta V = mR\Delta T$ 
+				\end{tabular}
+		\end{center}
+\item Transformacion Isométrica (V = Cte.):
+		\begin{center}
+		\begin{tabular}{r | l c r | l}
+			\vspace{.3cm} Calor & $Q = C_p \Delta T$ && Trabajo &$W = 0 $\\
+			\vspace{.3cm} Ec. de Mayer & $C_p = C_v + R$ && 
+		\end{tabular}
+     	\end{center}
+
+\item Transformacion Isotérmica (T = Cte.):
+       	\begin{center}
+       	\begin{tabular}{r | l c r | l}
+       		\vspace{.3cm} Energia int. & $\Delta U = 0$ && Trabajo &$W = RT \log_{e}\dfrac{V_2}{V_1} $\\
+       		\vspace{.3cm} Calor & $Q =RT \log_{e}\dfrac{V_2}{V_1} $ && Relacion por T=cte& $\dfrac{P_1}{P_2}=\dfrac{V_2}{V_1} $
+       	\end{tabular}
+        \end{center}
+\item Transformacion adiabatica $Q=0$:
+       \begin{center}
+        	\begin{tabular}{r | l c r | l}
+        		\vspace{.3cm} Relacion $T$& $V^{(k-1)}T=cte$ && Relacion $PV$ &$V^kP = cte$\\
+        		\vspace{.3cm} Relacion $TP$ & $ TP^{(\frac{1}{k}-1)}=cte $ && $k = \dfrac{C_p}{C_v}$& $(k - 1)=\dfrac{R}{C_v} $
+        	\end{tabular}
+       \end{center}
+
+\item Transformacion Politropica $C = cte.$:   
+	 \begin{center}
+		\begin{tabular}{r | l c r | l}
+			\vspace{.3cm} Relacion $T$& $V^{(m-1)}T=cte$ && Relacion $PV$ &$V^mP = cte$\\
+			\vspace{.3cm} Relacion $TP$ & $ TP^{(\frac{1}{m}-1)}=cte $ && $m = \dfrac{C_p - C}{C_v - C}$& 
+		\end{tabular}
+	\end{center}
+
+\end{itemize}
+
+
+		\begin{center}
+			\vspace{.3cm} $W=\dfrac{R T_{1}}{m-1}\left(1-\dfrac{T_2}{T_1}\right)$\\
+			\vspace{.3cm} $W=\dfrac{R T_{1}}{m-1}\left[1-\left(\dfrac{v_1}{v_2}\right)^{m-1}\right]$\\
+			\vspace{.3cm} $W=\dfrac{R T_{1}}{m-1}\left[1-\left(\dfrac{p_2}{p_1}\right)^{\frac{m-1}{m}}\right]$
+	\end{center}
+
+\small{\textbf{nota:} estas mismas ecuaciones se pueden utilizar para la transformación adiabatica pero cambiando el coeficiente \emph{m} por \emph{k}}
+\normalsize
+\end{tcolorbox}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{center}
+	\begin{table}[htbp]
+		
+		\centering
+		\resizebox{16cm}{!}{ %ACA REESCALA LA TABLA 
+			\begin{tabular}{|l|c|l|l|l|l|}
+				\hline
+				\multicolumn{1}{|c|}{\textbf{Proceso}}                          & \textbf{\begin{tabular}[c]{@{}c@{}}Índice\\ n\end{tabular}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Calor \\ agregado\end{tabular}}} & \textbf{$\int_{1}^{2} p.dv$} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Relaciones\\ p,v,T\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Calor específico\\ c\end{tabular}}} \\ \hline
+				\begin{tabular}[c]{@{}l@{}}Presión\\ Constante\end{tabular} 
+				& n=0 & $\mathit{c_{p}}.(T_{2}-T_{1})$  &    $p.(\mathit{v_{2}}-\mathit{v_{1}})$ & $\dfrac{T_{2}}{T_{1}}=\dfrac{\mathit{v_{2}}}{\mathit{v_{1}}}$ & $\mathit{c_{p}}$
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}Volumen \\ Constante\end{tabular}    
+				& n=$\infty$& $\mathit{c_{v}}.(T_{2}-T_{1})$  &    0 & $\dfrac{T_{1}}{T_{2}}=\dfrac{\mathit{p_{1}}}{\mathit{p_{2}}}$ & $\mathit{c_{v}}$
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}Temperatura\\ Constante\end{tabular} 
+				& n=1&$\mathit{p_{1}}.\mathit{v_{2}}.\log_{e}\dfrac{\mathit{v_{2}}}{\mathit{v_{1}}} $ &    $\mathit{p_{1}}.\mathit{v_{2}}.\log_{e}\dfrac{\mathit{v_{2}}}{\mathit{v_{1}}} $ & $ \mathit{p_{1}}.\mathit{v_{1}}=\mathit{p_{2}}.\mathit{v_{2}} $ & $\infty$
+				\\ \hline
+				\begin{tabular}[c]{@{}l@{}}Adiabático\\ reversible\end{tabular} & n=$\gamma, \, k$ &  0 & $ \dfrac{\mathit{p_{1}}.\mathit{v_{1}}-\mathit{p_{2}}.\mathit{v_{2}}}{\gamma-1} $ &
+				\begin{tabular}[c]{@{}l@{}} $ \mathit{p_{1}}.\mathit{v_{1}}^{\gamma}=\mathit{p_{2}}.\mathit{v_{2}}^{\gamma} $\\ \\ $\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{v_{1}}}{\mathit{v_{2}}})^{\gamma-1}$\\
+					$\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{p_{2}}}{\mathit{p_{1}}})^{\dfrac{\gamma-1}{\gamma}}	$	\end{tabular}
+				
+				&         0   \\ 
+				\hline
+				Politrópico  & n=$n, \, m$ &
+				\begin{tabular}[c]{@{}l@{}} 
+					$ \mathit{c_{n}}.(T_{2}-T_{1}) $\\
+					$=\mathit{c_{v}}.(\dfrac{\gamma-n}{1-n}).(T_{2}-T_{1})	$\\
+					$=(\dfrac{\gamma-n}{1-n}).\mathcal{W}_{sin~flujo}$\\
+				\end{tabular} 
+				&$ \dfrac{\mathit{p_{1}}.\mathit{v_{1}}-\mathit{p_{2}}.\mathit{v_{2}}}{n-1} $ 
+				&\begin{tabular}[c]{@{}l@{}} $ \mathit{p_{1}}.\mathit{v_{1}}^{n}=\mathit{p_{2}}.\mathit{v_{2}}^{n} $\\ \\ $\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{v_{1}}}{\mathit{v_{2}}})^{n-1}$\\
+					$\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{p_{2}}}{\mathit{p_{1}}})^{\dfrac{n-1}{n}}	$
+				\end{tabular}
+				& $\mathit{c_{n}}=\mathit{c_{v}}.(\dfrac{\gamma-n}{1-n})$
+				\\ \hline
+			\end{tabular}
+		}
+	\end{table}
+	
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tcolorbox}[title = \large\textbf{Sistemas abiertos}]
+	%NOMENCLATURA
+        \begin{tabular}{r l c r l}
+         	$\omega$ & Velocidad && $z$ & Altura \\
+         	$U$ & Energia interna && $g$ & Aceleracion gravesadad \\
+         	$w_1 = P_1 V_1$ & Trabajo de ingreso && $w_2 = P_2 V_2$& Trabajo de egreso \\
+         	
+        \end{tabular}
+%FORMULAS
+	\begin{center}
+			\begin{tabular}{r | l c r | l}
+					\vspace{.3cm} Primer principio & $Q = \Delta E + W_T$ && Energia total & $E = E_c + E_p + U$\\
+					\vspace{.3cm} Energia cinetica & $e_c = \dfrac{\omega^2}{2}$ && Energia potencial & $e_p = gz$\\
+					\vspace{.3cm} Trabajo total & $W_t = W_2 - W_1 + W_c$ && Trabajo de circulacion & $W_c = \int -v \, dp$\\
+					\vspace{.3cm} Calor & \multicolumn{4}{l}{$Q = \Delta U + \Delta E_c + \Delta E_p + W_t $ }\\
+					\vspace{.3cm} Entalpia & $h = u + PV$ && Calor entonces & $Q = \Delta h + W_c$
+				\end{tabular}
+		\end{center}
+	\small{\textbf{Nota:} la ultima definicion de calor es considerando $e_c=0$ y $e_p=0$}\\
+	\normalsize
+	
+	\textbf{Ecuacion de continuidad}\\
+	
+	\begin{tabular}{r l c r l}
+		$\omega$ & Velocidad && $A$ & Seccion\\
+		$L$ & Longitud && $V = AL$ & Volumen \\
+	\end{tabular}
+    \begin{center}
+    	\begin{tabular}{r | l c r | l}
+    		\vspace{.3cm} Caudal volumetrico & \multicolumn{4}{l}{$Q_v = \dfrac{V}{t} = \dfrac{Al}{t}= A \omega$} \\
+    		\vspace{.3cm} Continuidad & \multicolumn{4}{l}{$Q_1 = Q_2\rightarrow A_1 \omega_1 =A_2 \omega_2$}\\
+    		\vspace{.3cm} Caudal masico & $Q_m = \dfrac{m}{t} = \dfrac{Q_v}{v_e}$    		
+    	\end{tabular}
+    \end{center}
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%SEGUNDA PARTE
+
+\begin{tcolorbox}[title = \large\textbf{Segundo Principio}]
+	\begin{tabular}{r l c r l}
+		$Q$ & Calor && $T$ & Temperatura 
+    \end{tabular}
+
+	\begin{center}
+		\begin{tabular}{r | l c r | l}
+				\vspace{.3cm}	Rendimiento & $ \eta = \dfrac{\textsc{Energía Útil}}{\textsc{Energía Absorbida}}$ && MT & $\eta = 1 - \dfrac{Q_{2}}{Q_{1}}$ \\
+				\vspace{.3cm}   MF & $\eta = \dfrac{Q_{2}}{Q_{1}} - 1$ && BC & $\eta = 1 - \dfrac{Q_{1}}{Q_{2}}$ \\
+				\vspace{.3cm}	Teorema de Clausius & $\displaystyle\sum \dfrac{Q_{i}}{T_{i}} \leq 0$ && Reversible & $\displaystyle\sum \dfrac{Q_{i}}{T_{i}} = 0$ \\
+                \vspace{.3cm}	Irreversible & $\displaystyle\sum \dfrac{Q_{i}}{T_{i}} < 0$ 
+				\end{tabular}
+			Para los ciclos reversibles, se puede poner el rendimiento en funcion de las temperaturas de las fuentes.
+		\end{center}
+
+
+21
+\end{tcolorbox}
+
+\begin{tcolorbox}[title = \large\textbf{Entropia}]
+	\begin{tabular}{r l c r l}
+		$Q$ & Calor && $T$& Temperatura \\
+		
+	\end{tabular}
+
+	Se toma un estado de referencia en el cual $s_{0} = 0$ para $T_{0} \, v_{0} \, p_{0} \, $
+	\begin{center}
+		\begin{tabular}{r | l c r | l}
+			\vspace{.3cm} Entropia & $ds = \dfrac{\delta Q}{T}$ && &\\
+			\vspace{.3cm} Para $s_0$ & \multicolumn{4}{l}{$s = C_{v} \ln \dfrac{T}{T_{0}} + R \ln \dfrac{v}{v_{0}} = C_{p} \ln \dfrac{T}{T_{0}} - R \ln \dfrac{p}{p_{0}}$} \\
+			\vspace{.3cm} $v = cte$ & $s = s_{0} + R \ln \dfrac{v}{v_{0}} $ && Temperatura & $T = T_{0} e^{\frac{s_{0}}{c_v}}$\\
+		   	\vspace{.3cm} $p = cte$ & $s = s_{0} - R \ln \dfrac{p}{p_{0}} $ && Temperatura & $T = T_{0} e^{\frac{s_{0}}{c_p}}$
+		\end{tabular}
+	\end{center}
+\end{tcolorbox}
+
+
+\end{document}
