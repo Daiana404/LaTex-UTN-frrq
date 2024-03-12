@@ -1,0 +1,434 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{tcolorbox,booktabs,fourier,tabularx,wrapfig,multicol,caption, subcaption,tikz,fancyhdr, tcolorbox, esint}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\tcbuselibrary{breakable}
+
+\graphicspath{{../imagenes/}}
+
+
+%Comando título de cada unidad
+\newcommand{\unidad}[2]{\begin{center}
+		\fontsize{10}{10}\selectfont\color{gray!50!black}\scshape Unidad #1 \\
+		\fontsize{14}{14}\selectfont \scshape #2
+	\end{center} \vspace{-.5cm}}
+
+
+
+%\author{}
+%\title{\includegraphics[width=.12\textwidth]{utn} \\ \textsc{Termodinámica} \\ \textsl{Hoja de fórmulas} \\ }
+%\date{}
+
+%Encabezado y pie de página
+
+
+\fancyhead[R]{\textsc{Termodinámica Técnica}}
+\fancyhead[L]{\includegraphics[width=.1\textwidth]{utncom}}
+\fancyhead[C]{ Hoja de fórmulas}
+\fancyfoot[L]{Franco Guardiani, Valentin Franzoi, Daiana Polo}
+\fancyfoot[R]{\thepage}
+\fancyfoot[C]{}
+
+\begin{document}
+	
+
+	
+\pagestyle{fancy}
+\vspace{1cm}
+	\section*{Nomenclatura} \vspace{-.3cm}
+	\begin{tabular}{r l}
+		$P$ [Pa] & Presión\\
+		$V$ [m$^{3}$] & Volumen \\
+		$m$ [kg] & Masa \\
+		$\delta$ [kg/m$^{3}$] & Densidad \\
+		& $\delta_{H_{2}O}=997$[kg/m$^{3}$] \\
+		$l$ [m] & Altura \\ 
+		$g$ [m/s$^{2}$] & Aceleración de la gravedad \\
+		$\dot{m}$ [kg/min] & Caudal másico \\
+		$\dot{Q}$ [m$^3$/min]& Caudal volumétrico\\
+		$T$ [K] & Temperatura \\
+		$R$ [kJ/kg$\cdot$K] & Constante del gas \\
+		$\overline{R}$ [kJ/kg$\cdot$K] & Constante universal de los gases \\
+		& $\overline{R}=8.31434 [kJ/kmol\cdot K]$ \\
+		$n$ [moles] & Número de moles \\
+		$M$ [kg/kmol] & Peso molecular \\ 
+		$\overline{v}$[m$^3$/kmol] & Volumen específico molar \\
+		$t$ [s] & Tiempo \\
+		$Q$ [J] & Calor \\
+		$u,U$ [J] & Energía interna\\
+		$W$ [J] & Trabajo \\
+		$W_{c}$ [J] & Trabajo de circulación\\
+		$h, H$ [J]& Entalpía \\
+		$c_{v}$ & Calor específico a $v=cte$ \\
+		$c_{p}$ & Calor específico a $p=cte$ \\
+		$c_{n}$ & Calor específico medio del gas \\
+		$k$ & Razón de calores específicos \\
+		$\gamma$ & Coeficiente adiabático \\
+		$n$ & Coeficiente politrópico \\
+		$\Delta$ & Estado 2 $-$ Estado 1 \\
+		$x_{i}$ & Fracción molar \\
+		$g_{i}$ & Composición gravimétrica \\
+		$P_{c}, T_{c}, V_{c}$ & Valores críticos \\
+		$z$ [m] & Altura \\
+		$\omega$[m/s$^{2}$] & Velocidad del gas\\
+
+		
+	\end{tabular}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\color{gray!50!black}	\fontsize{14}{14}\selectfont \scshape Fórmulas más utilizadas
+\end{center}\vspace{-.5cm}
+\begin{tcolorbox}[colback=white!90!gray, colframe=black!80!gray]
+	\begin{tabular}{r l}
+\vspace{.1cm}		Ec. General & $pV=mRT$ / $pv=RT$\\
+
+\vspace{.1cm}		1er Principio & $Q=\Delta h+\Delta E_{p}+\Delta E_{c}+W_{c}$\\ 
+\vspace{.1cm}		2do Principio & $Q_{1}=W+Q_{2}$\\
+
+\vspace{.1cm}		Calor & $\delta Q=c\cdot  dT$ \\
+\vspace{.1cm}		Energía interna & $du=c_{v} \cdot dT$ \\
+\vspace{.1cm}		Entalpía & $ dh = c_{p} \cdot dT $ \\
+\vspace{.1cm}		Relación Mayer & $R=c_{p}-c_{v}$\\
+\vspace{.1cm}		Constante del gas & $\overline{R}= R \cdot M$\\ 
+\vspace{.1cm}		Trabajo SC & $\delta W = p \cdot dv$ \\
+\vspace{.1cm}		Trabajo SA rp & $\delta W_c = -v \cdot dp$\\
+
+\vspace{.1cm}		Rendimiento & $\eta = \frac{obtenido}{demandado}$ \\
+\vspace{.1cm}		Ciclo de Carnot & $\eta = 1-\dfrac{Q_2}{Q_1}=1-\dfrac{T_2}{T_1}$ \\
+\vspace{.1cm}		Politrópica & $pv^{n}=cte$ $$\\
+\vspace{.1cm}		Potencia & $ N=W \dot{m}=Q \dot{m} $ \\
+
+	
+	\end{tabular}
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\unidad{1}{Conceptos Fundamentales}
+\vspace{0.1cm}
+	\begin{tcolorbox}[colback=white!97!brown, colframe=brown!15!gray]
+		\begin{tabular}{r l}
+			
+			\vspace{.1cm}	Presión hidrostática 		& $P_{h}=\delta g l$ \\
+			\vspace{.1cm}	 $P_{abs}=P_{atm}+P_{man}$	 & $P_{vacío} = P_{atm} - P_{abs}$ \\ 
+			\vspace{.1cm}	Densidad específica			 & $\delta_{e} = \dfrac{\delta}{\delta_{H_{2}O}}=\dfrac{m}{V \delta_{H_{2}O}}$ \\
+			\vspace{.1cm} Volumen específico 			& $v_{e}/v=\dfrac{V}{m} \hspace{.2cm} \overline{v}=\dfrac{V}{m}M$ \\
+
+			\vspace{.1cm} Potencia 						& $N=W\cdot \dot{m}$\\
+			\vspace{.1cm}Temperatura 					& \\ \multicolumn{2}{c}{$\dfrac{^{\circ}C}{100}=\dfrac{^{\circ}F-32}{180}=\dfrac{K-273}{100}$} \\	
+	\end{tabular}
+	\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\unidad{2}{Gases Ideales}
+	\begin{tcolorbox}[colback=white!97!brown, colframe=brown!15!gray]
+		
+		\begin{tabular}{r l}
+		\vspace{.1cm}	\textbf{Ecuación general} & $PV=mRT$ \\
+		
+		
+		\vspace{.1cm}	Ley Boyle-Mariotte 	& $PV=cte$  ($T=cte$)\\
+		\vspace{.1cm}	Ley de Charles			& $\dfrac{V}{T}=cte$  ($P=cte$)\\
+		
+		\vspace{.1cm}	Ley de Joule& $u= c_{v} T$ \\
+		\vspace{.1cm}	Entalpía 	& $h=u+pv$ \\
+		\vspace{.1cm}			 	& $h=c_{p}T$ \\
+		
+		\vspace{.1cm}	$PV = n \overline{R} T$ & $m=nM$ \hspace{.2cm} $\overline{R} = R M$\\
+		\vspace{.1cm}	 Trabajo			 & $\delta W= p \cdot dv  \hspace{.2cm} [J/kg] $ \\
+		\vspace{.1cm}	 Calor 					& $\delta Q=c \cdot dT \hspace{.35cm} [J/kg] $  \\
+	
+	\vspace{.2cm}		Relación \textbf{\textsc{importante}} &  $\dfrac{pv}{T}=R=cte$ \\	
+		\end{tabular}\\
+
+
+	\end{tcolorbox}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+		\unidad{3}{Gases Reales}
+	
+	\begin{tcolorbox}[colback=white!97!brown, colframe=brown!15!gray]
+		
+		
+		
+		\begin{tabular}{r l}
+			\vspace{.1cm}	Ecuación de Mayer 		& $R=c_{p}-c_{v}$ \\
+			\vspace{.2cm}			Razón de calores 			& $k = \dfrac{c_{p}}{c_{v}}>1$ \\
+			\multicolumn{2}{l}{\textbf{Mezcla de gases}} \\
+			\vspace{.1cm}	Ley de Dalton 			& $P_{T}=\displaystyle\sum P_{i}$ \\
+%			\multicolumn{2}{c}{\small $(P_{1}+P_{2})V= n_{T}\overline{R}.T$ }\\
+			\vspace{.1cm}Ley de Amagat 				& $V_{T}=\displaystyle\sum V_{i}$ \\
+%			\multicolumn{2}{c}{\vspace{.2cm} \small $P(V_{1}+V_{2})= n_{T}\overline{R}.T$}\\
+			
+			\vspace{.1cm}\textbf{Fracción molar} & $x_{i}=\dfrac{n_{i}}{n_{T}}=\dfrac{V_{i}}{V_{T}}=\dfrac{P_{i}}{P_{T}}$\\
+			\vspace{.1cm} Compos. gravimétrica & $g_{i}=\dfrac{m_{i}}{m_{T}}$\\
+			                                                                 
+			\vspace{.1cm} $u=\sum g_{i}u_{i}$ 		&$c_{v}= \sum g_{i}c_{vi}$\\
+			\vspace{.2cm} $h=\sum g_{i}h_{i}$ 		&$c_{p}=\sum g_{i}c_{pi}$\\
+			\vspace{.2cm} Peso molecular & $M_T=\dfrac{m_T}{n_T}$ \\
+			
+			\multicolumn{2}{l}{\vspace{.1cm}	Van der Waals } \\
+			\multicolumn{2}{c}{$\left( p+\dfrac{a}{(\overline{v})^{2}} \right)=\dfrac{\overline{R}T}{(\overline{v}-b)}$} \\
+			\multicolumn{2}{c}{\vspace{.2cm} $a=3P_{c} V_{c}^{2} \hspace{.2cm} b=\dfrac{V_{c}}{3} \hspace{.2cm} R=\dfrac{8}{3}\dfrac{P_{c}V_{c}}{T_{c}}$ } \\
+			
+			\multicolumn{2}{l}{\vspace{.1cm} Beattie-Bridgeman} \\
+			\multicolumn{2}{c}{\vspace{.1cm}$ \left( p+\dfrac{A}{(\overline{v})^2} \right) \dfrac{(\overline{v})^2}{(\overline{v}+B)}=\overline{R}T(1-e) $} \\
+			\multicolumn{2}{c}{\vspace{.1cm}$ A=A_{0} \left( 1- \dfrac{a}{\overline{v}} \right) \hspace{.2cm}  B=B_{0} \left( 1- \dfrac{b}{\overline{v}} \right) \hspace{.2cm} e=\dfrac{c}{\overline{v}T^{3}} $} \\
+	\vspace{.1cm}		Propiedades reducidas & \\
+			\multicolumn{2}{c}{\vspace{.2cm} $ p_{r}=\dfrac{p}{p_{c}} T_{r}=\dfrac{T}{T_{c}} v_{r}=\dfrac{v}{v_{c}}$} \\
+			\vspace{.1cm} Gou Yen Sou & $PV=zn\overline{R}T$ \\
+		\end{tabular}
+	\end{tcolorbox}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+	\unidad{4}{Transformaciones en Gases}
+	
+	\begin{tcolorbox}[colback=white!97!brown, colframe=brown!15!gray, breakable]
+		
+	
+		\begin{tabular}{r l}
+		
+			\multicolumn{2}{l}{En \textbf{sistemas cerrados}} \\
+
+\vspace{.1cm}			{\textcolor{brown!50!black}{\textbf{Primer principio}}}& $Q = \Delta U + W$\\
+\vspace{.1cm}			W(+): $\Box \rightarrow$& Q(+): $\Box \leftarrow$\\
+\vspace{.1cm}			W(-): $\Box \leftarrow$  &   Q(-): $\Box \rightarrow$ \\
+
+		
+
+	\multicolumn{2}{l}{\vspace{.1cm} En \textbf{sistemas abiertos}} \\
+	\vspace{.1cm}		{\textcolor{brown!50!black}{\textbf{Primer principio}}} & $Q=\Delta E+W_{T}$\\
+	\multicolumn{2}{c}{$Q=\Delta h + \Delta E_{p} +\Delta E_{c} + W_{c}$} \\
+	%	\vspace{.1cm}						& $W_{T}=-W_{c}+L_{2}-L_{1}$\\ 
+	\vspace{.1cm}		Energía potencial & $E_p = gz \left[\frac{J}{kg}\right]$ \\
+	\vspace{.1cm}		Energía cinética & $E_c = \frac{1}{2}\omega^{2} \left[\frac{J}{kg}\right]$ \\
+	\vspace{.1cm}		Trabajo circulante &$W_{c}=\displaystyle\int_{1}^{2} -v \cdot dp$\\
+	%	\vspace{.1cm}	Si $E_{c}=E_{p}=0$	& $Q=\Delta H +W_{c}$\\
+	\vspace{.2cm}	Si no hay datos para $E_{c/p}$ & $\Rightarrow \hspace{.1cm} E_{c/p}=0$ \\
+	
+	\vspace{.1cm} Caudal volumétrico 			& $\dot{Q}=A\cdot \omega [m^{3}/s] $ \\
+	\vspace{.1cm} Caudal másico					& $\dot{m}= \dfrac{\dot{Q}}{v_{e}} \ [kg/s] $ \\
+
+\end{tabular}
+
+\vspace{.1cm}
+  \textbf{Transformaciones} 
+\vspace{.2cm}	
+
+	\resizebox{7.7cm}{!}{\begin{tabular}{r l l l }
+	\vspace{.1cm}	Isocórica 	& $pv^{\infty}=cte$ 	& $ Q = \Delta u =c_{v} \Delta T$ 				& $W=0$\\
+	\vspace{.1cm}	Isobárico  	& $pv^{0}=cte$ 			& $ Q = \Delta h = c_{p} \Delta T$ 				& $W=p(v_{2}-v_{1})$ \\ 
+	\vspace{.1cm}	Isotérmico	&$pv=cte$				& $Q= p_{1}v_{1} \ln{\dfrac{v_{2}}{v_{1}}}$ 		& $W=p_{1}v_{1} \ln{\dfrac{v_2}{v_1}}$\\ 
+	\vspace{.1cm}	Adiabática  &$pv^{\gamma}=cte$ 		& $Q=0$											& $W=\dfrac{p_{1}v_{1}-p_{2}v_{2}}{\gamma -1}$\\
+	\vspace{.1cm}	Politrópica & $pv^{n}=cte$ 			& $Q=\left(\dfrac{\gamma-n}{\gamma-1}\right)W$	& $W=\dfrac{p_{1}v_{1}-p_{2}v_{2}}{n -1}$\\
+	\end{tabular}}	
+	
+\vspace{.3cm}
+\textsl{Para politrópicas}
+\vspace{.1cm}
+
+\hspace{-.5cm}
+\resizebox{8.3cm}{!}{\begin{tabular}{c c c}
+	$T v^{n-1}=cte$ & $p v^{n}=cte$ & \vspace{.2cm} $TP^{\dfrac{1-n}{n}}=cte$ \\
+	$W=\dfrac{R T_{1}}{n-1}\left(1-\dfrac{T_2}{T_1}\right)$  & 
+	$W=\dfrac{R T_{1}}{n-1}\left[1-\left(\dfrac{v_1}{v_2}\right)^{n-1}\right]$ & 
+	$W=\dfrac{R T_{1}}{n-1}\left[1-\left(\dfrac{p_2}{p_1}\right)^{\frac{n-1}{n}}\right]$
+\end{tabular}}
+
+
+
+%	En general:
+%	\begin{center}
+%		$Q=h_{2}+E_{c2}+E_{p2}-h_{1}-E_{c1}-E_{p1}+W_{c}$ 
+%	\end{center}
+%	Relación potencia-trabajo-caudal:
+%	\begin{center}
+%		$N=W \dot{m}$
+%	\end{center}
+
+
+	\end{tcolorbox}
+%------------------------------------------------------------------------------------------------------------------------
+		
+%	\begin{center}
+%		\begin{table}[htbp]
+%			
+%			\centering
+%			\resizebox{8.5cm}{!}{ %ACA REESCALA LA TABLA 
+%				\begin{tabular}{|l|c|l|l|l|l|}
+%					\hline
+%					\multicolumn{1}{|c|}{\textbf{Proceso}}                          & \textbf{\begin{tabular}[c]{@{}c@{}}Índice\\ n\end{tabular}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Calor \\ agregado\end{tabular}}} & \textbf{$\int_{1}^{2} p.dv$} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Relaciones\\ p,v,T\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Calor específico\\ c\end{tabular}}} \\ \hline
+%					\begin{tabular}[c]{@{}l@{}}Presión\\ Constante\end{tabular} 
+%					& n=0 & $\mathit{c_{p}}.(T_{2}-T_{1})$  &    $p.(\mathit{v_{2}}-\mathit{v_{1}})$ & $\dfrac{T_{2}}{T_{1}}=\dfrac{\mathit{v_{2}}}{\mathit{v_{1}}}$ & $\mathit{c_{p}}$
+%					\\ \hline
+%					\begin{tabular}[c]{@{}l@{}}Volumen \\ Constante\end{tabular}    
+%					& n=$\infty$& $\mathit{c_{v}}.(T_{2}-T_{1})$  &    0 & $\dfrac{T_{1}}{T_{2}}=\dfrac{\mathit{p_{1}}}{\mathit{p_{2}}}$ & $\mathit{c_{v}}$
+%					\\ \hline
+%					\begin{tabular}[c]{@{}l@{}}Temperatura\\ Constante\end{tabular} 
+%					& n=1&$\mathit{p_{1}}.\mathit{v_{2}}.\log_{e}\dfrac{\mathit{v_{2}}}{\mathit{v_{1}}} $ &    $\mathit{p_{1}}.\mathit{v_{2}}.\log_{e}\dfrac{\mathit{v_{2}}}{\mathit{v_{1}}} $ & $ \mathit{p_{1}}.\mathit{v_{1}}=\mathit{p_{2}}.\mathit{v_{2}} $ & $\infty$
+%					\\ \hline
+%					\begin{tabular}[c]{@{}l@{}}Adiabático\\ reversible\end{tabular} & n=$\gamma$ &  0 & $ \dfrac{\mathit{p_{1}}.\mathit{v_{1}}-\mathit{p_{2}}.\mathit{v_{2}}}{\gamma-1} $ &
+%					\begin{tabular}[c]{@{}l@{}} 
+%							\vspace{0.25cm}$ \mathit{p_{1}}.\mathit{v_{1}}^{\gamma}=\mathit{p_{2}}.\mathit{v_{2}}^{\gamma} $\\ 	\vspace{0.25cm}$\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{v_{1}}}{\mathit{v_{2}}})^{\gamma-1}$\\
+%							\vspace{0.25cm}$\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{p_{2}}}{\mathit{p_{1}}})^{\dfrac{\gamma-1}{\gamma}}$
+%					\end{tabular}
+%					
+%					&         0   \\ 
+%					\hline
+%					Politrópico  & n=n &
+%					\begin{tabular}[c]{@{}l@{}} 
+%						\vspace{0.25cm}$ \mathit{c_{n}}.(T_{2}-T_{1}) $\\
+%						\vspace{0.25cm}$=\mathit{c_{v}}.(\dfrac{\gamma-n}{1-n}).(T_{2}-T_{1})	$\\
+%						\vspace{0.25cm}$=(\dfrac{\gamma-n}{1-n}).\mathcal{W}_{sin~flujo}$\\
+%					\end{tabular} 
+%					&$ \dfrac{\mathit{p_{1}}.\mathit{v_{1}}-\mathit{p_{2}}.\mathit{v_{2}}}{n-1} $ 
+%					&\begin{tabular}[c]{@{}l@{}} 
+%							\vspace{0.25cm}$\mathit{p_{1}}.\mathit{v_{1}}^{n}=\mathit{p_{2}}.\mathit{v_{2}}^{n} $\\  	\vspace{0.25cm}$\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{v_{1}}}{\mathit{v_{2}}})^{n-1}$\\
+%							\vspace{0.25cm}$\dfrac{T_{2}}{T_{1}}=(\dfrac{\mathit{p_{2}}}{\mathit{p_{1}}})^{\dfrac{n-1}{n}}	$
+%					\end{tabular}
+%					& $\mathit{c_{n}}=\mathit{c_{v}}.(\dfrac{\gamma-n}{1-n})$
+%					\\ \hline
+%				\end{tabular}
+%			}
+%		\end{table}
+%	\end{center}
+%------------------------------------------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\unidad{5}{Segundo principio}
+%	\begin{tcolorbox}[colback=white!97!brown, colframe=brown!15!gray]
+%		\begin{center}
+%			\emph{La transferencia de calor y trabajo no es equivalente, existen pérdidas.}\\
+%			
+%			$Q_{1}=W+Q_{2}$
+%		\end{center}
+%	\begin{tabular}{r l}
+%\vspace{.1cm}		Rendimiento & $\eta = \dfrac{\textup{energía útil}}{\textup{energía absorbida}}$ \\
+%\vspace{.1cm}		Ciclo de Carnot & $\eta = 1 - \dfrac{Q_{2}}{Q_{1}}=1-\dfrac{T_{2}}{T_{1}}$ \\
+%\vspace{.1cm}		Teorema de Clausius & $\displaystyle\sum \dfrac{Q_{i}}{T_{i}} \leq 0$\\
+%\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} = 0$ & Procesos reversibles \\
+%\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} < 0$ & Procesos irreversibles \\
+%\vspace{.1cm}		Entropía & $dS =\dfrac{\delta Q}{T} \hspace{.4cm} T=cte$\\
+%	\end{tabular}
+%	\end{tcolorbox}	
+
+
+%El minipage es para que quede el cuadro en toda la pagina, pero tengo que agregarle dirección horizontal negativa porque me lo hace en la segunda columna (columna de la derecha)
+\hspace{-9.1cm}
+\begin{minipage}{17cm}
+	\begin{center}
+		\unidad{5}{Segundo Principio}
+		\vspace{.4cm}
+	\end{center}
+		\begin{tcolorbox}[colback=white!97!brown, colframe=brown!15!gray]
+		\begin{center}
+			\emph{La transferencia de calor y trabajo no es equivalente, existen pérdidas.}\\
+			
+			$Q_{1}=W+Q_{2}$
+		\end{center}
+		\begin{tabular}{r l r l }
+			\vspace{.1cm}		Rendimiento & $\eta = \dfrac{\textup{energía útil}}{\textup{energía absorbida}}$ & 	\multicolumn{2}{c}{Rendimientos isentrópicos}\\
+			\vspace{.1cm}		Ciclo de Carnot & $\eta = 1 - \dfrac{Q_{2}}{Q_{1}}=1-\dfrac{T_{2}}{T_{1}}$ & Turbina & $\eta_{s} =\dfrac{W_{real}}{W_{s}}=\dfrac{h_{1}-h_{2r}}{h_{1}-h_{2s}}$ \\
+			\vspace{.1cm}		Teorema de Clausius & $\displaystyle\sum \dfrac{Q_{i}}{T_{i}} \leq 0$ &
+			Compresor & $\eta_{s}=\dfrac{W_{s}}{W_{real}}=\dfrac{h_{2s}-h_{1}}{h_{2r}-h_{1}}$	\\
+			\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} = 0$ & Procesos reversibles &&\\
+			\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} < 0$ & Procesos irreversibles&& \\
+			\vspace{.1cm}		Entropía & $dS =\dfrac{\delta Q}{T} \hspace{.4cm} T=cte$&&\\
+		\end{tabular}
+%				\begin{tabular}{r l}
+%			\vspace{.1cm}		Rendimiento & $\eta = \dfrac{\textup{energía útil}}{\textup{energía absorbida}}$ \\
+%			\vspace{.1cm}		Ciclo de Carnot & $\eta = 1 - \dfrac{Q_{2}}{Q_{1}}=1-\dfrac{T_{2}}{T_{1}}$ \\
+%			\vspace{.1cm}		Teorema de Clausius & $\displaystyle\sum \dfrac{Q_{i}}{T_{i}} \leq 0$\\
+%			\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} = 0$ & Procesos reversibles \\
+%			\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} < 0$ & Procesos irreversibles \\
+%			\vspace{.1cm}		Entropía & $dS =\dfrac{\delta Q}{T} \hspace{.4cm} T=cte$\\
+%		\end{tabular}
+\end{tcolorbox}
+\end{minipage}	
+%
+%\begin{center}
+%	Rendimientos isentrópicos
+%\end{center}
+%\begin{tabular}{r l}
+%	\vspace{.1cm}		Turbina & $\eta = \dfrac{\textup{W real turbina}}{\textup{W isentrópico turbina}}$ \\
+%	\vspace{.1cm}		& $\dfrac{W_{real}}{W_{s}}=\dfrac{h_{1}-h_{2r}}{h_{1}-h_{2s}}$ \\
+%	\vspace{.1cm}		Compresor & $\eta = \dfrac{\textup{W isentrópico compresor}}{\textup{W real compresor}}=$ \\
+%	\vspace{.1cm}		& $\dfrac{W_{s}}{W_{real}}=\dfrac{h_{2s}-h_{1}}{h_{2r}-h_{1}}$ \\
+%	
+%\end{tabular}
+%\unidad{5}{Segundo principio}
+%\begin{tcolorbox}[colback=white!97!brown, colframe=brown!15!gray]
+%	\begin{center}
+%		\emph{La transferencia de calor y trabajo no es equivalente, existen pérdidas.}\\
+%		
+%		$Q_{1}=W+Q_{2}$
+%	\end{center}
+%	\begin{tabular}{r l}
+%		\vspace{.1cm}		Rendimiento & $\eta = \dfrac{\textup{energía útil}}{\textup{energía absorbida}}$ \\
+%		\vspace{.1cm}		Ciclo de Carnot & $\eta = 1 - \dfrac{Q_{2}}{Q_{1}}=1-\dfrac{T_{2}}{T_{1}}$ \\
+%		\vspace{.1cm}		Teorema de Clausius & $\displaystyle\sum \dfrac{Q_{i}}{T_{i}} \leq 0$\\
+%		\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} = 0$ & Procesos reversibles \\
+%		\vspace{.1cm}		$\displaystyle\sum \dfrac{Q_{i}}{T_{i}} < 0$ & Procesos irreversibles \\
+%		\vspace{.1cm}		Entropía & $dS =\dfrac{\delta Q}{T} \hspace{.4cm} T=cte$\\
+%	\end{tabular}
+%\end{tcolorbox}	
+\unidad{6}{Aire húmedo}
+\begin{tcolorbox}
+	\textbf{Psicrosometría}\\ 
+	
+	\begin{tabular}{l r}
+		$P_{bar}=P_{aire}+P_{agua}$& 
+		$ h=~h_{a}+\omega h_{v~sat}$\\
+		$HR=\dfrac{m_{v}}{m_{sat}}=\dfrac{P_{v}}{P_{sat}}$&$\omega=\dfrac{m_{v}}{m_{a}}=\dfrac{0.622~p_{v}}{P~-~P_{v}}$
+	\end{tabular}
+	\begin{center}
+			Ecuaciones de aire seco:
+	\end{center}
+	\begin{tabular}{l c}
+		\textit{Masa de aire seco:}& $\sum_{ent}\dot{m}_{a}=\sum_{sal}\dot{m}_{a}$\\
+		\textit{Masa de agua:} & $\sum_{ent}\dot{m}_{w}=\sum_{sal}\dot{m}_{w}$ \\
+		&  $\sum_{ent}\dot{m}_{a} \omega=\sum_{sal}\dot{m}_{a}\omega$\\
+		\textit{Energía:} &\\	
+	\end{tabular}
+	\begin{center}
+		 $ \dot{Q}_{ent}+\dot{W}_{ent}+\sum_{ent} \dot{m}h= \dot{Q}_{sal}+\dot{W}_{sal}+\sum_{sal} \dot{m}h$
+	\end{center}
+
+\end{tcolorbox}
+		
+		
+	
+	\unidad{16?}{Transferencia calor}
+	\vspace{0.1cm}
+	\begin{tcolorbox}
+	\textbf{Conducción de calor a través de paredes planas y compuestas.}
+	\begin{center}
+		$Q=\dfrac{A.\Delta T}{\dfrac{1}{h}+\dfrac{L}{k}+\dfrac{1}{h}}$
+	\end{center}
+
+	\textbf{Conducción de calor a través de cilindros huecos y compuestos.}
+	\begin{center}
+		$Q=\dfrac{2 \pi.L.\Delta T}{\dfrac{1}{h.r_{i}}+\dfrac{ln\left(\frac{r_{f}}{r_{i}}\right)}{k}+\dfrac{1}{h.r_{f}}}$
+	\end{center}
+	\end{tcolorbox}
+\end{document}
+
+
