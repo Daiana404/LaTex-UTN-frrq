@@ -87,7 +87,7 @@ git push origin --delete nombre-DDMMAAAA-version
 
 # Agregar archivos
 Algunas consideraciones a tener en cuenta
-> En revisión...
+> En revisión de contenido...
 ### Materias
 Crear una carpeta por cada materia que se requiera. Colocar el nombre completo de la materia, en minúsculas y separado por guiones medios. Por ejemplo: `máquinas-eléctricas`
 
