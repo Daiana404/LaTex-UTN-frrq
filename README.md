@@ -9,10 +9,7 @@ Este repositorio es de colaboración, por lo que cada miembro debe seguir una se
 
 ### 1. **Clonar el repositorio**
 
-Si todavía no clonaste el repositorio, hacelo con el siguiente comando:
-```bash
-git clone https://github.com/Daiana404/LaTex-UTN-frrq.git
-```
+
 ### 2. **Crear una nueva rama**
 
 Para trabajar en nuevos archivos o hacer modificaciones, creá una nueva rama utilizando el formato: `nombre-DDMMAAAA-version`, y ubicate en la rama creada con `git checkout`.
@@ -90,6 +87,11 @@ Algunas consideraciones a tener en cuenta
 > En revisión de contenido...
 ### Materias
 Crear una carpeta por cada materia que se requiera. Colocar el nombre completo de la materia, en minúsculas y separado por guiones medios. Por ejemplo: `máquinas-eléctricas`
+
+
+### Materias
+Crear una carpeta por cada materia que se requiera. Colocar el nombre completo de la materia, en minúsculas y separado por guiones medios: `máquinas-eléctricas`
+
 
 #### Teoría
 
