@@ -5,3 +5,8 @@
 *.out
 *.ptc
 *.synctex.gz
+*.acn
+*.bcf
+*.glo
+*.ist
+*.run.xml
