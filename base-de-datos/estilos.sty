@@ -1,0 +1,89 @@
+\usepackage{multicol}%Multicolumnas :)
+\usepackage[many]{tcolorbox}%Cajitas propias
+\usepackage{nameref}%Lo uso para llamar a las secciones
+\usepackage[explicit]{titlesec} %Para cambiar section, subsection, etc...
+\usepackage{titletoc}
+\usepackage{tocloft}%Modificar el toc
+
+\numberwithin{equation}{section} % Establecer la numeración de ecuaciones en función de las secciones
+\numberwithin{figure}{section} % Establecer la numeración de figuras en función de las secciones
+\captionsetup{labelfont=bf} % Establecer el formato en negrita para la palabra "Figura" en todos los captions de figuras
+
+%ESTILOS
+\newcommand{\minisection}[1]{
+	\begin{center}
+		\textbf{#1}
+	\end{center}
+}
+%\renewcommand{\contentsname}{} % Elimina el título del índice
+%BEGIN_FOLD SECTION / SUBSECTION / SUBSUBSECTION
+%Section
+\newcommand{\cero}{1}
+\newcommand{\aux}[1]{
+%	\if\thesection\cero
+%	
+%	\else
+%%	\newpage
+%	\fi
+	\textbf{\fontsize{40}{48}\selectfont #1} \\ {\large Unidad \thesection} \vspace{0.5cm}
+	\label{sec:\thesection}\\
+	
+	{\vspace{.5cm}\Large\textsl{Visión General}} \vspace{-.2cm}
+	\begin{multicols}{2}
+		\startcontents[seccion] 
+		\printcontents[seccion]{}{2}{}
+	\end{multicols}
+}
+\titleformat{name=\section}
+{\normalfont}{}{0em}
+{\aux{#1}}[\addvspace{4ex}]
+
+\renewcommand{\cftsubsecfont}{\normalfont\bfseries}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\setlength{\cftbeforesubsecskip}{10pt}
+%Subsection
+\newcommand{\auxx}[1]{
+	\vspace{.5cm}
+	
+	
+	{\Large \thesubsection \hspace{.8cm} \textsc{#1} \hrule}
+	
+	\vspace{-.5cm}
+}
+\titleformat{name=\subsection}
+{\normalfont}{}{0em}
+{\auxx{#1}}[\addvspace{4ex}]
+%%Subsubsection
+\newcommand{\auxxx}[1]{
+	{\large \textit{\textbf{\thesubsubsection\ #1}}}
+}
+\titleformat{name=\subsubsection}
+{\normalfont}{}{0em}
+{\auxxx{#1}}[\addvspace{4ex}]
+%END_FOLD
+
+%BEGIN_FOLD CAJITAS
+\newtcolorbox{preguntas}[1]{title = \textsc{\textbf{Pregunta de examen}},enhanced,attach boxed title to top left={xshift=2mm, yshift=-2mm}, colbacktitle=red!70!black, coltitle=white, boxed title style={colframe=red!30},colback=white!90!red, colframe=red!30}
+%END_FOLD
+
+%BEGIN_FOLD ENCABEZADO Y PIE
+
+\newcommand{\materia}{\textit{\nombreMateria}}
+\fancyhead[R]{\textbf{\nameref{sec:\thesection}}}
+\fancyhead[C]{}
+\fancyhead[L]{\textsc{\nombreMateria}}
+\fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
+\fancyfoot[L]{Polo Daiana, Franzoi Valentin, Guardiani Franco}
+\fancyfoot[C]{}
+
+% Definición del estilo para la portada
+\fancypagestyle{piePortada}{
+	\fancyhf{} % Limpia todos los encabezados y pies de página predefinidos
+	\fancyfoot[L]{Universidad Tecnológica Nacional} % Pie de página centrado
+	\fancyfoot[C]{Facultad Regional Reconquista}
+	\fancyfoot[R]{\textbf{Año 2023}}
+}
+%END_FOLD
+% Para quitar los números de página al toc
+\let\Contentsline\contentsline
+\renewcommand\contentsline[3]{\Contentsline{#1}{#2}{}}
