@@ -1,32 +1,97 @@
 # LaTex-UTN-frrq
-Resúmenes de materias y fórmulas específicas de la carrera Ingeniería Electromecánica
-## Pasos a seguir
-Primera vez
-Si es la primera vez, se debe clonar el repositorio con `git clone https://github.com/Daiana404/LaTex-UTN-frrq.git`
+Apuntes de materias y resúmenes de fórmulas específicas de la carrera Ingeniería Electromecánica
+
+# Guía para trabajar en el repositorio
+
+Este repositorio es de colaboración, por lo que cada miembro debe seguir una serie de pasos para hacer cambios correctamente.
+
+## Flujo de trabajo
+
+### 1. **Clonar el repositorio**
+
+Si todavía no clonaste el repositorio, hacelo con el siguiente comando:
+```bash
+git clone https://github.com/Daiana404/LaTex-UTN-frrq.git
+```
+### 2. **Crear una nueva rama**
+
+Para trabajar en nuevos archivos o hacer modificaciones, creá una nueva rama utilizando el formato: `nombre-DDMMAAAA-version`, y ubicate en la rama creada con `git checkout`.
+
+Por ejemplo: 
+```
+git branch daiana-20022025-1
+```
+```
+git checkout daiana-20022025-1
+```
+### 3. Realizar cambios
+
+Hacé los cambios necesarios en los archivos correspondientes.
+
+### 4. Verificar el estado de los cambios
+Puedes ver qué archivos han sido modificados usando:
+
+```
+git status 
+```
+### 5. Agregar los cambios
+Agregá todos los cambios con `git add .`, o en a archivos específicos con `git add [filename]`
+
+```
+git add .
+```
+### 6. Confirmar los cambios
+Hacé un commit con un mensaje descriptivo que explique los cambios:
+```
+git commit -m "Descripción de los cambios realizados"
+```
+
+### 7. Actualizar tu rama con los últimos cambios
+
+Antes de subir tus cambios, asegurate de que tu rama esté actualizada con los últimos cambios de la rama main:
+
+```
+git pull origin main
+```
+### 8. Subir los cambios al repositorio remoto
+
+Una vez que tengas todos tus cambios listos, subí tu rama al repositorio remoto:
+
+```
+git push origin nombre-DDMMAAAA-version
+```
+
+### 9. Crear un Pull Request (PR)
+Una vez que se trabajó y se hizo el push de un archivo, tenés que hacer el pull en GitHub.
+
+1. Andá a GitHub y abrí el repositorio.
+2. Vas a ver un botón que dice "Pull requests". Hacé clic ahí.
+3. En el Pull Request, agregá una descripción de los cambios realizados.
+4. Seleccioná la rama main como la rama base, y tu rama como la rama que querés fusionar.
+5. Pedí la revisión de tus cambios antes de fusionar.
+
+### 10. Borrar ramas
+Una vez que tu Pull Request haya sido fusionado, podés eliminar la rama tanto local como remotamente.
+
+Eliminar la rama localmente:
+```
+git branch -d nombre-DDMMAAAA-version
+```
+Eliminar la rama remotamente:
+```
+git push origin --delete nombre-DDMMAAAA-version
+```
+
+¡Listo! Así es como podés colaborar en este repositorio. Si tenés alguna duda, no dudes en preguntar.
 
 
-Si ya tenés la carpeta, solo tenes que actualizar con `git pull`
-
-
-Si no se muestran las actualizaciones debes ir a otra rama aleatoria `git checkout random-branch` y volver `git checkout main`
-
-
-## Siempre
-Crear una nueva rama `git branch nombre-DDMMAAAA-version` y luego `git push origin nombre-DDMMAAAA-version`
-
-## Revisar en GitHub
-Una vez que se trabajó y se hizo el push de un archivo, se debe realizar el pull en GitHub. Ir a *Pull requests* y luego *compare and merge* si está todo ok.
-
-## Eliminar ramas viejas
-No elimines hasta que sepamos qué estamos haciendo
-
-# Archivos
+# Agregar archivos
 Algunas consideraciones a tener en cuenta
+> En revisión...
+### Materias
+Crear una carpeta por cada materia que se requiera. Colocar el nombre completo de la materia, en minúsculas y separado por guiones medios. Por ejemplo: `máquinas-eléctricas`
 
-## Materias
-Crear una carpeta por cada materia que se requiera. Colocar el nombre completo de la materia, en minúsculas y separado por guiones medios: `máquinas-eléctricas`
-
-### Teoría
+#### Teoría
 
 Dentro de la carpeta de la materia, se deberá crear una carpeta de `Teoría`. En dicha carpeta, se deberá crear el archivo *main* del resumen de la materia con el siguiente nombre como ejemplo: `maq-ele-resumen`.
 > Si están de acuerdo, nombremos a los archivos con las primeras tres letras de cada palabra. Con dos palabras bastaría. Lo hice con todos menos con mecánica de los fluidos... aunque se podría poner algo como `mec-flu`
@@ -56,10 +121,8 @@ Así debería verse el archivo *main*, pueden copiar y pegar:
 \end{document}
 ```
 
-### Resumen de Formulas
+#### Resumen de Formulas
 
 Así como se crea una carpeta de Teoría, se deberá crear una carpeta llamada `Formulas`. En dicha carpeta, se creará el archivo respectivo al resumen de fórmulas. Ejemplo: `maq-ele-formulas`
 
 
-# Sintáxis de GitHub
-Les recomiendo que lean la [Guía de Sintáxis de GitHub](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para que quede todo más bonito, referenciado y ordenado.
