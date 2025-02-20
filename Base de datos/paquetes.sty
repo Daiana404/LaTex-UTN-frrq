@@ -1,0 +1,65 @@
+% --Antiguo 
+%\usepackage[utf8]{inputenc}
+%\usepackage[spanish]{babel} %Traduce encabezados al español como Chapter - Capítulo
+%%\setmainfont{Butler}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{graphicx}
+%\usepackage{caption}
+%\usepackage{subcaption}%Ambos paquetes son para poder usar el entorno de subfiguras
+%\usepackage{parskip}%quitar sangría
+%\usepackage[left=2.00cm, right=2.00cm, top=3.00cm, bottom=3.00cm]{geometry}
+%\usepackage{fancyhdr}
+%\usepackage{tocloft} %Personalizar el formato del índice
+%\usepackage{textcase} %Hacer letras en mayúscula
+%\usepackage{setspace}
+%\usepackage{lastpage} %Colocar el num de páginas
+%\usepackage{lipsum}
+%\usepackage{apacite} %Apa
+%\usepackage[sort&compress]{natbib} % para contraer referencias de texto
+%\usepackage{wrapfig}
+%\usepackage{tikz}
+%\usepackage{soul}%Para el tachado
+%\usepackage{enumitem} %Para cambiar el item de itemize
+%\usepackage{anyfontsize} %Cambiar el tamaño de fuente
+%\usepackage{hyperref}%Para el índice sea interactivo y te lleve automáticamente a los títulos y también la bibliografía
+%\hypersetup{colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black}%Con esto quito los molestos cuadros rojos de las referencias
+%\usepackage{float}
+%\usepackage{xfrac}%Permite agregar la fracción inclinada pequeña con el comando \sfrac
+%
+%%COMANDOS COMUNES
+%\newcommand{\fasor}[1]{\uppercase{\textbf{#1}}}
+
+% --Nuevo
+% --Paquetes iniciales
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+\setlength{\parindent}{0pt}
+\usepackage{titlesec} % Tabla de contenidos
+
+% --Para tablas
+\usepackage{caption}
+\captionsetup[table]{skip = 4pt} % Altura entre caption y tabla
+\usepackage{multirow}
+\usepackage{longtable}
+
+% --Hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=teal,
+	citecolor=blue
+}
+% --Bibliografía
+\usepackage[
+backend=biber,
+style=apa,
+sorting=ynt
+]{biblatex}
+\addbibresource{referencias/refs.bib}

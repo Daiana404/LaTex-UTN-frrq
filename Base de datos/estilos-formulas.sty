@@ -1,0 +1,47 @@
+%tcolorbox personalizado
+% Define un nuevo estilo llamado 'miestilo' que centra el contenido
+% Define un nuevo estilo llamado 'miestilo' que centra el contenido
+% Define un nuevo estilo llamado 'miestilo' que centra el contenido, mantiene el espaciado interno y ajusta el ancho
+\tcbset{
+	miestilo/.style={
+		colback=white!97!brown, % Color de fondo
+		colframe=brown!15!gray, % Color de borde
+		breakable, % Permitir cajas que se dividen en páginas
+		arc=3mm, % Radio de las esquinas
+		boxsep=2mm, % Espaciado interno
+		halign=center, % Centrar el contenido
+	}
+}
+
+\newtcolorbox{cajita}{miestilo}
+
+%Encabezado y pie de página
+\fancypagestyle{pieyencabezado}{
+	\fancyhf{} % Borra el encabezado y el pie de página predeterminados
+	\renewcommand{\footrulewidth}{0.4pt} % Establece el ancho de la línea de pie de página en 0.4pt
+	\fancyfoot[L]{Franzoi Valentin, Guardiani Franco, Polo Daiana} % Define el contenido del pie de página izquierdo
+	\fancyhead[C]{\includegraphics[width=.1\textwidth]{../../utncom}} % Define el número de página en el centro del pie de página
+	\fancyfoot[R]{Página \thepage} % Define el contenido del pie de página derecho
+	\renewcommand{\headrulewidth}{0.4pt} % Establece el ancho de la línea de encabezado en 0.4pt
+	\fancyhead[L]{Hoja de fórmulas} % Define el contenido del encabezado izquierdo
+	\fancyfoot[C]{} % Define el contenido del encabezado central
+	\fancyhead[R]{\textsc{\materia}} % Define el contenido del encabezado derecho
+}
+%Comando para fasores :)
+\newcommand{\fasor}[1]{\uppercase{\textbf{#1}}}
+%Comando título de cada unidad
+\newcommand{\unidad}[2]{\begin{center}
+		\fontsize{10}{10}\selectfont\color{gray!50!black}\scshape Unidad #1 \\
+		\fontsize{14}{14}\selectfont \scshape #2
+	\end{center} \vspace{-.6cm}}
+%Comando para subtitulos
+\newcommand{\subtitulo}[1]{
+	\textbf{#1} \\ \vspace{.1cm} {\color{gray} \hrule}
+}
+%Comando para subsubtitulos
+\newcommand{\subsubtitulo}[1]{
+	\begin{flushleft}
+		\textsc{\textbf{#1}}
+		\vspace{.1cm}
+	\end{flushleft}
+}
