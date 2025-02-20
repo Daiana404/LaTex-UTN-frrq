@@ -65,7 +65,7 @@ git push origin nombre-DDMMAAAA-version
 Una vez que se trabajó y se hizo el push de un archivo, tenés que hacer el pull en GitHub.
 
 1. Andá a GitHub y abrí el repositorio.
-2. Vas a ver un botón que dice "Pull requests". Hacé clic ahí.
+2. Vas a ver un botón que dice "Compare & pull request". Hacé clic ahí.
 3. En el Pull Request, agregá una descripción de los cambios realizados.
 4. Seleccioná la rama main como la rama base, y tu rama como la rama que querés fusionar.
 5. Pedí la revisión de tus cambios antes de fusionar.
