@@ -81,7 +81,7 @@ git push origin --delete nombre-DDMMAAAA-version
 
 ¡Listo! Así es como podés colaborar en este repositorio. Si tenés alguna duda, no dudes en preguntar.
 
-
+<!-- 
 # Agregar archivos
 Algunas consideraciones a tener en cuenta
 > En revisión de contenido...
@@ -125,6 +125,6 @@ Así debería verse el archivo *main*, pueden copiar y pegar:
 
 #### Resumen de Formulas
 
-Así como se crea una carpeta de Teoría, se deberá crear una carpeta llamada `Formulas`. En dicha carpeta, se creará el archivo respectivo al resumen de fórmulas. Ejemplo: `maq-ele-formulas`
+Así como se crea una carpeta de Teoría, se deberá crear una carpeta llamada `Formulas`. En dicha carpeta, se creará el archivo respectivo al resumen de fórmulas. Ejemplo: `maq-ele-formulas` -->
 
 

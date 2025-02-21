@@ -1,4 +1,9 @@
-\chapter{Unidad 4}
+\chapter{Sistemas de distribución}
+
+%\minitoc
+
+%\partoc 
+
 % Falta por hacer
 % Subestaciones de distribución MT/MT. Juego de barras.  Materiales y construcciones normales. Protección contra sobrecorriente transformadores y distribuidores. Protección contra sobretensiones: Selección de descargadores. Riesgo del uso de la energía eléctrica. Tensión de paso, de contacto y transferida. Sistema de puesta a tierra
 % Hecho:
@@ -22,6 +27,17 @@ Entonces, los elementos básicos de un CT son:
 
 Se clasifican, de acuerdo con la tabla \ref{tab:clas-ct}, dependiendo de su misión y su situación en la red eléctrica de \acrshort{at}.
 
+\subsubsection{Por alimentación}
+
+\begin{itemize}
+	\item Un CT alimentado \textbf{en punta} está ubicado al final de una línea, o bien es único en dicha línea. En este último caso se suele denominar independiente. Sólo tiene una entrada de línea.
+	
+	\item Un CT \textbf{de paso} están ubicados en un punto medio de una línea. A ellos llega una línea desde la subestación o desde otro CT y sale hacia el siguiente. Disponen de celda de entrada y salida de línea.
+	\item Un CT alimentado \textbf{en anillo o bucle} son un caso especial de los CT de paso. En estos no se puede considerar que la línea entra y sale, ya que en realidad son alimentados por los dos extremos. Esta es la configuración más usada en ciudades y polígonos industriales, ya que proporciona una buena fiabilidad en el suministro.
+	\item Un CT \textbf{de maniobra} es un CT de compañía con salidas controladas por aparatos de corte con capacidad de despejar fallas.
+\end{itemize}
+
+
 \begin{longtable}{ll}
 	\caption{Clasificación de los CT}\label{tab:clas-ct}\\
 	\hline
@@ -33,12 +49,12 @@ Se clasifican, de acuerdo con la tabla \ref{tab:clas-ct}, dependiendo de su misi
 	\endfoot
 	\hline
 	\endlastfoot
-	\multirow{3}{*}{Por alimentación} & CT alimentado en punta \\
+	\multirow{3}{*}{Por alimentación} & CT alimentado en punta \\\noalign{\penalty10000}
 	& CT alimentado en paso, en anillo o en bucle\\
 	& CT de maniobra (o reparto)\\\hline
-	\multirow{2}{*}{Por la propiedad} & CT de compañía \\
+	\multirow{2}{*}{Por la propiedad} & CT de compañía \\\noalign{\penalty10000}
 	& CT de cliente o abonado \\\hline
-	\multirow{2}{*}{Por el emplazamiento} & CT de intemperie \\
+	\multirow{2}{*}{Por el emplazamiento} & CT de intemperie \\\noalign{\penalty10000}
 	& CT de interior \\\hline
 	\multirow{2}{*}{Por el tipo de acometida} & CT con acometida aérea \\\noalign{\penalty10000} % Para que no corte en la mitad del multirow
 	& CT con acometida subterránea \\\hline
@@ -47,15 +63,6 @@ Se clasifican, de acuerdo con la tabla \ref{tab:clas-ct}, dependiendo de su misi
 	& CT subterráneo
 \end{longtable}
 
-\subsubsection{Por alimentación}
-
-\begin{itemize}
-	\item Un CT alimentado \textbf{en punta} está ubicado al final de una línea, o bien es único en dicha línea. En este último caso se suele denominar independiente. Sólo tiene una entrada de línea.
-	
-	\item Un CT \textbf{de paso} están ubicados en un punto medio de una línea. A ellos llega una línea desde la subestación o desde otro CT y sale hacia el siguiente. Disponen de celda de entrada y salida de línea.
-	\item Un CT alimentado \textbf{en anillo o bucle} son un caso especial de los CT de paso. En estos no se puede considerar que la línea entra y sale, ya que en realidad son alimentados por los dos extremos. Esta es la configuración más usada en ciudades y polígonos industriales, ya que proporciona una buena fiabilidad en el suministro.
-	\item Un CT \textbf{de maniobra} es un CT de compañía con salidas controladas por aparatos de corte con capacidad de despejar fallas.
-\end{itemize}
 
 \begin{figure}
 	\centering

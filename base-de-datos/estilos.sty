@@ -94,16 +94,105 @@
 % --Nuevo
 
 % --Hoja A4
-\usepackage[left=2.50cm, right=2.50cm, top=3.00cm, bottom=3.00cm]{geometry}
+	\linespread{1.5}
+	
+	\renewcommand{\headrulewidth}{0pt} % Quita la línea del encabezado
+	
+	\usepackage[left=2.50cm, right=2.50cm, top=3cm, bottom=3.0cm]{geometry}
+	
+	% Aumenta el espacio entre el encabezado y el cuerpo del texto
+	\setlength{\headsep}{1.8cm}  % Aumenta el espacio entre el encabezado y el cuerpo del texto
+	\setlength{\footskip}{1.5cm}  % Aumenta el espacio entre el pie y el cuerpo del texto
+	
+	% Ajusta automáticamente la altura del cuerpo para que el pie de página no se desplace
+	\setlength{\textheight}{23.2cm}
 
+% --Colores
+
+\definecolor{primero}{RGB}{52,86,86} 
+\definecolor{segundo}{RGB}{64,112,118}
+\definecolor{tercero}{RGB}{66, 122, 129}  
+\definecolor{cuarto}{RGB}{156, 149, 130}  
+
+% --Edición tabla de contenidos
+
+	\renewcommand{\cftchappresnum}{Unidad }
+	\AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{\bfseries Chapter }}}	
+
+% --Edición de encabezados y pies de páginas
+
+	% ----- Estilo para todas las páginas -----
+	\fancypagestyle{hoja-default}{
+		\fancyhf{}
+		\fancyhead[L]{\large\textsc{\materia}}
+		\fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
+		\fancyfoot[L]{\includegraphics[width=.3cm]{../../../araña.png} \hspace{.3cm} \textbf{\leftmark}}
+	}
+	\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Para utilizar el nombre de la sección
+
+	% ----- Estilo especial para la primera página de cada capítulo -----
+	\fancypagestyle{chapterstyle}{
+		\fancyhf{} % Limpia los encabezados y pies de página
+		\fancyfoot[L]{\includegraphics[width=.3cm]{../../../araña.png}}
+		\fancyhead[R]{\large\textsc{\materia}}
+		\fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
+	}
+
+% --Edición de secciones
+
+	% Chapter
+	
+		% Edición del minitoc
+		\mtcrule\nomtcrule % Elimina las líneas antes y después del minitoc
+		\renewcommand{\mtctitle}{Contenido}
+		\setlength{\mtcindent}{0pt} % Elimina espacio lateral del minitoc, un poco al menos
+		\renewcommand{\mtifont}{\bfseries} % Hace que las secciones en el minitoc sean negritas
+		
+		% Edición del chapter
+		\titleformat{\chapter}[block]
+		{\normalfont\Huge\bfseries\color{primero}}   % Estilo del título
+		{\normalfont\huge Unidad \thechapter}          % "Chapter 1", etc.
+		{0pt}                          % Sin espacio entre el número y el título
+		{\vskip0.5cm}                  % Espacio vertical entre el número y el título
+		[\minitoc \thispagestyle{chapterstyle}]  % Formato del título (ajustar según lo necesario
+		
+		\titlespacing*{\chapter}{0pt}{\baselineskip}{1,5cm} % Ajusta el espaciado alrededor del capítulo
+	
+		
+		
+	% 	Section
+	
+		\titleformat{\section}[block]
+		{\normalfont\Large\bfseries\color{segundo}}  % Fuente y tamaño de la sección
+		{\thesection}  % Número de la sección
+		{1em}  % Espacio entre el número y el título
+		{}  % Nada antes del título
+		[\titlerule]
+	
+		% Ajusta el espacio antes y después de las secciones
+		\titlespacing*{\section}{2pt}{\baselineskip}{2em}  % Espacios antes y después del título
+	
+	% 	Subsection
+	
+		\titleformat{\subsection}
+		{\vspace{.8cm}\normalfont\large\bfseries\color{tercero}}   % Rojo para las subsecciones
+		{\thesubsection}{1em}{}[\vspace{.3cm}]
+	
+	% 	Subsubsection
+		
+		\titleformat{\subsubsection}
+		{\vspace{.5cm}\normalfont\large\bfseries\color{black}}   
+		{\thesubsubsection}{1em}{}[\vspace{.3cm}]
+%		{\thesubsubsection}{1em}{}[\rule{.6cm}{.1pt}\hspace{.3cm}\rule{2.8cm}{.1pt}]
+	
 % --Tablas y figuras
-\renewcommand{\arraystretch}{1.8} % Factor de escala de altura de fila
-\captionsetup{
-	justification=centering,  % Centra el texto del caption
-	singlelinecheck=true      % Asegura que incluso captions de una línea estén centrados
-}
-\newcommand{\cabezaTabla}[1]{\textsl{Continuación Tabla \ref{#1}.}}
-\newcommand{\pieTabla}{\textsl{Continuación en la siguiente página.}}
+	\renewcommand{\arraystretch}{1.5} % Factor de escala de altura de fila
+	\captionsetup{
+		justification=centering,  % Centra el texto del caption
+		singlelinecheck=true      % Asegura que incluso captions de una línea estén centrados
+	}
+	\newcommand{\cabezaTabla}[1]{\textsl{Continuación Tabla \ref{#1}.}}
+	\newcommand{\pieTabla}{\textsl{Continuación en la siguiente página.}}
 
 % --Listas
-\renewcommand{\labelitemi}{-}
+	\renewcommand{\labelitemi}{-}

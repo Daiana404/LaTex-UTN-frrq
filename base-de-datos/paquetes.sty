@@ -39,13 +39,26 @@
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+\addto\captionsspanish{\renewcommand{\chaptername}{Unidad}}
 \setlength{\parindent}{0pt}
 \usepackage{titlesec} % Tabla de contenidos
+
+% --Edición de encabezado y título
+\usepackage{lastpage}
+\usepackage{fancyhdr} % Para encabezado y pie de página
+
+% --Edición de secciones
+\usepackage{minitoc}
+
+% --Edición de la tabla de contenidos
+
+\usepackage{tocloft,calc}
 
 % --Para tablas
 \usepackage{caption}
 \captionsetup[table]{skip = 4pt} % Altura entre caption y tabla
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{longtable}
 
 % --Hipervínculos
