@@ -1,0 +1,44 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{paquetes}[2025/07/10 Carga de paquetes comunes]
+
+% Codificación y lenguaje
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{parskip}
+
+% Márgenes y geometría
+\usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+
+% Matemáticas
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Gráficos
+\usepackage{graphicx}
+\graphicspath{{./figuras}}
+
+% Colores
+\usepackage{xcolor}
+
+% Hipervínculos
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black}
+
+% Cajas de colores
+\usepackage{tcolorbox}
+\tcbuselibrary{listings, skins, breakable}
+
+% TikZ
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+
+% Títulos y encabezados
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% Otras utilidades
+\usepackage{nameref}
+\usepackage{caption,subcaption}
+\usepackage{emoji}
+\usepackage{multicol}
