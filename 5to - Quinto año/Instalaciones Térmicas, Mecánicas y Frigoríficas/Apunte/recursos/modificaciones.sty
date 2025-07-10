@@ -1,0 +1,54 @@
+% Modificación de los caption
+\captionsetup{skip=10pt, labelfont=bf}
+
+
+% Para el longtable
+\newcommand{\cabezaTabla}[1]{\textsl{Tabla \ref{#1} - Continuación}}
+\newcommand{\pieTabla}{\textsl{Continuación en la siguiente página}}
+
+% Para las listas
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{-}
+
+% Modificación del texto general
+\renewcommand{\baselinestretch}{1}
+%\setlength{\parskip}{10pt} % Ajusta el espacio entre párrafos
+%\setlist{parsep=0pt} % Aplica el mismo espaciado a listas
+
+%\renewcommand{\arraystretch}{1.5}
+
+% Quitar sangría
+\setlength{\parindent}{0pt}
+
+
+% Modificación de tabla
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+
+% Modificación de referencias
+\DefineBibliographyStrings{spanish}{bibliography = {Referencias}}
+
+% Para minitoc
+\dominitoc
+\renewcommand{\mtctitle}{Contenido}
+\let\oldminitoc\minitoc
+\renewcommand{\minitoc}{\oldminitoc\newpage}
+
+
+\addto\captionsspanish{\renewcommand{\contentsname}{Contenidos}}
+%\renewcommand{\mtctitle}{Tabla de Contenidos} % Cambia el título de la minitoc
+%\renewcommand{\mtcindent}{0pt} % Elimina indentación de la minitoc
+
+% Modificación hyperef
+\hypersetup{
+	colorlinks=true,
+	citecolor=black,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+
+% Comando para llamar la atención
+
+\newcommand{\ver}[1]{\textcolor{red}{\textbf{Ver: #1}}}

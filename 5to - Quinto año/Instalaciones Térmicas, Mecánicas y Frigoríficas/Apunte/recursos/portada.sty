@@ -1,0 +1,35 @@
+\ProvidesPackage{portada}
+
+\usepackage{tikz}
+\usepackage{setspace}
+\definecolor{maincolor}{HTML}{213250}
+
+\makeatletter
+\renewcommand{\maketitle}{
+	\begin{titlepage}\centering
+		\begin{tikzpicture}[remember picture, overlay]
+			\draw[line width=60pt, color=maincolor] 
+			([xshift=1cm, yshift=-1cm]current page.north west) 
+			rectangle 
+			([xshift=-1cm, yshift=1cm]current page.south east);
+		\end{tikzpicture}
+		\vfill
+		\includegraphics[width=4cm]{recursos/logo}\\[5pt]
+		{\Large \textsc{Universidad Tecnológica Nacional}\\[5pt]
+			Facultad Regional Reconquista\\[5pt]
+			Ingeniería Electromecánica}\\[3cm]
+		
+		\begin{minipage}{.7\linewidth}
+			\centering
+			\setstretch{.9}
+			{\Huge\textbf{\@title}\\[5pt]
+				\LARGE \emph{Apunte de Cátedra} \par}
+			\vspace{3cm}
+		\end{minipage}
+		\vfill
+		{\@author\\[5pt]
+			\large \@date}
+		\vfill
+	\end{titlepage}
+}
+\makeatother

@@ -1,0 +1,53 @@
+\documentclass[spanish,11pt,a4paper, oneside]{book}
+\usepackage{{./recursos/paquetes}}
+\usepackage{{./recursos/modificaciones}}
+\usepackage{{./recursos/portada}}
+\usepackage{{./recursos/estilos}}
+\usepackage{{./recursos/glosario}}
+\usepackage{multicol}
+\title{Instalaciones Térmicas, Mecánicas y Frigoríficas}
+\author{Daiana Polo\\Esteban Stechina}
+\date{\today}
+\begin{document}
+		% Esto lo puse como recomendacion de chatgp
+		\setlength{\headheight}{14pt}
+		\addtolength{\topmargin}{-2pt}
+
+		\maketitle
+		
+		\pagestyle{fancy}
+			\setcounter{tocdepth}{1}
+		\begin{multicols}{2}
+			\tableofcontents
+		\end{multicols}
+			\setcounter{minitocdepth}{4}
+		
+%		\include{./modulos/introduccion}
+		\part{Refrigerantes}
+		\include{./modulos/unidad-1/refrigerantes}
+		
+		\part{Refrigeración por Compresión}
+		\include{./modulos/unidad-3/refrigeracion}
+		\include{./modulos/unidad-3/compresores}
+		\include{./modulos/unidad-3/averias-soluciones}
+		\include{./modulos/unidad-2/evaporadores}
+		\include{./modulos/unidad-2/dispositivos-de-expansion-seguridad-y-control}
+		
+		\part{Acondicionamiento de Aire}
+		\include{./modulos/unidad-4/diagrama-psicrometrico}
+		\include{./modulos/unidad-4/calculo-termico}
+		\include{./modulos/unidad-4/condiciones-diseño}
+		\include{./modulos/unidad-4/acondicionamiento-ambiental}
+		\include{./modulos/unidad-5/acondicionamiento-industrial}
+		
+		\part{Resumen de cada tema}
+		\include{./modulos/resumen-refrigeracion}
+		\include{./modulos/resumen-vapor}
+		
+		
+		
+
+	\printbibliography
+	\printglossaries
+
+\end{document}

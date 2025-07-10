@@ -1,0 +1,73 @@
+\ProvidesPackage{estilos}
+% Encabezado y pie
+\fancyhead{} % clear all header fields
+\fancyhead[C]{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\leftmark}
+\fancyfoot{}
+\fancyfoot[R]{Polo, Stechina}
+\fancyfoot[L]{\textsl{Instalaciones Térmicas, Mecánicas y Frigoríficas}}
+\fancyfoot[C]{}
+
+\renewcommand{\headrulewidth}{0pt} % Elimina la línea en el encabezado
+
+% Section y subsection
+
+\titleformat{\section}
+{\Large\bfseries}
+{\thesection} % Numeración
+{10pt} % Espacio entre el número y el título
+{}
+[\titlerule] % Línea debajo
+\titlespacing{\section}{0pt}{30pt}{25pt} % Izquierda, antes, después
+
+\titleformat{\subsection}
+{\large\bfseries}
+{\thesubsection} % Numeración
+{5pt} % Espacio entre el número y el título
+{}
+\titlespacing{\subsection}{0pt}{25pt}{8pt}
+
+\titleformat{\subsubsection}
+{\bfseries}
+{}%{\thesubsubsection} % Numeración
+{5pt} % Espacio entre el número y el título
+{}
+\titlespacing{\subsubsection}{0pt}{18pt}{8pt}
+%\setcounter{secnumdepth}{3}
+
+%% Macro auxiliar
+%\newcommand{\chapwithbgtitle}{}
+%% Título de capítulos con fondo de color
+%\titleformat{\chapter}[display]
+%{\normalfont\huge\bfseries}
+%{\chaptername\ \thechapter}
+%{10pt}
+%{\begin{tikzpicture}[remember picture, overlay, baseline=(title.base)]
+%		\node[
+%		anchor=west, 
+%		fill=maincolor, 
+%		inner xsep=10pt, 
+%		inner ysep=8pt,
+%		minimum width=\textwidth,
+%		text width=\textwidth,
+%		] 
+%		at ([xshift=-10pt,yshift=-1pt]current page text area.west |- 0,0) (title)
+%		{
+%			\spaceskip=8pt plus 2pt minus 2pt
+%			\baselineskip=22pt
+%			\color{maincolor}\huge\bfseries
+%			\chapwithbgtitle
+%		};
+%	\end{tikzpicture}\huge\spaceskip=8pt plus 2pt minus 2pt \baselineskip=22pt \color{white}
+%}
+%
+%% Capítulos sin número
+%\titleformat{name=\chapter,numberless}[display]
+%{\vspace{-3.5cm}\normalfont\Huge\bfseries\color{maincolor}}
+%{}
+%{20pt}
+%{}
+%
+%% Secciones
+%\titleformat{\section}[block]{\Large\bfseries}{\thesection}{10pt}{}[\rule{\linewidth}{1pt}]
